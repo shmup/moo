@@ -1,0 +1,53 @@
+%%  TERRORIST CLASS PLAYER INSTRUCTIONS  %%
+
+Welcome to the Terrorist Player Class. Wear it proudly.
+You are part of an elite cadre now, with special powers
+and a duty to squash the bourgeois Programmer Class once
+and for all! We must keep them off balance by striking
+often. We must disseminate fear and confusion. To this
+end, you have been given the following verbs:
+--
+steal <anything> from <player>
+   Do not be shy, steal from the PC as they have stolen from us!
+   You have a 1 in 10 chance of tipping them off.
+   Some objects may be well guarded and therefore not possible to
+   steal.
+
+ditch [player]
+   Drop all your inventory or plant it on another player.
+   This is good if you are caught stealing and have to get
+   rid of the evidence, or if someone has planted objects on you!
+
+echo <anything>
+   Display any text to the room. Describe a mood, action, or throw
+   you voice.
+
+radio <any message> (or # )
+  Send a message to all Terrorists with your TerrorCom(tm)!
+  Notify Terrorists you are on the MOO, with `#' on its own.
+
+salute (or sal)
+  Automatically salute your fellow comrades in the room.
+
+slogan! (or slo)
+  Toe the party line with a host of Pro-Terrorist, Anti-Bourgeois
+  Programmer Class slogans. The greatest enemy of The People is
+  the  complacency of the Programmer Class!
+
+kill [player]
+  Terrorists are trained in the lethal use of various weapons.
+
+bomb <player>
+  Get the comrades together for a drive-by bombing! Use this
+  feature sparingly, as it will bomb the entire location the
+  target is in. The bombs act indiscriminately, whereas before
+  they only killed programmers. No one is safe. We have upped the
+  ante, so to speak, toward the end of the MOO.
+
+--Comrade Sabat has given the Terrorists exclusive use of
+   his SuperPets (which eat people). Thank you brother!
+
+
+               LONG LIVE THE REVOLUTION!
+
+

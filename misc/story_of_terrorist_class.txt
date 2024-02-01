@@ -1,0 +1,195 @@
+The Story of the Terrorist Class ...
+
+I would like to clear up any misconceptions you might have concerning 
+the infamous Terrorist Class, as well as give a factual history of its
+creation and its use. The concepts I use are broad, and I hope you
+will find them good humoured. Whether you know nothing about the Great
+War before the Apocalypse, or were one of its casualties, I hope you
+will find this both informing and entertaining. If I may quote
+liberally from one of our fine comrades:
+
+--------------------------
+ ... what the hell is the problem with this terrorist thing anyway?
+People seem to think that it is the beginning of the end . . .
+Terrorism on the MOO will lead to complete chaos and all that. Why are
+these people on the MOO?  Don't they have any clue about what it is to
+play?  I guess they will never know the thrills of a MOO killing.
+Alas, . . .
+--------------------------
+
+On November 5th, 1993, wizard Daffy posted a news item telling everyone
+on PMC-MOO that it was moving. Most of us didn't know what parts would 
+be
+moved or how, and the posting warned that we may have to port our own
+stuff if we wanted to be sure it would reappear on the new MOO. Other
+programmers and myself began speculating on the nature of the new MOO,
+how it would be organized, and whether the recent rash of `spying' and
+limited `intrusions', as well as the dissatisfaction of a lot of
+veteran PMC-MOOers with the recent `quality' of conversation, would
+provoke a stricter code of conduct. We joked about the possibilities.
+Most people seemed to focus on the impending end of the MOO, instead
+of its rebirth at a new location, and I, along with a few other
+programmers, had lost all inspiration to create. A few of us began
+musing over the inviting ending of Daffy's news post: All players are
+encouraged to plan/program for a final apocalypnic ...apocapicnic
+..apocalypso ...the end of it all.
+
+
+I remember when I first logged on to PMC-MOO I was absolutely amazed.
+The studious friend I logged on with immediately took to the library,
+while I immersed myself in the atmosphere, trying new things, looking
+around, and learning how to manipulate the virtual space with a little
+programming. A little while later I met Sabat, a sunny but oft morose
+X-er, with whom I explored the new area, created objects, tested
+commands and verbs, and basically played. I can remember the first
+time I smoked some virtual dope with him; I felt like I was 14 all
+over again. It was great.
+
+Slowly but surely we began to learn how to program, and we shared our
+knowledge with others who were curious. Even then people were already
+unhappy. They complained that new users were more interested in
+playing around and making things than talking about Post Modern
+Culture. I thought this was a shallow take on the situation, because
+we were *living* PoMo, and more often than not it was a chance to
+explore it more deeply than exchanging notes with other people
+verbally. I've always objected to the paper-trail of academe.
+Experience fortifies theory.
+
+I created several things, all the while keeping within the default
+quota of 20 objects. Talks I had with other players like femmefatale,
+roxii and Smack gave me ideas about new creations, and we collaborated
+on several of these. Together we made everything from birthday cakes
+to church confessionals, Harley Davidsons to Hookers, all the while
+sharing our insights and memories of how these things effected how we
+thought and felt. Though I liked the church, I destroyed it and many
+other things I made to make room for a performance space, where MOO
+poetry could be read, and we might experiment (though I don't know how
+just yet) with MOO music. Our aim was always to contribute to the MOO,
+and to have fun doing it.
+
+And so, towards the end of this old MOO, we exchanged ideas again.
+What could we do for a grand finale? What did we want to experiment
+with? How could we affect the MOO, the coMOOnity? Now was the time to
+play and go for broke; though we never lost sight of common courtesy.
+If you think you know otherwise, think again.
+
+I'll take full responsibility for the MOO Terrorist Player Class,
+unless someone else wants it, though many of the ideas we came up with
+were shared. Anyone who has read the instructions to the Terrorist
+Class should get an idea of what we were looking for. We were
+experimenting with factioning the community, developing semi-tangible
+classes which mimicked history or real life. The result was a
+surprising parallel to it.
+
+My first concern was that the Terrorists not use up the system
+resources, and that we keep things simple. The second was that we
+should not attack new users, visitors, or anyone who did not have
+Programmer status. After all, this wouldn't be fair to the user in the
+real world. Someone learning the system should be allowed to do so
+unmolested. So we targeted the Programmers. Here, we thought, was a
+group of people with enough experience and the wherewithal to handle
+themselves and the situation. The Programmers would have the knowledge
+to `deal' with Terrorists and appreciate them. Everyone else was a
+brother/sister, a comrade. The lowly Player and Builder Classes would
+be `avenged' by us. The Programmers, second only to the wizards in the
+power hierarchy (and this is still a tangible hierarchy), naturally
+fit the role of the upwardly mobile bourgeoisie, and thus the
+Revolution was born! It was fitting that the Terrorists were reared
+from both Programmer and non-programming stock. Almost too real.
+
+To protect the system and the end users, we agreed that `spamming'
+(flooding someone's terminal with text) would not be allowed. Nor
+would any attack on newbies (new users) or non-programmers. To ensure
+this, it was coded into all our verbs. Our bombs quite simply did not
+work on anyone who did not have the Programmer Class parent. During a
+bombing attack, the most that might happen to any non-programmer in
+the target area was that they would `hear' and `see' a sedan race in
+and lob a molotov cocktail in their midst. They would then be told
+that they were not the target, and the Terrorists meant them no harm.
+A maximum intrusion of 7 lines of text.
+
+If, however, you *were* a Programmer, you would be `injured' in the
+raid, and the bomb would attempt to move you to room #310 as eMOOgency
+services tried to cart you off to the hospital to recover. Adding an
+extra 2 lines of text to the original display. But this wasn't all the
+Terrorists had to offer. We had a brief sense of community too. When
+you logged on, you could type `@twho' and get a list of all the
+Terrorists logged on at the time with you. Upon entering a room you
+could `salute' all the other Terrorists. You could shout (not a
+MOO-wide shout mind you, just a simple emote to your location)
+`slogans', which were invariably some nonsense like The Programmer
+Class has grown rich off the backs of the Builder Class for too long!
+The Terrorists also had radios with which they could contact each
+other, regardless of location. They could `steal' other people's
+possessions, but always ran the risk (10%) of being caught. When this
+happened, the player was told they had been clumsy and their victim
+was told they had been bumped suspiciously by the assailant. Lastly,
+Terrorists couldn't attack Terrorists. It was impossible. If the verb
+you called tried to move another Terrorist it was instantly rerouted.
+All these features made me think people would enjoy the idea of the
+Terrorist Class; its spontaneity, sense of community, and ultimate
+harmlessness. If the Terrorists really and truly pissed you off (and I
+never met anyone they really did), you could just join them and have
+an end to it! The old `if you can't beat 'em ...' strategy. And as the
+creator, I purposefully left myself off the failsafe list. So I was
+also subject to the bombings, stealing and killing.
+
+In our heyday, the Terrorists had 77 members. That's 77 individuals
+who thought the idea was fun and interesting, compared to the 3 or 4
+complainers who *hated* `us'. And I mean HATED. These people were so
+bursting with bile and aggressive hatred that they wouldn't listen for
+one second to my explanation of what was going on, or how they might
+avoid any problems (and even gain a few features) by joining up. You
+can imagine my relief when I found out they didn't really hate me or
+my intrepid comrades at all, but were confusing the Terrorist name
+with the activities of one or two other people who had formed a rival
+group called the PoMo Subversives. I have recently been even further
+encouraged to discover that these few angry people had been hating
+each other since long before the Terrorists were even a twinkle in my
+eye. Well, encouraged and angry at the same time. I was disappointed
+that a few in-fighting whiners had sullied our bad name, and that they
+were using the MOO to settle their petty grievances. I was all the
+more surprised to find out some of these people actually knew each
+other in the real world.
+
+Sadly, the ones that cried and screamed the most about Terrorist
+`spamming' (which, as I have said, was never a part of the Terrorist
+modus operandi, nor ever part of *any* Terrorist attack), had
+previously been `spamming' others repeatedly without remorse. The
+immediacy of the virtual environment and the lack of emotional and
+other textual references allowed a small group argument to escalate to
+a war literally over night. And even now, with all the hype and lies
+and rumours and rhetoric, I have to come to the same conclusion:
+nothing really went wrong. The MOO did not fall apart, or drastically
+degenerate. The Terrorists were erroneously held responsible for a
+personal war between a handful of people. Even after `crossing over'
+to the new MOO, we see that those involved in the private battle are
+still fighting with each other, sans Terrorists. This scapegoating
+actually resulted in the @recycling of #777 (the Terrorist Class
+object on the old MOO) on the new MOO, even though it was no longer
+the same object.
+
+Let me close by saying I've had a lot of fun on the MOO. The
+interactive environment has given me the incentive to learn its
+programming language and a few intricacies that I would never have
+otherwise even bothered to learn. The experience I have gained here is
+invaluable, and I hope to continue to contribute and collaborate with
+others in increasingly creative ways. I have the utmost respect for
+wizard/god Barney (aka John), the MOOs not-so-absent father, who has
+gone out of his way to provide a manageable environment where learning
+and creativity go hand in hand. A place where sex, race, and other
+role biases are necessarily and routinely subverted and questioned.
+Like any doting parent, he must be reluctant to let the MOO wander off
+on its own, to experiment, explore, and make not just a few
+`mistakes'. We shouldn't admonish a child for stumbling, however, lest
+in fear of failure it never learn to walk. I am particularly
+encouraged by Daffy's approach to the development of the MOO. It is
+indeed the very rare anarchist or Marxist (or any `ist', for that
+matter) who does not resort to totalitarian or fascist tactics to
+`help guide the people along the path'.
+
+To all my comrades, I wish you many more Revolutions. Viva!
+
+OGRE
+
+
