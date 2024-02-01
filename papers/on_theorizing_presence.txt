@@ -1,0 +1,403 @@
+On Theorizing Presence
+
+David Jacobson
+Brandeis University
+Jacobson @ brandeis.edu
+
+Presence is the experience of being engaged by the representations of
+a virtual world (Lombard and Ditton 1997, Lombard 2000a). Most research on
+presence has focused on technologies that use a variety of sensory inputs
+(e.g., visual, auditory, haptic) to create a simulacrum of a real environment,
+a virtual reality (VR) that mimics perceptions in the physical world (cf.
+Biocca 1997, Heeter 1995, Kim and Biocca 1997, Lombard and Ditton 1997,
+Lombard 2000b, Witmer and Singer 1998). Less attention has been paid to
+presence in the context of text-based virtual worlds. This paper presents
+a brief overview of theories that identify factors that promote or undermine
+a sense of presence in text-based virtual worlds.
+
+In the context of text-based virtual worlds such as MUDs, MOOs, IRC, and
+Chats, presence is usefully described as a feeling of getting lost or wrapped
+up in the representations of the text--of being involved, absorbed, engaged,
+or engrossed in or by them (Lombard 2000a). Immersion is another term that is
+used in the literature on presence, but it seems better suited to the kind of
+virtual reality afforded by head-mounted displays and data-gloves, in which
+participants are surrounded by or submerged in software-generated images, than
+to text-based virtual worlds (cf. Schubert et al 1999:270, Slater and Wilbur
+1997:604-606).
+
+As Lombard notes (2000b), analysts use different terms to describe a sense of
+presence. Similarly, participants use different idioms in talking about their
+experience of it. They may say that they are “caught up” in an activity, that
+they are “there” or “here” when speaking of a virtual place, or that a virtual
+world is “real.” However, from the context of their statements and from their
+descriptions of the situations in which they experience presence, it is
+evident that participants are referring to their engagement in a virtual world
+and to what Lombard (2000a) describes as an “illusion of nonmediation.”
+
+Different theoretical frameworks are relevant in explaining experiences of
+presence. Various analysts (e.g., Jacobson 1999, Lea and Spears 1995, Walther
+1992, 1996, 1997) argue that individuals engaged in text-based
+computer-mediated communication cope with absent or attenuated cues,
+ordinarily present in face-to-face interaction, by engaging in processes of
+"optimized self-presentation" and "overattribution" (Walther 1996, 1997). In
+the former, individuals selectively construct self-images, imagining how they
+will appear to others; in the latter, they idealize others, imagining how they
+appear. In these processes, people become invested in such presentations and
+idealizations. This theoretical perspective recalls Stone's analysis of phone
+sex. She writes (1995:93-95):
+
+    The effect of narrowing bandwidth [from offline, physical reality to
+    computer-mediated communication, especially text-based CMC] is to engage
+    more of the participants' interpretive faculties….Frequently in
+    narrow-bandwidth communication the interpretive faculties of one
+    participant or another are powerfully, even obsessively, engaged….In phone
+    sex, once the signifiers begin to "float" loose from their moorings in
+    a particularized physical experience, the most powerful attractor becomes
+    the client's idealized fantasy. In this circumstance narrow bandwidth
+    becomes a powerful asset, because extremely complex fantasies can be
+    generated from a small set of cues. In enacting such fantasies,
+    participants draw on a repertoire of cultural codes to construct
+    a scenario that compresses large amounts of information into a very small
+    space….client and provider mobilize erotic tension by taking advantage of
+    lack--filling in missing information with idealized information.
+
+According to reception theorists and other analysts of reading (cf. Barbatsis,
+Fegan, and Hansen 1999, Gerrig 1993, Gerrig and Pillow 1998, Iser 1978, Miller
+1995, Ochs and Capps 1996, Ryan 1991, 1994, 1999, Segal 1995), participants
+become caught up in virtual worlds when they exercise their imagination to
+fill narrative and/or descriptive gaps. Moreover, the greater the opportunity
+to imaginatively construct a virtual world, the more a sense of presence will
+be strengthened. This is the “less is more” view of the factors that promote
+the involvement of readers. That is, presence is enhanced when the "glory of
+imagined description" (Brann 1991:468; cf. Reed 1991:30) is not undermined.
+
+Although analysts agree about the importance of imagination in facilitating
+the experience of presence in the context of textual representations, there
+are different views regarding the processes that affect it. One view
+emphasizes the “willing suspension of disbelief.” Coleridge (1847:1-2) used
+the phrase in his account of “exciting the sympathy” of readers of poetry in
+which “the incidents and agents were to be, in part at least, supernatural.”
+For him, the act of the “willing suspension of disbelief” enabled readers to
+engage with what they otherwise knew were “shadows of imagination.” (The
+concept of the “willing suspension of disbelief” plays an important role in
+semiotic and sociological theorizing about the construction of and engagement
+in various kinds of realities--see Wiley 2000a and 2000b.) Laurel (1991),
+a theorist of human-computer interaction, and Ryan (1994, 1999), a literary
+theorist, draw on Coleridge in analyzing the sense of presence generated in
+interacting with computers and in computer-mediated communication. Ryan writes
+(1999:89):
+
+    This idea of suspension of disbelief is the literary-theoretical
+    equivalent of the VR concept of immersion. It describes the attitude by
+    which the reader brackets out the knowledge that the fictional world is
+    the product of language, in order to imagine it as an autonomous reality
+    populated by solid objects and embodied individuals.
+
+The suspension of disbelief model suggests how individuals may become engaged
+in textual representations, but it does not explain why such engagement fails
+or is otherwise limited. Research in cognitive psychology addresses this
+issue.
+
+Cognitive psychologists offer a view of the processes underlying both
+engagement and disengagement in the context of textual representations.
+Gilbert and his colleagues, drawing on Spinozan rather than Cartesian
+perspectives, argue that people initially assign a truth value to a mental
+representation, subsequently rejecting it only if warranted by rational
+assessment. As Gilbert, Krull, and Malone note (1990:601; cf. Gilbert 1991;
+Gilbert, Tafarodi, and Malone 1993):
+
+    Baruch Spinoza…suggested that all ideas are accepted (i.e., represented in
+    the mind as true) prior to a rational analysis of their veracity, and that
+    some ideas are subsequently unaccepted (i.e., represented as false)….In
+    short, the mental representation of a proposition or idea has a truth
+    value associated with it, and by default this value is true. This default
+    value remains unaltered when the idea is subsequently assessed to be true,
+    but is changed when the idea is subsequently assessed to be false.
+
+Gerrig (1993; cf. Gerrig and Pillow 1998), in a critique of “toggle” theories,
+including Coleridge’s theory of the suspension of disbelief, extends the
+Spinozan argument in analyzing people’s engagement with “narrative worlds,”
+including the worlds represented in text-based computer-mediated
+communication. Like Gilbert and unlike Coleridge, Gerrig argues that readers
+are inclined to accept information as valid in the course of comprehension,
+disbelieving it only after conscious appraisal warrants otherwise. His theory
+assumes that people will believe what they read --"persuasion by fiction is
+the default outcome" (Gerrig 1993:227)--until they critically scrutinize such
+claims and reject those that are, on inspection, incredible or unwarranted. In
+this sense, Gerrig “replaces a ‘willing suspension of disbelief’ with
+a ‘willing construction of disbelief’ (1993:230; cf. Gerrig and Pillow
+1998:1-2-103). Gerrig's model implies that comparing a fictional world with
+a factual one will undermine a sense of presence. Moreover, since people’s
+knowledge of or beliefs about the factual world will vary, different people
+will accept (and reject) different claims about represented (or virtual)
+worlds.
+
+As predicted by the research of Gilbert, Gerrig, and others, presence is
+affected when participants compare the textual description of what is imagined
+and the reality it simulates. When the real (or offline) referent of a virtual
+world is unknown, presence is enhanced (or at least not diminished by
+reference to knowledge and/or beliefs about “real life”); when the actual
+referent is known, presence is inhibited or undermined, especially when there
+is a discrepancy between the image (that which is imagined) and the actual
+world it is supposed to resemble (see Jacobson 2001).
+
+If knowing the real world represented by an imaginary one decreases a sense of
+presence, knowing participants offline, in real life, increases the sense of
+presence. This seems to happen when participants view a virtual world not as
+an imaginary one, but, rather, as a medium of communication. They are engaged
+not by the textual representation of the faux world, but by interacting with
+people they know. This pattern is consistent with the observations of Towell
+and Towell (1997; see Jacobson 2001), who report a stronger sense of presence
+among MOO participants who knew one another in real life and/or who knew one
+another's real names than among those who did not know one another and/or who
+used pseudonyms.
+
+The effect of offline knowledge of others holds when people know one another
+before they interact online. The effect of meeting people or seeing
+photographs of them after having first encountered them online appears to
+produce a different outcome (especially when interaction is confined to
+cyberspace), one that reinforces the argument that imagination (and
+projection) plays a role in creating a sense of presence. This pattern is
+consistent with findings about the role of pictures in fostering online
+relationships. Walther and his colleagues (2001) found that for people who had
+interacted online for a long time before seeing photographs of their virtual
+partners, the pictures were disappointing and hindered the maintenance of
+intense and engaging relationships, and when people saw photographs of their
+partners before they began to work together online, the pictures somewhat
+facilitated the development of such experiences. In the case of virtual
+partners who formed impressions of one another before seeing photographs,
+idealized images did not match reality, and the difference was disappointing.
+
+When a virtual world is viewed as a locus of activity, Csikszentmihalyi's
+theory of "flow" explains a sense of presence (1982, 1988; cf. Trevino and
+Webster 1992; Webster, Trevino, and Ryan 1993). Conceptualized as a "flow"
+experience, presence entails a "merging of action and awareness," during which
+a person loses "self-consciousness" and a sense of time, focusing on "the
+present, blocking out the past and the future" (Csikszentmihalyi 1982:38-42;
+cf. Danet et al 1998, Fontaine 1992, Novak et al. 2000). Flow theory addresses
+the experiences people have when participating in activities that are
+intrinsically rewarding and in which a person's abilities and skills match the
+challenges she or he encounters. Intrinsically rewarding activities are those
+in which satisfaction is derived from engaging in "the activity itself, the
+pattern, the action, the world it provides" (Csikszentmihalyi 1982:14).
+Although such activities provide participants a sense of challenge, people
+have to feel they are capable of meeting challenges; otherwise, an imbalance
+between challenges (demands) and abilities and skills (resources) will produce
+boredom (if the resources exceed the demands) or stress (if the demands exceed
+the resources), both of which are said to undermine, rather than enhance,
+a sense of absorption. In Csikszentmihalyi's view, activities that induce
+a sense of flow include play, exploration, problem-solving, and those of
+companionship and friendship--activities that commonly take place in MOO type
+virtual worlds (see Jacobson 2001).
+
+Theorizing about presence is found within different disciplines, although the
+convergence is largely unnoted, perhaps because practitioners tend to ignore
+the relevance of work done outside their own fields. Although theoretical
+frameworks in psychology and of literary studies, especially those focusing on
+the role of imagination and on flow experiences, each provides a partial
+understanding of the experience of presence in text-based environments,
+considering them together may contribute to a fuller and more satisfying
+explanation.
+
+References Cited
+
+Barbatsis, Gretchen, Michael Fegan, and Kenneth Hansen
+1999 The Performance of Cyberspace: An Exploration Into Computer-
+Mediated Reality. Journal of Computer-mediated Communication, 5:1.
+http://www.ascusc.org/jcmc/vol5/issue1/barbatsis.html.
+Accessed February 3, 2000
+
+Biocca, Frank
+1997 Cyborg's Dilemma: Progressive Embodiment in
+Virtual/Environments. Journal of Computer-Mediated Communication 3:2.
+http://jcmc.huji.ac.il/vol3/issue2/biocca2.html#User
+Accessed April 10, 2000
+
+Brann, Eva T. H.
+1991 The World of the Imagination. Savage, MD: Rowman and Littlefield
+Publishers, Inc.
+
+Coleridge, Samuel Taylor
+1847 Biographia Literaria, Volume II. London: William Pickering.
+
+Csikszentmihalyi, Mihaly
+1982 Beyond Boredom and Anxiety. San Francisco: Jossey and Bass.
+
+Csikszentmihalyi, Mihaly and Isabella Selega Csikszentmihalyi
+1988 Optimal Experience: Psychological Studies of Flow in
+Consciousness.
+Cambridge: Cambridge University Press.
+
+Danet, Brenda, Lucia Ruedenberg, and Yehudit Rosenbaum-Tamari
+1998 Hmmm…Where's That Smoke Coming From? Writing, Play, and
+Performance on Internet Relay Chat. In Network and Netplay: Virtual Groups
+on the Internet (Eds.,Fay Sudweeks, Margaret McLaughlin, and
+Sheizaf Rafaeli), pp. 41-76.
+
+Fontaine, Gary
+1992 The Experience of a Sense of Presence in Intercultural and
+International Encounters. Presence 1:4:482-490.
+
+Gerrig, Richard J.
+1993 Experiencing Narrative Worlds: On the Psychological Activities of
+Reading. New Haven: Yale University Press.
+
+Gerrig, Richard J. and Bradford H. Pillow
+1998 Developmental Perspective on the Construction of Disbelief. In
+Believed-In Imaginings: The Narrative Construction of Reality (Eds.,
+Joseph de Rivera and Theodore R. Sarbin), pp. 101-119. Washington,
+D.C.: American Psychological Association.
+
+Gilbert, Daniel T.
+1991 How Mental Systems Believe. American Psychologist 46:2:107-119.
+
+Gilbert, Daniel T., Douglas S. Krull, and Patrick S. Malone
+1990 Unbelieving the Unbelievable: Some Problems in the Rejection of
+Information.Journal of Personality and Social Psychology 59:4:601-613.
+
+Gilbert, Daniel T., Romin W. Tafarodi, and Patrick S. Malone
+1993 You Can’t Not Believe Everything You Read. Journal of Personality
+and Social Psychology, 65:2:221-233.
+
+Heeter, Carrie
+1995 Communication Research on Consumer VR. In Communication in the
+Age ofVirtual Reality (Eds., Frank Biocca and Mark R. Levy), Pp. 191-218.
+Hillsdale, NJ:Lawrence Erlbaum Associates.
+
+Iser, Wolfgang
+1978 The Act of Reading: A Theory of Aesthetic Response. Baltimore:
+Johns Hopkins University Press.
+
+Jacobson, David
+1999 Impression Formation in Cyberspace: Online Expectations and
+OfflineExperiences in Text-based Virtual Communities. Journal of
+Computer-mediatedCommunication. 5:1.
+http://www.ascusc.org/jcmc/vol5/issue1/jacobson.htmlAccessed April 10,
+2000
+
+2001 Presence Revisited: Imagination, Competence, and Activity in Text-
+BasedVirtual Worlds. CyberPsychology & Behavior, 4:6:653-673
+
+Kim, Taeyong and Frank Biocca
+1997 Telepresence via Television: Two Dimensions of Telepresence May
+HaveDifferent Connections to Memory and Persuasion. Journal of
+Computer-MediatedCommunication, 3:2.
+http://jcmc.huji.ac.il/vol3/issue2/kim.html
+Accessed April 10, 2000
+
+Laurel, Brenda
+1991 Computers as Theatre. Reading, MA: Addison-Wesley Publishing
+Company.
+
+Lea, Martin and Russell Spears
+1995 Love at First Byte? Building Personal Relationships over Computer
+Networks.In Under-studied Relationships: Off the Beaten Track (Eds., Julia
+T. Wood and SteveDuck ), Pp. 197-233. Thousand Oaks, CA : SAGE
+Publications
+
+Lombard, Matthew
+2000a Presence Explication.
+http://nimbus.ocis.temple.edu/~mlombard/Presence/explicat.htm
+Accessed March 27, 2001
+
+2000b Presence Measurement.
+http://nimbus.ocis.temple.edu/~mlombard/Presence/measure.htm
+Accessed March 27, 2001
+
+Lombard, Matthew and Theresa Ditton
+1997 At the Heart of It All: The Concept of Presence. Journal of Computer-
+mediated Communication 3:2.
+http://www.ascusc.org/jcmc/vol3/issue2/lombard.html
+Accessed July 6, 2000.
+
+Miller, J. Hillis
+1995 Narrative. In Critical Terms for Literary Study, Second Edition, (Eds.,
+Frank Lentricchia and Thomas McLaughlin (Eds.), pp. 66-79. Chicago:
+University of Chicago Press.
+
+Novak, Thomas P., Donna L. Hoffman, and Yiu-Fai Yung
+2000 Measuring the Customer Experience in Online Environments: A
+StructuralModeling Approach-How the Construct of Flow Can Be Used to
+Define and Measure Compelling Online Customer Experience. Marketing
+Science. 19:1:22 43.
+http://www.smeal.psu.edu/mktg/MktgSciJournal/abstracts/vol19/no1/
+novakandhoffmanandyung.html
+Accessed February 6, 2001
+
+Ochs, Elinor and Lisa Capps
+1996 Narrating the Self. Annual Review of Anthropology 25:19-43.
+
+Reed, Kit
+1991 Mastering Fiction Writing. Cincinnati: F&W Publications.
+
+Ryan, Marie-Laure
+1991 Possible Worlds, Artificial Intelligence, and Narrative Theory.
+Bloomington: Indiana University Press.
+
+1994 Immersion vs. Interactivity: Virtual Reality and Literary Theory.
+PostmodernCulture.5:1.
+http://muse.jhu.edu/journals/postmodern_culture/v005/5.1ryan.html
+Accessed March 14, 2000
+
+1999 Cyberspace, Virtuality, and the Text. In Cyberspace Textuality:
+Computer Technology and Literary Theory (Ed., Marie-Laure Ryan), Pp. 78-
+107. Bloomington: Indiana University Press.
+
+Schubert, Thomas, Frank Friedmann, and Holger Regenbrecht
+1999 Embodied Presence in Virtual Environments. In Visual
+Representations and Interpretations (Eds., Ray Paton and Irene Neilson),
+pp. 269-278. London: Springer-Verlag.
+
+Segal, Erwin
+1995 Narrative Comprehension and the Role of Deictic Shift Theory. In
+Deixis in Narrative: A Cognitive Science Perspective (Eds. Judith F.
+Ducham, Gail A. Bruder, and Lynne E. Hewitt), pp. 3-17. Hillsdale, NJ:
+Lawrence Erlbaum Associates.
+
+Slater, Mel and Sylvia Wilbur
+1997 A Framework for Immersive Virtual Environments (FIVE):
+Speculations on the Role of Presence in Virtual Environments. Presence
+6:6:603-616.
+
+Stone, Allucquere Rosanne
+1995 War of Desire and Technology at the Close of the Mechanical Age.
+Cambridge: MIT Press.
+
+Towell, John and Elizabeth Towell
+1997 Presence in Text-Based Networked Virtual Environments or
+"MUDS." Presence 6:5:590-595. http://www-
+nix.mcs.anl.gov/~towell/presence.html Accessed June 24, 1999.
+
+Trevino, Linda K. and Jane Webster
+1992 Flow in Computer-Mediated Communication. Communication
+Research 19:5:539-573.
+
+Walther, Joseph B.
+1992 Interpersonal Effects in Computer-Mediated Interaction: A Relational
+Perspective. Communication Research 19:1:52-90.
+
+1996 Computer-Mediated Communication: Impersonal, Interpersonal, and
+Hyperpersonal Interaction. Communication Research 23:1:3-43.
+
+1997 Group and Interpersonal Effects in International Computer-Mediated
+Collaboration. Human Communication Research 23:3:342-369.
+
+Walther, Joseph B., Celeste L. Slovacek, and Lisa C. Tidwell
+2001 Is a Picture Worth a Thousand Words? Photographic Image in Long-
+Term and Short-Term Computer-Mediated Communication.
+Communication Research 28:105-134.
+
+Webster, Jane, Linda K. Trevino, and Lisa Ryan
+1993 The Dimensionality and Correlates of Flow in Human-Computer
+Interactions. Computers in Human Behavior 9:411-426.
+
+Wiley, Norbert
+2000a Multiple Realities and Cultural Studies. Paper presented at the
+American Sociological Association Convention, Washington, D.C.
+
+2000b Movies and the Mind: A Pragmatist Approach. Interdisciplinary
+Journal forGermanic Linguistics and Semiotic Analysis 5:1:93-126.
+
+Witmer, Bob G. and Michael J. Singer
+1996 Measuring Presence in Virtual Environments: A Presence
+Questionnaire. Presence 7:3:225-240.

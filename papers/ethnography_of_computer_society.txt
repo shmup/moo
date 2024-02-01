@@ -1,0 +1,1759 @@
+March 16, 1992
+
+                             Virtual Reality:
+                Reflections of Life, Dreams, and Technology
+                   An Ethnography of a Computer Society
+
+                          by Michael S. Rosenberg
+	    	          msr@casbah.acns.nwu.edu
+===========================================================================
+ABSTRACT
+
+In modern society, the role computers play in our lives cannot be
+underemphasized.  With computer technology growing by leaps and bounds,
+with access to computers being opened up to an even larger segment of the
+population, and with more and more people becoming familiar and more
+comfortable with computers, it is no wonder that entire social systems
+based on and through computers have developed and spread throughout the
+world.  This phenomena can take many forms, one of which is the Multi-User
+Dungeon (MUD).  Within this paper, I try to show the reader the culture
+that has developed within the "virtual world" of a MUD, the people behind
+the culture, and its relationship to real life.
+===========================================================================
+                     ***************************
+                     *   Welcome to WolfMOO!   *
+                     ***************************
+
+                    Running Version 1.5 of WolfMOO
+
+                  ArchWizard:  Belgarath (aka Wolf)
+                  Wizards:     Polgara (aka Aunt.Pol)
+                               Belgarion (aka Garion)
+                               Beldin (aka Hunchback)
+                               Belkira (aka Kira)
+                               Beltira (aka Tira)
+
+Type `connect Guest' to connect to a guest character,
+     `create  <character-name> <password>' to create a new character,
+     `connect <character-name> <password>' to connect to an existing one,
+or
+     `@who' just to see who's logged in right now.
+
+For example, `create Munchkin frebblebit' or `connect Munchkin frebblebit'.
+
+
+To disconnect, either now or later, type `@quit'.
+
+After you've connected, type `help' for documentation.
+
+Please email bug/crash reports to wolf@pseudo.comp.com.
+
+>create Ethnographer culture
+*** Created ***
+The Coat Closet
+The closet is a dark, cramped space.  It appears to be very crowded in
+here; you keep bumping into what feels like coats, boots, and other people
+(apparently sleeping).  One useful thing that you've discovered in your
+bumbling about is a metal doorknob set at waist level into what might be a
+door.
+Don't forget to take a look at the newspaper.  Type 'news' to see it.
+>out
+You open the closet door and leave the darkness for the living room,
+closing the door behind you so as not to wake the sleeping people inside
+The Living Room
+It is very bright, open, and airy here, with large plate-glass windows
+looking southward over the pool to the gardens beyond.  On the north wall,
+there is a rough stonework fireplace, complete with roaring fire.  The east
+and west walls are almost completely covered with large, well-stocked
+bookcases.  An exit in the northwest corner leads to the kitchen and, in a
+more northerly direction, to the entrance hall.  The door into the coat
+closet is at the north end of the east wall, and at the south end is a
+sliding glass door leading out onto a wooden deck.  There are two sets of
+couches, one clustered around the fireplace and one with a view out the
+windows.
+You see a newspaper, Welcome Poster, README for New MOOers, The Daily
+Whale, a cuckoo clock on the mantle, Cockatoo, Electronic Ownership Tally
+Board, Ice Block, 1934 Buick, lag meter, and Zeebmobile here.
+===========================================================================
+                         "You have entered the Twilight Zone
+                          Beyond this world strange things are known
+                          Use the key, unlock the door
+                          See what your fate might have in store
+                          Come explore your dream's creation
+                          Enter this world of imagination."
+
+                                   "The Twilight Zone" -- Rush
+
+INTRODUCTION
+     A world of imagination.  A world of dreams.  Hidden amidst the complex
+computer systems that criss-cross the world can be found MUDs.  Multi-User
+Dungeons.  Computer programs that allow people from all over the world to
+communicate...to interact...to create and dream and live in ways that they
+cannot in their real lives.  Their life at home is their real life...their
+lives in the computer is their "virtual reality".  A world where
+imagination holds sway...where dreams can come true...a world which I have
+studied...a world known as WolfMOO.
+     I first heard about WolfMOO from a friend of mine at school who needed
+help connecting to it, and asked me since I knew a lot about computers.
+From the very beginning the entire thing was fascinating.  I had heard of
+MUDs before but never actually experienced one and was interested to see
+what it was like.  It turned out that WolfMOO was quite different than my
+expectations.  With my friend's tales and stories of the MOO ringing in my
+ears, I eagerly leaped at the chance to study the culture and background of
+WolfMOO and to return to the fascinating world I had only caught a brief
+glimpse of previously.
+     The paper is basically divided into three sections.  The first deals
+with the individual players and their characters, the second concerns the
+MOO community as a whole and how it interacts, and the third discusses real
+life behind the MOO.  I plan to avoid discussing the technical aspects
+behind the computer system as much as possible, but have included a brief
+description of technical details about the computer networks and the MOO in
+Appendix A.  Because of the frequency and variety of folk terms throughout
+the MOO and this paper, a glossary has been included in Appendix C.
+     The culture of WolfMOO is quite diverse and complex.  In this paper, I
+hope to describe the people who frequent the MOO, to explain its social
+structure, how and why people have become so addicted to this form of
+communication and interaction, and what effects the MOO and real life have
+on each other.
+===========================================================================
+Hackers' Heaven
+  This room just exudes technobabble.  Every time you turn around, it seems
+something incomprehensible is being uttered.  You feel alternately
+delighted with the arcane environment and baffled by the other occupants
+  Before asking a question, see if you can figure out the answer for
+yourself by reading the manual, looking through the help texts, or reading
+the various books in the Wolf House Library (n, e, e, u, e, n from the
+living room).  If you still feel the need to ask a question, just blurt it
+out!  (And don't whisper it to Aunt.Pol, either.  Other people know stuff
+too!)  If your question involves something that gave you an error message,
+remember the EXACT thing that was printed.  Write it down if necessary, but
+don't be vague!  This applies to getting help too; say what object and verb
+are giving you trouble...  If it's a syntax error, read about the 'publish'
+command from within verb editor, so we can see your verb.
+  The north wall contains a small grimy window.   A small sinister-looking
+plastic device hangs from the ceiling.  A plaque labelled "READ ME" is
+nailed to the west wall.  A tall glass cylinder sprouting slender tubes
+rests on a silver stand.  Several thin drips hang enticingly from the
+bottom of the machine.  The southern doorway reads "eciffO etavirP
+s'loP.tnuA".  The ceiling tiles are very disarrayed here.
+You see File Cabinet, the Beltira Memorial Fission Reactor and Power
+Supply, harmless geusting simulator, generic byte counter, Political
+Bumpersticker, WolfMOO Official Helpful Person Badge Dispenser, Pewter
+Dragon, List of Generic Parentables, Etymology of `Biffle Dink', Anarchist,
+Belkira's World Tour 1992, and 1593028 here.
+Flipper, Egg, Seal, Bugs, Horsey, Crysilla, Cricket, Beetle, Flub, Garion
+(distracted), Lelladorin (daydreaming), Buzzer, and Aunt.Pol (asleep) are
+here.
+Horsey says, "nope, Bz"
+>emote waves
+Ethnographer waves
+>look Beetle
+Beetle
+Beetle stands about 5'9, and when the light hits him JUST RIGHT, he looks
+like a dead ringer for Matthew Broderick  Beetle is wearing a long sleaved
+silk shirt, and matching cotton slacks. Both seem overly baggy, but Beetle
+seems to like them.  He seems to be in a really good mood.
+He is awake and looks alert.
+Carrying:
+  staff named "Dealer"
+  Silver Band (worn)
+  average ring of keys
+  Tape Recorder
+  Bottle of Wine
+  suit of chainmail
+  greaves
+  dagger named "Frick"
+  dagger named "Frack"
+  vambraces
+  skull-cap
+===========================================================================
+                                   "All the world's indeed a stage
+                                    And we are merely players
+                                    Performers and portrayers
+                                    Each another's audience
+                                    Outside the gilded cage."
+
+                                             "Limelight" -- Rush
+
+PART I:  THE PLAYERS
+     When a person first logs into WolfMOO they have to create a character.
+How they design and describe their character depends largely on who they
+are, their background, and their interests; both in real life and of the
+MOO.  Once they've created the character they have become the players...the
+basis of the MOO.
+
+1. BACKGROUND
+     The best word to describe the players is "diversity."  Although the
+majority of the MOOers appear to be college students from the United
+States, it's very difficult to make generalizations about the backgrounds
+of the people on the MOO.  People from countries all over the world have
+logged in, such as Canada, Ireland, England, France, Germany, Netherlands,
+Italy, Switzerland, Denmark, Russia, Iraq, Finland, Hong Kong, Indonesia,
+Malaysia, Singapore, New Zealand, Israel, Australia, and Sweden.  Ages
+range from as low as sixteen or even younger to people well into their
+forties.  Occupations include many areas well outside of computers such as
+psychology, music, anthropology, theatre, and law.
+     There are a few generalizations that can be made though.  Although I'm
+sure none of them hold true for every player who logs into WolfMOO, they
+certainly capture the essence of a majority of the players.  Most of the
+players are male, college-age students in the U.S.  It's been suggested
+that as many as 95% of all WolfMOO players are male (Curtis).  Most seem to
+have or had at one time a very strong interest in science-fiction and
+fantasy.  Themes from popular works of science-fiction can be found all
+over the MOO, especially in places such names and descriptions.  Perhaps
+most of all, frequent MOOers must have an active imagination.  Since
+everything is text-based, without a vivid imagination, all of the
+descriptions would seem empty, lifeless, and uninteresting.
+     Obviously this does not sum up every player, but it gives a basis of
+understanding of where a lot of the things that happen on the MOO are
+coming from.  It helps to remember that you're dealing with a fairly
+intelligent, fairly young, fairly imaginative group of individuals when
+trying to piece together events.
+
+2. THE CHARACTER
+     One of the most important aspects of the MOO is the character.  It is
+through the character that players interact and communicate.  Almost every
+aspect of an individual's character--everything from description to gender
+to messages to
+possessions--can be controlled, altered, and customized to the personal
+needs, interests, or whims of the player.
+
+A. CREATING THE CHARACTER
+     The process for creating a character is quite simple.  At the initial
+welcome screen (see page 1) the player only has to type "create Name
+Password".  Assuming no character with this name already exists (in which
+case the computer will tell you to try again) the new character is created,
+and from there it is up to the player to provide as many or as few details
+as he wishes in order to fleshen out the character and bring it to life.
+
+     1. NAMES
+     The very first thing a player must decide upon creating a character is
+a name.  Like anything else on the MOO, names can be changed, but, for the
+most part, people keep the name they chose upon originally creating the
+character (the major exception to this is morphing.  See Glossary).  The
+names people choose can come from anywhere:  a popular form of fiction
+(books, TV, movies), nicknames, silly sounding names, descriptive names.
+(See Appendix B, Table 1, for a sampling of some of the names found on the
+MOO).  About the only name a player will never choose for their character
+is their real name.  I only came across one regular who used her real
+name...or more accurately a variation of her own name.  Her characters'
+names (she has two that I know of) are her first and last names spelled
+backwards.
+
+     2. DESCRIPTION
+     As in real life, a person's appearance lends largely to the way other
+people will react and interact with them.  Unlike in real life, MOOers have
+the option of completely controlling their appearance.  They can look like
+anyone or anything, be any gender they wish, and can change anything they
+choose as often as they wish.  Descriptions of the MOO range from single
+one-liners to complex, full-page length essays on what the character looks
+like. The average description is probably from about six to eight lines
+long (See Appendix B for examples of different types of descriptions).
+     The longer descriptions tend to come from people who like to write and
+want to leave nothing in doubt, "This is what I look like!"  Very short
+descriptions depend on a number of things.  Some are due to laziness, some
+are due to a lack of imagination, and some are due to a calculated effort.
+One of my informants told me that she had not given her character a
+description because she received a lot of unwanted attention in real life
+from her appearance, and she wanted people on the MOO to react to her for
+who she was, not what she looked like.
+     To a large extent, the most important aspect of a character's
+description is their gender and this, like all other aspects, can be
+controlled and chosen at will.  There are currently ten different genders
+available on WolfMOO:  neuter, male, female, either, Spivak, splat, plural,
+egotistical, royal, and 2nd.  The three most commonly chosen genders are
+neuter, male, and female.  The only difference between each gender as far
+as the computer is concerned is that each has a different set of pronouns
+that goes along with it (See Appendix B, Table 2).
+     The choice of gender can be much more difficult than might be
+imagined.  Although most players tend to stick to their actual gender,
+there is quite a bit of crossing over.  The percentage of female players is
+much smaller than the percentage of female characters.  There are many
+reasons why a male player may wish to have a female character.  Male
+characters tend to pay more attention to female characters than to other
+male characters.  Curiosity as to what it's like to be female is another
+motivation.  Some male players find it fun to create female characters with
+provocative descriptions, to act in a very flirtatious manner, and then to
+try to entice male characters into sexually explicit conversations or into
+netsex.  It has been observed that very few female players would actually
+want to do this (for reasons running from women's rights and sexism to
+being a nice person), and that most (but not all) female characters on the
+MOO with provocative descriptions can be assumed to be male.
+     In fact, female characters on the MOO often receive such a hassle from
+male characters, that a large portion of the female players choose to have
+male or neuter characters.  The female informant I mentioned before who
+gave her character almost no description in order to prevent people from
+becoming interested in her because of it, has a second character that is
+neuter which she uses on the rare occasions when she gets completely fed up
+with the harassment her female character occasionally gets.
+     There is only one character that I know of who regularly switches
+between male and female.  His name is Jean-Marie.  Her name is Marie-Jean.
+Depending on the mood he/she is in will decide which sex she/he chooses to
+be at any given moment.  It turns out that in real life the player is
+female, but there was no way for me to know this just from the character's
+description.
+     This brings up one of the most important aspects of the MOO.  There is
+no way for you to know what any new people you meet on the MOO really look
+like or what sex they are.  Even if the description they give their
+character is actually their real life description, it is still only through
+your imagination that you can picture the person.  You could pass someone
+on the street with whom you'd spent hours talking, playing games, and
+sharing secrets, and never realize it.
+===========================================================================
+Aunt.Pol says, "Lelladorin is cuter that Garion."
+BasTyra says, "Come here and give me a kiss, you big strapping hunk of
+wizard!
+Aunt.Pol is making it up
+Marie-Jean's body suddenly begins to emanate a rose light.  She is
+enveloped in a shimmering nimbus as her features begin to melt and flow.
+The light begins to shade to grey and increases in intensity until, with a
+bright flash and an orgasmic sound, he becomes Jean-Marie.
+Aunt.Pol says, "Garion is cuter than Hunchback though."
+Jean-Marie says, "I'm cuter."
+Aunt.Pol isn't making that one up.
+>emote thinks Erato is cuter than Garion but then she's almost the only
+MOOer he's met.
+Aunt.Pol says, "Of course, you have to realize that my definition of
+cuteness is dependent entirely on length of hair."
+Ethnographer thinks Erato is cuter than Garion but then she's almost the
+only MOOer he's met.
+Jean-Marie's body suddenly begins to emanate a grey light.  He is enveloped
+in a shimmering nimbus as his features begin to melt and flow.  The light
+begins to shade to rose and increases in intensity until, with a bright
+flash and an orgasmic sound, she becomes Marie-Jean.
+Thalis has met no MOOers...sigh.
+Ant has shoulder-length hair. How's that?
+Aunt.Pol says, "Medium cute."
+BasTyra has longer-than-shoulder-length hair.  Ha!
+Ant says, "Jet black, no lie."
+Garion mentions that syrup is the authority on People Cuter than Garion
+Ferris sighs. His hair is reasonably short at present, so he's not cute.
+Salmrissa should extend her description's hair, since she's not a RL girl
+anyway.
+>emote:'s hair used to be shoulder length but has been cut shorter and must
+therefore be non-cute.
+Marie-Jean says, "Well, Aunt.Pol, if you judge long-haired people to be
+cute, then that places BasTyra high on the scale."
+Ethnographer's hair used to be shoulder length but has been cut shorter and
+must therefore be non-cute.
+>emote knew that, but Syrup wasn't logged on.
+Aunt.Pol yays BasTyra!
+Ethnographer knew that, but Syrup wasn't logged on.
+Marie-Jean notes that BasTyra has gorgeous blond hair.
+BasTyra considers whining for quota on the strength of his hair.
+BasTyra says, "I'm such a gorgeous bitch!"
+Aunt.Pol considers recycling BasTyra despite his hair.
+Aunt.Pol says, "After all, you've already been through it once!"
+BasTyra notes he can recycle himself just fine.
+Marie-Jean says, "Well, when you met me, Aunt.Pol, you must have judged me
+extremely non-cute, considering MY hairlength."
+Ant says, "Oh, did I say I had shoulder-length hair? I think I may have
+confused you. You see, I'm very cute because, though my hair is
+shoulder-length, I left my shoulders three floors down from here so that
+makes me VERY cute, indeed."
+Ferris tells Aunt.Pol to recycle BasTyra and keep his hair for rehself.
+===========================================================================
+               "Do not meddle in the affairs of wizards,
+                for they are subtle and quick to anger."
+
+                    _The_Fellowship_of_the_Ring_, J.R.R. Tolkein
+
+
+PART II:  THE COMMUNITY
+     What is WolfMOO?  Why does it exist?  Perhaps it's stated best in one
+of the MOO's introductory documents (help introduction):
+
+     WolfMOO is a kind of virtual reality, in which players move about
+     from place to place manipulating their environment in what we
+     hope are amusing, entertaining, or enlightening ways.
+
+     WolfMOO is more of a pastime than a game in the usual sense;
+     there is no `score' kept, there are no specific goals to attain
+     in general, and there's no competition involved.  WolfMOO
+     participants explore the virtual world, talk to the other
+     participants, try out the weird gadgets that others have built,
+     and create new places and things for others to encounter and
+     enjoy.
+
+
+1.  GEOGRAPHY
+     The world of WolfMOO consists of a series of interconnected rooms,
+each with it's own description and function.  Each room is separate and
+distinct from the others.  The characters in one room can all interact with
+each other and other objects in that room, but cannot see what is happening
+in another room (unless it is relayed to them from some device, such as a
+puppet).
+     The basic layout of WolfMOO is based on a house; a very large,
+convoluted mansion with just about anything and everything that can be
+imagined in it (See Appendix B, Table 10 for the MOOs description of
+WolfMOO House).  Some of the more important rooms in the house include the
+Living Room (see p. 1), the Dinning Room, the Kitchen, and Hacker's Heaven
+(see p. 4).
+     Besides the rooms that are considered part of the house many players
+build 'homes' or rooms which they design, own, and where their body will
+'sleep' when they're not logged on.  Like with the characters'
+descriptions, the descriptions of homes vary from the simple to the complex
+(See Appendix B, Table 11 for descriptions of various rooms in WolfMOO).
+     There are two ways to get from one room to the next.  Most rooms are
+connected by passageways that can be traveled by entering the direction you
+wish to go (i.e. east).  The other method of travel is teleportation.
+Teleportation is instantaneous movement from one room to another,
+regardless of whether or not the rooms are next to each other.
+Teleportation is usually achieved by an object such as a ring which will
+allow the player to join any other player on the MOO, instantly moving the
+first player to the location of the second.
+
+2.  STRUCTURE AND HIERARCHY
+     The characters on WolfMOO can be divided into a number of different
+groups, some of which may overlap.  An informant of mine divided the MOO
+into three groups:  Programmers, Socialites, and Tinysexers.  I feel this
+is a fairly accurate division, although there are a number of subdivisions
+that can be made.  The programmers are the people who create objects on the
+MOO, design and program verbs on the objects, and those who really add to
+the atmosphere and overall design of the MOO.  The socialites make up the
+main body of characters on WolfMOO.  They are on WolfMOO to meet and
+interact with new people, and to basically discuss and try out new things.
+The Tinysexers are people who frequent the MOO for no other reason than to
+experience a computer network phenomena known as netsex.
+     Netsex is a form of computer interaction whereby the people doing it
+make sexually explicit statements and actions through which they imitate
+sexual acts with each other through the computer.  The phrase that came to
+my mind when I first heard of this was 'glorified phone sex.'  The
+tinysexers are usually uninterested in another player's feelings, tend to
+very abusive and harassing, tend to stay on WolfMOO for only a short period
+of time before moving on to another MUD somewhere, and are generally
+ignored and ostracized by the rest of the MOO community.  This isn't to say
+that netsex doesn't occur between other characters on the MOO.  It's just
+that they're motivations and goals for the MOO differ...they're primary
+objective for being on WolfMOO is not sex.
+     Another group, known as Adventurers, could be drawn from all three
+groups already mentioned.  These are characters who perform in a classical
+RPG style adventure, complete with quests, monsters, and treasure.  A lot
+of characters will try out the adventuring a few times, but very few that I
+have heard of adventure on a regular basis.  This is largely due to the
+fact that there are other MUDs that are more devoted to adventuring and
+have a much better setup for those truly interested in it.
+     Although the main body of characters on the MOO are socialites, the
+programmers may be the most important group.  If it weren't for the
+programmers, WolfMOO would be purely a social gathering spot with no other
+forms of entertainment and with a large dimension of the MOO gone.  The
+programmers can be subdivided into three groups, although some of the
+division is very nebulous.  They can be divided into serious programmers
+and people who just dabble in programming.  A third subdivision that is
+drawn from the serious programmers, is that of the wizards, and they are an
+extremely important group on the MOO.
+     The wizards are a group of (currently) six players who  maintain,
+police, and generally keep WolfMOO running.  The wizards have special
+powers and controls that other players do not have, which allow them to
+successfully run and administer the MOO.  They are the people who can deal
+with any technical difficulties that may arise from the computer system.
+They also tend to be among the most experienced and knowledgeable
+programmers on the MOO, and can often help with difficult programming
+problems.
+     For whatever reason, a certain mystique has built up around the
+wizards, and when new players first approach them, they are normally
+treated with an amount of respect not shown to other characters.  Whenever
+someone asks them a question the phrase, "I'm sorry for wasting your time"
+is usually said before all is done.  In truth, the wizards are all very
+friendly, very helpful people, who are usually glad to help out anyone with
+legitimate problems.  Things have been known to get out of control, though.
+     The wizard Polgara became so completely bombarded by questions, most
+of which could be easily answered by other, non-wizard players, that she
+started setting up factors that would prevent people from asking her
+questions.  One of these was the Helpful Person Badge Dispenser.  The
+concept behind this was that there would be a list of topics that various
+players could give help on, and someone who needed to ask questions about
+something would try these players before consulting a wizard.
+     Unfortunately, there was an unforseen problem that resulted from this.
+The topics list was not monitored, and players started adding a slew of
+non-MOO related topics (e.g.  Celtic Legends, Cheese Curing, Swedish,
+etc...) that, while possibly interesting to some people, seemed to turn the
+idea into a mockery and partially destroyed its usefulness.  At this time,
+there has been a push to remove most of the non-MOO related topics and to
+restore the original idea behind the device (See Appendix B, Table 5, for a
+list of current topics in the Helpful Player Badge Dispenser).
+
+A.  RULES AND REGULATIONS
+     In order to preserve order on the MOO, there are a number of rules
+which the players are expected to follow if they wish to remain on the MOO.
+For the most part, the rules are quite simple and easy to follow, although
+not always obvious.  Most of the basic rules are easily accessible through
+a command known as 'help manners' which will present the player with a
+document listing the general manners that should be observed on the MOO.
+When a new character is created a suggestion to read this document is
+presented to the player.  The rules include things like being polite to
+other players, to remember that the other players are real people with real
+feelings who can be hurt, to avoid spoofing (see Glossary), and to avoid
+wasting computer resources (See Appendix B, Table 4, for some excerpts from
+the 'Help Manners' Document).
+     The wizards duties in maintaining the order of the MOO  includes
+disciplining anyone who breaks the rules.  For the most part they're
+tolerant of small infractions and normally give warnings for first
+infractions and before exacting punishment.  Punishment on the MOO is quite
+simple.  Your character and its belongings are toaded...wiped from
+existence on the MOO.  For players who continue to log back in with new
+characters and continue to be an annoyance, there is a further measure the
+wizards can take known as site-locking.  This will effectively prevent the
+offender from logging in again from that site.  The side effect to this is
+that nobody else from that site will be able to log in either.  This is
+perhaps the main reason site-locking is quite rare, because the wizards do
+not want to limit MOO access to legitimate players.
+     I probably would not have even known site-locking existed if I had not
+been logged on when a site-locking occurred.  Two players from Ohio State
+kept logging into WolfMOO, created characters with rude, pornographic-
+style names (e.g. Rumple_Fourskin) and messages, and refused to listen to
+the wizards when they were told to change it, so Ohio State was locked from
+accessing the MOO.  Whether or not the lock will be removed in the future
+is up to the wizards.
+     One of the most important rules has been stated as "'Revenge is ours,'
+sayeth the wizards."  To prevent the MOO from falling into complete
+anarchy, the wizards expect players with complaints or problems with other
+players to bring the problems to them...not to deal with them by
+themselves.  Normally, the wizards will first attempt to discuss in a
+logical manner the details of the offense, with both offender and offendee.
+Only if there is a refusal to abide by the rules of the MOO, or a repeat
+offender, will a wizard then resort to toading.  In the time I have been
+studying WolfMOO I have never seen a toading, but I have heard of a number
+of them, usually for people who had been abusing the rights of other
+players.
+     The most serious event that I heard about, revolving around the
+wizards' roles as judges, turned into a very unusual and rare event for the
+MOO:  a trial.  Although I was not present at the time of the trial, I
+managed to obtain some very clear descriptions of the events which
+occurred.  To go into specific details would take too long and would negate
+my promise not to reveal too much about what happened, but a summary of the
+overall events and the outcome would help a lot in explaining the roles the
+wizards play and the way the MOO legal system works.
+     Basically, Person A jokingly made some sexual comments and innuendo to
+Person B.  Person B did not realize that Person A was joking and got very
+insulted and hurt.  Person B proceeded to create a new character and then
+go and harass Person A with the new character, at which point Person A
+complained to the wizards.  The wizards (with much difficulty) managed to
+get them to each tell their own side of the story, plus heard the testimony
+from a number of other players who acted as character witnesses and the
+such.  The final outcome was that it was recommended to Person A to be very
+careful when joking around with people, and person B was reprimanded for
+not taking the complaint to the wizards in the first place and trying to
+exact revenge on its own.  The people involved weren't necessarily happy
+with the judgement, but both accepted it, quite possibly because of what
+the wizards could do to them if they didn't.
+
+3.  SOCIALIZING
+     The two primary activities on the MOO are socializing and programming.
+Although the players may disagree as to which is the primary activity, it
+really depends on the person.  Overall, there is more socializing than
+programming, if for no other reason than just about all of the programmers
+socialize at least a little, while many of the socialites do not program at
+all.
+
+A. CONVERSATION
+     There are a number of ways in which conversations start on the MOO.
+The most common of which is two or more players basically run into each
+other in the same room and start talking.  Most new players are forced to
+try to strike up a conversation with whomever they can find because their
+first exposure to the MOO can be quite disorienting and it is not always
+easy to figure out what the commands are, and how the MOO works.
+     Players who already know each other, obviously will seek each other
+out to discuss something about themselves or the MOO.  It is also quite
+common for players to gravitate to large groups.  A character sitting by
+itself in a room is more likely to be involved with something and too busy
+to talk to, than a gathering of five or six or more people.  There are
+exceptions to this...characters who are exploring and looking for things to
+do often end up on their own, as do newbies who may not know what they are
+doing.  It never hurts to ask someone by themselves what they are up to.
+     Because of the nature of the MOO, players tend to be more outgoing
+than they would in reality; part of the point of MOOing is to interact with
+people in a way you could not in real life, and that includes with people
+they would not be able to have contact with in their locale.  Therefore,
+it's not uncommon for players to approach complete strangers and to start
+talking to them in a manner that they would never dare do in person.
+     The very first thing that happens in almost any MOO conversation is
+the greeting.  This usually consists of saying hello and some sort of wave.
+It's not uncommon to see a whole series of 'Person waves' when a character
+first enters a room in which there are already a number of other
+characters.
+     The conversation itself can best be described as chaotic.  Because
+everything said or done in a conversation must be typed in, there is often
+considerable delay between actions, although when there are a lot of people
+in the same room there is rarely a noticeable pause.  However, one player's
+response to what another player said, may not appear on the screen until
+after the thread of the conversation has turned, or (more likely) a number
+of other threads have been commented on.  In large gatherings, it is quite
+normal for there to be four of five different conversations going on at
+once, often with every player involved in all of them (See p. 11 and
+Appendix B, Table 12, for examples of MOO conversations).
+     To add to the chaos, it is quite easy for private conversations,
+through the use of the page and whisper command (See Appendix A for more
+details on page and whisper), to be going on within the framework of
+another more outward discussion.  There have been a number of times on the
+MOO where I was involved with three outward discussions with a group of
+people, was having a whispered conversation with one player, and a paging
+conversation with two others, all at the same time.
+
+     1. TOPICS
+     Conversations on WolfMOO revolve around anything and everything.  For
+obvious reasons, many conversations deal with computers and programming,
+but by no means is this the only topic discussed.  In fact, many characters
+go out of their way to avoid technobabble whenever they can.
+     Because such a large portion of the players are currently in college,
+discussions often deal with college issues and other issues of this age
+group:  classes, schools, careers, dating, and depression.  I often came
+across groups talking about everything from movies, TV, and literature to
+current events and politics to religion and philosophy...quite often, all
+at the same time.
+     Although a lot of players don't like to talk about their real lives,
+others are quite willing to talk about who they really are and often only
+want to talk about their real lives.  It seems that fairly often, two
+players who are physically located far apart will hit it off very well and
+end up confiding in each other all of their problems and stresses.  This is
+one of the major features that seems to keep players on the MOO.  It can be
+very useful to have someone completely outside of your normal life, to whom
+you can tell what's bothering you, because the people who are in your life
+are often the cause of what's bothering you.
+     This is one of the reasons why WolfMOO is so addictive to some people.
+It offers a relief from the stresses of their normal life.  It can offer
+you someone to talk to and complain to who is outside of your problems,
+people who have no expectations from you, and the opportunity to do almost
+anything that you can imagine and might not be able to do in real life.  It
+offers freedom.
+
+B. GAMES AND DISTRACTIONS
+     In addition to conversation, there are a number other ways in which
+characters can interact and socialize with each other on the MOO.  These
+consist mostly of various games that have been designed and implemented in
+the MOO.  Board games like chess, scrabble, go, master-mind, backgammon,
+connect-4, MOOnopoly, pente, and reversi are all available for play against
+other players.  For example, up to four players can play against each other
+in scrabble.  The computer keeps track of which tiles haven't been picked
+yet, the board and location of tiles placed on the board, and the scores of
+the players.  It is up to the players to decide whether words placed are
+real words or not (there is no dictionary built into the game).  The other
+games work basically the same way (See Appendix B, Table 7 for example of
+the layout of some of the board games).
+     Other distractions include a scavenger-hunt, a hedge-maze, a rubik's
+cube, and detailed exploration of the MOOs geography (See Appendix B, Table
+6 for a copy of the Scavenger Hunt list).   One informant told me that
+there were also airplane and train rides that you could go on and observe
+the scenery.  For the player trying to find something new to do, there are
+a number of places they can look.  One is the Tourist's Guide to WolfMOO
+and the other is on the refrigerator.  The Tourist's Guide to WolfMOO is an
+easily accessible document that can be found in the Living Room and that
+players can read to get an idea of what WolfMOO is like (See Appendix B,
+Table 8 for a copy of this document).  The refrigerator is an object in the
+Kitchen (one of the many rooms in the MOO) on which people write notes
+about things to do or try or check out.  These range from the board games
+to programming contests to puzzles (See Appendix B, Table 9 for a list of
+notes currently on the refrigerator).  If a player is willing to put forth
+just a little effort, they will never be bored on WolfMOO.
+===========================================================================
+                              Imagination is the one weapon
+                              in the war against reality.
+                                        --Jules de Gaultier
+
+
+PART III: REAL LIFE -- THE WORLD
+     No matter how wonderful and fantastic the MOO may seem, it is
+important to remember that there is reality behind all of it.  Behind the
+characters are real people, not free-floating phantasms who only exist on
+the computer; people with feelings, emotions, desires, and fears.
+
+1.  THE SESSION
+     A standard session on WolfMOO varies form person to person.  The first
+thing most people do after logging on is to check to see who else is
+currently logged in.  Assuming that there's no specific person the newly
+arrived player wished to interact with, they often end up going to either
+the room with the most people or the room with the most people they already
+know...assuming they're feeling social.  Others might just start exploring
+something they haven't checked out up to this point.
+     Lengths of sessions can vary immensely.  The biggest denominator in
+time spent on the MOO is free time available in real life.  As one
+informant put it, "I could stay on indefinitely if it weren't for my non-
+vertical life [sleep], but the damn thing keeps intruding." (Erato,
+2/16/1992)  Times vary so much between individuals and sessions that it is
+almost impossible to even guess the average length of time that a player
+will stay logged on, but I'd say that it's between one and two hours.
+Players have been known to be actively logged in for more than seven hours
+straight, and people often log in for just a minute if they just want to
+check their mail (See Glossary).
+     Because of my schedule as a student, I logged in most often at night
+(local time).  This seems to be fairly standard for many players.  The
+times I logged in during the day there were not nearly as many people
+logged in as there tends to be at night.  At night there averages maybe 35
+players logged on at once... during the day about 15 or 20.
+     Computer access also limits the sessions for a lot of people.  Many
+players probably have to login from a computer lab, which means that they
+can only logon when the lab is open.  One thing to remember though, is that
+it is not the same time locally for everyone involved.  Just in the
+continental U.S., there will be people logged in at the same time from four
+different time zones.  At 11:00 pm local time, you often see a large number
+of people logoff who's labs are closing.  This is also the same time that
+many west coast people start to log on.
+     For the most part, the people with whom I had the most contact with on
+the MOO were from the eastern half of the country because we all could
+logon at the same time.  I'm sure there are a lot of regulars from the west
+coast and from other countries whom I never had any contact with, simply
+because we were never logged in at the same time.  It's almost impossible
+to judge how many regulars there are on the MOO, because of the time
+problems and problems with the defining what makes a regular, but
+statistics have shown that as many as 250 different people will login in a
+single week. (Curtis)
+
+2.  PROBLEMS
+     As wonderful as the MOO can be, like anything else in life, it has
+problems.  From a technical standpoint, there's always the possibility that
+the network will be down and you'll be unable to connect, or even worse,
+will be disconnected in the middle of something.  If there are too many
+people logged on at once and/or there are a lot of complicated programs
+running, the computer can slow down and cause long lags.  Lag is the delay
+between when a command is entered and when it is executed.  It can cause
+massive frustration when a player is involved in an important discussion
+and has to wait extra time for his response to be processed.
+     On a more personal note, there's always the problem of players getting
+hurt by unthinking players.  Because of the real life anonymity of the MOO,
+there are many players who take advantage of this opportunity to do
+socially unacceptable things and end up being abusive and harassing.
+Despite attempts to eliminate it, sexual harassment exists on WolfMOO, just
+as it does in real life.  These players often have a difficult time
+remembering that they are talking to real people with real feelings who can
+get hurt or offended by what they say.  The wizards try to control this,
+but there is only so much they can do.
+     Part of the problem stems from the fact that there are limits on the
+communicative abilities of the written word.  According to one of the
+wizards,  "Research indicates that 55% of communication is body language,
+38% is inflection, and 7% is words.  It's real easy to get misunderstood
+when you're dealing with MOO, which lies in the 7% range." (Aunt.Pol,
+2/4/1992)  Methods have been developed on the MOO which can overcome some
+of this problem, but they are limited by the players experience and ability
+to express himself.  Body language is very difficult to enter into the MOO.
+Players will often enter commands like "Player looks shocked!" or "Player
+gasps" or "Player laughs" but these lack the meaning that true body
+language would give.  Inflection is a bit easier to instill, by
+highlighting words in various ways, for example:  ALL CAPS,
+***asterisks***, and _underscore_.
+     Another problem is that some people begin to take WolfMOO too
+seriously.  While it can be a wonderful diversion, it should not be taken
+to be real life.  Players can become so involved in the MOO and it's
+possibilities (often because of problems in their real life), that the MOO
+becomes their reality.  They begin to take it to be and treat it as real
+life.  This is a fairly rare occurrence but has been known to happen.  Even
+people who do not have this problem often think of WolfMOO as a real
+place...sort of an out-of-the way corner where they can lose themselves.
+===========================================================================
+                              "The sleep is still in my eyes
+                               The dream is still in my head
+                               I heave a sigh and sadly smile
+                               And lie a while in bed
+                               I wish that it might come to pass
+                               Not fade like all my dreams
+                               Just think of what my life might be
+                               In a world like I have seen"
+
+                                        "2112" -- Rush
+
+
+CONCLUSION
+     Everything that can be imagined.  Some things that can't be.  WolfMOO
+has certainly been an experience outside that which I had previously
+encountered.  Looking at the backgrounds of the people showed me a lot
+about myself.  Why did I, when first logging on, choose to name my
+character as such?  Describe it how?  Why did I find myself drawn to the
+programmers and not the adventurers, whom I would have thought I would find
+more interesting?  Answering these has let me realize a lot that I didn't
+necessarily know before hand.
+     I've also now made a number of new friends, some of them with the
+potential to be quite close.  If things go well, perhaps one day I'll even
+meet some of them in person.  If nothing else, I know they'll always be
+there to talk to...the computerized pen-pal.
+     I hope to find time to continue to explore WolfMOO...to learn even
+more about it.  One day I'd like to connect to some other MUDs and see how
+they run and function, what's similar and what's different about them.
+     Looking at the people on the MOO and the way their interaction has
+allowed me to see what happens when the imaginations of a large number of
+people are let loose to associate and mix with each other.  I've often had
+the chance to observe what the imagination of a single person can produce,
+mostly in books, but also in art, TV, and film.  However, never before had
+I seen a medium by which the full imaginations of a group of separate
+people could be integrated into a single, living, entity which defies
+description, yet invites interpretation.
+===========================================================================
+>emote waves goodnight to everyone
+Ethnographer waves goodnight to everyone
+Hogan says, "goodnight"
+Hogan says, "it looks like i have to go for now."
+CeNedra says, "night Silk, I will be at your dorm in ten minutes deal?"
+Silk says, "sure"
+>emote attempts to stand up but gets a cramp from all of the sitting he's
+been doing and ends up looking like the hunchback of notredame
+Ethnographer attempts to stand up but gets a cramp from all of the sitting
+he's been doing and ends up looking like the hunchback of notredame
+CeNedra love hunchbacks
+>emote thanks everyone for their time
+Ethnographer thanks everyone for their time
+>emote thinks he's going to go to bed
+Ethnographer thinks he's going to go to bed
+CeNedra thinks she will to
+>emote waves distractedly at his eyes go in and out of focus
+Ethnographer waves distractedly at his eyes go in and out of focus
+>emote waves goodbye one last time
+Silk byes
+Silk does the wave
+Ethnographer waves goodbye one last time
+Beetle waves.. and is fixing to leave himself
+CeNedra goodbyes to Ethnog!
+>home
+You click your heels three times.
+Anthopology Office
+Cluttered doesn't begin to describe this room.  Everything appears to have
+been  stacked, piled, and thrown haphazardly around the room, yet there
+seems to be some implicit pattern that you can't quite put your finger on.
+The furniture (consisting of a bed, a table, and a few chairs) is of crude
+wood construction, yet is strangely comfortable (the multitude of down
+pillows probably helps!).  The wooden floor is covered with numerous throw
+rugs (Persian?) which are them-selves covered with books, large beanbags,
+papers, magazines, and computer printouts.  One wall contains a large
+hearth with a roaring fire, filling the room with warmth, the low,
+crackling sound of the flames, and the light, pleasant smell of the burning
+wood.  A pile of logs, along with tinder, poker, and shovel sit next to the
+hearth.  A large kettle of something that smells particularly appetizing is
+suspended over the fire.  Another wall is blocked by overflowing
+bookshelves.  Books by Tolkein, Steven King, Eddings, Asimov, and many
+others have been stacked, shoved, pushed, and squeezed onto the shelves.
+An entertainment center, complete with stereo, TV, and VCR is in one corner
+of the room, while a complex computer system is in the another.  Hanging
+from the walls and ceiling are many skeletons and skulls from creatures
+long dead.  Any remaining spots on the walls are covered with posters
+depicting scenes from the fantasy genre.  A low doorway to the west leads
+to a sauna.
+>emote types fieldnotes
+Ethnographer types fieldnotes
+>@quit
+*** Disconnected ***
+===========================================================================
+Appendix A:  Technical Details
+
+This appendix will consist of a largely amateur description of some of the
+technical details behind MUDing and WolfMOO.  Please forgive any blatant
+technical mistakes in the text that follows.
+
+     A large portion of the computerized world is connected through a
+system known as the internet.  Using lines similar to phone lines, any
+computer in the internet can connect to any other, although it may have to
+pass through a number of intermediaries in order to do so.  In order to
+differentiate between all of the computers, each computer system has it's
+own unique address.  Casbah, Northwestern's main computer system at this
+time, has the following internet address:
+
+          casbah.acns.nwu.edu
+
+You can connect to a system on the internet if you know it's address
+through a variety of commands, one of which is telnet.  For example, if I
+wanted to connect to WolfMOO, I would enter the command
+                                                  Note:  This is
+          telnet wolf.pseudo.comp.com 1234        a fictional
+                                                  address.
+
+Once connected to the WolfMOO computer (see page 1 for opening screen) I
+could connect my character and start MOOing.
+
+The core program of WolfMOO is designed such that everything on the MOO can
+be divided into one of two things:  objects or verbs.  Each object has its
+own unique object number by which it can be identified and called from
+anywhere in the MOO.  Each verb is a computer program written onto an
+object, that will in some way manipulate that object.  Everything on the
+MOO is a variation of this, from players to rooms to personal items.
+
+Most verbs can run as if they were simple English sentences.
+Examples:
+
+Verb                                    Jump
+Verb  Object                            Read book
+Verb  Direct Obj.  Prep.  Indir. Obj.   Give flower to Erato
+
+The object(s) can be either the name of the object or the object number,
+which is often used to distinguish between ambiguities (for example if
+there were two objects in the room named Red Flower and Yellow
+Flower...typing 'smell flower' would be ambiguous).  It is therefore also
+possible for a player to manipulate an object that is not present in the
+same room as him by entering the objects number instead of its name.
+
+The remainder of Appendix A will consist of a section of Pavel Curtis's
+essay, "Mudding:  Social Phenomena in Text-Based Virtual
+Realities."  His descriptions of MUDs and the basic command parser are too
+clear and well written for me to attempt to summarize.
+
+-----------------
+
+A MUD is a software program that accepts `connections' from multiple users
+across some kind of network (e.g., telephone lines or the Internet) and
+provides to each user access to a shared database of `rooms', `exits', and
+other objects. Each user browses and manipulates this database from
+`inside' one of those rooms, seeing only those objects that are in the same
+room and moving from room to room mostly via the exits that connect them. A
+MUD, therefore, is a kind of virtual reality, an electronically-represented
+`place' that users can visit.
+
+MUDs are not, however, like the kinds of virtual realities that one usually
+hears about, with fancy graphics and special hardware to sense the position
+and orientation of the user's real-world body. A MUD user's interface to
+the database is entirely text-based; all commands are typed in by the users
+and all feedback is printed as unformatted text on their terminal. The
+typical MUD user interface is most reminiscent of old computer games like
+Adventure and Zork [2]; a typical interaction is shown in Figure 1.
+------------------------------------------------------------------------
+>look
+Corridor
+    The corridor from the west continues to the east here, but the way is
+blocked by a purple-velvet rope stretched across the hall. There are
+doorways leading to the north and south.  You see a sign hanging from the
+middle of the rope here.
+>read sign
+    This point marks the end of the currently-occupied portion of the
+house.  Guests proceed beyond this point at their own risk.
+     -- The residents
+>go east
+    You step disdainfully over the velvet rope and enter the dusty darkness
+of the unused portion of the house.
+
+           Figure 1: A typical MUD database interaction
+-----------------------------------------------------------------------
+Three major factors distinguish a MUD from an Adventure-style computer
+game, though:
+
+o    A MUD is not goal-oriented; it has no beginning or end, no `score',
+and no notion of `winning' or `success'. In short, even though users of
+MUDs are commonly called players, a MUD isn't really a game at all.
+o    A MUD is extensible from within; a user can add new objects to the
+database such as rooms, exits, `things', and notes. Certain MUDs, including
+the one I run, even support an embedded programming language in which a
+user can describe whole new kinds of behavior for the objects they create.
+
+o    A MUD generally has more than one user connected at a time. All of the
+connected users are browsing and manipulating the same database and can
+encounter the new objects created by others. The multiple users on a MUD
+can communicate with each other in real time.
+
+This last factor has a profound effect on the ways in which users interact
+with the system; it transforms the activity from a solitary one into a
+social one.
+
+Most inter-player communication on MUDs follows rules that fit within the
+framework of the virtual reality. If a player `says' something (using the
+say command), then every other player in the same room will `hear' them.
+For example, suppose that a player named Munchkin typed the command
+
+     say Can anyone hear me?
+
+Then Munchkin would see the feedback
+
+     You say, "Can anyone hear me?"
+
+and every other player in the same room would see
+
+     Muchkin says, "Can anyone hear me?"
+
+Similarly, the emote command allows players to express various forms of
+`non-verbal' communication. If Munchkin types
+
+     emote smiles.
+
+then every player in the same room sees
+
+     Munchkin smiles.
+
+Most interplayer communication relies entirely on these two commands.
+
+There are two circumstances in which the realistic limitations of say and
+emote have proved sufficiently annoying that new mechanisms were developed.
+It sometimes happens that one player wishes to speak to another player in
+the same room, but without anyone else in the room being aware of the
+communication. If
+Munchkin uses the whisper command
+
+     whisper "I wish he'd just go away..." to Frebble
+
+then only Frebble will see
+
+     Munchkin whispers, "I wish he'd just go away..." to you.
+
+The other players in the room see nothing of this at all.
+
+Finally, if one player wishes to say something to another who is connected
+to the MUD but currently in a different and perhaps `remote' room, the page
+command is appropriate. It is invoked with a syntax very like that of the
+whisper command and the recipient sees output like this:
+
+     You sense that Munchkin is looking for you in The Hall.
+     He pages, "Come see this clock, it's tres cool!"
+===========================================================================
+Appendix B:  Further Examples
+
+
+Table 1:  Sample of Names used on WolfMOO
+
+Parker_Lewis       JimmyTheHand       JoeFeedback      GoDuck
+Dr.Who             Yoyoma             Seamus           stardust
+Morpheus           Elrond             Kilik            sieri
+Shadowen           Zippy              Xythian          Nada
+yduJ               Nosredna           Nonny            yoshi
+Over-Sphere        Golem              Beryn            Jan
+ZenDream           sol                Dren             Obscinni
+auzzie             Leper              Count            BlondeBabe
+Julio              Arien              Foobies          trixie
+natasha            harlequin          pan              capella
+DePhile            Zone-Dancer        Luckstar         Olivia
+Moiyenamarre       Lance              Feoh             Sethus
+Doc                Lydiriel           Cassnak          Dutch
+Puff               Gandalf            Rog              Ford
+Satan              Sigmund            Geatrenda        MrEd
+TamLin             Moonlight          Primetime        fishticles
+darkrider          Frand              Shadowspawn      Scarab
+Wintermute         evangeline         Sorbonne         Mats
+democ              blackadder         Anya             Tohu'o
+DangerMouse        Quimby             DejahThoris      CyberPunk
+Kishawn            Gilmore            Robbie           Muse
+Jonny              Arutha             WhiteRabbit      Alice
+
+
+Table 2:  MOO Genders and Their Respective Pronouns
+
+neuter:        it,it,its,its,itself
+male:          he,him,his,his,himself
+female:        she,her,her,hers,herself
+either:        s/he,him/her,his/her,his/hers,(him/her)self
+Spivak:        e,em,eir,eirs,eirself
+splat:         *e,h*,h*,h*s,h*self
+plural:        they,them,their,theirs,themselves
+egotistical:   I,me,my,mine,myself
+royal:         we,us,our,ours,ourselves
+2nd:           you,you,your,yours,yourself
+
+
+Table 3:  Sample Character Descriptions
+
+5'80Blonde 19
+
+You see a woman with knee-length shiny brown hair, so thick that it is hard
+to see anything else.  ehS wears a pin reading "Support the Free Software
+Foundation!"  ehS seems to have a transparent shield surrounding her,
+rendering her impervious to food fights.
+
+Some guy.  He is approximately 6 feet tall and has a slim build.  His brown
+hair is cut rather short and conservative, except for the blond and orange
+streaks and the braid hanging from his left temple.  His clothes consist of
+a black, cotton T-shirt, black fatigues, black, leather high-topped
+sneakers with oversized tounges, a black leather jacket and a pair of
+black, fingerless, leather gloves.  His face is handsome, although in need
+of a shave and his icy-blue eyes contrast the disturbed smirk he wears.
+
+A young woman with blonde shoulder length hair and blue eyes.  She is
+wearing a knee length blue dress over which is a white apron.  She smiles
+at you as you look at her.
+
+Bouncy is a slender but petite women, with long light brown hair, and
+emreld green eyes. She is wearing a short skirt with zippers on either
+side, and the shirt she is wearing bearly covers her ripe breasts from
+view. Her personality is rather easy going but she does not like to be
+forced to do anything. Bouncy is always willing to have a good time if
+asked nicely.
+
+A smallish female with pale skin and short dark hair.  A long fringe of
+hair falls across her grey eyes, and her face is full of an amused, yet
+kindly, tolerance of the world at large.  She continually seems about to
+smile.  A battered sci-fi paperback sticks out of one hip pocket, and
+something about her nose suggests that it's usually in a book.
+   She sees you looking at her, and gives you a quick, wry grin.
+She is wearing jeans and a t-shirt, appropriately unisex for this bland,
+generic description.
+
+A tall blonde with hazel eyes wearing a beautiful lacy peach dress
+
+A quite introverted young princess on a quest to regain her father's
+long-lost kingdom.  She sometimes has a look on her face as if she
+sometimes just cannot understand reality really applies to her, while other
+times she can be very nice and sociable.  She has a long, blond hair, which
+she takes as well care of as if it was alive by itself, and she has a nice
+voice and likes to sing.
+She is wearing a long gown with golden linings, which looks like it was
+taken straight out of the 18th century.
+Tall. Dark. Ticklish.  Will bite if provoked.
+
+Haj is a young, strong, Persian prince who is in constant search of
+adventure.  He is wearing a chain-mail vest, which he received from his
+father on his 18th birthday.  He also wears some metal leggings with other
+conventional worrior accessories.  On his a belt hang two weapons ... one
+is a small dagger and the other is a doubld-edged sword, thought to be that
+of Ta Taher.
+Haj is a man of ancient times and finds much in this new world which he
+does not understand.  (He is a very strong-willed person who sometimes just
+doesn't 'get' it.)
+
+A foolish, bumbling idiot who is looking for guidance.
+
+No longer a tiger, you see Tigger standing 5'11 with short shiny black
+hair.  He wears a white t-shirt, Umbros, and soccer flats.  You see that
+Tigger is well cut and groomed even in this dress.  You want to submerge
+him in chocolate syrup.
+
+A clean cut looking student on the outside, a caring individual on the
+inside. Please come talk to me.
+
+Adarra is a handsome wench in her early twenties, with a round face whose
+sparkling dark eyes reveal an energy for life only slightly concealed
+behind her young, shy exterior.
+She carries a classical guitar at her side; a book of folk ballads is
+tucked under her arm.  As you look at her guitar, you notice that her hand
+tightly clasping the guitar case displays a thin gold engagement ring.
+Adarra is clad in a white poet's shirt with long ruffled sleeves, over
+which is laced a grey vest.  An ankle-length black skirt flows to her
+ankles; from underneath the hem of the skirt peek layers of white
+petticoats and black ankle-laced boots.  Her long, light-brown hair is tied
+up in a large white bow.
+
+A redheaded man, standing 6'4, with a trim beard.  He seems to have a
+shining wisdom behind the lenses of his wire-rims.  He wears a long black
+trenchcoat, and carries a stringed instrument.
+
+Action_Jackson
+         ,-------_
+        / _,,_.__ \
+        '' -  - ;  ;
+          |O  O  ; ;
+         /  /    : ;
+         | ____ <  |
+         | \__/  ','
+          \_____/
+       _____|    |_____
+      /  |=|  ~   |=|  \
+He proudly displays a Helpful Person Badge.
+
+     The new-and-improved Silk is medium height and very slim.  He is
+wearing short, soft, black boots, into which are tucked his blousy, black
+pantaloons.  He is wearing a light purple shirt, with black trim, and a
+dark purple tie with little purple and blue ameoba like creatures on it.  A
+long, dark, black overcoat completes the ensemble.  He's got dark
+sunglasses with gold rims, that make him look like someone you can't quite
+put your finger on.  His dark brown hair is currently cut on the short
+side.
+     He turns toward you and removes his sunglasses, giving you a quick
+grin as his bright blue eyes seem to swirl with newly found power, hope,
+and inspiration.
+
+You see a fairly tall college student with long, blond hair.  He's wearing
+a black jacket with papers and CD's stuffed in all its many large pockets.
+He notices you looking at all the black clothing he wears, and loudly,
+perhaps a bit defensively, claims that it's _not_ because he's depressed.
+He proudly displays a Helpful Person Badge.
+
+Salmrissa is about five foot four, with dark brown bangs. She stares at the
+world through deep blue eyes. She's wearing faded denim jeans, and a white
+t-shirt which is held away from her abdomen by her breasts.  She proudly
+displays a Helpful Person Badge.  The Generic Chameleon class sleeps
+quietly in her arms.
+She is also uninterested in being hit on by hormonally frantic geeks, so if
+that's what you're considering, look elsewhere now.
+
+A fiery Redhead (not a carrot top but the beautiful shade closer to
+auburn).  Her long, curly tresses come to the middle of her back, the
+golden ringlets calling you to reach out and touch them, experiencing their
+silkiness.  She is quiet and shy.  This adds to her mysteriousness and
+increases the aura of intelligence which surrounds her; for she knows that
+it is better to remain silent and be thought wise than to open your mouth
+and remove all doubts.  She is 5'10" and weighs approx. 127 lbs.  Although
+attractive, she downplays her physical beauty (after all, it's what is on
+the inside that counts!) and relies on her brains to win hearts.  Presently
+she is wearing a black mini with black suede flats and black hose.  The
+cream off-the-shoulder silk angora sweater she is wearing allows you
+glimpses of milky white porcelin smooth shoulders (a few freckles can be
+seen but they are not overpowering and add to the beauty) and what appears
+to be the amazingly soft skin awaiting caresses.  As you look into her
+eyes, you can not ascertain what encaptures you and causes you to be lost
+within the lucid orbs.  Still you are drawn in and can not resist the
+desire to unlock whatever secrets lie hidden in the twinkling emerald green
+masses.  She is very friendly and encourages you to make the first move of
+approachment as her shyness causes her to contemplate a counter to your
+intended actions.  She hopes to make many friends and would like you to be
+one of them, for she is fascinated by what she sees in you..........:)
+
+
+Table 4:  Selected Excerpts from the 'Help Manners' Document
+
+The MOO, like other MUDs, is a social community; it is populated by real
+people that you interact with via network connections.  Like other
+communities of human beings, the members of this one have evolved certain
+guidelines for the behavior of the participants.  This article lays out
+what the wizards believe to be the general consensus concerning these
+`rules of courteous behavior,' or `manners,' on the MOO.
+
+Many of the rules that follow are by no means `obvious' or even related to
+similar rules in the real world.  The MOO is not the real world; it has its
+own special properties that require new kinds of rules.  These rules have
+been worked out through our experiences with the MOO; they reflect what
+we've learned about what make the MOO an enjoyable place.
+
+        >> Don't shout. <<
+It is easy to write a MOO command that prints a message to every connected
+player in the MOO.  Please don't.  It is generally annoying to receive such
+messages; such shouting should be reserved for really important uses, like
+wizards telling everyone that the server is about to be shut down.
+Non-wizards never have a good enough reason to shout.  Use `page' instead.
+
+        >> Only teleport your own things. <<
+By default, most objects (including other players) allow themselves to be
+moved freely from place to place within the MOO.  This fact makes it easier
+to build useful objects like exits and magic rings that move things as a
+part of their normal role in the virtual reality.  Unfortunately, it also
+makes it easy to move other players from place to place without their
+permission, or to move objects in and out of other players' possession.
+Please don't do this; it's annoying (at the least) to the poor victim and
+can only cause bad feelings.
+
+        >> Don't teleport silently. <<
+It is easy to write MOO commands that move you instantly from place to
+place.  In writing such programs, please remember to print a message to all
+players both in the place you're moving from and in the place you're moving
+to.  It is disconcerting and otherwise unpleasant for someone to suddenly
+say something in a room without there ever having been a notice that that
+person had arrived.  Similarly, it is annoying to discover that you've been
+talking for some time to a person who has left the room without a sound.
+
+*****************************************************************
+
+The wizards are always interested in hearing players' feedback on these
+rules of behavior.  The rules were developed by the consensus of players
+and can be expected to evolve that way, too.
+
+
+Table 5:  Topics in the Helpful Player Badge Dispenser
+
+generic following dogs             creating objects (general)
+communications                     movement
+tasks and permissions              basic programming
+psychology and basic Moo issues    Morphing
+General Help                       badges
+Transgenderism                     Getting Around
+moo-addiction                      Fun Things to Do
+Creativity                         fractal geometry
+Speleology                         Celtic legends
+general MOO non-programming stuff  Beginner Questions
+trouble-shooting                   grunge
+Helpful Person Finder              hacking around WolfMOOCore.DB
+depression                         simple verbs
+setting messages                   Telnet Hassles
+BBS software                       C++
+MOO rpg                            user interfaces
+GOMS                               godnet
+minimal.db                         building
+Geek Avoidance                     Swedish
+GNU Emacs                          evil computer uses
+drugs                              Unix
+clients                            debugging
+design issues                      quota
+Why NOT to fall in love with someone on the MOO
+Sex, Sex, Sex, Cheese Curing, MOO revolution
+
+
+Table 6:  MOO Scavenger Hunt
+
+Scavenger Hunt List requires you to find, in order:
+*  1. The Family Room
+   2. any pillow
+   3. enormous vegetable marrow
+   4. salamander
+   5. Wind-Up Duck
+   6. Tutorial
+   7. Holy Grail
+   8. Aunt.Pol
+   9. Integrating Detail Room Mark III
+  10. any Lelladorin's Word Square
+ * -- item/place already found.
+
+
+Table 7:  MOO Board Games
+
+   a b c d e f g h i j k l m n o
+   _____________________________
+ 1|=     '       =       '     =|
+ 2|  -       "       "       -  |
+ 3|    -       '   '       -    |
+ 4|'     -       '       -     '|
+ 5|        -           -        |
+ 6|  "       "       "       "  |
+ 7|    '       '   '       '    |
+ 8|=     '       *       '     =|      Blank Scrabble Board
+ 9|    '       '   '       '    |
+10|  "       "       "       "  |
+11|        -           -        |
+12|'     -       '       -     '|
+13|    -       '   '       -    |
+14|  -       "       "       -  |
+15|=     '       =       '     =|
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   a b c d e f g h i j k l m n o
+   _____________________________
+ 1|=     '       =       ' D E W|
+ 2|  -       "     I M A G E -  |
+ 3|    -       '   '       A    |
+ 4|'     -       '       - F   '|
+ 5|  S     B       S T A G E S  |
+ 6|  P R O L E     T "     N O  |
+ 7|  O '   A   '   A     D ' A M|
+ 8|F O X ' Z     D R O N E   R E| Partially Filled Scrabble Board
+ 9|E N '   E   '   V     C '    |
+10|W "     S K A T E "   E   "  |
+11|        -     A   P I N E    |
+12|'     -   J I B       C     D|
+13|    -     U ' O '     Y E T I|
+14|  -   V A T   O   H       - N|
+15|=     '       S L I G H T   E|
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                    MOOnopoly
+
++-----+---+---+---+---+---+---+---+---+---+-----+
+|PARK |Ken|CHA|Ind|Ill|B&O|Atl|Ven|Wat|Mar|>JAIL|
+|     |   |   |   |   |   |   |   |   |   |     |
++-----+---+---+---+---+---+---+---+---+---+-----+
+|New  |                                   |  Pac|
++-----+                                   +-----+
+|Ten  |   ---      ---                    |  Nor|
++-----+  |o o|    |o o|                   +-----+
+|CCH  |  |   |    | o |                   |  CCH|
++-----+  |o o|    |o o|                   +-----+
+|StJ  |   ---      ---                    |  Pen|
++-----+                             tm    +-----+
+|Prr  |    M  O  O  N  O  P  O  L  Y      |  Sho|
++-----+                                   +-----+
+|Vir  |                                   |  CHA|
++-----+                                   +-----+
+|Sta  |                                   |  Par|
++-----+                                   +-----+
+|Ele  |                                   |  LUX|
++-----+                                   +-----+
+|StC  |                                   |  Brd|
++-----+---+---+---+---+---+---+---+---+---+-----+
+|     |   |   |   |   |   |   |   |   |   |   GO|
+|JAIL |Con|Ver|CHA|Ori|Rea|TAX|Bal|CCH|Med| <-- |
++-----+---+---+---+---+---+---+---+---+---+-----+
+
+
+                Chess
+
+  +---+---+---+---+---+---+---+---+
+8 | r | n | b | q | k | b | n | r |                GO
+  +---+---+---+---+---+---+---+---+
+7 | p | p | p | p | p | p | p | p |        +-----------------+
+  +---+---+---+---+---+---+---+---+      1 | . . . . . . . . |
+6 |   |   |   |   |   |   |   |   |      2 | . . . . . . . . |
+  +---+---+---+---+---+---+---+---+      3 | . # . . . . . . |
+5 |   |   |   |   |   |   |   |   |      4 | . . O . . . . . |
+  +---+---+---+---+---+---+---+---+      5 | . . . O . . . . |
+4 |   |   |   |   |   |   |   |   |      6 | . . . . O . . . |
+  +---+---+---+---+---+---+---+---+      7 | . . . . . . . . |
+3 |   |   |   |   |   |   |   |   |      8 | . . . . . . . . |
+  +---+---+---+---+---+---+---+---+        +-----------------+
+2 | P | P | P | P | P | P | P | P |          A B C D E F G H
+  +---+---+---+---+---+---+---+---+
+1 | R | N | B | Q | K | B | N | R |
+  +---+---+---+---+---+---+---+---+
+    a   b   c   d   e   f   g   h
+
+
+
+Table 8:  Tourist's Guide to WolfMOO
+
+You see a handy booklet full of information on that attraction of
+attractions, WolfMOO.
+
+Welcome to WolfMOO! We hope your stay is a pleasant and enjoyable one.
+
+Excitement and adventure as well as curious oddities inhabit the Wolf
+House. Sprawling outwards and upwards, the widely varying architectures
+present an amazing, if somewhat shocking, image to first-time visitors. The
+current landlords keep finding new rooms in dusty hallways and objects in
+forgotten alcoves. No one quite knows the extent of the mansion. Some say
+that entire subcultures inhabit sections of the house and its surrounding
+land, forming pacts with each other in a tension filled non-existence. The
+owners either have no knowledge of this or do not mind.
+
+In the entrance hall, an ancient Strasbourg Clock riddled with dials and
+knobs displays the time for dozens of different regions of the world. It
+would be a simple task to adjust one of the unused clock faces to a
+suitable time. Walking into the dining room, the preponderance of curios
+often convinces people that the room was never anything other than a game
+room. This is further compounded by the fact that people frequently leave
+new puzzles in there, perhaps to trap the unwary. The kitchen, situated to
+the south of the dining room, has the most modern of appliances. Random
+notes decorate the refrigerator, and a whirring cuisinart grinds assorted
+things into exciting foods. Please be cautious near the master bedroom to
+the east of the entrance hall as the owners have installed some security
+measures.
+
+Outside, a luxurious pool filled with an inummerable number of pool toys
+provides a relaxing area for fun or play. A hot tub nearby awaits swimmers
+resting after a quick dip in the pool. Amidst this scene of tranquil bliss,
+rumors of creatures living beneath the pool abound. How they survive in the
+murky chlorinated water, no one knows. Some even say that catacombs snake
+underneath the house and that terrifying kobolds and goblins cavort in
+abandoned mine shafts. Most disregard these tales as superstitious fears of
+the dark. There are, of course, no secret societies or Illuminati. No one
+would believe that a medieval castle would exist anywhere near the Wolf
+House. Any word of them is obviously just a fantasy of the mind.
+
+For the children, there is a delightful tree house in the back which is
+filled with untold suprises. Alongside the pool, a genuine(tm) Rube
+Goldberg contraption designed to provide hours of enjoyment awaits the pull
+of curious hands. They may also find the living room, the roost of a most
+audible cockatoo, quite enjoyable. Of course, caution should be advised
+with respect to the discussions that arise in there. They have been known
+to drive visitors insane. If this unfortunate incident does afflict
+someone, help may be sought at the Department of Psychology on the second
+floor. A past owner created it, as well as an entire university, in a fit
+of frenzied building. Aid is available at the MOOjunkies Anonymous
+counseling center located above the family room for those suffering from
+that dreaded addiction. Many people have also established rooms in that
+area, most likely to remain in close proximity to this vital service.
+
+Evidently, some businesses have also sprung up in obscure corners of the
+house. No one really knows, but startled laughter can sometimes be heard
+from broken mirrors. From the slightly swaying movements of those visiting
+the dusty, uninhabited areas of the house, one could also imagine that a
+pub resides nearby. This is all just wild speculation of course. Taverns
+have no more of a chance existing in a house than a gypsy caravan or an
+alien space ship would have behind it.
+
+
+Table 9:  WolfMOO Refrigerator
+
+This is a fine, large fridge that looks like it could hold enough to
+support a fairly large household.  There are several little magnets on the
+door; many of them are being used to hold up notes.  Type 'read 1 on
+fridge' for help on reading what's here.
+    1 - Wolf:  How to use notes on the fridge
+    2 - Belkira:  First Puzzle on MOO!
+    3 - Floyd:  Adventuring
+    4 - Floyd:  Ghostbusters!
+    5 - Sickle:  Aliens!
+    6 - Doc:  Shopping List -- Buy at Moo-Store
+    7 - Mutt:  a dog-eared note
+    8 - Belkira:  "Nothing We Can Do"
+    9 - Doc:  MOO-ARCADE! NEW UNDERGROUND CENTER!
+   10 - Puzzler:  Try your skills on the Hedge Maze!
+   11 - Doc:  Moonopoly
+   12 - syrup:  Scrabble!
+   13 - Zipper:  Master safes
+   14 - syrup:  Eliza's on MOO!
+   15 - Aunt.Pol:  Try your assembly skills
+   16 - Amoeba:  Multiplayer Communications
+   17 - Zipper:  Good programmers needed!
+   18 - Zipper:  (new!) Spiral-al
+   19 - Doc:  Vast railroad empire...
+   20 - Beltira:  Coming soon to a town near you...
+   21 - housekeeper:  I'm kinda busy but I'll clean your stuff...
+   22 - Aunt.Pol:  Hotel rooms available
+   23 - Bunny:  Advertisement for MPIF
+   24 - Gelfind:  Visit WolfMOO International Raceway!
+   25 - Amoeba:  generic programmable note
+   26 - Sally:  The End Cafe is now OPEN!
+   27 - syrup:  improved (yet again) login watcher
+
+
+Table 10:  WolfMOO Mansion
+
+WolfMOO takes place inside and on the grounds of a large, sprawling
+mansion.  The house has existed in one form or another for literally
+hundreds of years, passing through the hands of a bewildering seqeuence of
+owners.  Most of the owners have taken the opportunity to add to the
+mansion, extending it in dozens of different directions, each with a
+completely different vision and architectural style.  In short, this house
+is a bit of a mongrel.
+The house is also very large, so large in fact that the current occupants
+themselves have only ever explored a tiny portion of it.  What may be going
+on in other parts of the house is anybody's guess.  I wouldn't be the least
+bit surprised to hear about space aliens, ancient secret societies, or even
+high-tech cottage industries that are making use of parts of the house.
+With nobody having the means or inclination to patrol the whole place,
+almost anything could be squatting here.
+
+South of the occupied part of the house lie the palatial gardens.  Many
+parts of the gardens are still being tended and cared for, some even by
+gardeners hired by the current occupants.  Of course, there are other parts
+of the gardens that have become quite overgrown and wild, sheltering who
+knows what.
+The land underneath the house is also full of strange tunnels, odd caverns,
+perhaps a forgotten mine, and other amusements.  Of course, except for the
+wine cellars, the current occupants are completely unaware of such
+developments.
+
+
+Table 11:  Various Room Descriptions
+
+The Dining Room
+This room is dominated by a large pearwood table and six matching chairs.
+There are a pair of large bookcases on the north wall and doors into the
+kitchen to the south.  To the east is an open archway leading into the
+entrance hall.
+You see Mastermind Board, Mastermind Instructions, Deck of Playing Cards,
+GOPS, Automatic Poker Pot, Dwarf's backgammon board, Dwarf's chessboard,
+big connect-4, 'nopoly bank, zoologist, Dwarf's reversi board, Clasp's
+connect-4 board, Scrabble board, gagsi, Ghost game, Beldin's solver for
+Dwarf's mind bender, Moonopoly Board, Paper Bag, Dwarf's mind bender,
+PenteSet, go board, Rubik's Cube, Scavenger Hunt List, generic set of dice,
+wind up lamb, and Number puzzle here.
+
+The Kitchen
+The kitchen is of a modern design, very large and well-lit, yet still homey
+and comfortable.  The walls are covered in beautiful natural-wood cabinets
+and the stove is set into a large 'island' counter in the center of the
+room.  Over the sink, along the south wall, there are windows looking out
+onto the pool and gardens.  At the west end of the room, there is a little
+breakfast nook with a table and four chairs; beyond it to the west is the
+family room.  There are doors in the north wall leading into the dining
+room, a sliding glass door to the south, and a doorway in the northeast
+corner leading out into the entrance hall.
+You see a refrigerator, cookbook, dishwasher, cuisinart, kitchen counter,
+microwave, and carrot here.
+
+Nocturne
+     Moonlight pours through an open window, as rain beats a steady patter
+on the balcony to the west. Many dark-coloured stones compose the floor of
+this room, whilst the walls are the characteristic black stone of the Keep.
+A large bed lies unmade, soft pearl duvets ruffled over black satin sheets.
+Several
+pillows are thrown about. A chill draft wafts through the window, and the
+bed seems all the more seductive.
+     A heavy wooden door leads south into the observatory.
+
+Library
+The Bovine Illuminati Library is a chaotic jumble of shelves overflowing
+with books, scrolls, maps and random scrawlings. Several desks and chairs
+are scattered about the place so that initiates may sit and study in their
+quest for enlightenment. A doorway to the east leads through to the
+technical section.
+
+Thumper's Thicket
+The feeling here is peaceful and serene. A soft breeze blows through the
+trees all around you. Sunlight filters through the leaves above and dances
+across the forest floor.
+
+Parnassus
+ A brooke flows between dense groves of olive trees, clear water cascading
+over rocks rounded by its centuries-old flow. The sun plays in the stream,
+casting shimmering reflections amidst the boughs of strong trees.
+Snow-capped peaks rise from deep green fields of grass, undulating in the
+wind. A warm breeze ripples over a nearby pond, where toads croak lazily
+within bunches of reeds.  The enchanting melody of a songbird and the
+distant musing of a harp lulls you into a sensual euphoria. You sit in the
+shadow of a laurel -- breathing deep the heady aroma of countless natural
+perfumes. As sylvan creatures play within flowering arboria, you pause to
+mourn reality's loss of this mythic paradise. With a sigh, you slip back
+into the wondrous illusion.
+
+Hermaphrodite Heaven
+Welcome to the domain of Marie-Jean/Jean-Marie. As you look around, you
+notice that your feet are no longer on the ground.  In fact, you're
+floating!  You appear suspended at the center of a vast night sky. You are
+surrounded by gauzy nebulae, brilliant stars, fiery comets, and awe-
+inspiring, immense planets.  After flailing about a bit, you encounter the
+series of invisible rails that allow you to transport yourself about in
+this tiny piece of eternity. A series of gravity-stabilized discs lead up
+to (up? what's up? ain't got no gravity here, dude(tte)!  Okay, they lead
+_toward_) an enormous hammock the size of a double bed, which, although
+apparently supported by nothing, somehow manages to remain in the same
+place.  It is draped with various grey-, rose-, and malachite-colored
+hangings, and is covered with pillows of the same colors.  The pillows are
+velcro-attached, but may be easily _detached_ for a zero-g pillow fight. As
+you direct your gaze towards what used to be downward, you spy a swirling
+black hole (don't ask how you can see a black hole, or how it can swirl.
+The creator pleads poetic license), gateway to points unknown.  It seems to
+be the only exit.
+
+Hell
+A really hot, firey place that looks like the cover of a heavy-metal album.
+There are lots of people (and lawyers) here.  At one end of the chamber is
+a line of new-admits, being handled by an arch-devil.  To the northeast is
+a simple door with writing on it.
+
+Hell's library
+A huge, cavernous room filled with books.  Most of the books are calculus
+texts.  To your surprise, there is a section of award-winning mystery
+novels.  Every mystery novel has the last page torn out so you'll never
+find out whodunnit.  There is a door to the southwest.
+
+Alpha Club
+This is a spacious room with several working benches. Some equipments like
+CRO, multimeters, screwdrivers, hammers, soldering irons etc. are lying
+around on the benches.  There is a huge bookselve leaning against the west
+wall with lots and lots of books of various kinds like Hitch Hikers' Guide
+to the Galaxy, GEB an Eternal Golden Braid, MCS yearbooks, DGS yearbooks,
+MSS yearbooks, Lasallites, Playmates of the Year etc selved in it.  Several
+double-deck beds are placed on the far side of the room, looking a little
+bit untidy and, perhaps, smelly.  What a typical room for young, innovative
+scientists!
+
+
+Table 12:  Sample Conversation
+
+Holly teleports in.
+Katz says, "Touche!   I've been car hunting...  :-("
+Cricket says, "Are you a anthropologist, Ethnographer?"
+>emote ers, "Sort of"
+Ethnographer ers, "Sort of"
+Beetle says, "hey Katz"
+Horsey says, "bag any cars?"
+Katz waves to Holly
+Holly says, "hi"
+emote shows Cricket the note
+Holly says, ""
+Flub wonders what Bugs was trying to do to the hat?
+Cricket says, "I have a bachelors in that field."
+Velcro waves.
+Holly wave
+Ethnographer shows Cricket the note
+Garion sees the glory of the royal scam.
+>give note to Cricket
+You hand Copy of My Note to Cricket.
+Katz says, "Not yet - and I've still got a dead Golf to get rid of  :-("
+Bugs was trying to get the hat to wave at itself.
+Egg whispers, "Ethnog, can you please help me adjust my entrance /exit
+description i lost the exact command and i am desparate..."
+Flub says, "It won't."
+La-Z-Boy recliner arrives with a faint smell of Velveeta cheese melted over
+fried Spam.
+Flub says, "It would get stuck in a oo and spam me if it did."
+>whisper "@arrive ring is \"message\"   " to Egg
+Velcro ist gewaven.
+CeNedra checks her calendar in RL, she didn't realize that today was pick
+on CeNedra day, she thought that was next week.!
+Flub says, "loop even. damn emacs."
+You whisper, "@arrive ring is "message"   " to Egg.
+Horsey tsks and says better than a Ford Pinto.
+Beetle is far to tired to read this fast
+>whisper "same thing but depart . . .. " to Egg
+Garion laughs at Flub.
+Bugs gives Gus a VELVEETA BURRITO!!
+Katz says, "What, a golf?"
+Flub made enough objects that respond to things said to get it working
+right.
+You whisper, "same thing but depart . . .. " to Egg.
+Cricket says, "What class is it that you are doing this for.  It seems like
+a pretty big project for one semester."
+Horsey sings Aye, aye, aye aye, oh I'm the Velveet Burrito!
+Egg says, "thanks to etnagropher i will be even more evident!!!"
+The hand on generic stupid waving hat stops waving.
+Flub wonders why emacs can't keep up with his typing, since it isn't that
+fast.
+===========================================================================
+Appendix C:  Glossary
+
+ADVENTURING:  Participating in a RPG style game
+BUILDING:  Designing objects for the MOO.  Programming.
+CHARACTER:  The manifestation of a player that the other players will see
+     and interact with.  This is YOU in the virtual world.
+COMMAND:  See verb.
+HACKER:  Slang for a computer programmer.
+HOME:  The room where a character sleeps when the player is not logged in.
+IDLE:  When a character has been inactive for a while it is
+     considered to be idle.
+INTERNET:  The computer network that hooks a large portion of the world's
+     computers together.  It is through the internet that you can connect
+     to WolfMOO
+IRL (or just RL):  Abbreviation for In Real Life
+LAG:  The time differential between when a command is entered into the
+     computer and when it is executed.  During times when there are a lot
+     of people logged on at once or when there are other computer problems,
+     lag can be quite bad and can cause communication problems.
+LOGGING IN/OUT:  The process by which you connect into a computer system is
+     referred to as logging in.  Leaving the system is logging-out.
+MAIL:  There is a mail-system on the MOO by which players can send messages
+     to other players who aren't necessarily logged on.  Basically
+     equivalent to mail in the real world.
+MESSAGES:  Most actions (verbs) on the MOO cause things to happen that
+     other characters will see.  What the other character's see is referred
+     to as a message.
+MORPHING:  The ability of a character to transform itself from one pre-set
+     description to another.  Example:  A werewolf has a human form and a
+     wolf form. (Although there is not necessarily a limit of two forms on
+     the MOO)  A character who morphs can change almost everything about
+     itself, including its name, sex, and description; everything but it's
+     object number.
+MUD:  Multi-User Dungeon (or sometimes Multi-User Dimension)
+NETSEX:  A form of interaction in which the players involved perform and
+     say sexually-explicit actions so as to act out sex through the
+     computer.
+NEWBIE:  A player who is new to the MOO and may not be familiar with many
+     of its intricacies.
+OBJECT:  Everything in the MOO world is an object:  characters, rooms,
+     devices.  Every object has a unique object number by which it can be
+     referred and manipulated.
+OBJECT NUMBER:  See object
+PLAYER:  A person who logs into the MOO and manipulates characters is
+     referred to as a player.
+PROGRAMMER:  Players with the ability to verbs (computer programs) on
+     objects that will allow the object to do something or manipulate
+     something in the MOO world.
+PUPPETS:  Special objects in the MOO that act like separate characters but
+     which are actually controlled by another character.  They can perform
+     actions and speak the way normal characters can and can also transmit
+     everything they see to the controlling character.  Puppets cannot
+     create new objects or program.
+QUOTA:  The maximum number of objects a character can own at any time.  The
+     purpose of a quota is to keep the database as small as possible.
+RECYCLE:  To remove all descriptions, properties, and verbs from an object.
+     Destruction or annihilation of an object.
+REGISTRATION:  A means to control who may login to the MOO and who can't be
+     requiring people to present a form of ID (normally an email address)
+     before they are granted permission to enter the MOO.
+REGULAR:  A player who frequents the MOO on a regular basis as opposed to
+     someone who may log on once or twice then never return.
+ROOM:  A location within the MUD where characters can interact with each
+     other.  Rooms are normally connected to each other and can be
+     traversed through standard directions such as east, north, and up.
+RPG:  Role-Playing Game.  Refers to the classic 'Dungeons & Dragons' style
+     game whereby characters start at a low level and gradually gain skills
+     through experience.
+SITE:  The local computer system from which a player logs into the MOO.
+SITE-LOCKING:  A wizardly function by which they may prevent anyone from a
+     given computer site  from logging on.  Normally only used in drastic
+     situations.
+SLEEP:  A character who's player is not logged on is said to be sleeping.
+SMILEYS:  A form of computer symbolism by which people can communicate
+     feelings and emotions.  They are common computer characters that, when
+     put together and looked at sideways, appear to look like smiling faces
+     (or frowns).
+     Examples:  :-)  :)  :')  ;)  :(  8)  ;-()  :0  =O
+SPOOF:  (Definition directly from 'Help Manners') Spoofing is loosely
+     defined as `causing misleading output to be printed to other players.'
+     For example, it would be spoofing for anyone but Munchkin to print out
+     a message like `Munchkin sticks out his tongue at Potrzebie.'  This
+     makes it look like Munchkin is unhappy with Potrzebie even though that
+     may not be the case at all.
+TECHNOBABBLE:  Refers to complex computer programming talk which non
+     programmers (and even many programmers) cannot understand or follow.
+TELEPORT:  A method from moving from any one room to another on the MOO
+     instantly, instead of traveling by more standard means such as
+     walking.
+TELNET:  A command by which a person may connect one computer to another.
+TINYSCENERY:  An object in the MOO which does nothing.  It may have a fancy
+     description, but otherwise serves no useful purpose.
+TINYSEXER:  A person on the MOO whose main interest for being on the MOO is
+     netsex.
+TOADING:  A wizardly function by which an object is destroyed by the
+     wizard, normally by some offense to the standards of conduct that have
+     been instituted on the MOO.
+VERB:  A computer program that has been assigned to a specific object in
+     the MOO and that will do something interesting (hopefully) when run.
+VIRTUAL REALITY:  Life in the MOO as opposed to real life outside the
+     computer.  Anything that is perceived to happen or exist in the MOO is
+     considered to be part of the character's virtual reality.
+WIZARD:  Programmers with special abilities on the MOO.  It is they who run
+     and maintain the MOO, keep civil order (as it were), and oversee the
+     general activities and functions of the MOO.  They are gods, judges,
+     and police all rolled into one.  They're also, for the most part,
+     quite friendly and easy going and willing to help people who ask.
+===========================================================================
+                               Bibliography
+
+
+Curtis, Pavel.  "Mudding:  Social Phenomena in Text-Based Virtual
+     Realities."

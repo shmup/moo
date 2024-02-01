@@ -1,0 +1,392 @@
+Presented at The Internet Society, San Fransisco, CA, August 1993.
+
+
+	Gender Swapping on the Internet	Proc. INET'93	A.S. Bruckman
+
+
+				    EFC-1
+		       GENDER SWAPPING ON THE INTERNET
+
+			     Amy S. Bruckman (1)
+
+
+
+
+
+ABSTRACT
+In text-based virtual reality environments on the Internet called MUDs, it is
+possible to pretend to be the opposite gender.  In these virtual worlds, the
+way gender structures basic human interaction is often noticed and reflected
+upon.  This paper introduces MUDs, and then presents a community discussion
+about gender issues that MUDs inspired.  Gender swapping is one example of
+ways in which network technology can impact not just work practice but also
+culture and values.
+
+
+I. GENDER SWAPPING ON THE INTERNET
+On the television show Saturday Night Live, a series of skits concerned a
+character named Pat, who has no apparent gender.  The audience is tempted with
+the promise of clues.  In one episode, Pat gets his or her hair cut.  A sign
+in the salon says that men's haircuts are $7, and women's haircuts are $9.
+The audience waits in suspense: when Pat goes to pay, his or her true gender
+will be revealed.  The humor of the series lies in the fact that those hopes
+are constantly foiled; in this instance, Pat leaves $10 and says to keep the
+change.
+
+Gender is so fundamental to human interactions, that the idea of a person
+without gender is absurd.  The audience thinks that surely some clue must
+reveal Pat's gender, but none ever does.  Many who have never seen Saturday
+Night Live know about Pat.(2) The character has become a kind of cultural icon.
+Pat's popularity is revealing.
+
+On many MUDs, it is possible to create gender neutral characters.  It is
+possible not only to meet Pat, but also to be Pat.  When I(3) first met an
+ungendered character, I felt a profound sense of unease.  How should I relate
+to this person?  Most unsettling was my unease about my unease: why should
+this matter?  I am having a casual conversation with a random stranger; why
+should I feel a need to know his or her gender?
+
+The experience highlights two things: the ways in which gender structures
+human interactions, and, more importantly, the ways in which MUDs help people
+to understand these phenomena by experiencing them.  This paper briefly
+introduces the technology called MUDs, and then analyzes a community
+discussion about the role of gender in human social interaction which was
+inspired by the participants' experiences in MUDs.  Gender swapping is one
+example of how the Internet has the potential to change not just work practice
+but also culture and values.
+
+
+II. WHAT ARE MUDS?
+A MUD is a text-based multi-user virtual-reality environment.  As of April
+16th, 1993, there were 276 publicly announced MUDs based on twenty different
+kinds of software on the Internet.  I will use the term "MUD," which
+stands for "Multi-User Dungeon," to refer to all the various kinds.(4) The
+original MUDs were adventure games; however, the technology has been adapted
+to a variety of purposes.
+
+When a person first logs onto a MUD, he or she creates a character.  The
+person selects the character's name and gender, and writes a description of
+what the character looks like.  It is possible for a character to be male or
+female, regardless of the gender of the player.  In many MUDs, a character can
+also be neuter or even plural.  A plural character could, for example, be
+called swarm_of_bees or Laurel&Hardy.
+
+MUDs are organized around the metaphor of physical space.  You can "talk" to
+anyone in the same virtual room.  When you connect to a MUD at the Media Lab
+called MediaMOO,(5) you see the description:
+
+ >connect guest
+ Okay,... guest is in use.  Logging you in as `Green_Guest'
+ *** Connected ***
+ The LEGO Closet
+
+ It's dark in here, and there are little crunchy plastic things under your
+   feet!  Groping around, you discover what feels like a doorknob on one wall.
+
+ Obvious exits: out to The E&L Garden
+
+MediaMOO is a virtual representation of the MIT Media Lab.  Typing "out" gets
+you to the "E&L Garden," a central work area for the lab's Epistemology and
+Learning research group:
+
+ >out
+ The E&L Garden
+ The E&L Garden is a happy jumble of little and big computers, papers, coffee
+ cups, and stray pieces of LEGO.
+ Obvious exits: hallway to E&L Hallway, closet to The LEGO Closet, and sts to
+ STS Centre Lounge
+
+ You see a newspaper, a Warhol print, a Sun SPARCstation IPC, Projects
+ Chalkboard, and Research Directory here.
+ Amy is here.
+
+ >say hi
+ You say, "hi"
+ Amy says, "Hi Green_Guest!  Welcome!"
+
+The earliest MUDs such as "MUD1" and "Scepter of Goth" were based on the
+role-playing game Dungeons and Dragons, and were written in late 1978 to
+1979.(6) They were also based on early single-user text adventure games, such
+as the original ADVENT by Crowther and Woods [7].  In adventure-based MUDs,
+the object is to kill monsters and obtain treasure in order to gain
+"experience points."  As a character gains experience, he/she/it becomes more
+powerful.
+
+In 1989, a graduate student at Carnegie Mellon University named James Aspnes
+decided to see what would happen if the monsters and magic swords were
+removed.  He created a new type of MUD, called "TinyMUD," which was not an
+adventure game.  Instead of spending time killing virtual monsters,
+participants work together to help extend the virtual world using a simple
+programming language.  Langdon Winner remarks that "social activity is an
+ongoing process of world-making" [9].  In MUDs, this is true in a literal
+sense.
+
+In most MUDs, characters are anonymous.  People who become friends can
+exchange real names and email addresses, but many choose not to.  Conventions
+about when it is acceptable to talk about "real life" vary between
+communities.  In most MUDs, people begin to talk more about real life when
+they get to know someone better.  However, in some communities such as those
+based on the Dragonriders of Pern series of books by Anne McCaffrey, talking
+about real life is taboo.
+
+MUDs are increasingly being used for more "serious" purposes.  Pavel Curtis of
+Xerox PARC has developed a MUD to enhance professional community amongst
+astrophysicists called AstroVR [4].  The MediaMOO project, which I began in
+fall of 1992, is designed to enhance professional community amongst media
+researchers [2].  MediaMOO currently has over 500 participants from fourteen
+countries and is growing rapidly.
+
+MUDs also have an intriguing potential as an educational environment.  Since
+1990, Barry Kort has been running a MUD for children called MicroMUSE.(7) I am
+currently in the process of designing a MUD language and interface to make the
+technology more usable by children as part of my dissertation research.  I
+hope to use this technology to encourage ten to twelve year-old girls to be
+more interested in computers.
+
+
+III. A PUBLIC DEBATE ABOUT GENDER
+Gender pervades human interactions in such basic ways that its impact is often
+difficult to observe.  Phenomena that are subtle in real life become obvious
+in MUDs, and are a frequent topic of discussion on USENET newsgroups about
+MUDs.  For example, men are often surprised at how they are treated when they
+log on as a female character.  Andrew writes on the newsgroup
+rec.games.mud:(8)
+
+ "Back when I had time for MUD, I, too, played female characters.  I found it
+ extraordinarily interesting.  It gave me a slightly more concrete
+ understanding of why some women say, "Men suck."  It was both amusing and
+ disturbing."
+
+Female characters are often besieged with attention.  By typing using the who
+command, it is possible to get a list of all characters logged on.  The page
+command allows one to talk to people not in the same room.  Many male players
+will get a list of all present, and then page characters with female names.
+Unwanted attention and sexual advances create an uncomfortable atmosphere for
+women in MUDs, just as they do in real life.
+
+Many people, both male and female, enjoy the attention paid to female
+characters.  Male players will often log on as female characters and behave
+suggestively, further encouraging sexual advances.  Pavel Curtis has noted
+that the most promiscuous and sexually aggressive women are usually played by
+men.  If you meet a character named "FabulousHotBabe," she is almost certainly
+a he in real life [3].
+
+Perhaps more damaging than unwanted sexual advances are unrequested offers of
+assistance.  Carol, an experienced programmer who runs a MUD in Britain,
+writes on rec.games.mud:
+
+ "What I *do* think is funny is this misconception that women can't play muds,
+ can't work out puzzles, can't even type "kill monster" without help.  (Okay, I
+ admit we have it on this side of the Atlantic too...) Thanks, guys....  I log
+ on, they work out I am female, and then the fun begins. Oh joy! After all, I
+ don't log on to see whether people have found bugs with my little area, or to
+ dispense arbitrary justice ("Please, Miss, he stole my sword!") or to find a
+ friend. I call Aber-o-rama(9) (for this is the place) expressly to meet little
+ spods who think (I assume) that because I am female I need help.  People
+ offering me help to solve puzzles *I* wrote are not going to get very far.
+
+ Do you think all women in real life too are the same? We don't squeak and look
+ helpless *all* the time (in my case, only when I am tired and can't be
+ bothered to wire the plug, change a fuse or remove the centipede from the bath
+ (I really should move house...))."
+
+The constant assumption that women need help can be damaging to a woman's
+sense of self esteem and competence.  If people treat you like an incompetent,
+you may begin to believe it.  Carol here is honest and astute enough to admit
+that women as well as men help create this problem- sometimes she acts
+helpless when she's simply "tired and can't be bothered" to complete an
+uninteresting or unpleasant task.
+
+In the same netnews discussion, Dennis concurs with Carol:
+
+ "I played a couple of muds as a female, one making up to wizard level.  And
+ the first thing I noticed was that the above was true.  Other players start
+ showering you with money to help you get started, and I had never once gotten
+ a handout when playing a male player.  And then they feel they should be
+ allowed to tag along forever, and feel hurt when you leave them to go off and
+ explore by yourself.  Then when you give them the knee after they grope you,
+ they wonder what your problem is, reciting that famous saying "What's your
+ problem?  It's only a game".  Lest you get the wrong idea, there was nothing
+ suggesting about my character, merely a female name and the appropriate
+ pronouns in the bland description.  Did I mention the friendly wizard who
+ turned cold when he discovered I was male in real life?  I guess some people
+ are jerks in real life too."
+
+Male characters often expect sexual favors in return for technical assistance.
+A male character once requested a kiss from me after answering a question.  A
+gift always incurs an obligation.  Offering technical help, like picking up
+the check at dinner, can be used to try to purchase rather than win a woman's
+favor.  While this can be subtle and sometimes overlooked in real life, in
+MUDs it is blatant, directly experienced by most, and openly discussed in
+public forums such as this USENET discussion.
+
+Ellen provides an interesting counter point:
+
+ "This is very odd.  I played LPmud(10) once, just to find out what it was
+ like.  Since most LP's do something hideous with my preferred capitalization
+ of my preferred name, I chose a different name, and thought, what the heck,
+ I'd try genderbending and find out if it was true that people would be nasty
+ and kill me on sight and other stuff I'd heard about on r.g.m(11).  But, no,
+ everyone was helpful (I was truly clueless and needed the assistance); someone
+ gave me enough money to buy a weapon and armor and someone else showed me
+ where the easy-to-kill newbie(12) monsters were.  They definitely went out of
+ their way to be nice to a male-presenting newbie...  (These were all
+ male-presenting players, btw.(13))
+
+ One theory is that my male character (Argyle, description "A short squat
+ fellow who is looking for his socks") was pretty innocuous.  Maybe people are
+ only nasty if you are "A broad-shouldered perfect specimen of a man" or
+ something of that nature, which can be taken as vaguely attacking.  People are
+ nice if they don't view you as a threat."
+
+Ellen's point is intriguing, and takes the discussion to a new level of
+sophistication.  In "Group Psychology and Analysis of the Ego," Sigmund Freud
+suggests that "love relationships... constitute the essence of the group mind"
+[5].  Issues of sexual power structure interpersonal interactions, and are
+more complex than "boy chases girl."  Argyle's description invites a phallic
+interpretation- he is short and squat, and the reference to socks carries a
+connotation of limpness.  Since Argyle is clearly not a sexual threat, he
+receives kinder treatment.
+
+One cannot fail to be impressed by the quality of the netnews discussion.  For
+the participants, MUDding throws issues of the impact of gender on human
+relations into high relief.  Fundamental to its impact is the fact that it
+allows people to experience rather than merely observe what it feels like to
+be the opposite gender or have no gender at all.
+
+Without makeup, special clothing, or risk of social stigma, gender becomes
+malleable in MUDs.  When gender becomes a property that can be reset with a
+line of code, one bit in a data structure, it becomes an "object to think
+with," to use Seymour Papert's terminology [6].  In public forums like
+rec.games.mud, people reflect the values that our society attaches to gender.
+In private experiences, people can explore the impact of gender on their lives
+and their constructions of themselves.
+
+
+V. CONCLUSION
+Gender is just one example of an aspect of personal identity that people
+explore on MUDs.  Examples abound.  Jack is a British student studying in
+America.  He logs onto MUDs in the morning when it is afternoon in Britain and
+many British players are on.  He enjoys confusing them- he tells them he is in
+America, but displays a detailed knowledge of Britain.  On further
+questioning, Jack tells me he is trying to decide whether to return to Britain
+or continue his studies in America.  What does it mean to be British or
+American?  Jack is exploring his sense of national identity in virtual
+reality.  MUDs are an identity workshop.
+
+Gender swapping is an extreme example of a fundamental fact: the network is in
+the process of changing not just how we work, but how we think of ourselves-
+and ultimately, who we are.
+
+
+VI. REFERENCES
+
+[1]	A. Bruckman.  "Identity Workshop: Emergent Social and Psychological
+Phenomena in Text-Based Virtual Reality."  Unpublished manuscript, 1992.
+Available via anonymous ftp from media.mit.edu in pub/asb/papers/
+identity-workshop.{ps.Z, rtf.Z}
+
+[2]	A. Bruckman and M. Resnick.  "Virtual Professional Community: Results
+from the MediaMOO Project."  Presented at the Third International Conference
+on Cyberspace in Austin, Texas on May 15th, 1993.  Available via anonymous ftp
+from media.mit.edu in pub/asb/papers/MediaMOO-3cyberconf.{ps.Z,rtf.Z,txt}
+
+[3]	P. Curtis.  "MUDding: Social Phenomena in Text-Based Virtual
+Realities."  Proceedings of DIAC Ô92.  Available via anonymous ftp from
+parcftp.xerox.com, pub/MOO/papers/DIAC92.{ps, txt}.
+
+[4]	P. Curtis and D. Nichols.  "MUDs Grow Up: Social Virtual Reality in
+the Real World."  Presented at the Third International Conference on
+Cyberspace in Austin, Texas on May 15th, 1993.  Available via anonymous ftp
+from parcftp.xerox.com in pub/MOO/papers/MUDsGrowUp. {ps,txt}
+
+[5]	S. Freud.  Group Psychology and Analysis of the Ego.  New York: W. W.
+Norton & Company, 1989.
+
+[6]	S. Papert.  Mindstorms: Children, Computers, and Powerful Ideas.  New
+York: Basic Books, 1980.
+
+[7]	E. Raymond.  The New Hackers Dictionary.  Cambridge, MA: MIT Press,
+1991.
+
+[8 ]	S. Turkle.  The Second Self: Computers and the Human Spirit.  New
+York: Simon & Schuster, 1984.
+
+[9]	L. Winner.  The Whale and the Reactor.  Chicago: University of Chicago
+Press, 1986.
+
+
+ACKNOWLEDGMENTS
+I'd like to thank MIT Professors Sherry Turkle, Mitchel Resnick, and Glorianna
+Davenport for their support of this research.  Warren Sack and Lenny Foner
+read drafts of this paper.  Most importantly, I'd like to thank the MUDders
+who have shared their experiences with me.
+
+
+AUTHOR INFORMATION
+Amy Bruckman is a doctoral candidate in the Epistemology and Learning Group at
+the Media Lab at MIT.  She received her BA in physics from Harvard University
+in 1987.  She received her MS from the Media Lab in the Interactive Cinema
+Group in 1991.  Her master's thesis project is a system called "The Electronic
+Scrapbook" designed to help users to edit their home videos.  She is founder
+and ArchJanitor of MediaMOO, a MUD designed to enhance professional community
+amongst media researchers.  In her current research she is exploring the
+potential of MUDs as a learning environment for children.  In particular, she
+is interested in using MUDs to encourage girls to be more interested in
+computers.
+
+
+NOTES
+(1)Amy Bruckman is with the MIT Media Laboratory.  She may be reached at
+asb@media-lab.media.mit.edu
+
+(2)In fact, I retell this story second hand; the details may not exactly
+reflect the television show.
+
+(3)I have chosen to write in the first person, because many of the ideas in
+this paper are based on my experiences as a participant-observer, and because
+notions of identity are part of my topic.
+
+(4)On March 6th, 1992 there were 143 MUDs based on 13 kinds of software.  This
+is an increase of 93% in number of MUDs and 54% in number of types of software
+over slightly more than a year.  MUDs are constantly being created and
+destroyed.  A current list is regularly posted to the USENET news group
+rec.games.mud.announce.
+
+(5) To connect to MediaMOO, type "telnet purple-crayon.media.mit.edu 8888"
+from a UNIX system on the Internet.  Send electronic mail to
+mediamoo-registration@media.mit.edu for more information.
+
+(6)The earliest multi-player games existed on stand-alone time-sharing
+systems.  In 1977, Jim Guyton adapted a game called "mazewar" to run on the
+ARPAnet.  Participants in mazewar could duck around corners of a maze and
+shoot at one another, but could not communicate in any other fashion [email
+conversation with Jim Guyton, March 1992].  Numerous multi-user games based on
+the Dungeons and Dragons role playing game appeared in 1978-1979 including
+Scepter of Goth by Alan Klietz and MUD1 by Roy Trubshaw and Richard Bartle
+[email conversation with Alan Klietz, March 1992].
+
+(7)MicroMUSE is at chezmoto.ai.mit.edu 4201.
+
+(8)This is an excerpt from a USENET discussion on about MUDs.  Communications
+technologies have complex interactions.  Since most MUDders have read USENET
+groups about MUDding for at least some period of time, the culture of USENET
+and of MUDs are in some ways linked.  Social conventions evolve in the context
+of the complete set of technologies in use, including email, netnews, surface
+mail, telephones, answering machines, voice mail, television, radio,
+newspapers, magazines, books, and the like.  Email, netnews, and MUDs have
+especially complex interactions.
+
+(9)The name of the MUD has been changed.
+
+(10)LPMUDs are a type of adventure-game-style MUD.
+
+(11)The abbreviation "r.g.m" stands for "rec.games.mud," the USENET newsgroup
+on which this discussion is taking place.
+
+(12)A newbie is a new player with little experience.  According to Raymond
+[7], the term comes from British slang for "new boy," and first became popular
+on the net in the group talk.bizarre.  A newbie monster is a monster that a
+low-level player could defeat.
+
+(13)This is an abbreviation for "by the way."

@@ -1,0 +1,2063 @@
+Paper to appear in Electronic Journal of Communication,
+summer 1995
+
+
+THE MODAL COMPLEXITY OF SPEECH EVENTS IN A SOCIAL MUD
+
+
+Lynn Cherny
+Stanford University
+
+        Abstract.  The availability of the emote
+     modality, combined with social responses to object
+     and room-persistence in MUDs, creates a more
+     structured and flexible communication environment
+     than is found in other single modality
+     chat programs.  The emote command is used for
+     ritual greetings and goodbyes, for back channels
+     during conversations, for play interactions, for
+     reports of activity in "real life" which might
+     distract a user from the conversation, and for
+     presentation of background information during
+     conversations.  I discuss the status of emoted
+     actions as speech acts, and how their
+     interpretation depends on frame of reference
+     within the virtual world and the real world.
+
+                        1. The Site
+
+     There is a growing literature about social phenomena
+in text-based virtual realities, or MUDs ("multi-user
+dimensions"); for instance, Curtis (1992), Reid (1994),
+Bruckman (1992), Dibbell (1993), Cherny (1994a, 1994b),
+Kendall (1995), McRae (1995).  This literature has explored
+how users gender-swap, role play, build communities and
+support groups, punish violators of emergent social norms,
+indulge sexual fantasies where bodies are discursive
+constructions, and often reinforce gender norms in subtle
+ways interactionally.  This paper takes this literature as
+background, and examines in detail how a community
+functions in text.  In particular, I investigate the
+categories of "action" that have evolved to delimit and
+communicate availability, interest, and attention in
+conversation, provide opportunity for collaborative play,
+and open up multiple frames of reference in the MUD and "in
+real life."
+
+     My discussion is based on discourses gathered as a
+participant-observer on a MOO (object-oriented MUD) over 11
+months.  Some of my comments or conclusions may apply to
+conversation in other social MUDs, but for the most part, my
+observations will be specific to a group of well-practiced
+users in a particular speech community (Gumperz, 1972).  The
+names of the MUD and its participants have been changed in
+this paper to protect their privacy.
+
+     My data were collected during ethnographic observation
+of a community called ElseMOO.[1]  The virtual geography
+is modelled after a real house and the surrounding town in
+Minnesota.  This community has a population of about 30 to
+40 fairly regular users, with a core population of about 20.
+The median age is 22.5; the gender ratio is about a third
+female to two-thirds male.  "In real life" the users are
+mostly students, many in computer science, and others are
+computer professionals or in network related fields like
+information technology.  The regulars are geographically
+scattered around North America, with a few in the U.K. and
+Australia; there are concentrations of regulars in Seattle
+and Boston.  The original founders and many of their MOOing
+friends started in Minnesota, but most have since moved to
+Boston for school or work, joining other regulars there.
+
+     Since most mudders are regulars on more than one MUD,
+it helps to understand the relationship between the
+population on EM and those on a few other MUDs.  The EM
+population is historically related to the populations of
+LambdaMOO (Dibbell, 1993; Curtis, 1993), DeepSeasMUSH, and
+InfoPark.  The majority of the users of EM also have
+characters on LambdaMOO, and often multi-MUD (splitting
+their connection window between the two MOOs) in order to
+talk about politics on LM with friends on EM.  Several of
+the wizards from LM are regulars on EM.  There are also
+several core regulars who frequent DSM, a historically
+significant MUD with a community that dates back to the
+original MUDs in the U.S. in the late eighties.  Most of
+the regulars on EM have been mudding for at least a year,
+and in many cases, as long as four years, hence their overlap
+with the DSM crowd.  InfoPark (Evard, 1993) is a MUD for
+system administrators at Northeastern University, which
+several members of EM work on.  The administrator of IP
+believes that there has been significant flow of
+communicative conventions and culture between IP and EM.
+The same is certainly true between EM and LambdaMOO and
+DSM.  Membership in multiple communities renders the
+conventions in one MUD community more likely to hold for
+other, related, MUD communities as well.
+
+     For a researcher interested in conversation and
+community formation in MUDs, there are several attractive
+qualities to the EM community.  The users are
+well-practiced at MUD conversation, spending several hours
+every day online, often while working.  The community views
+the MUD as an extension of real life, rather than an escape
+from it: they make efforts to meet one another in real life,
+they talk on the phone, and many make available their real
+names and email addresses in their character information.
+They do not gender switch or role play in their MUD
+personas.  Finally, the community was formed as a place for
+hacking on networking and virtual reality, as well as
+socializing; the users have a heavy investment in the
+technology and many hope to put it to use in their
+professional lives.  Although the MUD exists external to
+their work contexts, professional work is accomplished on
+it; many users report that it is a great place to find
+answers to technical problems or to come for design
+discussions.  EM is therefore interesting as a proto
+computer-supported cooperative work environment, as well.
+
+                 2. Communication Commands
+
+     There are two main modes of communication in MUDs, the
+"say" and the "emote," plus various programmatic ways of
+producing communicative output that resembles them.   A
+user (me, with character lynn, in this case) can "say"
+something by typing at her prompt:
+
+     >"hi there.
+
+and the output in the virtual room she occupies will be:
+
+     lynn says, "hi there."
+
+     She may also direct her "say" to another character, to
+make it unambiguous who she is responding to in a
+multi-threaded conversation in a crowded room.
+
+     >`Tom how are you?
+     lynn [to Tom]: how are you?
+
+     The other main mode of communication is the "emote,"
+which allows body language or other forms of narration.  For
+instance, using the emote command or its shorter
+abbreviation ":", I can perform an action:
+
+     >:scratches her head.
+     lynn scratches her head.
+
+Emotes may also be used in other ways: for example, to
+reflect states of mind or belief, as an alternative to a
+"say."
+
+     >:wonders where that book went that she loaned
+          paul.
+     lynn wonders where that book went that she loaned
+          paul.
+
+     Conversation can also take place "long-distance"
+between characters who are not in the same room.  Analogs of
+the "say" and emote commands are available for long-distance
+communication.  If paul is in another room, I can page him
+(line 1) or "remote-emote" (line 4).
+
+     1 >page paul how's it going?
+     2 Your message has been sent to paul.
+     3 paul pages, "not bad, you?"
+     4 >+paul grins.
+     5 (to paul) lynn grins.
+     6 (from the sunroom) paul grins too.
+
+No one but me sees his answering page in line 3.  Likewise
+with his remote-emote response to me (showing which room he
+occupies) in line 6.
+
+     To simplify examples in this paper, I have removed
+my prompt line from the logs unless the command I typed
+was a page.  A table of command types is shown in Table 1.
+
+
+==========================================================
+
+Table 1.  Summary of Communication Command Types
+
+Command        Example                          Public?
+----------------------------------------------------------
+Say            lynn says, "hi"                  Yes
+Emote          lynn waves.                      Yes
+Page           >page paul hi                    No
+               paul pages, "hi"
+Remote-emote   (from the sunroom) paul grins.   No
+               (to Tom) lynn hugs.
+
+==========================================================
+
+
+     Sometimes communication also involves programmed
+functions that can be called by users.  The programs are
+commands (known as "verbs") which are either globally
+available anywhere or reside on objects in the MOO, like a
+chair or a dictionary.  The "Antisocial Commands" are
+examples of global commands accessible to anyone anywhere
+in EM.  These commands are records of in-jokes in the
+community, or useful ritual phrases that communicate affect
+responses in conversation.  For instance, if I want to
+communicate that I think someone is behaving oddly, I may
+"eye" them "warily" using an Antisocial verb:
+
+     1 >eye tom
+     2 lynn eyes Tom warily.
+
+As shown in line 1, I type the Antisocial verb, followed by
+the name of the person I want to "aim" it at, and the
+message shown in line 2 is seen by the occupants of the
+room I am in.  I could also type line 2 as an emote,
+clearly, but the verb provides a shorthand input form.
+
+     Objects frequently have commands on them that output
+some information to the room they occupy when someone
+interacts with them.  For instance, if I want to sit on a
+chair:
+
+     >sit on chair
+     lynn sits on the folding chair.
+
+Objects may only be interacted with by a user in the same
+room as the object.  The Antisocial Commands, and the
+Carpal Tunnel Syndrome commands I will discuss below, are
+available anywhere.  The output from interactions with both
+objects and the command set verbs most often appears as if
+it were an emoted action.
+
+     The flexibility of the emote, which is not available
+in many other chat programs, makes the form of
+communication in social MUDs particularly complex.  A
+variation on the emote is in fact available in Internet
+Relay Chat (apparently added since Reid, 1991), but IRC
+does not have perseverative objects and geography (Danet,
+Ruedenberg, & Rosenbaum-Tamari, 1994; Holmes & Dishman,
+1994).  The emote command in IRC also differs from the
+emote in MUDs in that it is not parallel to the "say"
+utterance in IRC; it requires extra typing to label an
+utterance as an action, while in MUDs the two require the
+same effort.  The emote, combined with the social responses
+to objects and geography, allows for a complex user culture
+on MUDs.  In an indirect argument to support this claim, I
+will suggest in section 4 that page conversations, which do
+not observe room boundaries, are different from
+conversations respecting room boundaries (the virtual
+version of face-to-face) because of this emergent user
+culture.  Various uses of emotes in conversation play the
+major role in this account.
+
+                    3. Types of Emotes
+
+     I divide emote types into five broad categories which
+are substantive in terms of their role in determining
+content and structure of conversations.  I provide a
+summary table for the five here:
+
+
+===========================================================
+
+Table 2.  Summary of Emote Types
+
+Emote Type          Section Tense     Example
+-----------------------------------------------------------
+Conventional Action 3.1    present    lynn waves.
+Back Channels       3.2    present    lynn nods.
+Byplay              3.3    present    Mike pastes Tom's
+                                                 lips...
+Narration           3.4    present    ls packs for his
+                                                 trip.
+Exposition          3.5    any        lynn hated the film.
+
+===========================================================
+
+
+     The first type consists of conventionalized "actions"
+like waving when entering a room, poking someone to get
+their attention, blinking to announce that one is "awake"
+in the room again after a period of idleness.  The second
+type are reactions during conversation that communicate
+continued attention or understanding, similar to "back
+channels" in face-to-face speech, like "lynn nods" or "lynn
+grins." The third type comprises the joking by-play during
+conversation, usually meta-discourse commentary, like
+"Shelley hands some prepositions to Jon." The fourth type
+includes emotes describing actions occurring in real life,
+as a kind of narrative commentary; these often explain
+periods of idleness.  Unlike the first four types
+described, which all occur in simple present tense, the
+fifth type are emotes of internal or factual background, in
+which the tense may shift from the simple present to
+another tense.  These may represent states of mind, for
+instance: "lynn hated the film."
+
+     There are two other sorts of emote, which are closer
+to the "says" than the other emote types described above.
+I will mention these here and then not return to them,
+because they are more indicative of play with modality than
+content.  In the first of these, a verb is formed out of
+potential quoted material: e.g., instead of "Tom says,
+`cool'" Tom expresses it as "Tom cools."  These
+verb-creations are usually derived from short, frequently
+produced utterances, like "uh oh," or "oh"; but there are
+occasional examples of longer utterances (this was
+collected for me by a user who found it odd herself):
+
+     Pete actuallies, calls NES once he gets contact
+          info from johnf
+
+     The "say" gloss of this one might be something like:
+"Pete says, `actually, i'll call NES once i get contact
+info from johnf.'"  (Note the use of the simple present
+tense "calls" for future intention.  I will return to this
+phenomenon in section 5.)
+
+     In another type of modality play, an exclamatory
+utterance surfaces as an emote, but untensed, e.g., "Karen
+eep."  This is probably intended to suggest urgency or fast
+emotional response.
+
+     Tom incidentally has probably broken `home' for
+          people who live underground.
+     Karen eep
+     *******
+     Tom aieee as he discovers how the secret tunnels
+          connect to ken's tree
+
+     Tom's "aieee" above simulates a wailing or screaming
+sound of distress.  (Interestingly, I have only one case of
+"aieee" appearing with the tense morpheme on it versus
+dozens of untensed examples, which I would suggest is
+because the exclamatory force is weakened by tensing it;
+however, addition of complex modifiers apparently doesn't
+have that effect, as indicated by the above example.  I do
+find occasional examples of it as a say: "Mike says,
+`aieee.'")
+
+     These two types of emote represent variation in the
+choice of modality, which appears to be systematically
+meaningful for the community.  I will now discuss the other
+five types in more detail.
+
+3.1 Conventionalized Action
+
+     The first sort of emote I will consider is the class of
+what I call "conventionalized" or "ritual" actions.  As will
+become clear, they are actions that are classifiable loosely
+as conversation openers or closings (Schegloff, 1982).  This
+category includes ritual greetings, like "hugging" or
+"waving" to someone when they enter the room or leave,
+"poking" someone to get their attention, "idling" when one
+is leaving one's terminal and not able to participate in
+conversation, "blinking" or "waking" when one returns to the
+MUD window and becomes active again.
+
+     I will focus mainly on the greeting and goodbye uses in
+detail, since they are used most systematically.  I will
+also expand my discussion to synonymous "say" greetings for
+completeness' sake.   Examples of greeting waves follow.
+
+     Bonny wanders in from the eastern path through
+          the parsley trees.
+     lynn waves bonny
+     Bonny waves.
+     Tom says, "this maroon shirt frightens me"
+     Karen waves.
+
+     Satire is one of the best ways of finding out what a
+community recognizes as conventional behaviors or
+categories.  George, one of the characters on EM, wrote
+satiric regulations about proper etiquette in certain
+situations.  These regulations are considered satiric
+because they are exaggerated prescriptions of behavior that
+has evolved over time.  No user is expected to follow the
+regulations as stated.  Below is a script of me reading a
+note containing his parody of departure and arrival rituals
+(note that although reasons for departures are polite if
+you are active in the conversation, they are not always
+given; and there is no even close approximation to the
+points under Leaving:2):
+
+     >read 2131.g
+     There appears to be some writing on the note ...
+
+     Leaving:
+     1) Say goodbye and/or wave.  A reason why is
+     optional.
+     2) Wait for at least 2 members of the social
+     setting to acknoledge that you are leaving or 5
+     mins.
+     3) Leave.
+
+     Entering:
+     1) Wave
+     2) Say hello or hi (optional)
+     See Regulation 2131.GO for information about
+     saying goodbye or greeting people entering the
+     social setting.
+
+     (You finish reading.)
+
+(The "read" command typed at the ">" in the example above is
+the command that prints the text on the note called "2131.g"
+to my screen.  No other user sees the text when I "read"
+the note.  The parenthesized "You finish reading." alerts me
+that the output has stopped from the note object.)
+
+     3.1.1 Contexts for Conversation.
+
+     The importance of such conventional actions for the
+community should not be underestimated.  They help define
+and structure interactions, particularly at the limits.
+They serve as signallers of contexts for potential
+conversations.  Examination of greeting waves or other
+forms of greeting reveals complex attitudes towards the
+"geography" and idle behaviors.  The majority of entrances
+to rooms on EM are accompanied by a wave or some greeting
+from the enterer to the room's occupants, and then usually
+by some reciprocal greeting to the enterer from the active
+occupants.
+
+     Although statistics are of only limited use when
+behavior is complex and situated in a natural context
+rather than a controlled laboratory setting, I present a
+few numbers to illustrate the point.  In two days (16
+hours) of logs, out of 71 cases of characters entering a
+room I was in, in 54 of the cases (76%) the entering
+character issued a greeting, while in 17 cases she/he
+issued no greeting upon entry.  (I only considered cases of
+regular community members who know the conventions in this
+investigation.)
+
+     Cases in which no wave or hello is issued upon arrival
+can either be dismissed as simply "rude" or examined to
+find a deeper organizing principle behind the use of
+greetings (see Schegloff, 1968, for an example of this
+strategy, examining cases of unusual speaker order in phone
+greeting sequences).  I will attempt the latter, situating
+the actions in their contexts.
+
+     In a large sense, connecting to the MOO means entering
+a potential conversational context.  Since many people use
+login watchers, which alert them to connections and
+disconnections, the possibility exists for greetings upon
+connection rather than just upon entry to a room.  (The
+login watcher is perhaps parallel with a ringing phone in
+Schegloff, 1968, although the login watcher amounts to just
+an announcement of presence; generally, though, greetings in
+MOO differ from phone greetings in that no identification of
+the person "calling" is necessary, since the name is
+trivially available.  This situation parallels some examples
+mentioned in Tang et. al., 1994, where caller id was
+available, and greetings reduced to "Hi, Ellen" from "Hi,
+this is Bob," for instance).
+
+     Greetings that do occur immediately upon connection
+happen in long-distance pages (since few people gather in
+the room that serves as connection point).  The possibility
+of long-distance communication expands the notion of
+conversational context beyond the room one is in; as a
+result, the borders of conversations are more flexible, and
+this fact may explain deviation from the standard greeting
+upon entry to a room.  An example of greeting immediately
+on connection follows.  The first line was printed by the
+login watcher.  After seeing the connection information, I
+paged hello at the > prompt and received a hello in
+response.  Penfold then joined the party, but did not
+repeat a greeting.
+
+     < connected: Penfold (#83) on Mon at 20:37.
+          On-line: 27. >
+     Tom dunno yet, is looking.
+     >page penfold hi.
+     Your message has been sent to Penfold.
+     [at 8:38 p.m.]:
+     Tom says, "his ongoing problem, he's now blaming
+          Delta for it?"
+     lynn says, "what prob?"
+     Tom says, "he had a dispute with maryanne"
+     Tom says, "the fish was selected to mediate"
+     lynn says, "oh that, yeah."
+     Tom Traceback says, "he was also mloses"
+     [at 8:39 p.m.]:
+     Penfold pages, "hi."
+     Tom doesn't think he likes facial hair.
+     Penfold arrives from the eastern end of the
+          patio.
+     Tom says, "except penfold's"
+     Tom eyes himself warily.
+
+     In fact, in several cases, joiners who didn't greet
+seemed to be involved in paged conversations with subsets
+of the group before joining them.  The general greeting on
+entry to the room would have been somewhat redundant.
+Other cases of non-greeters appeared to be people who were
+not intending to participate, just intending to idle in the
+midst of a group.  A few others were cases of people who
+had joined other groups before, and greeted people there;
+perhaps they felt that an initial greeting to people upon
+arriving at the MOO was enough for the day.  Overlap in the
+participants between the different groups probably was a
+factor as well.  (Note that in ``real life'' it also
+becomes awkward to repeat hellos to people one has already
+greeted, in subsequent meetings.)
+
+     3.1.2 Departures as Closure.
+
+     A close look at departures supports some of the basic
+conclusions above about conversational contexts.  I showed
+above that some people view connection as an opportunity
+for greeting, even across room boundaries, which ordinarily
+define the contexts for conversations.  Disconnection in a
+room counts as a departure from conversation, and hence may
+require a goodbye, as the following departure from Shawn
+shows:
+
+     Karen eeep a spider
+     Tom eek a mouse
+     Shawn [to Karen]: mmm nice juicy spiders
+     lynn [to Karen]: keep it away from me....
+     Tom says, "why are wohwait"
+     Shawn bye
+     [at 9:41 p.m.]
+     Shawn has disconnected.
+
+     However, not all disconnections are preceded by
+goodbyes or waves; long idle folks may just disconnect
+suddenly, may be kicked off by their machines logging them
+out after a certain idle period, or bounced off by
+call-waiting seizing their phone line.  When active people
+leave a room with no wave or bye or statement of intent to
+go, it is generally seen as odd (often on EM, the
+departing character will be "eyed warily," signaling
+unease); but if someone relatively idle walks out or
+disconnects without any warning, it is not so unusual.  The
+reaction to the departure is dependent on the
+conversational involvement of the person.
+
+
+===========================================================
+
+Table 3. Departure Events in 16 Hours
+
+Departures with goodbye from the departing    23
+Departures with no goodbye from the departing 16
+------------------------------------------------
+Total departure events                        39
+
+===========================================================
+
+
+     Note that nearly half (16 out of 39) the leaving
+events (of which 9 were disconnections) are not preceded by
+a goodbye from the person leaving.  This contrasts with the
+situation for arrivals, where 76% greeted on entry; idling
+habits or connection problems appear to be the reason for
+the disparity.
+
+     Of the 16 who left with no goodbye, 10 were idle for
+at least 5 minutes before their departure.  One or two
+others appeared to be having connection problems.  Three
+cases of departure from the room when less than a minute
+idle appear to be instances of people trying to avoid
+"spammy" (noisy) crowds; in two of those cases, paged
+conversation continued with them after they left,
+indicating that the conversation they were involved in was
+not concluded by their departure.  Another one left quickly
+to get something from an adjacent room and returned
+immediately--with no goodbye or hello at each juncture,
+probably because his participation was merely suspended
+momentarily.  Out of the idlers, one entered without a
+greeting and idled the entire time he was present in the
+room, then left the room with no goodbye; his lack of
+entrance hello may have been an indication of his intent to
+just idle in the room.
+
+     Leaving or joining a group normally requires an active
+(non-idle) human agency which is expected to conform to
+social norms when entering a conversational context.
+Social norms usually involve greetings and closures.  On
+the MUD, events are flexible, however.  Disregarding those
+norms, by entering or leaving without appropriate greetings
+or goodbyes, may signal a lack of interest in participating
+in the conversation (and hence an interest in idling).  The
+option of long-distance paged greetings expands the
+conversational context from the room to the entire MUD, and
+makes the lack of greetings upon entry to a room also a
+viable social option.  Technical concerns like connection
+problems may also excuse or explain flouting of the norms.
+
+     In her discussion of computer messaging, Murray (1989)
+suggests that closings don't occur in her data because
+other media take precendence over the computer
+conversation, neither party has anything new to contribute
+to the topic, or the initial reason for opening
+conversation has been resolved.  Phone interruptions or
+someone entering an office can cause silence, and lack of
+proper closings.  While silence does result from
+interruptions in MUD conversations, it's not appropriate to
+say that the other media take precedence, precisely;
+generally someone interrupted ``in real life'' returns to
+the MUD conversation afterwards.  Lack of new information
+as a reason for concluding conversation presupposes a very
+different, purely task-oriented use of the medium, which is
+not true for the community on the MOO I observe.  People in
+EM are in a social context, occasionally having technical,
+task-oriented conversations there; the social framework is
+not forgotten when the task is concluded, however.
+Clearly, the motivation for use of a communications medium
+has a large role to play in the way it is used, and the
+results in Murray (1989) do not carry across to MUD
+interactions.
+
+3.2 Back Channel Reactions During Conversation
+
+     The second class of emoted utterances consists of
+simulated "back channels" during conversation, like "lynn
+nods," "lynn giggles."  Again, I will also consider
+synonymous say utterances in this discussion.
+
+     Gumperz (1982) claims that back channels represent
+"one common way in which conversational cooperation is
+communicated and monitored," and may include nods or other
+body movements, or interjections like "ok," "aha," "right."
+Back channels, which include the class of "confirmation
+feedback" discussed in Oviatt and Cohen (1988), are
+important for determining the attention state of an
+interlocutor, and establishing whether speaker intentions
+have been understood.  In a text-based medium where no
+physical cues are available, and interlocutors may be
+called away from their desk or terminal at any moment,
+these are particularly important; back channel emotes
+therefore play a large role in establishing achievement of
+mutual understanding and facilitating a sense of
+co-presence.  Note that their existence contradicts
+assumptions by early computer-mediated communication
+researchers that the limited channel resulted in reduced
+sense of social presence (Short, Williams, and Christie,
+1976) or in less feedback (Daft & Lengel, 1984, 1986).
+Users adapt to the medium or adapt the medium to their use,
+as suggested by other CMC researchers (Hiltz & Turoff,
+1981; Walther, 1992).
+
+     Examples of back channel use in a conversation occur
+in lines 3, 9, and 13 below.  (Conventional expressions of
+puzzlement, which are actually examples of repair, as in
+line 9, provide information about the status of mutual
+understanding, so I include them in the class under
+consideration here.)
+
+     1 Tom says, "only in look self"
+     2 Karen says, "cool"
+     3 Karen nods.
+     4 Karen thot so, but
+     5 Karen says, "oh"
+     6 Karen says, "there was another reason"
+     7 Karen sigsh
+     8 Karen wanted name j---- jdesc
+     9 Tom says, "huh"
+     10 Karen
+     11 ----- --Karen
+     12 Karen's description
+     13 Tom nods.
+     14 Karen says, "now i can't"
+
+In this example, Karen is trying to describe how she wants
+some text to be laid out: lines 10-12 are her attempt to
+graphically represent the fields she wants, which consist of
+a name, a line of hyphens, and a description underneath it.
+
+     Evidence for the importance of these utterances can be
+found in the fact that many of them have been translated
+into "verbs," which can be typed at the prompt, for ease of
+production.  For instance, the "Carpal Tunnel Syndrome" set
+of commands includes "gg" which outputs "lynn giggles" (if
+typed by me), "nd" for "lynn nods," "h" for "lynn hehs" (a
+simulation of laughter), "gr" for "lynn grins," "si" for
+"lynn sighs," "sm" for "lynn smiles," "/" for "lynn says,
+`?'" (which approximates a questioning look, according to
+users' interpretations).  (Other commands in the CTS set
+include "waves" and "whuggles" which fit into the first
+category of emotes discussed.  See Cherny, 1994a, for a
+discussion of whuggling.)[2]
+
+     The definition of a "back channel" in the literature
+is vague; Duncan (1973) suggests that the difference
+between turn and back channel becomes uncertain when
+restatements of speaker position or requests for
+clarification are considered.  I therefore focus on a
+closed class of short utterances and "actions" which seem
+to fulfil the definition in Gumperz (1982), plus allowing
+in conventional expressions of hearer confusion.  Rather
+than arbitrarily exclude says that apparently function the
+way these emoted responses do, I expand my focus to include
+some say responses like "yeah" or "yes" or "ok."
+
+     I did pattern matching in two-person conversations for
+the back channels "nods," "hsm," "hmm," "hrm," "ok," "oh,"
+"yeah," "yes," "?," "giggles," "laughs," "grins," "smiles,"
+and "hehs," which are conventional responses of either
+puzzlement, understanding, or appreciation for an
+interlocutor's remarks.
+
+
+===========================================================
+
+Table 4. Back Channels Against Utterance Rate
+
+Tom:  time point   utts  words/utts lynn's back channels
+--------------------------------------------------------
+        10          35    6.8        5
+        20          74    7.4        4
+        31          52    7.5        0
+        43          28    4.8        4
+        53          33    8.1        5
+        64          39    6.3        1
+        78          22    7.1        6
+        88          29    6.2        2
+        98          44    6.0        1
+
+lynn: time point   utts  words/utts  Tom's back channels
+--------------------------------------------------------
+        10          37    11.4       12
+        20          49    10.1       5
+        31          28     5.4       5
+        43          17     7.8       4
+        53          24     5.0       5
+        64          26     6.3       1
+        78          20     6.2       7
+        88          32     7.2       5
+        98          24     6.6       0
+
+
+============================================================
+
+
+     Table 4 illustrates two halves of the course of one
+long conversation within a single room on June 20, 1994.
+The left column corresponds to time points within the
+conversation.  The "utts" column shows the number of
+utterances in each time period by speaker, since the last
+time period.  The third column, "words/utts," gives a
+measure of the rate of speech, the number of words in the
+time period divided by the number of utterances in the time
+period.  The numbers in the last column correspond to the
+number of back channels received in each time period from
+the interlocutor.  (I.e., the table of Tom's utterances has
+lynn's back channels in it.)
+
+     Periods with low utterance counts for both conversants
+(43 minutes, 78 minutes) nevertheless show the presence of
+several back channels.  If back channels were only
+functioning as an indicator of comprehension of a speaker's
+plans (as, for example, the treatment of some clue words in
+Grosz & Sidner, 1986, implies) or of completion of a
+discourse structure (Schegloff, 1982), there should be
+fewer back channels during periods with little interaction.
+The appearance of these signals in such periods probably
+indicates that a potential interlocutor is attending and
+may be available for more extended conversation.  The
+conversants are in a "continual state of incipient
+conversation" (Schegloff & Sacks, 1972), analogous to that
+achieved by the two-party situations Goffman (1963)
+describes: "communication arrangements that seem to lie
+halfway between mere copresence and full-scale
+co-participation."
+
+     In the following excerpt from the period around 43
+minutes, the conversation has trickled off the previous
+topic which was a somewhat tense one, and the interlocutors
+are registering their continued alertness, even while they
+document their actions in real life.  In lines 1-2, I
+illustrate that I am reading email in another window, and
+paste a section from one message.  After a desultory
+exchange on that topic, Tom begins playing with names in
+thought bubbles (lines 7-9) and then reports singing, a
+common practice while listening to music and mudding at the
+same time.  I respond with back channel responses in lines
+12 and 14, indicating I am still alert, before making
+another desultory conversation attempt in line 15.
+
+     1 lynn sees OJ all over the popcult list, of
+          course.
+     2 --------------------------------lynn-----------
+     In any case, thanks to OJ, Al, and the LA chopper
+     teams and reporters for providing all of us cult
+     studs folx with yet another a perfect
+     Baudrillardian moment...
+     --------------------------- lynn stops pasting --
+     Done @pasting.
+     3 Tom says, "al?"
+     4 lynn dunno.
+     5 lynn says, "media coverage somehow."
+     6 Tom says, "ah"
+     7 Tom . o O ( oj et al )
+     8 Tom . o O ( woj simpson )
+     9 Tom . o O ( homer j simpson )
+     10 Tom [sings]: who throwed lye on my dog?
+     11 Tom wonders if he could fall asleep.
+     12 lynn says, "hmm. go home and sleep."
+     13 Tom is home.
+     14 lynn says, "oh."
+     15 lynn says, "I wonder why I keep dreaming about food."
+
+     The context-sensitive nature of back channel
+interpretation (which I can hardly do justice to here; see,
+e.g., Heritage, 1984; Cherny, 1995) is supported by the
+distribution of back channels during periods of rapid
+conversation: the number of back channels given by speaker
+A to an interlocutor B increases when B's number of
+utterances increases, but stays low if A's utterance rate
+increases in parallel (see times 21 minutes and 63 minutes
+on Table 4).  The parallel rates of increase suggest that
+the back channels' confirmatory function (or indication of
+attention) is being fulfilled by other utterances which
+more complexly express comprehension and attention.
+
+3.3 Emoted Byplay
+
+	These emotes of action usually occur in a multi-party,
+joking context.  They serve a similar function to the back
+channels described above, in that they signal attention to
+conversation, but they may involve other characters in a
+more phatic, often teasing manner.  Sometimes the imagery
+is quite violent, or unrealistic (e.g., "Karen detonates a
+low yield nuclear device over Penfold"), but it is
+understood to be just play, given the conversational
+context in which it occurs (see Cherny, 1994a).  The overall
+impression these actions give is of a cartoonish unreality,
+a rubberness of boundaries.[3]
+
+ 	An example occurs in line 3 below:
+
+	1 Tom says, "....can you speak, Mikey, without paste?"
+	2 Kit [to Tom]: EAT MY PASTE
+	3 Mike pastes Tom's lips together.
+
+     Play in the MOO is a highly cooperative behavior,
+usually happening during multi-party conversation and often
+triggered by or directed at objects in the environment.
+Objects and their modes for interaction form a partial
+conversational context, which distinguishes MUDs from IRC or
+other chat environments (Holmes & Dishman, 1994; Danet et
+al., 1994; Evard, 1993).
+
+     Interactions with objects in conversation may consist
+of interactions with "verbs" (MOO code) on objects in the
+room, references to objects in the MUD room without use of
+coded verbs on the objects, or references to imaginary
+objects conjured during the discourse (including bodies).
+The real world may also be referred to in a joking manner
+during conversation.  I discuss examples of each type in
+the sections below.
+
+     3.3.1 Interactions with Coded Objects.
+
+     Objects serve as a record or embodiment of history,
+giving a permanence to some events.  Stories are associated
+with some objects: their reason for creation, their origin
+on other MUDs, their original author.  The high5ing glove
+on EM is a copy of an object made by the character lew on
+a historically significant MUD (DreamScape).  The glove is
+used in a congratulatory fashion.  Here, Mike uses it in
+lines 4-7 because Henry comes up with a clever name
+transformation to apply to Mike (the copyright notices were
+attached when it was copied by a character on EM, with
+lew's permission):
+
+     1 Mike takes a AI from his chest and turns Henry
+          into a hairy!
+     2 Henry takes a FA from his chest and turns Mike
+          into a fake!
+     3 Delak takes a GA from his chest and turns Finder
+          into a gander!
+     4 Mike picks up the the special high-fiving glove
+          and slips it onto his hand. (c) 1992 lew
+          industries.
+     5 Mike leaps up into the air and high5s Henry with
+          a resounding >THWACK<.
+     6 The high-fiving glove on Mike's hand glows gently
+          for a moment, then returns to normal.
+          (c) 1992, lew industries.
+     7 Mike suddenly flings a large glove to the ground
+          and shouts, "I CHALLENGE YOU, BENJAMIN J.
+          TOAD!" You nod your head in solemn approval.
+          (c) 1992, lew industries.
+
+The entire interaction, from picking up the glove to
+flinging it down, is a coded script on the object, which is
+output to the room by typing a short command ("high5
+<someone> with glove").
+
+     The vase in the EM living room dates back to another
+historic joke from ChaosMUD, in which a vase object
+transmitted everything said in the main party spot into
+another room.  Apparently the original joking line for the
+vase worked like this:
+
+     thelfar speaks into the vase.  "lew suspects."
+
+It evolved into a message referring to agents, possibly
+because of a later joke on DreamScape (a MUD frequented by
+the same crowd that hangs out on DeepSeasMUSH now).  Now,
+on EM, discussion of agents in the living room is likely
+to cause someone to type the command "identify <someone> to
+vase," resulting in the output message visible to all in
+line 8 below:
+
+     1 Mike says, "which one?"
+     2 lynn highly recommends it for a giggle.
+     3 lynn [to Mike]: "What's An Agent, Anyway?"
+     4 Kit walks in from the sunroom.
+     5 Shelley waveys Kit
+     6 Ted |  lynn [to Mike]: "What's An Agent, Anyway?"
+     7 Ted |  Kit walks in from the sunroom.
+     8 Ted whispers into the vase, "I think Kit is an
+          agent."
+
+(In lines 6 and 7, the vertical bar represents a "paste,"
+indicating that Ted is quoting the previous lines 3 and 4.
+He does this to motivate his action in line 8.)
+
+     3.3.2 Interactions with Uncoded Objects.
+
+     The dual identify of character as user and character as
+object to be played with is source of many joking exchanges
+(see Cherny, 1994b).  Several commands on EM produce a
+random list of characters and other objects in their output;
+for instance, if I typed the right command, people in the
+room with me might see a (nonsense) output utterance like
+the following:
+
+     lynn thinks we should have some kind of INTELLIGENCE
+          TEST to get in here so people like Tom, the
+          Library Browser, the Last Exit For The Lost, and
+          the Generic Combination Lock can't BLUNDER ALONG
+          and BOTHER ALL OF US AGAIN.
+
+("The Library Browser," "the Last Exit for The Lost," and
+"the Generic Combination Lock" are objects in the MOO,
+randomly picked to parallel the name I gave to the command
+I typed.)
+
+     Objects in the environment which cannot be interacted
+with via code on them can nevertheless feature in group
+play.  Often they are targeted with the Antisocial commands,
+which record community in-jokes with amusing (often
+graphic) utterances.  One day's humor revolved around
+vilifying the trees someone had put in the park.  Most of
+the actions or quotes directed to the trees originated from
+the Antisocial commands (some of which were invoked by me at
+the prompt, e.g., "shake" in line 12).
+
+     1  Jon stands up from the tree stump.
+     2  Jon [to the trees]: Come to Perkins!
+     3  Jon [to a tree]: Come to Perkins!
+     4  Jon giggles
+     5  >!The trees groan and pull their roots out of
+          the ground; they advance on Jon threateningly.
+     6  The trees groan and pull their roots out of the
+          ground; they advance on Jon threateningly...
+          --lynn
+     7  >eye me
+     8  lynn eyes herself warily.
+     9  Ray giggles
+     10 Ray nails a tree down.
+     11 Jon detonates a low yield nuclear device over a
+          tree.
+     12 >shake trees
+     13 lynn shakes the trees.
+     14 Ray spraypaints "WAKE UP" on a tree in dayglo
+          orange.
+     15 Ray giggles
+     16 Jon takes off and nukes a tree from orbit.  "It's
+     the only way to be sure."
+
+(In line 5, I "spoofed" the behavior of the trees, which
+resulted in the line shown in 6, with my name appended as
+the "author" of the spoof.  Spoofs allow production of
+utterances that don't begin with the author's character
+name.  They are ordinarily used in playful interactions.)
+
+3.3.3 Interactions with Imaginary Objects.
+
+Contextual suggestions may briefly evoke imaginary
+objects in the discourse, producing a cartoon-like
+atmosphere at times.  The play with these unreal objects is
+often collaborative, like in this case, where Marie responds
+to the gift of imaginary flowers:
+
+     Marie [to Patrick]: caller is "this" from the calling
+          verb.  You sure you want caller and not caller
+          perms?
+     Patrick ose!
+     Patrick duhs.
+     [at 2:49 P.M.]:
+     Patrick YAYS.
+     [at 2:50 P.M.]:
+     Patrick pulls a handful of roses out of the air and
+          presents them to Marie in appreciation of her
+          help.
+     Patrick feel st00pi, to.
+     Patrick kicks his silly S1 keyboard.
+     [at 2:51 P.M.]:
+     Patrick [to Marie]: thanks.
+     Marie stops and smells the roses.
+
+     It is out of the ordinary for characters to indulge in
+extended, solitary interactions with imaginary objects, as
+occurred in this example, when a guest on the MOO enacted
+a biker persona fantasy at length.
+
+     The Canadian guest lights smoke:
+     Tom eyes the Canadian guest warily.
+     lynn backs away from smoking.
+     [at 2:10 P.M.]:
+     Karen too!
+     Karen is allergic
+     The Canadian guest removes whisky bottle from pocket
+          and takes a long hit:
+     The Canadian guest throws smoke out window and returns
+          bottle to pocket:
+     Robin says, "hey how was the brunch thingy?"
+     [at 2:11 P.M.]:
+     Tom [to Robin]: ask carrot
+     The Canadian guest runs hands threw greay hair:
+     Robin [to Tom]: okay.
+     [at 2:12 P.M.]:
+     Karen whispers to lynn, "what a dea guest"
+     Robin [to lynn]: gil is pretty normal...
+     Karen whispers to lynn, "what a dear guest, that is"
+     The Canadian guest removes biker jacket:
+     Tom [to the Canadian guest]: out of curiosity, why are
+          you using : to end sentences?
+     Karen too Tom!
+     Karen was just typing it
+     lynn grins.
+     The Canadian guest drops jacket on floor
+     Robin hehs.
+     [at 2:13 P.M.]:
+     Tom says, "what floor?"
+     Karen [to Canadian guest]: did you notice we're in a
+          ditch?
+     The Canadian guest bottle in jacket breaks
+     Karen says, "there's no floor or window"
+     Tom eyes the Canadian guest warily.
+     lynn eyes the Canadian guest warily.
+     Robin peers at the Canadian guest suspiciously.
+     The Canadian guest says, "when you drink and smoke as
+          much as me, you loose track of things""
+     [at 2:14 P.M.]:
+     Tom feels like he's witnessing a really clumsy strip
+          tease.
+
+     Tom later told me that the annoying aspect of that
+guest's interaction was his lack of interest in or reaction
+to the other participants in the room.  It also appears to
+be significant to the regulars that the guest does not pay
+attention to the characteristics of the room they are in,
+which is a ditch at the side of a road.  This kind of
+imaginary play usually occurs within a larger discourse
+context, involves multiple parties in the creation of the
+fantasy, and often involves the characteristics of the room
+as well.
+
+     3.3.4 Real Life Imaginary Actions.
+
+     In another subcategory of byplay, a character
+describes what she could be doing in real life.  These
+actions don't involve the virtual environment.  The most
+common, perhaps, is "LOL," which stands for "laughs out
+loud," but frequently the speaker is not in fact laughing
+audibly in real life.  It is certainly difficult to tell to
+what extent reported real actions are occurring or not; but
+in at least one instance, Tom's typist was revealed by
+another mudder in the room with him in "real life" to be
+quite silent despite the reports of "Tom LOL" in the course
+of MOO conversation.  Another possible case:
+
+     Damon writes down "keep lights on when with
+          inga"
+
+     These emotes are often distinguishable from the next
+category of emotes by the fact that they are responses to
+the on-going MOO conversation, although affect responses
+like "LOL" remain ambiguous.
+
+3.4 Narration of Real Life Actions
+
+     The next major category of emotes is the Narration
+category.  It is quite common for users to document in real
+time their actions in real life, while they MUD.  In this
+example, ls packs his computers for a trip while mudding.
+
+     1 ls starts packing for his argonne trip.
+     ...
+     2 ls pulls out his second duo.
+     3 lynn says, "you have two?"
+     4 paul [to ls]: show-off
+     5 ls says, "uh, yeah."
+
+     Users of this narration category of emotes may
+occasionally be motivated by need to explain distraction,
+lack of timely response, or departure from the MUD
+conversation; in other cases, they could be providing
+conversational openers; or they could be motivated by a
+desire for autobiography in the text window and in the
+memories of the people experiencing the MUD conversation.
+Some users seem to connect solely to document their daily
+work actions, hardly noticing remarks directed to them or
+conversation around them.
+
+     Interestingly, emotes about real life actions still
+occur in simple present tense, as if the actions are going
+on simultaneous with the typing.  In some cases there is
+overlap, as in the case of ongoing activities in real life.
+For instance, evidence that the activity of talking to
+Brock continues beyond the typed narration in line 1 below
+is found in line 2, where Shelley describes how Brock
+sounds (present tense).
+
+     1 Shelley talks to Brock.
+     2 Shelley says, "he sounds, um, i dunno...disappointed
+          or something."
+
+     Perhaps oddly, simple present tense can also be used
+to describe events that have already occurred in real life.
+
+     Marie wakes, scrolls, giggles
+          "$code_utils:boot_player_if_needed"
+
+In this case, Marie describes waking after being idle,
+reading her scrollback in the MOO window, and giggling at a
+programming line quoted in scrollback.  Her narration of
+the entire sequence of events occurs in one line.  We
+interpret these as sequential actions because narrative
+time is understood to progress with each verb that reports
+an achievement or accomplishment in a sequence (Dowty,
+1986).[4]  (Achievements and accomplishments describe
+punctual events, like reaching the top of a mountain, or
+waking.  For further discussion of aspectual classes and
+use of present tense in MUD discourse, see Cherny, 1995.)
+
+     These emotes can also describe intentions before they
+become actions.  In the next example, Tom leaves for a
+meeting.  He reports his intention to "really disconnect
+this time" in simple present tense, before doing it.  He
+even says goodbye before disconnecting.
+
+     Tom says, "welp"
+     Tom says, "time to go back to dealer"
+     Tom really disconnects this time.
+     Tom says, "bye"
+     Tom heads for the eastern end of the patio.
+     < disconnected: Tom (#73) on Wed at 16:51.
+          On-line: 21. >
+
+     In the analogous case below, note the similarity to
+the stylized use of the first person present tense in the
+formulaic spoken "And I quote:" --which indicates
+immediately upcoming quoted material.
+
+     Tom quotes the rest of the paragraph about Robin
+          (whose name rings a bell, but he doesn't
+          think he knew her):
+     Tom | Robin Weiland continues to work on her
+          writing in Minneapolis.  In the midst of a
+          financial scandal, half of the Paydirt staff
+          was laid off, giving her time for writing
+          and career planning.
+
+     The oddity of the utterance "Pete actuallies, calls
+NES once he gets contact info from johnf" is that the event
+intended (the calling) is nowhere near about to happen; but
+I suggest that it is in simple present tense to communicate
+Pete's strength of intention.  He indicates that he really
+will do it, so it can almost be considered an accomplished
+fact already.   This is similar to some uses of the present
+to denote future in non-MUD speech, like "I leave for Utah
+on Monday."
+
+3.5 Emotes of Background or Exposition
+
+     Emotes in this category differ from the other types in
+that these need not be in the simple present tense; they
+are usually statements about the attitudes, beliefs, or
+relevant background of a user in a conversational
+context.[5]
+
+     These emotes seamlessly fit into conversation as
+if they were uttered as says: they can be responded to as
+if they were "spoken" as says, and they can occur in
+response to says. Often they show first person speech-like
+properties, like being directed to another speaker,
+containing second person pronouns, and even showing
+dysfluencies similar to those frequently (intentionally)
+introduced in says.  E.g., line 5 below:
+
+     1 lynn [to Damon]: so Kit thinks you and I would
+          be a cute couple.
+     2 Damon says, "um"
+     3 Damon says, "how nice"
+     4 lynn laughs.
+     5 Damon hasn't, well, met you, lynn
+
+     The choice of emote modality over say modality for an
+utterance is no doubt significant, but a complete analysis
+of the meaning difference will be deferred for now.  I
+suggest that it has something to do with tone, via
+manipulation of perspective.  The omniscient narrator's
+voice suggested by third person is more distanced, and
+perhaps feels more authoritative.  However, for some users,
+the emote modality is used for long stretches of
+conversation.
+
+     Marie wants chocolate and M&M's make her teeth
+          hurt.
+     Marie's house mate is allegedly buying instant
+          chocolate pudding at the store.
+     lynn says, "switch to fudge."
+     Marie nods.
+     Marie has been eating hot fudge topping straight
+          out of the jar :-)
+     lynn says, "aieee, wow."
+     Marie might be out of it now tho.
+     Marie is like hardcore.
+
+     To give a general feel for the regularity of this sort
+of emote in conversation, I include breakdowns of 3
+two-party conversations showing the ratio of says to emotes
+in Table 5.  The emotes are broken down into emoted back
+channels, which include utterances like "lynn hsm"
+(indication of thought) and "Shelley nods," and the
+remainder of the emotes.  Interestingly, in each case, the
+emoted back channels amount to almost half of the total
+emotes.  Playful action emotes (section 3.3) are most
+common in multi-person parties, rather than the more sedate
+conversation that occurs between two people alone, and
+emotes narrating real life actions are most common in
+semi-idle cases, so it is likely that the remaining
+non-back channel emotes are of this expository background
+category.
+
+
+============================================================
+
+     Table 5.  Emoted Back Channels, Other Emotes, and
+               Says in Two-Party Conversations
+
+     back channel emotes:  3       3
+     other emotes:         5       8
+     says:                25      17
+                        ---- -------
+                        lynn Shelley (Nov 30, 14 mins.)
+
+     back channel emotes:  30      23
+     other emotes:         29      69
+     says:                102     261
+                          ----    ---
+                          lynn    Tom (July 13, 109 mins.)
+
+     back channel emotes:  17      33
+     other emotes:         17      52
+     says:                142     192
+                         ----   -----
+                         lynn   Karen (Nov 28, 55 mins.)
+
+==========================================================
+
+
+         4. Page Conversations and Virtual Geography
+
+     The term "page conversation" generally refers to a
+private conversation with both pages and remote-emotes
+occurring in it.  Page conversations often occur when a
+user has a quick topic to discuss with someone in another
+room and neither wants to leave their current party to join
+the other.  Since page conversations are private, and not
+detectable by other users, they may be used for private
+topics of discussion as well; even the fact of an
+interaction between two characters may be hidden if the
+page modality is used, since the two characters never need
+be in the same room together to converse.  (Private
+conversations can obviously occur between two characters in
+a room alone together, but their activity may be noted and
+provide a source for comment or speculation.  Two
+characters alone in a room are generally assumed to be a
+private party for two, in fact; it is common for a third
+person to page and ask one or both if the party is private
+before attempting to join.)
+
+     Page conversations are interesting because they do not
+observe the room/geography boundaries that normally
+determine contexts for conversations.  In effect, they
+become dyadic "channels," like found in IRC or other chat
+programs.  Some discussion of how page conversation is used
+may throw some light on how the geography affects users'
+experience of MUDding.  The following comments are based on
+my own page conversations and informal questions to other
+users about their page conversations.
+
+     With respect to greetings, paged greetings do occur,
+but not commonly in my experience.  Usually the paged
+greeting occurs when someone is particularly looking for
+another user, either because of close friendship or a need
+to discuss some topic.  Closures in page conversations
+generally occur when one person is explicity withdrawing
+from the MUD, to idle, or to disconnect.  Otherwise, page
+conversations tend to dangle without closings. This
+contrasts with the use of closures when people leave rooms,
+but do not become idle or disconnect.
+
+     A statistical comparison of the ratio of back channels
+to other utterances in several (7 page, 10 non-page)
+conversations between myself and four other people revealed
+that back channels are significantly absent from
+long-distance page conversations (T-test, p < .05).[6] This
+finding is non-intuitive at first glance, because emoted
+commands are available in long-distance conversation mode
+via the "remote-emote" command.  However, a closer look at
+conversation within the same room reveals that the duration
+of the conversation is usually longer compared to that of
+page conversations,[7] whereas page conversations usually
+cover only one or two topics (one user reports preferring
+to keep page conversations to short question-answer
+sequences, rather than prolonged exchanges).  Often a pager
+joins her interlocutor and the conversation then continues
+within the same room.  One conversational partner in my
+logs claims to feel more co-presence in non-paged
+conversation.  The tendency to use back channels probably
+creates this feeling.
+
+     Since page conversations don't allow interactions with
+objects or room characteristics, and dyadic conversation is
+much less prone to collaborative play, there appear to be
+fewer byplay emotes in page conversation.  A possible
+exception to this may occur in "netsex" (McRae, 1995)
+conducted in pages; because a page conversation is
+private and dyadic, other users cannot "walk in on" netsex
+encounters conducted in pages and remote-emotes.  (One user
+on EM used the page modality for netsex, reportedly.)
+
+     Likewise there appear to be fewer narrative emotes of
+the type in section 3.4 during page conversations.
+Narrative emotes often occur between periods of idleness,
+as a way of reinitiating conversation; people in page
+conversations do not "idle together," apparently: they lose
+contact when one or both becomes idle.  Expository emotes,
+however, are quite common in page conversations.  These
+emotes, and back channel responses, are the main uses of
+the emote in page conversation, I believe.
+
+     When asked about their feelings towards page
+conversation vis a vis the virtual geography metaphor that
+normally governs conversations in MUDs, users reported that
+they generally preferred room conversation, for a variety
+of reasons.  Having a page conversation with someone while
+also conducting public room conversation can be confusing,
+and may lead to mistakes in modality (saying something "out
+loud" that was intended for the page conversation, for
+instance; particularly worrying during netsex).  Room
+conversations give users access to objects, like furniture
+to "sit" on, or toy objects to play with.  The geography
+also gives a sense of "connected" or "local" space... users
+often idle in rooms that are adjacent to party spots, for
+instance.
+
+     The virtual reality (and geography) metaphor matters
+more to some users than others.  Bothered by the violation
+of metaphor that pages cause, one user (George) created a
+radio object that "transmits" pages to another user who has
+a radio.  The resulting page message looks like this:
+
+     On your radio, Mike hails, "hey, your boss is here"
+
+Not all users have radios or even know how to work them,
+though.  Some users claim they are quite comfortable paging
+people when they are in a room alone, on the other hand,
+and not likely to be distracted by public conversation;
+this is common on LambdaMOO, for instance, where many
+people avoid public rooms because of the noise level
+("spam").
+
+     In conclusion, as Holmes and Dishman (1994) report,
+MUDs provide "an explicit spatial context" for conversation
+which chat programs do not have; similarly, in MUDs there
+is richer narrative play within the spatial context than
+found in most chat programs, and I would argue, a broader
+range of conventionalized action types and more flexible
+self-presentation in conversation.[8]  User preferences for
+room interactions over page conversations and differences
+in the types of emotes that occur in the two sorts of
+conversation support this claim, although a fuller
+investigation of actions in IRC and page conversations
+other than my own are surely called for.
+
+              5. Verb Tenses and Speech Acts
+
+     To summarize so far: I have illustrated the five main
+categories of emotes, and how they play a role in
+conversation and in structuring interactions.  Emotes,
+combined with social responses to persistent geography and
+objects, can be used to signal alertness and willingness to
+participate in conversation, supply feedback of the sort
+normally found in back channels, to play, to narrate real
+life activity which might cause distraction from the MUD,
+to provide background exposition in place of says.
+
+     The many uses of emotes appear to reflect a rich
+culture of practice and use on MUDs, but there remain a few
+unanswered questions raised in the preceding sections.  Why
+are almost all emotes in simple present tense?  How can a
+user describe events in any complexity given only one
+tense?
+
+     One possible explanation for the prevalence of present
+tense is that the convention is inspired or otherwise
+historically based on the fact that MUD system responses to
+user commands (such as a navigation command, like go north)
+are messages in present tense.  The following examples
+are output presented when users type commands to interact
+with the virtual geography or objects:
+
+     Guest steps off the catwalk.
+     *********
+     Guest goes east.
+     *********
+     Ferris heads for the eastern end of the patio.
+     *********
+     Plaid_Guest wanders up the street to the west.
+     *********
+     Tom picks up TomTraceback's Business Card.
+
+     A diachronic explanation is not enough, however, to explain
+how the present tense is used now in the discourse.
+
+     The persistence of present tense suggests a similarity
+to special speech registers like sportscaster commentary,
+in which present tense is adhered to while describing
+ongoing activity (Ferguson, 1983).  Oral narrative often
+shows regular use of the present tense, also known as
+conversational historical present in this context (cf.
+Schiffrin, 1981; Wolfson, 1982); for instance: "So I go
+to the store, and as I'm walking in, this guy says to
+me..."  Supposition as to the reason for the use of present
+tense in narrative usually involves hypotheses about the
+story teller being so wrapped up in her story that she
+recreates it as she lived it.  The historical present in
+narrative usually alternates with past tense, however, and
+the events described are past.  Emoted actions in at least
+the first three categories discussed are not descriptions
+of past events, but of actions co-temporaneous with their
+appearance on the screen.
+
+     The emoted actions in section 3.1 to 3.3 suggest the
+sort of speech acts that Searle (1969, 1989) and Austin
+(1962) discussed, called "performatives."  Performative
+speech acts are utterances that usually occur in the first
+person, simple present tense, indicative, and via their
+utterance perform some action: e.g., "I hereby pronounce
+you man and wife," "I promise I won't spend that dollar."
+Despite being in the simple present, they do not describe
+habitual or generic actions; they describe an event that
+occurs at their time of utterance, by virtue of their
+utterance.  Emoted actions seem to be related to this class
+of speech acts, albeit from third person, being conjured as
+"events" solely by their utterance.  (I follow Searle,
+1989, in not including indirect speech acts in my
+discussion here.)
+
+     Intentionality is a major component in Searle's (1989)
+account.  He argues that a class of verbs with
+intentionality as a component must be recognized; that one
+cannot perform a performative action without intention to
+do so.  "Manifestation of the intention to perform the
+action, in an appropriate context, is sufficient for the
+performance of the action." (Searle, 1989, p. 551).
+Furthermore, the performative verbs are self-referential,
+in that they describe their own actions and execute them at
+the same time.  If I say "I promise to come home at noon,"
+I both describe the content of my promise and make it.
+
+     Searle concludes that the explanation for performatives
+does not lie in the meaning of the verbs themselves, but in
+the world itself.  "If God decides to fry an egg by saying
+`I hereby fry an egg,' or to fix the roof by saying `I
+hereby fix the roof,' He is not misusing English.  It is
+just a fact about how the world works, and not part of the
+semantics of English verbs, that we humans are unable to
+perform these acts by declaration" (Searle, 1989, p. 554).
+
+     It is tempting to conclude that the world of MUD
+conversation has the status of the imaginary world Searle
+proposes for performatives.  Every uttered action is
+understood to occur at utterance, in the context of the MUD
+conversation.  However, the participants understand that no
+real action has occurred, that in a sense these are just
+descriptions of actions, carrying social significance
+within the MUD discourse.
+
+     There is some evidence that users view such emotes as
+events that "happen" (even if only as a communicative
+action) as soon as they are emoted, and are thus
+nondeniable, like performatives.  One woman described to me
+her upset at being hugged by a guest she didn't know and
+then her attempt to negate the event:
+
+     1 The guest hugs Karen.
+     2 Karen is NOT hugged by Guest.
+
+Despite her attempt in line 2 to retract the hug, another
+character later referred to "the guest who hugged her,"
+indicating that he perceived it as not deniable, or at
+least, nondeniable by her.  In some sense, the action
+occurred as soon as the message showed up on people's
+screens.
+
+     One problem Searle (1989) and Verschueren (1994)
+tackle is why there are no performatives for verbs like
+"hint," "boast," or "lie" which sound as if they ought to
+parallel verbs like "promise" and "order."  Searle
+concludes that they cannot be used performatively because
+they imply that their actions are not performed explicity
+and overtly, which is required of performatives.
+Verscheuren expands this into a theory about distance
+between the description of the action and the action the
+utterance performs.  In the utterance "I lie to you that I
+am done with my PhD," the action performed is the lying
+about a proposition, and the description is the statement
+that it is a lie.  He claims there must be no "distance"
+between the two in order to be performative.  To claim to
+"lie," for instance, is to describe an action as negatively
+valued and insincere; the choice of the word "lie" creates
+an evaluative distance between the description and the
+action intended, causing the performative attempt to fail.
+"I order you to go," on the other hand, succeeds because
+the action is an order, and the description is of an order
+as well, with no evaluative distance or insincerity
+implied.
+
+     Interestingly, there are occasional uses of verbs like
+"lie" in the discourse of the EM community:
+
+     Ray lies, "I'm awake, I'm awake!"
+
+     In fact, this utterance probably succeeds partly
+because in fact it is not uttered by the user of the
+character Ray, it is a programmed response that is
+triggered when the name "Ray" is mentioned in a room Ray is
+idling in (an "idle twitch").  In fact, his character is
+lying, as the utterance states.  Any negative evaluative
+distance in this case is confined to the third person
+description of action, rather than the utterance "I'm
+awake" itself.  That description is important for
+communicating that the utterance is not an ordinary one
+typed by an active user.
+
+     Note that this utterance would not succeed as a simple
+"say" from Ray's character: "Ray says, `I lie, I'm awake.'"
+The third person emote allows a distance between the
+description and the action which is not allowed in first
+person performatives, where the two must coincide.  This
+perspectival distance allowed by emotes complicates and
+enriches the sorts of actions that can be undertaken in the
+text conversation.
+
+     Verschueren (1989) discusses some speech acts which
+are not first person simple present tense, which he calls
+semi-performatives:
+
+     1. Le porteur declare etre majeur.
+          [The holder (of this ticket) declares
+          that he/she is over 18.]
+     2. You are dismissed.
+     3. Passengers are warned not to lean out the
+          window.
+     4. I am asking that you to do this for me, Henry,
+          I am asking for you to do it for me and
+          Cynthia and the children. (Searle, 1989)
+
+     Number (4) he dismisses as not containing the
+"content" of the request and therefore calls it a
+description of the request rather than a making of the
+request itself.
+
+     Emotes in category 3.3 and higher suggest that a
+simple performative analysis for all emotes is not
+sufficient.  The events described can be more complex than
+simple co-temporaneous actions.  The MOO example below
+consists of a description of action:
+
+          Ted says one thing, then the opposite, and
+               agressively asserts that both are true.
+               He then annoys you for a while, just
+               before boasting of his SPARCbook like
+               you care.
+
+     Ted describes himself as "boasting," but he is in fact
+describing an action he is not explicitly performing (since
+one cannot boast solely by saying that one boasts), which
+puts this example in the category of semi-performatives
+like Verscheuren's (4) above.  Emotes like this are a
+common occurrence, some of them more explicitly
+performative than others.  The more performative types
+include "note," "observe," "ask," "tell," "wonder," which
+usually take as subordinate clauses a proposition, unlike
+the boasting case above.  The proposition appears to
+accomplish the action, unlike the subordinating verb on its
+own.
+
+     Sandy notes that the power elite IS NOT linked...
+     *********
+     Shelley observes that she's about conferenced out
+          and would really like to go to the espresso
+          bar across the street and talk about
+          something else.
+     *********
+     Marie thanks lynn for signing
+
+     The "boasting" example is not alone in its
+meta-discourse character; in the following example, Tom
+describes the conversation in line 9.
+
+     1  You see a car scream by on Hwy 169, you hear a
+          SLAM, and Mike zings into the ditch and
+          lands with a painful THUD.
+     2  Ray laughs
+     3  Tom says, "zing"
+     4  Ray says, "THUD"
+     5  lynn says, "THUD"
+     6  Mike says, "WHAM!"
+     7  lynn [to Ray]: hmmph
+     8  Shelley says, "THUD"
+     9  Tom and Ray and lynn reenact the event.
+     10 Ray wins by virtue of only being a few yards
+          away from em.ccs
+     11 lynn [to Tom]: using Mike.
+     12 Tom [to Ray]: It must be a real pain for you
+          not to be able to blame lag when you lose
+          anymore.
+
+(em.ccs is the machine that the MOO resides on, and Tom
+refers to the lag of the network in line 12.)  Note that
+Tom describes it in present tense, suggesting the
+reenactment is not over. Note also that Ray claims he
+"wins" in reference to getting his "THUD" out before mine
+in line 5.  He has already won, but he describes the event
+in present tense.  Present tense seems to be fine for
+actions that have just ended as well, as seen under 3.3.
+
+     Considering the range of "action" types that are
+performed in third person simple present tense emotes, many
+of which describe either ongoing or concluded events, as
+well as imaginary worlds' events, it seems that a simple
+performative analysis of emoted actions is not going to
+hold up.  Whatever "semi-performatives" amount to, these
+emotes may indeed be of that type, however.
+
+             6. The Frame Contexts for Events
+
+     The first two categories of emotes discussed
+(Conventional Action, Back Channels) simply appear to
+be describing punctual events: the action is evoked
+co-temporaneous with the utterance.  However, the emotes in
+other categories accomplish more sophisticated event
+description.  Emoted byplay sometimes contains
+meta-discourse description, describing the action of a
+conversation with respect to some imaginary world.
+Narration of actions in real life can either refer to
+activities ongoing, to events just concluded, or events
+about to occur.
+
+     The context for an emote determines with what frame of
+reference it is to be interpreted, both with regard to
+temporal structure of the event being described, and
+whether it is intended to represent real action in the real
+world, imaginary action in the real world, action with
+objects in the MOO, or imaginary actions in the MOO (cf.
+Chayko, 1993; Goffman, 1974).
+
+     The way conversants determine the boundaries of events
+is partly pragmatic, based on contextual clues.  We know
+that a description of an event that is punctual (like an
+accomplishment or achievement) cannot be co-temporaneous
+with typing, so we interpret it according to the most
+plausible interpretation in context.  If Tom announces "Tom
+gets off the phone" we can guess he has just done it in
+real life, because the event is punctual, there are no
+phones in the MOO, and he was probably idle just before the
+utterance.  On the other hand, punctual play utterances are
+seen as accomplished with their transmission, even if
+events that might take a long time in the real world are
+described: "Robin takes off and nukes Davey from orbit."
+
+     The expression "lynn waves" is also interpreted
+according to the context it occurs in: if it occurs upon
+entry to a MOO room, it must be intended to be interpreted
+as a greeting action within the context of the MUD, rather
+than a description of an action external to the MUD.  The
+utterance "lynn waves at Terry Winograd" however, would be
+interpreted as a real life action being reported, since
+Terry Winograd is not a character on the MUD.  Similarly,
+in line 7 below, Tom is not interpreted as waving to MOO
+compatriots on entry to a room, because he has not just
+entered the room, and he is not using the formulaic short
+form of the utterance.
+
+     1 lynn [to Tom]: we could make sure we are home
+          on sunday to watch TV.
+     2 lynn says, "B5, specifically."
+     3 Tom says, "ok"
+     4 Tom says, "are we supposed to be somewhere on
+          sunday?"
+     5 Tom and lynn make public appearances at
+          fund-raisers throughout the state.
+     6 lynn says, "no. I need to work, but."
+     7 Tom smiles and waves to the crowd.
+     8 lynn eyes Tom warily.
+
+     Tom's flight of fancy in line 5 is interpretable in
+light of his question about being somewhere on Sunday.  If
+he had said "Tom and lynn made public appearances at
+fund-raisers throughout the state" we would expect that
+this had really occurred in real life, given the past
+tense.
+
+     This informal discussion of how emotes are
+interpretable in context should not imply that people are
+never confused about frame reference; it's not uncommon for
+people to be confused about whether events are happening in
+real life ("irl") or on-line:
+
+     Kelly talks for awhile with soime guy who talks
+          baout sex with no introduction. Or rather,
+          safe sex.
+     Eva peers at Kelly suspiciously.
+     lynn eyes Kelly askance.
+     Kelly [to Eva]: At MIT. I don't even know his name.
+     lynn [to Kelly]: irl?
+
+     Tom actually should probably just leave her out
+          of the "people" section; she doesn't seem to
+          mud anymore since the breakup.
+     lynn says, "breakup?"
+     Tom says, "with Willem"
+     [at 2:40 p.m.]
+     lynn says, "oh."
+     Karen tries to remember waht the relationship was
+     Tom [to Karen]: capital r
+     Tom eyes himself warily.
+     Karen says, "irl?"
+     Tom nods.
+
+     Most requests for clarification about whether
+something happened in real life or in a MUD ("in vr")
+usually happen in context of discussion about conversations
+or relationships... either of which could be occurring
+on-line or in real life.
+
+     As Goffman (1974) points out (and Danet et al., 1994,
+describe for IRC), in fanciful activities like games,
+the frame of the play activity contains by necessity some
+reference anchoring it to the real world.
+
+          The understanding that players and
+     nonplayers have of where the claims of the
+     ongoing world leave off and and where the claims
+     of play take over is part of what the players
+     bring to their playing from the outside world,
+     and yet is a necessary constituent of play.  The
+     very points at which the internal activity leaves
+     off and the external activity takes over---the
+     rim of the frame itself---become generalized by
+     the individual and taken into his frame of
+     interpretation, thus becoming, recursively, an
+     additional part of the frame.  In general, then,
+     the assumptions that cut an activity off from the
+     external surround also mark the ways in which
+     this activity is inevitably bound to the
+     surrounding world" (Goffman, 1974, p. 249).
+
+Just so are the worlds created by the MOO conversation a
+part of the real world, and vice versa, facts which the
+members of the community fully appreciate and plan for in
+their conversation.
+
+                       6. Conclusion
+
+     The different types of emotes discussed are summarized
+again in the table below:
+
+
+============================================================
+
+Table 6.  Summary of Emote Types
+
+Emote Type          Section Tense    Example
+-----------------------------------------------------------
+Conventional Action 3.1    present   lynn waves.
+Back Channels       3.2    present   lynn nods.
+Byplay              3.3    present   Mike pastes Tom's
+                                                lips...
+Narration           3.4    present   ls packs for his
+                                                trip.
+Exposition          3.5    any       lynn hated the film.
+
+============================================================
+
+
+     The use of the emote command creates a structured and
+complex communicative environment, in which many different
+sorts of actions are possible.  Emotes help define contexts
+for conversations, establish responsiveness and
+attentiveness, communicate understanding, initiate play,
+describe actions in real life that may affect the
+involvement in the MUD conversation.
+
+     Page conversations provide an interesting contrast to
+room conversations, given that the emote command is
+available in page conversations as well.  However, users do
+not provide as many back channel responses in page
+conversations, and page conversation tends to be shorter
+and more focused.  Differences between page and room
+conversations suggest that social responses to the
+geography and to idling behavior within the geography help
+in making room conversations different.  The persistent
+room metaphor is meaningful in practice, differentiating
+MUDs as communication environments from other chat programs
+without persistent geography or emotes.
+
+     Emoted actions appear similar to performative speech
+acts, which are executed upon utterance.  However,
+existence of complex emote types (meta-conversational
+description, imaginary world actions, narration of real
+life events) makes the parallel with performatives
+difficult to sustain; they are probably semi-performative
+at best.  The third person distance from the event provided
+by the emote creates interesting options for utterances
+that cannot be said in the first person.
+
+     Finally, context is important for determining frame of
+interpretation for the myriad simple present tense emotes.
+Emotes describing actions in the MOO and in the real world
+depend a lot on conversational context for their correct
+interpretation.  Frames for communication interpenetrate,
+allowing users to refer to real life events in the MUD and
+make them a part of their regular discourse.
+
+                           Notes
+
+[1] "ElseMOO" is a locative expression among MOOers meaning
+roughly "on another MOO."  In other papers I used various
+other names for the MOO, but the site is the same.
+
+[2] Interestingly, the CTS command set was constructed by
+two users on EM, but is used by a little more than a third
+of the regular users of EM now.  This is a good example of
+how MUDs evolve over time.
+
+[3] Sexual interactions, which usually take place between
+two characters alone or in pages, do not occur with
+frequency on the MOO I observe (as far as I am aware).
+Emoted sexual or otherwise physical exchanges may count as
+"play" as well (McRae, 1995), but this may be a problematic
+categorization.
+
+[4] The giggle here is probably an achievement since she
+giggled at something in particular.
+
+[5] Note that the emote command makes the character's name the
+subject of every utterance.
+
+[6] As a participant-observer in the MUD community, I have
+no access to private page conversations aside from my own,
+so my inclusion in the logs was inevitable at this point.
+
+[7] This is difficult to establish statistically, since a
+minimal conversation in either case might consist of one
+utterance exchanged; and it's unclear how to take pauses or
+changes in topic into account.
+
+[8] IRC may be evolving somewhat in parallel with MUDs,
+however; Reid (1991) did not mention the emote command at
+all, which seems to have been added since.  Reports on how
+often it is used in IRC vary a lot, however.
+
+                        References
+
+Austin, J. (1962). How to do things with words. Cowford:
+     Cowford University Press.
+
+Bruckman, A. (1992). Identity workshop: Emergent social and
+     psychological phenomena in text-based virtual reality.
+     Electronic manuscript, M.I.T., Media Lab, Boston.
+
+Chayko, M. (1993). What is real in the age of virtual
+     reality? ``Reframing'' frame analysis for a
+     technological world.  Symbolic Interaction, 16(2),
+     171-181.
+
+Cherny, L. (1994a). Gender differences in text-based virtual
+     reality.  To appear in Proceedings of the Berkeley
+     Women and Language Conference.
+
+Cherny, L. (1994b). ``Objectifying'' the body in the
+     discourse of an object-oriented MUD.  Paper presented
+     at Midwest Popular Culture Assocation, Pittsburgh,
+     PA.
+
+Cherny, L. (1995).  Conversational modes of action in a
+     text-based virtual reality.  In progress doctoral
+     dissertation, Stanford University, Palo Alto.
+
+Curtis, P. (1992). Mudding: Social phenomena in text-based
+     virtual realities.  Intertek, 3(3), 26-34.
+
+Daft, R.L., & Lengel, R.H. (1984). Information richness: A
+     new approach to managerial behavior and organization
+     design.  In B.M. Staw & L.L. Cummings (Eds.),
+     Research in Organizational Behavior, vol. 6 (pp.
+     191-233).  Greenwich, CT: JAI Press.
+
+Daft, R.L., & Lengel, R.H. (1986).  Organizational
+     information requirements, media richness, structural
+     determinants.  Management Science, 32, 554-571.
+
+Danet, B., Ruedenberg, L., & Rosenbaum-Tamari, Y. (1994).
+     `Smoking dope' at a virtual party: writing, play, and
+     performance on Internet Relay Chat.  To appear in S.
+     Rafaeli, F. Sudweeks, & M. McLaughlin (Eds.), Network
+     and netplay: virtual groups on the Internet.
+     Cambridge, MA: MIT Press.
+
+Dibbell, J. (1993).  Rape in cyberspace or how an evil
+     clown, a haitian trickster spirit, two wizards, and a
+     cast of dozens turned a database into a society.
+     Village Voice, 38(51).
+
+Dowty, D. (1986).  The effects of aspectual class on the
+     temporal structure of discourse: semantics or
+     pragmatics? Linguistics and Philosophy, 9, 37-61.
+
+Duncan, S. (1972).  Towards a grammar for dyadic
+     conversation.  Semiotica, 9(1), 29-46.
+
+Evard, R. (1993). Collaborative networked communication:
+     MUDs as systems tools.  Paper given at LISA, Monterey,
+     CA.
+
+Ferguson, C. (1983). Sports announcer talk: Syntactic
+     aspects of register variation.  Language in Society,
+     12, 153-172.
+
+Germain, E. (1993).  In the jungle of MUD.  Time,
+     September 13, 49.
+
+Goffman, E. (1963). Behavior in public places: notes on
+     the social organization of gatherings. New York: the
+     Free Press.
+
+Goffman, E. (1974). Frame Analysis.  Boston: Northeastern
+     University Press.
+
+Grosz, B. and C. Sidner. (1986).  Attentions, intentions,
+     and the structure of discourse.  Computational
+     Linguistics, 12(3), 175-204.
+
+Gumperz, J. (1982). Discourse strategies. Cambridge:
+     Cambridge University Press.
+
+Gumperz, J. (1972). Introduction. In J. Gumperz & D.
+     Hymes (Eds.), Directions in sociolinguistics.
+     Cowford: Blackwell.
+
+Heritage, J. (1984)  A change-of-state token and aspects of
+     its sequential placement.  In J. Heritage & J.M.
+     Atkinson (Eds.), Structures of social action (pp.
+     299-345).  Cambridge: Cambridge University Press.
+
+Hiltz, S.R., & Turoff, M. (1982). The evolution of
+     user-behavior in a computerized conferencing system.
+     Communications of the ACM, 24, 739-762.
+
+Holmes, M., & Dishman, J. (1994).  Social action in
+     synchronous computer-mediated communication: a
+     comparison of two genres.  Paper presented at Western
+     States Communication Association, San Jose, CA.
+
+Kendall, L. (1995).  Are you male or female? The
+     performance of gender on MUDs.  Paper presented at the
+     Pacific Sociological Association, San Francisco, CA.
+
+Kiesler, S., Siegel J., & Mcguire, T. W. (1984).  Social
+     psychological aspects of computer-mediated
+     communication.  American Psychologist, 39(10),
+     1123-1134.
+
+McRae, S. (1995). Coming apart at the seams: the erotics of
+     virtual embodiment.  Unpublished draft, University of
+     Washington, Seattle.
+
+Murray, D. (1989). When the medium determines turns:
+     Turn-taking in computer conversation.  In H. Coleman
+     (Ed.), Working with language (pp. 319-338). New York:
+     Mouton de Gruyter.
+
+Oviatt, S., & P. Cohen. (1988). Discourse structure and
+     performance efficiency in interactive and
+     noninteractive spoken modalities.  (Tech Report 454).
+     Menlo Park, CA: SRI International.
+
+Reid, E. (1991).  Electropolis: Communication and community
+     on internet relay chat.  B.A. honors thesis,
+     University of Melbourne, Australia.
+
+Reid, E. (1994). Cultural formations in text-based virtual
+     reality.  Unpublished master's thesis, University of
+     Melbourne, Australia.
+
+Sadock, J. (1988). Speech act distinctions in grammar. In
+     F. Newmeyer (Ed.), Linguistics: the cambridge
+     survey, vol. 2, (pp. 183-197).  Cambridge: Cambridge
+     University Press.
+
+Schegloff, E. (1968). Sequencing in conversational
+     openings. American Anthropologist, 70(6).
+
+Schegloff, E. and Sacks, H. (1974). Opening up closings.
+     In R. Turner (Ed.), Ethnomethodology: selected
+     readings.  Baltimore: Penguin.
+
+Schiffrin, D. (1981). Tense variation in narrative.
+     Language, 57(1), 45-62.
+
+Searle, J. (1969). Speech Acts.  Cambridge: Cambridge
+     University Press.
+
+Searle, J. (1989). How performatives work.  Linguistics and
+     Philosophy, 12, 535-558.
+
+Short, J., Williams, E., & Christie, B. (1976). The social
+     psychology of telecommunications.  London: Wiley.
+
+Tang, J., E. Isaacs, & M. Rua. (1994).  Supporting
+     distributed groups with a montage of lightweight
+     interactions.  Unpublished manuscript, Sunsoft,
+     Mountain View, CA.
+
+Verschueren, J. (1994). The conceptual basis of
+     performativity.  Unpublished manuscript.
+
+Walther, J. (1992). Interpersonal effects in
+     computer-mediated interaction.  Communication
+     Research, 19(1), 52-90.
+
+Whittaker, S., Frohlich, D. & Daly-Jones, O. (1994).
+     Informal workplacecommunication: what is it like and
+     how might we support it?  In Proceedings of CHI
+     1994, 131-137.
+
+Wolfson, N. (1982). CHP: the conversational historical
+     present in american english narrative.  Dordrecht:
+     Foris.
