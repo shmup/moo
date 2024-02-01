@@ -1,0 +1,304 @@
+The Incredible Tale of LambdaMOO
+written by Pavel Curtis on Wednesday, June 19, 2002
+
+Learn how one of the first virtual worlds ballooned into a real-life nightmare.
+
+The following tale of surprising successes and fabulous failures was excerpted
+from Pavel Curtis' article "Not Just a Game: How LambdaMOO Came to Exist and
+What It Did to Get Back at Me," published in "High Wired: On the Design, Use,
+and Theory of Educational Moos" edited by Cynthia Ann Haynes.
+
+Curtis will appear on Wednesday's episode of "The Screen Savers" to talk about
+the viability of online communities.
+
+-= A computer scientist trips and falls into the MUD =-
+
+I came to the Xerox Palo Alto Research Center (PARC) in the summer of 1983, as
+a summer intern working on adding static type checking to the Smalltalk
+programming language. By the time the summer of 1990 rolled along, I had
+started and was leading the SchemeXerox project in the Computer Science
+Laboratory at PARC. The project ran into some bureaucratic snafus, and I began
+to spend a lot more time reading NetNews than I had before; I was even willing
+to consider reading completely off-the-wall new groups whose charters were
+obscure at best.
+
+New newsgroup alt.mud; subscribe? (yes/no) yes
+As I read through the first day's traffic on this new group, a few things
+quickly became clear:
+
+    1. The discussion was neither about wrestling nor wet dirt.
+    2. Everyone who was contributing to the group already understood the
+       subject matter so well that they saw no point in making it clear to
+       anyone else.
+    3. Whatever this "MUD" stuff was, approximately half the contributors
+       thought it was a game; the other half vehemently and heatedly
+       disagreed.
+
+Over the next few days, I ascertained that MUDs were some kind of software,
+that people used them together somehow, and that they owed something to older
+programs like Adventure and Zork. Remembering the purely textual but evocative
+puzzles of Zork, clearly the product of wicked, twisted imaginations that
+I admired very highly, I became even more interested in tracking down these
+descendent MUD programs. It took, I think, over a week before someone on the
+newsgroup finally let slip enough information for me to connect to one of these
+worlds.
+
+Apparently, there were other people using the program at the same time, and it
+was possible for them to talk to one another! You can easily imagine my
+surprise the first time someone "teleported" into the same "room" and started
+talking with me; I almost embarrassed myself further by mistaking them for
+a cleverly programmed "robot"! This program, this place, this virtual world was
+created by the very same people who were currently visiting it, along with
+a great number of others. Anybody who came there and explored for long enough
+was allowed to create more!
+
+After disconnecting from the MUD, I started tracking down and exploring the FTP
+sites that contained documentation and source code for the many kinds of MUD
+servers that existed. As I searched and dissected these sites, I discovered to
+my disappointment that MUDs were, at least in the main, not really programmable
+at all; there were various commands for building and for setting the messages
+on the objects, but pretty much all of the actual behavior was fixed and
+unchangable by the users.
+
+I finally came across two exceptions to this rule, two MUD programs that were
+almost entirely programmable by the users. The first of these was very
+disappointing from a designer's point of view, being very error-prone and
+difficult to use reliably. The second one, though, was different; it was
+reasonably straightforward and reliable, and it had a simple but powerful
+object-oriented programming model. There was this student from Waterloo, one
+Stephen White, who had created it; he called it "MOO."
+
+
+-= From MOO to LambdaMOO in Four Easy Months =-
+
+It was late in September 1990 when I found the "alpha test MOO" running on
+a machine named "belch" in Berkeley. Stephen (aka Ghondahrl aka ghond) had set
+up this site so that he and others could test out his creation as it was being
+written and refined. It wasn't perfect, of course (what language is?), but he
+seemed to have made many fewer of the mistakes made by most language-design
+amateurs. I wrote few simple MOO programs of my own, trying to recreate in MOO
+some of my favorite puzzles from Zork, and decided after a few days that it
+would be fun to work with Stephen on the future evolution of his language.
+
+By the end of October, I had added a number of new features, fixed a number of
+bugs, and gotten hungry to try out my new version of the program on others. For
+my earlier MUD visits, I had used the name "Lambda" for myself; it was a major
+keyword in the Scheme programming language that I had been working in for so
+long and so it naturally sprang to mind when first I was prompted for
+a character name. I now decided to use "LambdaMOO" as the name for my revision
+of Stephen's MOO server, since it was "Lambda's MOO".
+
+I remember, in particular, one evening's conversation early in my tenure there;
+I chatted for quite some time with three other folks and it became clear after
+a while that two of them, named Gemba and Gary_Severn, must know each other
+outside of this electronic context. I was shocked to discover that Gemba and
+Gary were actually connected from the Australian National University and that
+the third other person was sitting at a terminal in Israel! It was only then
+that the geographic scope of MUD participation began to dawn on me.
+
+During the earliest days of LambdaMOO, through the beginning of 1991,
+everything was fascinating every day. The technical work was fascinating as
+Gary, Gemba, and I tried to build the core libraries of MOO programming. The
+collaborative feel of it was fascinating as we worked closely together from our
+separate offices thousands of miles apart. The creativity was fascinating as
+I laid out the core geography of the LambdaMOO mansion (based on the layout of
+my real-life house). But most fascinating of all was what was happening all
+around and through me: a community was forming inside this computer program,
+a community with hundreds of people, all learning about LambdaMOO by word of
+mouth and coming to see what it was about.
+
+Of course, not everyone was so nice or so constructive, though it took quite
+a while before this became clear. I think it was at least a few months into
+LambdaMOO's existence before the "Penn State a**holes" came calling. Two
+connections arrived nearly simultaneously, both from computers at Penn State
+University, and the log showed the player names these two new users had chosen
+for themselves: vulgar terms for parts of the female anatomy, words I wouldn't
+have repeated to my mother. By the time I joined them in the "Living Room,"
+they were both typing "F*** YOU" over and over again, to the annoyance of all
+present. Later that day, in a black mood, I wrote the first version of the
+LambdaMOO "@toad" command, for permanently destroying a user's character and
+all of its possessions. Some of the shine was off the apple, never to return.
+
+
+-= LambdaMOO Faces the World, and Vice Versa =-
+
+By the beginning of February 1991, I finally felt ready to make a public
+announcement of the existence of LambdaMOO; we had a small but thriving
+community, enough structure in the virtual world to give newcomers a starting
+point, a reference manual worth reading, and enough online "help" texts to
+answer most questions we thought a new user would ask. We got a fairly
+satisfying response, with lots of new users coming by to see what we'd been up
+to. We stopped being impressed when there were ten users online at the same
+time and started more often seeing numbers like 25 and 30. I thought we were
+huge beyond belief.
+
+With an increase in population and popularity, though, also came an increase in
+problems; we had built up a set of tacit rules for gracious living on LambdaMOO
+and had never really noticed ourselves doing so. These newcomers didn't know
+our rules, didn't know our style, and didn't know the lessons we'd learned over
+the course of four months of birthing.
+
+A player approached me one day to complain about how several of his objects had
+been moved about by other players without his permission; he asked me to find
+a way to let all the new players know what was considered acceptable and
+unacceptable behavior on LambdaMOO. The idea seemed pretty daunting to me, but
+he had a good point, so I wandered all over the MOO asking old-timers for
+examples of unwritten rules that ought to get writ. After a few days, I wrote
+the first draft of the "help manners" text that for a long time was the only
+written "law" that LambdaMOO had.
+
+The "Case of the Lookalike Puppet." One character and another had had a falling
+out and one of them had, afterwards, created a MOO "puppet" with the same name
+and description as the other player. A puppet is a MOO object that acts much
+like a player (saying things, performing actions, etc.) but that is actually
+owned by and under the control of some other player. The player who was being
+imitated in this fashion was most upset that there was this doppelganger of
+them wandering the halls of LambdaMOO. They wanted the puppet renamed at the
+least, and preferably outright destroyed.
+
+I agonized over the situation, I had long talks with both players, I took the
+problem home to my wife and argued both sides of it with her for hours, it
+seemed. I eventually worked out some sort of compromise (I forget the details
+now), but the case got me to thinking. What was going on here? What was
+happening to me? This was certainly not the kind of thing I had been used to
+doing as a programming language researcher. I was a hacker and not a judge,
+wasn't I?
+
+In January of 1992, I had a memorable conversation with my lab manager. He
+suggested that after I'd fulfilled my commitments to the SchemeXerox project
+that I should consider going into "this MUD stuff" full time! It was clear to
+Mark, and becoming clear to me, that the work I was doing had a good chance of
+being important and, more significantly, it looked like there weren't any other
+computer scientists working in this area.
+
+On the morning of April 1, 1992, when I first got to work, I checked out the
+transcript of my perpetual connection to LambdaMOO. Amid the usual paged
+questions and the like, there was a cryptic little message about how a major
+fire had just swept through the house. Curious, I began wandering around the
+core of LambdaHouse; it was marvelous. Clearly, some of my staff of wizards had
+been very busy preparing for this wonderful April Fool's Day hack.
+
+At some point in my wanderings, a worried player paged me to say that it
+really, truly wasn't his fault, but he seemed suddenly to be a wizard! I didn't
+believe it, of course, but I checked it out just the same and discovered to my
+shock that it was true; when I inspected his player object, it clearly had the
+"wizard" bit on! He pointed to the latest article in the LambdaMOO newspaper;
+that article, written by my wizards, described the fire and said that, in order
+to hasten the repairs, all players had been made into wizards so that they
+could help out. I was utterly aghast.
+
+
+-= Things Fall Apart; the Center Cannot Hold =-
+
+With the increased attention being paid to us, the population of LambdaMOO grew
+at an alarming pace. This, in turn, put an ever-increasing amount of pressure
+on the wizards; we were spending more and more of our time just keeping the
+place running, dealing with inter-player disputes, and judging the things that
+players had built when they wanted permission to build even more. None of us
+were being paid to operate LambdaMOO, but it was taking an increasing toll; we
+started to create institutions and automated procedures to lighten the load.
+
+I created a committee of long-time LambdaMOO players to take over the job of
+judging other player's work (according to a recently-announced quota on the
+amount of objects players can create). I named them after the kinds of groups
+I'd seen in various RL home-owner's associations: the Architecture Review Board
+(ARB). It was clear that this group would need some slightly privileged tools,
+so that they could make a sufficiently complete judgement of other players'
+work.
+
+From the very beginning of the ARB, there were players suspicious of it. How
+was it formed? Who chose those particular people and why? How do they make
+their decisions? What is said in the Star Chamber? What can't we go in there?
+It wasn't (at least at first) that anyone knew of anything bad actually
+happening around the ARB; its very existence, and the way it was created, were
+enough to worry some players.
+
+The third major burden on the wizards during this period was inter-player
+disputes. The wizards were the police, the judges, and the executioners; we had
+set ourselves up for this back when "help manners" was drafted, when we had
+claimed "Vengence is ours, sayeth the wizards." In retrospect, I think the last
+half of 1992 was almost entirely characterized for the wizards by our weariness
+and stress. Something had to give, and it was us.
+
+On December 9, 1992, I posted a pivotal message to LambdaMOO's *Social-Issues
+mailing list; I titled it "On to the next stage...," but somehow history has
+indelibly tagged it "LambdaMOO Takes A New Direction," or "LTAND." In that
+message, I announced the abdication of the wizards from the
+"discipline/manners/arbitration business;" we would no longer be making what
+I glibly termed "social decisions."
+
+LambdaMOO slowly became a rougher place after LTAND. It's hard to say how much LTAND accelerated a process that was already in place, but surely it didn't help to hold it back. The level of inter-player strife and harassment rose and rose, slowly but inexorably. The crisis point came about four months after LTAND, in the infamous rape in cyberspace case.
+
+
+-= Direct Democracy: LambdaMOO Is to Sysiphus as... =-
+
+My primary inspiration for the design of the petitions and ballots system was
+the voter-sponsored initiative process here in California. It was simple in
+outline: any LambdaMOO citizen could create a petition proposing that the
+wizards take some action; if it got enough signatures, it became a public
+ballot measure that passed on a two-thirds majority vote. Before a petition
+could become a ballot, though, it was necessary for the wizards to "vet" it, to
+ensure that the proposal was (a) clear, (b) feasible, (c) appropriate, (d)
+legal, and (e) secure.
+
+Overall, though, I'd have to say that the petition system has failed on
+LambdaMOO. It has, by and large, failed to be the jumping off point I hoped
+for; we have not seen it used successfully to move LambdaMOO to a working,
+stable form of self government. There were long periods, indeed, where many
+petitions reached ballot stage and none of them passed; it seems to me now that
+the voting population could never agree on anything of real substance. I think
+that this is the real lesson of LambdaMOO's experiment with direct democracy.
+
+Deep in its very structure, LambdaMOO depends on the wizards and on the owner
+of its machine. These are not and cannot be purely technical considerations.
+Social policy permeates nearly every aspect of LambdaMOO's operations, and only
+the wizards can carry out those operations. As a result, the wizards were at
+every turn forced to make social decisions. Every time we made one, it seemed,
+someone took offense, someone believed that we had done the wrong thing,
+someone accused us of awful ulterior motives. It felt a bit like the laws of
+thermodynamics: you can't win, you can't even break even, and you can't get out
+of the game.
+
+Throughout the entire month of April, the wizards' private mailing list was
+pulsing with activity; we were drafting, arguing about, and re-drafting a new
+fiat, my third pivotal message to *Social-Issues. Finally, on May 16th, we all
+agreed on a draft and I posted LTAD: LambdaMOO Takes Another Direction. In it,
+we formally repudiated my earlier theory of a social/technical dichotomy; we
+explained how impossible that fiction was and declared our intent to cease
+apologizing for our failures to make it reality. It was, in a way, a wizardly
+coup d'etat; out with the old order, in with the new.
+
+
+-= Can We Get Where From Here? =-
+
+Will it work this time? Can we achieve peace on LambdaMOO and a tolerable job
+for the wizards? It's best not to set one's sights too high for a place like
+LambdaMOO. Trapped in a fundamentally untenable economic and political
+situation, perhaps it is enough to maintain, to keep the place together for
+another year or two or three, until it stops providing something that its
+thousands of regular users can't get anywhere else, or until something better
+comes along.
+
+What would "something better" look like? On the top of my personal list is
+a vastly more equitable distribution of both power and economics. If these
+online "virtual" communities are to have the same robustness as the more
+physically oriented ones, they must become pliant and mutable under the same
+forces that cause RL communities to grow and change. It must be possible for
+incompatible sub-communities to separate and grow apart, thereby relieving the
+kinds of stresses that constantly tear at LambdaMOO. It must be possible for
+individuals to completely control their own creations, without the specter of
+an all-powerful wizard looming in the background, distorting all natural social
+interactions.
+
+When these things happen, when online communities can form and break apart as
+fluidly and naturally as do face-to-face ones, something dramatic will be
+taking place in the history of the human race. If you look closely at the
+Internet today, you can begin to see it happening already, in newsgroups and in
+the World Wide Web. It's still not here in the area of more synchronous
+interactions, but I know for a fact that it's coming; I'm working hard for it
+every day. We have only to hold on, to keep dreaming the dream; more than at
+any other time in human history, dreaming is nearly enough to make it happen.
+
+Pavel Curtis is the founder of LambdaMOO, still home to more than 150 virtual
+communities and 8,000 members. Curtis is also the founder of the
+Web-conferencing company PlaceWare.

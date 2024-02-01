@@ -1,0 +1,1059 @@
+From: pmc@unity.ncsu.edu
+Date: Fri, 11 Mar 94 01:59:22 EST
+
+What follows is an edited transcript of a conversation focusing on
+PMC-MOO @toad/@newt, spoofing, spamming, and general ettiquette.
+
+The 'YOU' in all this is Barney.
+---------------------------------
+
+The Lab
+You see a combination Laboratory, Locker Room, and Kitchen, with books,
+bits of code, and somebody's socks strewn about the place. On the flagstone
+floor you notice a big iron ring attached to a trap door that leads down, to
+the Crypt of Generics. The lobby is up above you, and a steel door leads east.
+Two or three wizards are sleeping around the room.
+You see bleary's locker, key, Banishment Petition, bleary's complaint &
+glinda's response, lag meter, and jgopher here.
+
+You say, "As I see it, two problems are here."
+You say, "one: establishing reliable evidence."
+You say, "two, reliably toading for good."
+You say, "I have *no* problem with toading those who harrass others."
+You say, "spamming and spoofing should, I think, be capital offenses."
+You say, "Comments so far?"
+Daffy says, "spamming is hard to define, no?"
+Bakunin agrees, mostly, doesn't see how `reliable toading for good' is
+possible, though.
+bleary says, "mmm."
+You say, "is it?"
+Daffy says, "how many lines does it take to piss someone off?"
+You say, "well, bak...I have more ideas on that line than on the first
+question."
+You say, "automated harrassment is spamming."
+Daffy nods.
+You say, "ten lines or a hundred thousand."
+You say, "we register each player, or multiples of a player, by email
+address.."
+You say, "we use trackdown to establish multiples."
+You say, "when we toad someone, we look for multiples."
+You say, "people can have more than one email address...."
+You say, "but there's a limit to how many accounts one is likely to be able to
+get."
+You say, "three or four, I'd say."
+bleary doesn't want to wage continual war.
+Bakunin nods. Except for the determined, yes.
+You say, "Right."
+You say, "we don't wage war."
+You say, "we just kick 'em off."
+bleary says, "and should we punish those who make spamming verbs or
+spoofing verbs as stringently as those who spam or spoof?"
+You say, "and if they come back from another address and do the same, that
+character gets kicked off."
+
+Bakunin thinks we should have an entrance essay requirement.
+bleary [to Bakunin]: i was thinking about that - grep it for keywords.
+You say, "right."
+You say, "get rid of the verbs, unilaterally."
+You say, "no spamming, no spoofing."
+Bakunin grins. If they don't mention discursive formations, they don't get in.
+bleary would not be here in that case, but that's OK.
+
+You say, "incidentally, I think we should agree that no one really has any
+*rights* here, as regards the MOO management."
+Daffy says, "true... welcome to pomo city."
+You say, "people have the right to be left alone."
+You say, "by one another..."
+You say, "but let's get right past this "I have a right to express myself by
+spamming you" bullshit."
+bleary says, "not strong rights, but weak rights: we will try to protect your
+privacy, your  freedom of speech, but we reserve the right not to."
+You say, "Actually, bleary..."
+You say, "do you know that distinction: strong vs. weak rights?"
+Bakunin nods to bleary. The right not to be harassed, certainly. Except by
+wizards, of course.
+bleary says, "no.  i''m just talking."
+You say, "it's a good point."
+You say, "there's a diff. between what you have a right *to* (strong rights, if
+you want)"
+You say, "and what you have a right *not* to (weak rights)"
+You say, "I'd say weak rights are the only ones here."
+bleary says, "i was thinking weak rights more along the lines of: we're going
+to try to give you these, but don't think they're self-evident or inalienable."
+You say, "no ... think categories."
+You say, "you have the right not to be disturbed..."
+You say, "you don't have the right to gay-bait in the name of free speech."
+You say, "for example."
+You say, "weak rights always outweigh strong ones."
+You say, "here in pomocity."
+bleary nods.
+You say, "divine non-interference..."
+You say, "but back to the practicalities..."
+
+You say, "how do we determine whether someone has been spamming or
+spoofing?"
+You say, "it's easy to write these verbs in a minute, then destroy them."
+Bakunin says, "I imagine it would need be based on a complaint."
+You say, "it's easy to fake evidence."
+Bakunin says, "Why not dump the contents of @paranoid along with the
+complaint/banish whatever?"
+You say, "it's easy to spoof spamming, producing honest misunderstanding
+and advocates for your corrupt cause..."
+Bakunin says, "We can checksum it, or something."
+bleary says, "we could implement @witness from lambda."
+Daffy says, "how do other moos handle it?.....ah"
+You say, "explain, Bleary?  "
+bleary isnt' sure how that works.
+You say, "ah.  What's its purpose?"
+bleary says, "paranoid is wiz-owned, so players can't change it (i think), so
+@witness just dumps @paranoid to another wiz-owned prop, saving the
+(unfakable) evidence."
+Bakunin nods. What he said.
+bleary says, "i'm not sure on the details, though."
+Bakunin doesn't seem like it could be faked easily.
+You say, "that would be fine, I think.  Just a checkable log somewhere."
+You say, "permissions are a major part of our solution, I think."
+You say, "If we had a reliable check on who was doing what to whom, I
+would have no problem with a one-warning-then-you-get-toaded system.
+Anyone else?"
+Bakunin says, "Opens up the possibility of toading someone because of a
+disagreement."
+You say, "life is too short for this bullshit...besides, there are MUDS for
+these assholes."
+You say, "that's the one warning, I think."
+bleary says, "not really - if you're going to be a jackass about a tiffle, then
+do it on Lambda."
+Bakunin says, "What about consensus? Or is it gonna be `two strikes, yer
+out?'"
+You say, "and I think we ought to have a group of non-wizards..."
+You say, "I do think we should have a whining penalty as well..."
+You say, "non-wizards who review complaints."
+Daffy takes out the weiner dog.
+You say, "and weiner dogs who attach themselves to whiners."
+Bakunin would prefer to see some sort of consensual-decision making
+process rather than a review board, hmm. A board with executive powers?
+You say, "the weiner dogs could say helpful things like "@refuse, @gag""
+You say, "I like the banishment proposal, but I think the way it's set up it
+takes too much consensus."
+You say, "given the size of our moo, thirty people is a virtualy unanimous
+vote."
+You say, "and given its age...."
+bleary thinks the idea of a board w/ executive is good.
+You say, "anyway, I bet we could appoint a few level heads."
+You say, "Heinrich, Tarquin would be good."
+You say, "and Dorothy?  Hey, she's not here, so we can elect her..."
+bleary says, "sure - and it'd set up some level of buffer between us and the
+plebs, maybe they'd take some of the heat and pages, etc."
+You say, "laughs"
+Bakunin grins.
+You say, "arf"
+You say, "um..."
+Bakunin . o O (a parole board?)
+You say, "I think the weiner dogs are important tools here..."
+Bakunin reports to his prole officer.
+Daffy laughs
+You say, "We don't want to end up with a hundred pre-schoolers..."
+You say, "he hit me!"
+You say, "he bit me!"
+Bakunin says, "We already have."
+Daffy . o O (or a hundred weiner dogs)
+You say, "agreed..."
+You say, "So daffman, you have a weiner dog ready to go?"
+Daffy says, "no, just like the idea"
+You say, "it's yours."
+Daffy . o O (great.... :))
+You say, "Bak, can you talk to dorothy about putting together a very small
+group with tarquin, heinrich and whomever else?  Here's one now...hang on."
+
+----------------------------------bleary-----------------------------------
+bleary quotes form the @witness petition/ballot/law
+The @witness command would automatically take a 50-line log of the
+ensuing conversation, keeping full stack traces as the @paranoid command
+does.  When the 50 lines are used, @witness notifies the user and stores the
+stack traces in a wizard-database.
+
+Each user may keep up to 6 logs in this database.  Each user may choose to
+"publish" a log to an accompanying mailing list, sending a copy of the text
+seen by the user to a wizard-owned mailing list with a pointer back to the
+entry in the database (now publically available for examination of the stack
+traces).  Published logs are not counted against the 6-log limit.
+
+Optional:  if feasible to implement, backing up the log by ten lines after
+entered would allow a player to "witness" something just seen.
+----------------------------------bleary-----------------------------------
+
+oura teleports in.
+
+[hellos, quacks, barks and yawns]
+
+You say, "well, the @witness stuff seems awfully involved."
+You say, "not yet, oura.  here's where we are, I think."
+You say, "We need three things."
+You say, "a good way to log what goes on, spoof-proof."
+You say, "so we have a record to refer to in disputes."
+oura says, "you want to log all?"
+You say, "a group of non-wizards to adjudicate these disputes, when they
+arise."
+You say, "potentially, sure."
+You say, "and third..."
+Bakunin really thinks culling the $paranoid_db would work pretty well.
+You say, "a clear rule..."
+You say, "no spamming, no spoofing.  "
+bleary says, "no spying."
+You say, "one warning and you're toaded."
+bleary [to Bakunin]: what do you mean?
+You say, "spying is another thing, I think."
+You say, "spying is a weak right..."
+Bakunin says, "We should add `silent entry' warning to $room, maybe."
+You say, "privacy is a strong one."
+You say, "weak rights win?"
+oura says, "how can there be privacy if you record everything....?"
+You say, "of course, there can't."
+You say, "but..."
+You say, "in point of fact, there's no privacy on the MOO anyway."
+oura nods
+You say, "it's all logged somewhere, and anyone who wants to and has wiz
+bits can find it."
+
+Bakunin [to bleary]: I meant, as opposed to implementing @witness.
+bleary wonders about Dot.
+oura says, "what about him"
+Daffy . o O (where is that good witch?)
+You say, "not that dot, oura."
+bleary says, "so do we think @witness is a good idea?"
+You say, "Alright...to conclusion."
+You say, "I think logging is a good idea...simplest way is best."
+You say, "changing the perms on @paraonid and funneling it all to a wiz-only
+log file is fine."
+You say, "we got disk space to burn, in any case."
+Daffy says, "is @witness automagic?  Without being turned on?"
+bleary [to Barney]: how much mem does thins box have?
+bleary [to Daffy]: not on lambda.
+You say, "64Meg ram, 1.2 gig HD at the moment..."
+Daffy mms... "DO we want to make it voluntary--to keep the 'privacy' freaks
+happy.
+You say, "nope."
+Daffy says, "make it like @paranoid?"
+oura says, "would that make sense?"
+bleary [to Barney]: plenty.
+Daffy mms
+
+Heinrich has arrived.
+You say, "Heinrich..."
+You say, "Would you be willing..."
+bleary says, "i see @witness as above and beyond @paranoid, since it implies
+something fishy is going on, rather than just wanting to know what's
+happening."
+Heinrich says, "Yup?"
+Daffy [to bleary]: ya
+You say, "to work with Tarquin and possibly the absent Dorothy"
+Heinrich says, "On what, praytell?"
+You say, "to review disputes, if we put in place strong measures to
+discourage assholism."
+Heinrich says, "Sure."
+Heinrich says, "And I'll even be nice."
+Heinrich giggles.
+You say, "can you be cool in the head?"
+Daffy reminds Heinrich that we have no 12 step plans here. :)
+Heinrich just gets hot for the amusement of it
+Heinrich says, "It's all Byronic fellas"
+You say, "even with people who piss you off?  Flameproof?"
+Heinrich laughs and laughs
+Daffy holds a torch to Heinrich.
+You say, "it's important..."
+Heinrich nods as his will keep Byron to the side
+You say, "not to get lit too easily."
+Heinrich says, "I'll keep the irnoy underwraps"
+Heinrich says, "I've only got mad once when they were pickin' on bleary"
+You say, "oh, irony is fine, no problem.  Ridicule to the max, in fact."
+Heinrich says, "Everything else has been tongue in cheek."
+You say, "but vindictiveness, no good."
+Heinrich giggles
+Heinrich laughs in RL
+
+oura says, "is there a situation at hand that needs adjudication now, or are
+you discussing prev. measures right now?"
+oura came in late, sorry
+You say, "a lotta shit lately, oura."
+Heinrich does his best Boy Scout salute to all the wizs
+You say, "spamming, juvenile stuff..."
+bleary [to Barney]: speaking of which....
+Daffy was an Eagle before he became a duck.
+You say, "shoot, blear."
+bleary [to Barney]: who do we settle the sedate matter?
+bleary feels bad for starting the 'matter'
+You say, "well, strip him of spamming and spoofing verbs...tell him the rules,
+and take him out of exile."
+You say, "if he fucks up, twice, out he goes."
+Heinrich says, "Isn't he out of exile?"
+Daffy says, "not the original sedate"
+You say, "if he comes back from other email addresses and fucks up twice
+more, out he goes again."
+Heinrich notes that the Sedate character has been logging in
+You say, "indeed, daff."
+bleary nopes.
+You say, "he's got more than one char."
+Heinrich says, "But the orignial Sedate has loggin in recently"
+Daffy says, "so, it's a 2-fuck up per player? Or per person?  "
+bleary [to Heinrich]: noHeinrich says, "Feb 18"
+You say, "two per person, if we know who all their players are."
+bleary [to Heinrich]: he can connect oh-so-briefly.
+You say, "two per player if we don't."
+Daffy nods
+Heinrich nods
+You say, "peple can have more than one email account."
+Daffy [to bleary]: how many ticks does it take to @boot a player?
+You say, "but they can't have an infinite number of accounts."
+oura says, "and prolly all from same site"
+bleary [to Daffy]: in sedate's case? 4 or 5.
+You say, "this system we're discussing depends on a couple things"
+You say, "no vindictiveness on the part of the small number of people who
+will adjudicate..."
+You say, "and very clear rules."
+Heinrich promises to be fair
+You say, "simple rules, just one or two."
+Heinrich says, "Scouts honor or you can @toad me"
+bleary . o O (no spamming, no spoofing, no exceptions.)
+You say, "but spamming and spoofing are out."
+You say, "new policy, universally announced and enforced."
+You say, "no need to consult or warn on that one:"
+You say, "any verb that looks spammy or spoofy, erase it."
+bleary says, "how about shouts?"
+Heinrich says, "Why not make all player classes spoof-proff?"
+You say, "first and scond warning is for harrassment....actually, no second
+warning."
+bleary says, "or spying?"
+Bakunin . o O (RL, sorry.)
+You say, "spying is diff, I think."
+Bakunin scrolls back and catches up.
+You say, "shouts should be limited to wizards."
+bleary [to Heinrich]: pretty impossible
+You say, "junk mail....."
+Heinrich [to bleary]: Does lambda have a spoof-proof player class?
+You say, "agreed, bleary.  Wizards will have to do some maintenance...."
+bleary says, "spam-proof maybe.  spoof-proof is not really feasable."
+You say, "I'll be happy to hunt down multiple players of problem cases..."
+You say, "and I'll be happy to rub out problem verbs..."
+bleary hears the tolling of the Lobby, clock, must hurry to bed before his
+gown turns back to rags.
+You say, "but I think it would be a good idea to have non-wizards, but
+venerable PMC-MOOers, in charge of complaints."
+You say, "Right, bleary...off to bed with you."
+You say, "Thanks for coming in.  You're a saint."
+Bakunin says, "g'night, bleary."
+bleary says, "send me moomail, lemme know whats going on."
+oura waves bleary
+Heinrich smiles and waves to bleary
+Daffy flaps
+bleary has disconnected.
+
+You say, ""bak..."
+You say, "you've been pretty quiet."
+You say, "you think all this is too arbitrary?"
+Bakunin doesn't think there's any reasonable way to prevent spoofing,
+either, 'cept by having an authorized list of people who can call your tell
+verb.
+You say, "I think some of this just has to be done by hand."
+glinda arrives.
+glinda hi's.
+You say, "and I think..hey there!"
+Heinrich says, "Is there a way to accurately @check or whatever spoof?"
+Bakunin [to Barney]: Sorry, I hadda give my cat some beta-blocker. No, I
+scrolled back and read it all. It _is_ arbitrary, but I'm as sick of this as
+everyone else and think something needs to be done, and am willing to go
+along with even arbitrary measures.
+You say, "wizards should do the things that wiz-perms are needed for."
+You say, "and others could others."
+You say, "a brief review?"
+You say, "here is what we've got so far..."
+You say, "I think."
+You say, "no spamming"
+You say, "no spoofing"
+You say, "one warning only"
+Bakunin [to Heinrich]: Yes, the @check command used $paranoid_db, which
+isn't easily hackable. Not a preventive mechanism, but, um, reliable.
+You say, "ditto bak on how we keep a record that is spoofproof, for dispute
+resolution."
+Bakunin says, "This still necessitates wizardly intervention."
+Heinrich [to Bakunin]: But, for instance, there is now a spoof verb here that
+the @check only goes to the verb owner not the spoofer
+You say, "a group of non-wizards to oversee same..."
+You say, "Heinrich, Tarquin...others?"
+Bakunin amends that to: the intervention of a specific class of players.
+You say, "Dorothy might chair that group?  "
+Bakunin [to Heinrich]: Oh, you're right.
+glinda is a bit confused... chair a group that over sees  me?
+You say, "wizards unilaterally destroy verbs that look spmmy or spoofy."
+Bakunin [to Heinrich]: We'll have to check callers(), I guess.
+Heinrich nods to Bakunin
+You say, "no, the heinrich et al group is for settling cases...."
+glinda [to Barney]: and I chair that group?
+You say, "looking at logs, applying the one-warning rule."
+Bakunin . o O (If we all chair a group, we'll wind up with a dinette set.)
+You say, "I think one of us needs to be involved, though not necessarily
+formally."
+Heinrich giggles about the dinette
+You say, "shout is another one... just get rid of these junk mail verbs."
+glinda will need a flame retardant ball gown.
+You say, "multiple players are OK..."
+glinda [to Barney]: why?
+Daffy says, "and fax verbs, if they give you rolled-up paper"
+You say, "but we need email addresses for all...."
+glinda [to Barney]: I say, as we spoke of ages ago, two characters per player.
+You say, "use trackdown when you have a problem and toad someone."
+You say, "Two is plenty, sure."
+Bakunin gestures vaguely at a consensus mechanism that doesn't necessarily
+require lots of votes. Has that idea been rejected for sure? Why have an elite
+group at all to serve as an executive? Or does that implicitly leave room for
+mediation?
+You say, "but this will be difficult to enforce."
+You say, "no, bak..."
+glinda [to Bakunin]: nope not at all, not rejected.
+You say, "mediation is important but time-consuming."
+Bakunin nods re: time consuming.
+You say, "group action is comfortable but inexact."
+glinda note that she was recommended to consume said time.
+Heinrich wonders if can put mediation on his CV with a letter from Barney
+oura cfs LambdaFiasco
+Heinrich smiles
+You say, "well, dear, you got here late..."
+Barney laughs
+glinda [to Barney]: hardly!
+You say, "EST?"
+glinda refers barn to the *wiz list
+Barney bows, willingly, to glinda
+glinda oopses... I mean i've been putting in my time, that's all.
+You say, "so aneewaze..."
+glinda [to all]: and I'd like to continue with bak's line of questioning about
+the necessity for elite group mediations...
+You say, "we need, for our sanity, to find a line between the arbitrary and
+the endless."
+glinda notes, unless that is rehashing some in depth discussion i missed in
+five  minutes i was waiting for a terminal.
+glinda [to Barney]: huh? re: what, exactly...
+You say, "arbitrary decisions are quick and seem efficient..."
+You say, "sensitive mediateio"
+glinda ahs, yes. I think what we are actually describing the need for is
+consistent mechanisms.
+You say, "sensitive mediation is nicer but takes forever and doesn't always
+deal with probs."
+You say, "right."
+glinda gestures again to bak's proposal.
+You say, "well, seems to me that 30 is too many."
+Daffy says, "then 20, 15?"
+You say, "and a year is too long...but if we can scale it to fit..."
+glinda nods...
+You say, "the only problem it would have is the ease with which one can
+spoof one's way to a crowd of angry witnesses."
+Daffy thinks the demobanishment would work... but has the ...RIghto
+You say, "I think there's some of that going on already, in the mail we've
+been reading."
+You say, "ashley, for instance."
+glinda [to Barney]: SOME! yes, some, I'd say.
+You say, "we need a spoof-proof database..."
+You say, "and a couple of people with permission to review it, in difficult
+cases."
+You say, "we can get rid of a lot of those cases by banning spamming and
+spoofing verbs."
+You say, "and unilateral wizactions on those are fine."
+glinda [to Barney]: yes... I 'd agree.
+oura says, "would it not work for committees to be ad hoc more like juries,
+with a chair selected from the ppl you've been nominating ...?"
+glinda wonders who oura is, btw.
+You say, "we can have a bak-mechanism to bring cases to the small group,
+how about."
+You say, "Oura is OK , though new to PMC-MOO."
+Heinrich wonders what the bak mech is, btw.
+oura says, "what are there secrets being told or something?"
+You say, "I mean a kind of banishment mechanism."
+glinda only meant to say she had not been introduced...
+You say, "ten votes, and the case goes to court."
+Heinrich introduces oura and glinda
+oura curtseys to glinda
+glinda yikes court.
+Bakunin says, "Sorry, eek. I'm back again. Kitty trouble."
+You say, "court reviews the db..."
+Heinrich says, "Ahhh, on the mech."
+You say, "etc. etc."
+You say, "hi bak...drug that cat."
+Daffy says, "or better (worse?)"
+Heinrich says, "So this isn't vulgar one character-one vote stuff, eh?"
+You say, "well, not court.  Kangaroo court."
+glinda says, "MOOt court."
+You say, "no, of course not!"
+glinda shakes head...
+You say, "what a silly idea."
+You say, "look the point is.."
+Bakunin missed this part. Why court?
+Heinrich will Gunierize on any voting things
+You say, "we have two kinds of problems here..."
+You say, "people who are assholes, and people who whine about people who
+are assholes."
+You say, "so to speak."
+Heinrich thinks they are the same
+You say, "I think we none of us have time for either type, really."
+Heinrich shrugs
+Heinrich laughs
+Bakunin . o O (toady went a-courtin...)
+You say, "what's the point, in any case?  "
+You say, "why are we here?  Why is pmc-moo here?"
+You say, "to be a perfect society?  Nope."
+glinda . o O (dee diddle dee dum day)
+glinda make a vulgar interve
+Bakunin laughs.
+Bakunin . o O (the vulgarian connection: kill de pope.)
+glinda [to all]: I think barney that that attitude is precisely related to the
+fuckyou fests we experience here.
+You say, "actually, I disagree."
+oura says, "which attitude?"
+You say, "I think the fuckyou fests are the result of people taking advantage
+of the absence of rules."
+Heinrich [to oura]: Read the last 200 posts to *theory
+Bakunin says, "Well, I kinda agree. The `user-unfriendly' stance we built
+upon has trickled down."
+glinda clarifies, the attitude initially set up by the genderfuck codes and
+then recalled by the login_welcome_message that seemed to say that
+everyone was under surveillance.
+You say, "I don't think most people here really want to mess with one
+another."
+Bakunin mixes metaphors.
+glinda [to Barney]: I would agree, except that LOTS of moos have few rules...
+You say, "I think our time is disproportionately consumed by a few..."
+You say, "and have no probs?"
+glinda adds, that indeed most moos are organized around unstated
+assumptions..
+Daffy says, "most people here would rather build a room and never come
+out."
+glinda [to Barney]: of course not, but not these kinds of problems perhaps...
+You say, "well, we moved the MOO once and changed some rules for a single,
+simple reason..."
+You say, "harrassment."
+You say, "I don't want people to come here and get harrassed."
+glinda dittos, obviously.
+You say, "I'm not, nor are you all, running this thing for that purpose."
+Daffy nods and nods
+oura says, "of course not, but it is a side effect not entirely avoidable...?"
+You say, "no one owes anyone anything here: you all are donating lots of
+time and energy to this place, and I trust your judgement."
+Heinrich . o O ( Part of the problem is anti-intellectual understandings of
+pomos as negative freedom, and negative freedom only )
+You say, "If sedate is a butthead, then get rid of him."
+You say, "if others do the same, ditto."
+You say, "I don't have a problem with this.  THey know what they are doing."
+oura is skeptical, but doesn't know the situation at hand
+You say, "I'm entirely with bleary on the toading of sedate, and I think
+others who behave the same way should simply be booted."
+Daffy thinks we should visit as guests more often
+You say, "it's too much trouble."
+You say, "good idea."
+glinda has already recommended that both sedate and his alias set notation
+be @toaded.
+You say, "shall we do it, then?"
+
+Bakunin [to Barney]: It's the `getting rid of' mechanism we're trying to
+formulate, isn't it? I have no problem with a means of removing abusive
+players, but I am interested in exploring how the society here to some extent
+constitutes it (I've not seen terrorists anywhere else), and how to avoid
+encouraging such an influx of players.
+You say, "actually, my own regrets run in the direction of not being able to
+tap into that terrorist energy in some way..."
+Heinrich suggests again that part of the problem is, Hein's humble opinion,
+the name of the MOO as pomo . . .
+You say, "sure."
+Heinrich says, "And the understanding of Pomo as negative freedom"
+You say, "but what the hey..."
+glinda [to all]: to follow up on bak's comment:
+You say, "we shall change the name to ArbitraryAndCapriciousMOO"
+You say, "and then all will be well."
+Heinrich [to barny]: Well, that's the vulgar understning of Pomo
+oura says, "it seems, kinda like glinda was saying, that moos themselves get
+perceived as based on negative freedom, as instances themselves of "pomo"
+and that the prob isnt unique here..."
+You hear what sounds like loud conversation coming from the lobby.
+Heinrich [to Barney]: I'm trying to point out that we've kiddies here who
+haven't thought more than 20 seconds about pomo
+glinda [to all]: I recommend that we @toad sedate and set notation because
+there is at present no other mechanism in place. AND then immediately
+impliment @banishment. It is unfeasible, it seems to me, to wait for
+banishment to be put in place as lots of players have lamented our inaction.
+You say, "removing genderfuck from PMC-MOO is in line with a general
+policy that says you have the right not to be fucked with..."
+You say, "agreed, glinda."
+Daffy nods
+glinda [to all]: and I think we need very much to make a public statement to
+this effect.
+Heinrich says, "could sedate be appealed to one more time?"
+You say, "and the right *not* to is the one we want to focus on."
+You say, "he's had his chance."
+You say, "and more."
+Heinrich says, "or has he done things I don't know about?"
+Heinrich nods
+glinda [to Heinrich]: yes
+Daffy says, "most likely"
+>@toad sedate
+Sedate(#2803) is now a toad.
+...#2
+...#70
+Heinrich says, "Well, i trust I don't need to know"
+Heinrich smiels
+Bakunin says, "So, um... We don't want to spend our time policing behavior,
+do we? How can we `tap into' that energy? It inherently avoids the kind of
+ruling apparatus we represent, dunnit? You wanna tap into it, take as much
+as possible out of the wizardly realms. If we want to be pomo, let's illustrate
+how power is distributed."
+*Site-Locks (#70) has just been sent new mail by Barney (#74).
+You say, "well, it *is* a problem, bak."
+Bakunin [to glinda]: Well said, I agree.
+You say, "I actually don't, necessarily, want to be pomo...and here's a hobby
+horse."
+You say, "if you're a medievalist, you are not expected to be medieval..."
+You say, "if you're a romanticist, you don't have to be romantic..."
+glinda [to Barney]: I *really* think that there is something to the idea that
+people fuck back when they feel fucked over. The genealogy of MOO is
+unavoidable and involves a bit of rampant rampaging. But the hostility, i
+think this comes from folks not knowing how power is likely to be used
+against them.
+You say, "just because I'm interested in postmodernism, donesn't mean I'm
+in favor of all things ostensibly postmodern."
+You say, "glinda..."
+You say, "it so quickly degenerates into tit for tat..."
+glinda adds, thus, I agree with bak that the way to "harness" the energy of
+the terrorists is to quite (seeming to) terrorize them, structurally speaking.
+Heinrich says, "Well, pomo ain't about negative freedom--so fuckin' shut
+down this kiddie bullshit about being able to do whatever."
+You say, "and the weak losing to the strong or the determined."
+glinda [to Barney]: I disagree.
+You say, "hmm."
+Bakunin [to Barney]: But, degenerates from _what_?
+You say, "well, degenerates from whatever people came here for."
+You say, "For example..."
+Bakunin . o O (throws in origins, since we're not being pomo.)
+glinda . o O (gets original)
+You say, "I spent a busy night protecting a group of writers, newbies on the
+moo..."
+You say, "from spamming and harrassment on the part of neanderthal
+teens..."
+You say, "women writers, guy teens...."
+oura says, "mebbe you should card at the door"
+You say, "I'm much more interested in being of use to the former than the
+latter."
+You say, "frankly, there are other places (oura knows) for the guys to go to
+work out what ails them."
+oura rolls her eyes
+You say, "I don't feel guilty about not being that place for those guys."
+You say, "I do feel bad about not being able to offer something more serious
+to people whose work/speech/time is more important to me."
+glinda [to Barney]: I've a suggestion, another vulgar intervention.
+You say, "goferit."
+glinda changes her mind...
+You say, "well, whatever.  I'm serious about that last part.  "
+glinda was going to say something like... we have done -- structurally
+speaking --- two contradictory things:
+You say, "which are?"
+glinda says, "on the one hand, we have tended to deploy the notion of pomo
+as a rather rigid thematics,... "
+glinda says, "yet, on the other hand, we have said "any thing goes" in a
+certain sense.."
+glinda adds yet another hand, YET, anything clearly doesn't go...
+You say, "well, thematically, there's a lot here that ain't pomo."
+Barney snuffs an elf or two
+Daffy grins
+oura says, "I hope I'm not out of place to say this, but even tho you don't
+wanna pander to B&B...."
+glinda nods, all I am again saying is that we think seriously about how it is
+that we have actually structured in the responses that we are getting.
+You say, "agreed, glinda, but I don't think we are entirely responsible
+either..  B&B, Oura?"
+glinda [to Barney]: of course that is not what I am saying.
+oura says, "beavis and butthead, the teenguys you were talking about"
+You say, "ah."
+You say, "to you both."
+oura says, "even though you dont want to protect that behaviour, it seems
+like the sort of punishment you're meting out is not in keeping with the kind
+of community you say you want"
+You say, "no, we're not responsible for B&B, but we are responsible .....for
+other things."
+You say, "I think back to Michael Joyce's visit..."
+You say, "came with his class on Pomo from Vassar..."
+Bakunin says, "But we sit in a responsible position, at the top (as it were) of
+an extemely problematic social situation. It's useful to explore our role in
+constituting it, and useful to consider non-arbitrary (as much as possible)
+ways to counter it, otherwise we'll just foment more of the same."
+You say, "he's trying despearately to talk about transsgression..."
+Bakunin [to Barney]: That visit was excruciating.
+You say, "and forty people are farting."
+You say, "it was terribly funny and to the point somehow."
+Heinrich giggles
+glinda [to Barney]: Its about clarity and consistency which doesn't mean clear
+and consistent wizards -- althought that would be nice -- but is about clarity
+and consistency of design, praxis.
+glinda . o O (sounds perfect actually, re: transgression)
+You say, "righto, glinda."
+You say, "but..."
+You say, "I'm inclined to think that the structure should protect the novice."
+Daffy says, "we did tell everyone that: repeated nuisance behavior will cost
+you your player."
+You say, "This is important."
+glinda [to Barney]: then its IRT chat.
+glinda [to Barney]: but I agree, actually, yes.
+You say, "It's more than that, in any case."
+You say, "then we're into liberal politics..."
+You say, "protect the weak..."
+You say, "a welfare state, etc. etc."
+You say, "so we get on into these discussions about wouldn't it be nice to
+have a tame terrorist..."
+You say, "or a terrorized terrorist..."
+glinda hms barn's genealogy of the liberal tradition...
+You say, "but actually, I think it may be just a pain."
+You say, "depends on what we're for, I guess."
+glinda adds, actually, we got on this topic in asking what kind of society
+produces terroriests.
+You say, "actual terrorists?"
+You say, "ineffectively repressive societies."
+glinda clarifies, what kind of MOO society produces MOO terrorist. This is the
+intersting question i think sedate smack etc. pose.
+Bakunin says, "Um, a totalitarian one."
+You say, "ditto."
+Heinrich thinks Barn has been listening to too much Rush as he equates
+liberal and welfare so swiftly
+Bakunin lags.
+glinda nods bakunin.
+You say, "well, never actually heard Rush, and despise him of course..."
+Heinrich laughs and hoped someone would laughs at that bad joke
+Heinrich shrugs
+You say, "but my point is that I want to protect the weak, but I hate the
+whining."
+glinda says, "thus, I think its crucial that we reduce the verisimilitude
+betwen this MOO and totalitarian state."
+You say, "reduce or enlarge?"
+glinda protects the weak here every fucking day.
+You say, "indeed."
+oura says, "been sounding like you wanna enlarge it..."
+You say, "and it's a lot of work, isn't it?"
+You say, "for what..."
+You say, "to protect the right of some bozos to spam?"
+Bakunin says, "It is if we keep all the juridical/executive power to
+ourselves."
+You say, "I can't see it somehow."
+glinda [to Barney]: it is alot of work to protect the weak in an environment
+which induces folks to spam, etc. Yes. yes yes, bakunin.
+oura says, "isnt simple spamming a different case than harassment?"
+You say, "agreed. let's give it up to the community, by all means, seriously."
+glinda [to Barney]: I'm suggesting, now in about the fourth incarnation, that
+your inability to see the connetion between the way we weild power and the
+way other folks weild power here *is* a central problem in the design of this
+moo.
+You say, "but I think we need fewer than thirty votes and less than a year to
+qualify."
+You say, "I don't wield it...that's the most problem here."
+glinda OH MY GODS!
+You say, "you all can do whatever you want, you know."
+glinda really doesn't know what to say next.
+Bakunin says, "Of course you (and we) wield power. Where else does it
+reside? I mean, in terms of design/praxis."
+You say, "I don't think I've ever gainsayed...and I understand the value of
+what you do."
+You say, "you keep the place going."
+You say, "you have the right to make it move one way or another."
+glinda [to Barney]: that  is not what I'm oh my godding, actually...
+glinda [to Barney]: reread, if you will, my last longish comment. as that was
+my best effort at saying somehting I really have thought a lot about
+You say, "well, I think..."
+You say, "I stand by what I just said:"
+glinda says, "ok. "
+You say, "I set the thing running, and I haven't had enough time to moderate
+and make it go."
+You say, "not being around..."
+glinda says, "if by that you mean, yes, not being around, i agree that is a
+prob. "
+You say, "I'm not as qualified as most of you are to say what's what here."
+You say, "I have my opinions, but I'm willing to bow to any old vote of you
+all."
+You say, "and I think part of the prob..."
+glinda has been extremely unqualified. is expressing opinions.
+Bakunin hasn't been around much either, and is doing the same.
+You say, "The real probl we see here, is the victimized getting fed up with
+the lack of authority."
+You say, "seems a shame, really."
+Daffy nods.
+You say, "t's not that hard to deal with."
+Bakunin says, "Okay. So the best way to help people be less victimized is to,
+um, empower them, right? Setting aside for a moment the problematic
+nature of top-down empowerment."
+glinda oks, shrugs, is visibly disappointed.
+Bakunin says, "The problem _isn't_ lack of authority, I don't think."
+oura comforts glinda
+You say, "sorry, glinda."
+glinda dittos again and again bak's point.
+glinda [to Barney]: you are just not thinking in a very complicated way,
+finally.
+You say, "fine: explain to me how our problem is the result of too much
+authority."
+glinda has been doing that from the beginning.
+You say, "explain how our complicated ideas about empowerment and
+freedom..."
+You say, "will assist the person who doesn't know from @refuse."
+glinda repeats, that we have not implimented a single complicated idea that
+undermines the de facto privilege of wizard rule.
+You say, "and why should expertise, finally, be the thing that gives you the
+right to communicate here."
+Bakunin [to Barney]: I really do believe, with glinda, that the genderfuck
+helped constitute the fuck-with-everything attitude here. Our _ideas_ about
+empowerment and freedom are complicated, but not the implementation.
+glinda says, "and we have implemented lots of other kinds of mechanisms
+that seem to do the exact opposite, ... "
+You say, "we dismantled the one idea we had about that..."
+Bakunin [to glinda]: Oops, what you said.
+glinda [to Bakunin]: no what you said
+Bakunin [to Barney]: We don't want to be police, do we? I don't.
+Bakunin grins at glinda.
+glinda is living virtual proof that expertise is not the final say in this MOO,
+btw.
+oura says, "that fact that bakunin points out -- that your ideas are
+complicated but not implementation -- is the cause of the seeming
+contradiction
+glinda's pointing out, isnt it?"
+glinda [to oura]: yes yes yes yes yes
+You say, "I don't either, of course...but I don't want a lot of interesting
+possiblities to go down the toilet so that someone can go
+HAHAHAHAHAHAHAH a million times against some person he thinks is gay."
+Bakunin [to Barney]: We all agree about that, absolutely.
+glinda says, "neither do 'the people'"
+glinda smiles... waves a little flag. salutes.
+You say, "fine, and I'm happy to have the proles etc. etc. "
+You say, "but at some point, there is a practical issue."
+Bakunin hums the International (house of pancakes).
+You say, "wiz perms..."
+glinda nods the practical.
+You say, "you gonna let everyone look at the logs?"
+You say, "or just not keep any?"
+You say, "without logs, it's a guessing game."
+Bakunin points shyly at the banishment petition again, that someone nicely
+ported over. Look, Ma. Built-in wiz-perms.
+glinda smiles...
+Bakunin says, "You want to build a case to convince other people to banish,
+you publish the relvant segment of the $paranoid_db (@check)."
+You say, "yes, but....how do we know spoofing isn't at issue."
+You say, "you being who?  a wiz?"
+Bakunin [to Barney]: Because only wiz-verbs can write into $paranoid_db.
+Bakunin says, "No, whomever casts the first @banish."
+You say, "fine.  I'm in favor, really. "
+Bakunin says, "Or subsequent ones."
+You say, "I don't want to make us into police, and I know we don't all want
+to deal with it."
+You say, "but we came here tonight because we know there's a problem..."
+You say, "and the problem is not an excess of freedom, I think."
+Bakunin says, "The problem is a lack of recourse."
+You say, "the problem is that the moocode itself inherently enables abusive
+behavior, if one wants to abuse its potential."
+Bakunin says, "It's very open, it's true. Anyone can call player:tell. "
+You say, "a lack of recourse, right.  But also more than the required benefit
+of the doubt, I think."
+You say, "the banishment thing takes care of that."
+You say, "and it distributes power."
+You say, "and that's fine."
+Bakunin [to Barney]: but..?
+You say, "we will also need, at some point, a means of appeal from that
+mechanism."
+You say, "sure as shootin'"
+You say, "so perhaps that's our wizards?"
+You say, "also..."
+You see a faint shimmering force wrapping itself around Daffy and hugging
+him warmly...
+Then the shimmering force dissipates slowly and silently...
+You say, "in your description of banishment..."
+You say, "you say that spamming and dumb weapons stuff is not grounds."
+You say, "but that leaves out most all of what people are now complaining
+about here."
+You say, "If I followed your rules, it wouldn't solve our problem."
+Bakunin says, "Why shouldn't that be addressed with @gag and @refuse?"
+You say, "the newbie issue."
+You say, "why should one be expected to be able to protect oneself here?"
+oura says, "well *some* responsibility should lie with them"
+You say, "we have a choice there."
+Bakunin says, "One has to, everywhere."
+You say, "nonsense, frankly."
+glinda [to Bakunin]: .. well. I don't think that is the point.
+Bakunin says, "And 100 HAHAHAs maybe should be grounds for @banish. On
+Lambda, well..."
+You say, "this is an arbitrary universe we're setting up here..."
+Bakunin [to glinda]: yeah, I was being facile.
+Daffy laughs
+glinda [to Barney]: clarify please?
+glinda wonders if, for example, $note sometimes is $thing?
+glinda thinks not.
+Bakunin says, "We give them banish, they can use it as they see fit. But, um...
+How is @banish any easier to learn about, for newbies, than @gag or
+@refuse?"
+You say, "right, it's not."
+You say, "the point is...I think (just me, mind you)"
+You say, "that being harrassed ought not be part of visiting PMC-MOO."
+You say, "that's what the current policy statement does already say"
+You say, "and I think all this is about who will enforce that, and how."
+glinda nods, yes...
+You say, "no one wants to wield the billy..."
+You say, "so distribute it, that's fine: but we don't escape anything by doing
+that."
+glinda [to Bakunin]: hey, bak. Are you suggesting the @banish deals with any
+and all social problems.?
+You say, "We still have to set the policy for @banish."
+oura says, "in the grubbier realms, there is a burden on the newbie to
+protect her/himself"
+oura says, "precisely because they are all about power in the raw"
+Bakunin [to glinda]: Oh, yes. definitely.
+Bakunin phhbts.
+glinda [to Bakunin]: for example, if spoof is disallowed are wizards not to
+strip spoof verbs etc.
+You say, "sure, oura.  but we backed off of object lessons at that level, I
+think."
+Bakunin [to glinda]: I dunno, I was wondering that. I think arbitrary wizard
+actions are another realm entirely. Undefined now.
+oura says, "well it all sounds very fascistic here"
+oura is tired and is going to leave
+You say, "I continue to think that wizards should have the right to
+unilaterally blow away harrassment verbs."
+oura says, "thanks for inviting me Barney"
+You say, "bye, then."
+You say, "um..."
+oura says, "it was interesting.  nice to meet you all -- you are frighteningly
+articulate, glinda"
+oura smiles at glinda
+glinda [to Bakunin]: that is what i'm trying to define. @banishment is not
+undermined by wizard acting according to clarified policies.
+oura has disconnected.
+
+You say, "banishment is the removal of a player..."
+Bakunin [to glinda]: No, I agree, it isn't. It's just another mechanism.
+You say, "destroying a verb is less serious."
+You say, "in fact, we could simply chown the verb."
+You say, "and move it to us, pending review and appeal etc. etc."
+glinda [to Bakunin]: yes. ok so lets clarify and posts what wizards can be
+expectied always to do.
+Bakunin [to glinda]: ok.
+glinda . o O (like cops who confiscate the drugs... hee hee)
+You say, "Banishment of players...on a scale that fits pmc-mooo."
+Bakunin hopes to confiscate some good ones.
+Bakunin says, "Should we talk about that now, or hash it out in *wiz?"
+You say, "repossession of verbs can be unilateral and without warning, on
+documented complaint."
+Heinrich says, "Hey, do I still get to be a MOOtrooper?"
+glinda yeah i bets.
+Bakunin hmms. Hash.
+Heinrich giggles
+glinda [to Heinrich]: nope.
+Heinrich shrugs
+You say, "Sure, Heinrich...."
+Heinrich says, "Good.  Less time."
+Heinrich smiles
+glinda [to Bakunin]: I say we begin it tonite, as we already have So we can
+post it in the news.
+Heinrich laughs about Barn and glinda
+You say, "come one, we need someone to monitor @gripe."
+Bakunin nods. Tonight it is.
+You say, "How about...we post this whole buffer?"
+Bakunin says, "Did someone log it?"
+You say, "I'm working in emacs...I can save it easily."
+Bakunin says, "Okay, I have no objection to posting it."
+glinda [to all]: toward clarifying wiz policies: 1. wizards will strip sppof
+and spamm verbs.
+Daffy says, "@chown to wiz I thought?"
+glinda has no objetions to posting it either.
+glinda [to Daffy]: ok, @chown to wiz.
+Bakunin [to Daffy]: Um, not on something the player owns.
+You say, "what daffy said...chown to be nice."
+Daffy [to Bakunin]: right... just the verb
+Bakunin says, "Wait, wait. That'll give it wizperms."
+The housekeeper arrives to cart oura off to bed.
+You say, "copy..."
+You say, "and destroy."
+Daffy says, "sorry, that's what I meant.."
+Bakunin nods. copy and @rmverb.
+glinda [to Bakunin]: ok that's 1. what's 2.
+You say, "banishment by players..."
+glinda nods... and adds that wizards investigate *site_lock issues.
+glinda adds, and duplicate characters, etc.
+You say, "no more than two, in any (known) case..."
+You say, "and we accept Bleary's suggestons, and Glinda's ammendments, on
+the quota issues..."
+You say, "to be duly posted...."
+Bakunin says, "I just created an object called $badverbs (core object) to hold
+copied, suspect verbs."
+You say, "copy the verbs to it, then?"
+Bakunin says, "Yes, and make them !r !x."
+You say, "bueno.  We have some we should copy right now...Daffy, you night
+duck, are you willing?"
+glinda [to all]: re: quota that is, next to spam/spoof fests that is the
+biggest bone of contention...
+Daffy says, "um, ok... not too much tho"
+
+You say, "I have to go read grad. applications ... whine whine."
+You say, "no, just the ones recently reported in *wiz"
+Daffy chuckles, and knows what/who you'll be reading.
+Daffy attaches a weiner dog to Barney.
+Bakunin says, "What about summary @toadings, in extreme circumstances?
+Do we retain that right?"
+glinda says, "yes."
+You say, "I will save this buffer now, but it may not be pasted back into the
+moo until tomorrow.  "
+Daffy agrees
+Bakunin nods.
+You say, "I don't think..."
+glinda says, "... hm..."
+You say, "I'm reluctant to allow unilateral action at that level..."
+You say, "just because of my recent experience with flamewars."
+You say, "the heat of the moment is what produces summary toading."
+glinda had thought that summary toading meant, simply, that there may be
+some circumstances -- unforseen now -- in which @banishment will not
+work effectively.
+You say, "no behavior is so egregious and uncontrollable that the measures
+we've already discussed aren't sufficient, I think."
+Bakunin nods to glinda. Extremely abusive player on, not enough players to
+banish, then what?
+glinda [to Barney]: so better, in the name of clarity of design, retain that
+right, rather than give it away only to reclaim it.
+Bakunin . o O (@newt?)
+You say, "right, @newt."
+
+You say, "and shout or involuntary moo-wide communication verbs are
+considered spammy, yes?"
+glinda . o O (she turned me into a @newt.. i got bettah)
+You say, "I'm not dead yet..."
+Heinrich thinks he should retain right to summary @toad on those who he
+deems are posting silly things to public lists
+Bakunin got bettah.
+Heinrich laughs and laughs
+You say, "and I think we should have a mechanism....I'm serious now..."
+glinda grins at barney.. didn't think you were.
+Heinrich says, "Another bad joke from Hein."
+You say, "like @banish, for stupid elfnames."
+Heinrich shrugs
+Daffy giggles
+Bakunin laughs.
+Daffy laughs some more. "or just barnyard animals?"
+You say, "if ten people find your esthetic offensive, out you go."
+Bakunin says, "What about summary @toading for Furry-type players?"
+Daffy says, "MOOsthetics"
+You say, "summary shaving.."
+glinda smiles... are you sure you want to say that... you little dog you?
+Daffy says, "and walking backwards"
+Barney likes being shaved.
+Bakunin morphs into a cuddly little fieldmouse with a pink ribbon and
+nipple clamps.
+glinda smiles...
+Daffy says, "can he do that?  :)"
+Heinrich thinks it's too bad all of you aren't here in RL as he just pulled a
+big pan of pizzarolls from the oven
+
+
+You say, "I gotta go.  Thanks for coming, thanks for putting up with me and
+helping make PMCMOO run.  Don't forget the innocents, if there are any."
+Bakunin [to Barney]: See ya, Barney. Take care.
+glinda will remember you, don't worry.
+Barney loves you all
+Daffy wishes Barney luck... or stronger coffee
+glinda laffs...
+Bakunin waves innocently.
+Heinrich waves to Barn
+>@quit
+
+Smack's note: None of the measures discussed here were ever implemented.
