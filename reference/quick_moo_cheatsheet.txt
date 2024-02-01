@@ -1,0 +1,566 @@
+MOO programming cheat sheet.
+
+Types
+
+  NUM	number	34
+  STR	string	"\"Hi\," said John."
+  OBJ	object	#23
+  LIST	list	{34, "a string", {"a", "sublist", 3}, {}}
+  ERR	error	E_TYPE
+
+Errors
+
+  E_TYPE	type mismatch
+  E_DIV		divide by zero
+  E_RANGE	invalid subscript
+  E_INVARG	invalid argument
+  E_VARNF	variable not found
+  E_PROPNF	property not found
+  E_VERBNF	verb not found
+  E_PERM	permissions error
+  E_INVIND	invalid object number
+  E_MAXREC	exceeded maximum recursion depth
+
+Subscripting
+
+  Everything is 1-based.
+  subscript lists or strings
+  s[expr] is lvalue and rvalue
+  s[expr..expr] does slices.  Exprs must be in range.
+
+  @expr does list splicing for lists or arguments.
+
+Special variables in functions
+
+  this		the object
+  caller	value of "this" in calling function, or player at top-level
+  player	player that invoked the task
+  verb		verb named used to invoke verb
+  args		list of arguments
+  [For commands]
+  argstr	everything after first word of command
+  dobjstr	direct object string
+  dobj		direct object value
+  prepstr	preposition string
+  iobjstr	indirect object string
+  iobj		indirect object value
+
+Exprs
+
+  Usual C stuff, except:
+    cond ? expr1 | expr2	conditional expressions
+    $foo			#0.foo
+    "str" + "str"		concatenation
+    expr in list		list membership, returns index or 0 (false)
+  Strings comparisons case-insensitive.
+
+Statements
+
+  if (expr); ... elseif (expr); ... else; ... endif
+  for variable in (expression); ... endfor
+  for variable in [expr1..expr2]; ... endfor
+  while (expr); ... endwhile
+  fork (expr); ... endfork
+  fork name (expr); ... endfork
+MATH
+  min(n1, n2, ...) -- minimum of n1,n2,...
+  max(n1, n2, ...) -- maximum of n1,n2,...
+  abs(n)           -- absolute value of n
+  sqrt(n)          -- square root of n, rounded down
+  random(n)        -- random integer between 1 and n inclusive
+
+$math_utils:
+  -- Trigonometric/Exponential functions
+  :sin(a),cos(a),tan(a) -- returns 10000*(the value of the corresponding
+       trigonometric function) angle a is in degrees.
+  :arctan([x,]y) -- returns arctan(y/x) in degrees in the range -179..180.
+       x defaults to 10000.  Quadrant is that of (x,y).
+  :exp(x[,n]) -- calculates e^x with an nth order taylor polynomial
+
+  -- Statistical functions
+  :combinations(n,r) -- returns the number of combinations given n objects
+       taken r at a time.
+  :permutations(n,r) -- returns the number of permutations possible given
+       n objects taken r at a time.
+
+  -- Number decomposition
+  :div(n,d) -- correct version of / (handles negative numbers correctly)
+  :mod(n,d) -- correct version of % (handles negative numbers correctly)
+  :divmod(n,d) -- {div(n,d),mod(n,d)}
+  :parts(n,q[,i]) -- returns a list of two elements {integer,decimal fraction}
+
+  -- Other math functions
+  :sqrt(x)      -- returns the largest integer n <= the square root of x
+  :pow(x,n)     -- returns x^n
+  :factorial(x) -- returns x!
+
+  -- Series
+  :fibonacci(n) -- returns the 1st n fibonacci numbers in a list
+  :geometric(x,n) -- returns the value of the nth order geometric series at x
+
+  -- Integer Properties
+  :gcd(a,b) -- find the greatest common divisor of the two numbers
+  :lcm(a,b) -- find the least common multiple of the two numbers
+  :are_relatively_prime(a,b) -- return 1 if a and b are relatively prime
+  :is_prime(n) -- returns 1 if the number is a prime and 0 otherwise
+  
+  -- Miscellaneous
+  :random(n) -- returns a random number from 0..n if n > 0 or n..0 if n < 0
+  :random_range(n[,mean]) -- returns a random number from mean - n..mean + n
+       with mean defaulting to 0
+  :simpson({a,b},{f(a),f((a+b)/2),f(b)}) -- returns the numerical
+      approximation of an integral using simpson's rule
+
+  -- Bitwise Arithmetic
+  :AND(x,y) -- returns x AND y
+  :OR(x,y) -- returns x OR y
+  :XOR(x,y) -- returns x XOR y (XOR is the exclusive-or function)
+  :NOT(x) -- returns the complement of x
+      All bitwise manipulation is of 32-bit values.
+
+TIME
+  time()         -- current time in seconds since midnight GMT, 1 Jan 70
+  ctime([time])  -- time (or current time) converted to a human-readable string
+
+$time_utils:
+  -- Converting from seconds-since-1970    
+  :dhms          (time)                  => string ...DD:HH:MM:SS
+  :english_time  (time[, reference time) => string of y, m, d, m, s
+
+  -- Converting to seconds
+  :to_seconds    ("hh:mm:ss")           => seconds since 00:00:00
+  :from_ctime    (ctime)                => corresponding time-since-1970
+  :from_day      (day_of_week, which)   => time-since-1970 for the given day*
+  :from_month    (month, which)         => time-since-1970 for the given month*
+      (* the first midnight of that day/month)
+
+  :day           ([c]time)              => what day it is
+  :month         ([c]time)              => what month it is
+  :ampm          ([c]time[, precision]) => what time it is, with am or pm
+  :time_sub      (string, time)         => substitute time information
+  :sun           ([time])               => angle between sun and zenith
+  :dst_midnight  (time)                 
+
+STRINGS
+  index(str1, str2 [, case-matters])  -- index of first str2 in str1
+  rindex(str1, str2 [, case-matters]) -- index of last  str2 in str1
+  strcmp(str1, str2)                  -- case-sensitive string comparison
+  strsub(subject, what, with [, case-matters]) -- substitution in a string
+  crypt(string [, salt])              -- one-way string encryption
+  match(str1, str2 [, case-matters])  -- match first pattern str2 in str1
+  rmatch(str1, str2 [, case-matters]) -- match last  pattern str2 in str1
+  substitute(template, subs)          -- perform substitutions on template
+
+$string_utils
+  -- Conversion routines
+  :from_list    (list [,sep])                          => "foo1foo2foo3"
+  :english_list (str-list[,none-str[,and-str[, sep]]]) => "foo1, foo2, and foo3"
+  :title_list*c (obj-list[,none-str[,and-str[, sep]]]) => "foo1, foo2, and foo3"
+						    or => "Foo1, foo2, and foo3"
+  :from_value   (value [,quoteflag [,maxlistdepth]])   => "{foo1, foo2, foo3}"
+
+  :english_number(42)          => "forty-two"
+  :english_ordinal(42)         => "forty-second"
+  :ordinal(42)                 => "42nd"
+  :group_number(42135 [,sep])  => "42,135"
+
+  -- Type checking
+  :is_numeric(string) => return true if string is composed entirely of digits
+
+  -- Parsing
+  :explode (string,char) -- string => list of words delimited by char
+  :words   (string)      -- string => list of words (like command line parser)
+  :word_start (string)   -- string => list of start-end pairs.
+
+  -- Matching
+  :match_string(string, pattern, options)  => * wildcard matching
+  :find_prefix(prefix, string-list)  => list index of elt starting with prefix
+  :index_delimited(string,target[,case])  => index of delimited string occur.
+  :match(string, [obj-list, prop-name]+)  => matching object
+  :match_player(string-list[,me-object])  => list of matching players
+  :match_object(string, location)         => default object match...
+  -- Pretty printing
+  :space         (n/string[,filler])     => n spaces
+  :left          (string,width[,filler]) => left justified string in field 
+  :right         (string,width[,filler]) => right justified string in field
+  :center/re     (string,width[,filler]) => centered string in field
+  :columnize/se  (list,n[,width])        => list of strings in n columns
+
+  -- Substitutions
+  :substitute (string,subst_list [,case])  -- general substitutions.
+  :pronoun_sub (string/list[,who[,thing[,location]]])
+					   -- pronoun substitutions.
+  :pronoun_sub_secure (string[,who[,thing[,location]]],default)
+					   -- substitute and check for names.
+  :pronoun_quote (string/list/subst_list)  -- quoting for pronoun substitutions.
+
+  -- Miscellaneous string munging:
+  :trim         (string)       => string with outside whitespace removed.
+  :triml        (string)       => string with leading whitespace removed.
+  :trimr        (string)       => string with trailing whitespace removed.
+  :strip_chars  (string,chars) => string with all chars in `chars' removed.
+  :strip_all_but(string,chars) => string with all chars not in `chars' removed.
+  :capitalize/se(string)       => string with first letter capitalized.
+  :uppercase/lowercase(string) => string with all letters upper or lowercase.
+  :names_of     (list of OBJ)  => string with names and object numbers of items.
+
+  .alphabet                    => "abcdefghijklmnopqrstuvwxyz"
+
+LISTS
+  listappend(list, value [, index]) -- adding an element at the end of a list
+  listinsert(list, value [, index]) -- adding an element at the head of a list
+  listset(list, value, index)       -- updating a list at some index
+  listdelete(list, index)           -- removing an element from a list
+  setadd(list, element)      -- adding an element to a set represented as a list
+  setremove(list, element)   -- removing an element from such a set
+
+$list_utils:
+  :append            (list,list,..) => result of concatenating the given lists
+  :reverse           (list)         => reversed list
+  :remove_duplicates (list)         => list with all duplicates removed
+  :compress          (list)         => list with consecutive duplicates removed
+  :setremove_all     (list,elt)     => list with all occurrences of elt removed
+  :find_insert       (sortedlist,e) => index of first element > e in sortedlist
+  :sort              (list[,keys])  => sorted list
+
+  :make              (n[,e])        => list of n copies of e
+  :range             (m,n)          => {m,m+1,...,n}
+  :arrayset   (list,val,i[,j,k...]) => array modified so that list[i][j][k]==val
+
+  -- Mapping functions (take a list and do something to each element)
+  :map_prop ({o...},prop)              => list of o.(prop)            for all o
+  :map_verb ({o...},verb[,args)        => list of o:(verb)(@args)     for all o
+  :map_arg  ([n,]obj,verb,{a...},args) => list of obj:(verb)(a,@args) for all a
+
+  -- Association list functions
+  An association list (alist) is a list of pairs (2-element lists), though the
+  following functions have been generalized for lists of n-tuples (n-element
+  lists).  In each case i defaults to 1.
+
+  :assoc     (targ,alist[,i]) => 1st tuple in alist whose i-th element is targ
+  :iassoc    (targ,alist[,i]) => index of same.
+  :assoc_prefix (targ,alist[,i]) => ... whose i-th element has targ as a prefix
+  :iassoc_prefix(targ,alist[,i]) => index of same.
+  :slice             (alist[,i]) => list of i-th elements
+  :sort_alist        (alist[,i]) => alist sorted on i-th elements.
+$seq_utils
+  A sequence is a set of integers (*)
+  This package supplies the following verbs:
+
+  :add      (seq,f,t)  => seq with [f..t] interval added
+  :remove   (seq,f,t)  => seq with [f..t] interval removed
+  :range    (f,t)      => sequence corresponding to [f..t]
+  {}                   => empty sequence
+  :contains (seq,n)    => n in seq
+  :size     (seq)      => number of elements in seq
+  :first    (seq)      => first integer in seq or E_NONE
+  :firstn   (seq,n)    => first n integers in seq (as a sequence)
+  :last     (seq)      => last integer in seq  or E_NONE
+  :lastn    (seq,n)    => last n integers in seq (as a sequence)
+
+  :complement(seq)       => [-2147483648..2147483647] - seq
+  :union    (seq,seq,...) 
+  :intersect(seq,seq,...) 
+
+  :extract(seq,array)           => array[@seq]
+  :for([n,]seq,obj,verb,@args)  => for s in (seq) obj:verb(s,@args); endfor
+
+  :tolist(seq)            => list corresponding to seq
+  :tostr(seq)             => contents of seq as a string
+  :from_list(list)        => sequence corresponding to list
+  :from_sorted_list(list) => sequence corresponding to list (assumed sorted)
+  :from_string(string)    => sequence corresponding to string
+
+  For boolean expressions, note that the representation of the empty
+  sequence is {} (boolean FALSE) and all non-empty sequences are
+  represented as nonempty lists (boolean TRUE).
+
+  The representation used works better than the usual list implementation
+  for sets consisting of long uninterrupted ranges of integers.  For sparse
+  sets of integers the representation is decidedly non-optimal (though it
+  never takes more than double the space of the usual list representation).
+
+  (*) Actually what this package implements is sets of integers-mod-2^32,
+  but this assumes the underlying machine on which the server runs has
+  32-bit integers.  If not, you need to change this.maxneg to be the
+  largest negative ("smallest"?)  integer available.
+
+$set_utils
+  This object is useful for operations that treat lists as sets (i.e.,
+  without concern about order and assuming no duplication).
+
+  :union(set, set, ...)        => union
+  :intersection(set, set, ...) => intersection
+
+  :diff*erence(set 1, set 2, ..., set n)
+        => result of removing all elements of sets 2..n from set 1.
+  :exclusive_or(set, set, set, ...)
+        => all elements that are contained in exactly one of the sets
+
+  :contains(set 1, set 2, ..., set n)
+        => true if and only if all of sets 2..n are subsets of set 1
+OBJECTS
+  valid(object)                -- testing whether an object exists
+  create(parent [, owner(*)])  -- creating a new MOO object
+  recycle(object)              -- destroying a MOO object
+  move(object, where)          -- altering the object-containment hierarchy
+  chparent(object, new-parent) -- altering the object-inheritance hierarchy
+  parent(object)               -- object's parent   in the inheritance hierarchy
+  children(object)             -- object's children in the inheritance hierarchy
+  max_object()                 -- the highest-numbered object in the MOO
+  renumber(obj)          -- changes an object's number to lowest available one*
+  reset_max_object()     -- resets max_object() to the largest valid object*
+
+  properties(object)   -- a list of the properties defined on an object
+  add_property(object, prop-name, value, info) -- add a new property
+  delete_property(object, prop-name)           -- remove a property
+  property_info(object, prop-name)             -- {owner, perms} info on a prop
+  set_property_info(object, prop-name, info)   -- setting same
+  is_clear_property(object, prop-name)         -- find out if a prop. is "clear"
+  clear_property(object, prop-name)            -- make a property "clear"
+
+  verbs(object)                   -- a list of the verbs defined on an object
+  add_verb(object, info, args)    -- add a verb to an object
+  delete_verb(object, verb-name)  -- remove a verb from an object
+  verb_info(object, verb-name)    -- {owner, perms, names} info for a verb defn.
+  verb_args(object, verb-name)    -- {dobj, prep, iobj} argument info for a verb
+  verb_code(object, verb-name [, fully-paren [, indent]]) -- program listing
+  set_verb_info(object, verb-name, {owner, perms, names})
+  set_verb_args(object, verb-name, {dobj, prep, iobj})   
+  set_verb_code(object, verb-name, {line, line, ...})
+
+$object_utils
+  -- Examining everything an object has defined on it
+  :all_verbs          (object) => like it says
+  :all_properties     (object) => likewise
+  :findable_properties(object) => tests to see if caller can "find" them
+  :owned_properties   (object[, owner]) => tests for ownership
+
+  -- Investigating inheritance
+  :ancestors(object[,object...]) => all ancestors
+  :descendants      (object)     => all descendants
+  :ordered_descendants(object)   => descendants, in a different order
+  :leaves           (object)     => descendants with no children
+  :branches         (object)     => descendants with children 
+  :isa        (object,class) => true iff object is a descendant of class (or ==)
+
+  -- Considering containment
+  :contains      (obj1, obj2) => Does obj1 contain obj2 (nested)?
+  :all_contents      (object) => return all the (nested) contents of object
+
+  -- Verifying verbs and properties
+  :has_property(object,pname) => false/true   according as object.(pname) exists
+  :has_verb    (object,vname) => false/{#obj} according as object:(vname) exists
+  :has_callable_verb          => same, but verb must be callable from a program
+  :match_verb  (object,vname) => false/{location, newvname}
+                               (identify location and usable name of verb)
+
+COMMANDS
+$command_utils
+  -- Detecting and Handling Failures in Matching
+  :object_match_failed(match_result, name)
+     Test whether or not a :match_object() call failed and print messages if so.
+  :player_match_failed(match_result, name)
+     Test whether or not a :match_player() call failed and print messages if so.
+  :player_match_result(match_results, names)
+     ...similar to :player_match_failed, but does a whole list at once.
+
+  -- Reading Input from the Player
+  :read()         -- Read one line of input from the player and return it.
+  :yes_or_no([prompt])
+		  -- Prompt for and read a `yes' or `no' answer.
+  :read_lines()   -- Read zero or more lines of input from the player.
+  :dump_lines(lines) 
+		  -- Return list of lines quoted so that feeding them to 
+		     :read_lines() will reproduce the original lines.
+
+  -- Utilities for Suspending
+  :running_out_of_time()
+		  -- Return true if we're low on ticks or seconds.
+  :suspend_if_needed(time)
+		  -- Suspend (and return true) if we're running out of time.
+
+  -- Client Support for Lengthy Commands
+  :suspend(args)  -- Handle PREFIX and SUFFIX for clients in long commands.
+
+
+CODE
+$code_utils:
+  :parse_propref("foo.bar")  => {"foo","bar"} (or 0 if arg. isn't a prop. ref.)
+  :parse_verbref("foo:bar")  => {"foo","bar"} (or 0 if arg. isn't a verb ref.)
+  :parse_argspec("any","in","front","of","this","baz"...)
+			    => {{"any", "in front of", "this"},{"baz"...}} 
+					     (or string if args don't parse)
+
+  :tonum(string)           => number (or E_TYPE if string is not a number)
+  :toobj(string)           => object (or E_TYPE if string is not an object)
+  :toerr(number or string) => error value (or 1 if out of range or unrecognized)
+  :error_name(error value) => name of error (error_name(E_PERM) => "E_PERM")
+
+  :verb_perms()    => the current task_perms (as set by set_task_perms()).
+  :verb_location() => the object where the current verb is defined.
+  :verb_documentation([object,verbname]) => documentation at beginning of
+	     verb code, if any -- default is the calling verb
+
+  -- Preposition routines
+  :prepositions()     => full list of prepostions
+  :full_prep ("in")   => "in/inside/into"
+  :short_prep("into") => "in"
+  :short_prep("in/inside/into") => "in"
+  :get_prep  ("off", "of", "the", "table") => {"off of", "the", "table"}
+
+  -- Verb routines
+  :verbname_match (fullname,name) => can `name' be used to call `fullname'
+  :find_verb_named          (object,name[,n]) => verb number or -1 if not found
+  :find_callable_verb_named (object,name[,n]) => verb number or -1 if not found
+  :find_verbs_containing (pattern[,object|objlist])
+
+  -- Verbs that do the actual dirty work for @show:
+  :show_object  (object)
+  :show_property(object,propname)
+  :show_verbdef (object,verbname)
+
+  -- Dirty work for explain_syntax
+  :explain_verb_syntax(thisname,verbname,@verbargs)
+
+  -- A random but useful verb
+  :verb_or_property(object,name[,@args]) => result of verb or property call,
+					   or E_PROPNF
+
+BUILDING
+$building_utils
+
+  :make_exit(spec,source,dest[,don't-really-create]) => a new exit
+	    spec is an exit-spec as described in `help @dig'
+
+  :set_names(object, spec) - sets name and aliases for an object
+  :parse_names(spec) => list of {name, aliases}
+	    in both of these, spec is of the form
+	      <name>[[,:]<alias>,<alias>,...]
+	    (as described in `help @rename')
+
+  :recreate(object, newparent) - effectively recycle and recreate object
+	    as a child of newparent
+  :transfer_ownership(object, old-owner, new-owner) - just what it sounds like
+
+
+OTHER
+  pass(arg, ...)            -- calling a verb defined on this object's parent
+  eval(string)              -- parsing and executing strings as MOO code
+  notify(player, string)    -- sending text to a player's terminal
+  read()                    -- reading a line of input from the player (*)
+  output_delimiters(player) -- return {prefix,suffix} set by PREFIX/SUFFIX cmds
+
+  typeof(value)      -- determining the data type of a value
+  tostr(value, ...)  -- converting any set of values into a string
+  tonum(value)       -- converting any non-list value into a number
+  toobj(value)       -- converting any non-list value into an object
+  length(value)      -- returns the length of a string or list
+
+  is_player(object)              -- testing whether or not object is a player
+  players()		         -- a list of all players, active or not
+  connected_players()		 -- a list of all currently-connected players
+  idle_seconds(player)		 -- seconds since given player typed anything
+  connected_seconds(player)      -- seconds given player has been logged in
+  boot_player(player)		 -- disconnect player from the MOO immediately*
+  set_player_flag(player, value) -- set/clear player bit; boot player if clear*
+  connection_name(player)	 -- server-assigned name for player's connection
+  open_network_connection(@args) -- open a connection to another network site
+
+  caller_perms()         -- the player whose permissions your caller was using
+  set_task_perms(player) -- changing permissions of the running task *
+  callers()      -- list of {obj, verb, owner, vloc, player}: this task's stack
+  suspend(secs)  -- suspending the current task for a number of seconds
+  seconds_left() -- number of seconds left in the current task
+  ticks_left()   -- number of ticks   left in the current task
+  task_id()      -- a random number representing the currently-running task
+  queued_tasks() -- list of {id,start,0,20000,owner,obj,verb,line,this}
+  kill_task(id)  -- delete one of your tasks from the queue
+
+  server_log(string) -- add a comment to the server log file
+  server_version() -- a string of three numbers "major.minor.release"
+  memory_usage()   -- {{blocksize, nused, nfree}, ...}, server's memory stats
+  shutdown(msg)    -- print msg and kill the server *
+  dump_database()  -- what it says *
+
+$wiz_utils
+  The following functions are substitutes for various server builtins.
+  Anytime one feel tempted to use one of the expressions on the right,
+  use the corresponding one on the left instead.  This will take care
+  of various things that the server (for whatever reason) does not handle.
+
+  :set_programmer(object)             object.programmer = 1;
+      chparent object to $prog
+      send mail to $prog_log
+
+  :set_player(object[,nochown])       set_player_flag(object,1);
+      set player flag, 
+      add name/aliases to $player_db,
+      and maybe do a self chown.
+
+  :unset_player(object[,newowner])    set_player_flag(object,0);
+      unset player flag,
+      remove name/aliases from $player_db
+      chown to newowner if given
+
+  :set_owner(object, newowner)        object.owner = newowner;
+      change ownership on object
+      change ownership on all +c properties
+      juggle .ownership_quotas
+
+  :set_property_owner(object, property, newowner)
+      change owner on a given property
+      if this is a -c property, we change the owner on all descendants
+      for which this is also a -c property.
+      Polite protest if property is +c and newowner != object.owner.
+
+  :set_property_flags(object, property, flags)
+      change the permissions on a given property and propagate these to 
+      *all descendants*.  property ownership is changed on descendants 
+      where necessary.
+
+$match_utils
+  :match
+  :match_nth
+  :match_verb
+  :match_list
+
+$lock_utils
+  :init_scanner
+  :scan_token
+  :canonicalize_spaces
+  :parse_keyexp
+  :parse_E
+  :parse_A
+  :eval_key
+  :match_object
+  :unparse_key
+  :eval_key_new
+  :parse_A_new
+
+$perm_utils
+  :controls
+  :apply
+  :caller
+
+GENDER
+$gender_utils:
+  Defines the list of standard genders, the default pronouns for each, and
+  routines for adding or setting pronoun properties on any gendered object.
+
+  -- Properties
+  .genders  -- list of standard genders
+  .pronouns -- list of pronoun properties
+  .ps .po .pp .pq .pr .psc .poc .ppc .pqc .prc 
+            -- lists of pronouns for each of the standard genders
+
+  If foo is of gender this.gender[n], 
+  then the default pronoun foo.p is this.p[n] 
+  (where p is one of ps/po/pp/pq...)
+
+  -- Verbs
+  :set(object,newgender) -- changes pronoun properties to match new gender.
+  :add(object[,perms[,owner]]) -- adds pronoun properties to object.
+
+  :get_pronoun     (which,object) -- return pronoun for a given object
+  :get_conj*ugation(verbspec,object) -- return appropriately conjugated verb

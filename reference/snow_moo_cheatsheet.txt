@@ -1,0 +1,1971 @@
+=============================================================================
+
+                   Wingy's Snow MOO Programming Cheat Sheet
+                      (modified from numerous authors)
+
+=============================================================================
+
+Help included on the following utilities:
+
+generic bigList utilities (#14)
+string utilities (#20)
+building utilities (#21)
+wizard utilities (#25)
+math utilities (#27)
+set utilities (#28)
+sequence utilities (#34)
+gender utilities (#41)
+permissions utilities (#42)
+time utilities (#43)
+matching utilities (#51)
+object utilities (#52)
+lock utilities (#53)
+list utilities (#55)
+command utilities (#56)
+code utilities (#59)
+network utilities (#71)
+gopher utilities (#74)
+nntp utilities (#75)
+byte quota utilities (#80)
+object quota utilities (#83)
+www utilities (#154)
+$web_utils:$web_utils (#162)
+misc utilities (#190)
+Net's Wizard Multiple Utils FO (#288)
+Quinn utilities (#337)
+who utilities (#491)
+Mickey's utilities (#920)
+
+Many useful verbs can be found in @verbs $root, @verbs $player, @verbs $room.
+=============================================================================
+
+Types of data recognized:
+
+  NUM number   34
+  STR string   "\"Hi\," said John."
+  OBJ object   #23
+  LIST   list  {34, "a string", {"a", "sublist", 3}, {}}
+  ERR error E_TYPE
+
+Data type can be determined using typeof(data). Returns...
+
+   0 if NUM, 1 if OBJ, 2 if STR, 3 if ERR, 4 if LIST
+
+=============================================================================
+
+Errors
+
+  E_TYPE    type mismatch
+  E_DIV     divide by zero
+  E_RANGE   invalid subscript
+  E_INVARG  invalid argument
+  E_VARNF   variable not found
+  E_PROPNF  property not found
+  E_VERBNF  verb not found
+  E_PERM    permissions error
+  E_INVIND  invalid object number
+  E_MAXREC  exceeded maximum recursion depth
+
+=============================================================================
+
+Subscripting
+
+  Everything is 1-based.
+  subscript lists or strings
+  s[expr] is lvalue and rvalue
+  s[expr..expr] does slices.  Exprs must be in range.
+
+  @expr does list splicing for lists or arguments.
+
+=============================================================================
+
+Special variables in functions:
+
+  this      the object
+  caller    value of "this" in calling function, or player at top-level
+  player    player that invoked the task
+  verb      verb named used to invoke verb
+  args      list of arguments
+  argstr    everything after first word of command
+  dobjstr   direct object string
+  dobj      direct object value
+  prepstr   preposition string
+  iobjstr   indirect object string
+  iobj      indirect object value
+
+=============================================================================
+
+Exprs
+
+  Usual C stuff, except:
+
+    cond ? expr1 | expr2     conditional expressions
+    $foo                     #0.foo
+    "str" + "str"            concatenation
+    expr in list             list membership, returns index or 0 (false)
+
+  Strings comparisons are case-insensitive.
+
+=============================================================================
+
+Statements
+
+  if (expr); ... elseif (expr); ... else; ... endif
+  for variable in (expression); ... endfor
+  for variable in [expr1..expr2]; ... endfor
+  while (expr); ... endwhile
+  fork (expr); ... endfork
+  fork name (expr); ... endfork
+
+=============================================================================
+
+STRINGS
+
+  index(str1, str2 [, case-matters])  -- index of first str2 in str1
+  rindex(str1, str2 [, case-matters]) -- index of last  str2 in str1
+  strcmp(str1, str2)                  -- case-sensitive string comparison
+
+  strsub(subject, what, with [, case-matters]) -- substitution in a string
+
+  crypt(string [, salt])              -- one-way string encryption
+  match(str1, str2 [, case-matters])  -- match first pattern str2 in str1
+  rmatch(str1, str2 [, case-matters]) -- match last  pattern str2 in str1
+  substitute(template, subs)          -- perform substitutions on template
+
+
+#20 string utilities
+--------------------
+
+For a complete description of a given verb, do `help $string_utils:verbname'
+
+    Conversion routines:
+
+:from_list    (list [,sep])                         => "foo1foo2foo3"
+:english_list (str-list[,none-str[,and-str[, sep]]])=> "foo1, foo2, and foo3"
+:title_list*c (obj-list[,none-str[,and-str[, sep]]])=> "foo1, foo2, and foo3"
+                                                 or => "Foo1, foo2, and foo3"
+
+:from_value   (value [,quoteflag [,maxlistdepth]])  => "{foo1, foo2, foo3}"
+:print        (value)                               => value in string
+:abbreviated_list (value, options)                  => short value in string
+
+:to_value       (string)     => {success?, value or error message}
+:prefix_to_value(string)     => {rest of string, value} or {0, error message}
+
+:english_number(42)         => "forty-two"
+:english_ordinal(42)        => "forty-second"
+:ordinal(42)                => "42nd"
+:group_number(42135 [,sep]) => "42,135"
+:from_ASCII(65)             => "A"
+:to_ASCII("A")              => 65
+:from_seconds(number)       => str of rough time passed in large increments
+
+:name_and_number(obj [,sep]) => "ObjectName (#obj)"
+
+:name_and_number_list({obj1,obj2} [,sep])
+                             => "ObjectName1 (#obj1) and ObjectName2 (#obj2)"
+
+:nn is an alias for :name_and_number.
+:nn_list is an alias for :name_and_number_list.
+
+    Type checking:
+
+:is_numeric  (string) => return true if string is composed entirely of digits
+
+    Parsing:
+
+:explode (string,char) -- str => list of words delimited by char
+:words   (string)      -- str => list of words (as with command line parser)
+:word_start (string)   -- str => list of start-end pairs.
+:first_word (string)   -- str => list {first word, rest of string} or {}
+:char_list  (string)   -- str => list of characters in string
+
+:parse_command (cmd_line [,player] => mimics action of builtin parser
+
+    Matching:
+
+:find_prefix (prefix, string-list)
+                            =>list index of element starting with prefix
+
+:index_delimited(string,target[,case]) =>index of delimited string occurrence
+
+:index_all  (string, target string)       => list of all matched positions
+:common     (first string, second string) => length of longest common prefix
+
+:match        (string, [obj-list, prop-name]+)  => matching object
+:match_player (string-list[,me-object])         => list of matching players
+:match_object (string, location)                => default object match...
+
+:match_player_or_object (string, location) => object then player matching
+
+:literal_object (string)                    => match against #xxx, $foo
+:match_stringlist (string, targets)         => match against static strings
+:match_string (string, wildcard, options)   => match against a wildcard
+
+    Pretty printing:
+
+:space         (n/string[,filler])     => n spaces
+:left          (string,width[,filler]) => left justified string in field
+:right         (string,width[,filler]) => right justified string in field
+
+:center/re     (string,width[,lfiller[,rfiller]]) => centered string in field
+
+:columnize/se  (list,n[,width])        => list of strings in n columns
+
+    Substitutions
+
+:substitute (string,subst_list [,case])  -- general substitutions.
+
+:substitute_delimited (string,subst_list [,case])
+                                         -- like subst, but uses index_delim
+
+:pronoun_sub (string/list[,who[,thing[,location]]])
+                                         -- pronoun substitutions.
+
+:pronoun_sub_secure (string[,who[,thing[,location]]],default)
+                                         -- substitute and check for names.
+
+:pronoun_quote (string/list/subst_list)  -- quoting for pronoun substitutions
+
+
+    Miscellaneous string munging:
+
+:trim         (string)       => string with outside whitespace removed.
+:triml        (string)       => string with leading whitespace removed.
+:trimr        (string)       => string with trailing whitespace removed.
+:strip_chars  (string,chars) => string with all chars in `chars' removed.
+:strip_all_but(string,chars) => string with all chars not in `chars' removed.
+:capitalize/se(string)       => string with first letter capitalized.
+:uppercase/lowercase(string) => string with all letters upper or lowercase.
+:names_of     (list of OBJ)  => string with names and object numbers of items
+:a_or_an      (word)         => "a" or "an" as appropriate for that word.
+:reverse      (string)       => "gnirts"
+
+    A useful property:
+
+:alphabet                    => "abcdefghijklmnopqrstuvwxyz"
+
+Suspended versions (with _suspended at end of name) for
+
+     :print     :from_value     :columnize/se
+
+=============================================================================
+
+OBJECTS
+
+  valid(object)                -- testing whether an object exists
+  create(parent [, owner(*)])  -- creating a new MOO object
+  recycle(object)              -- destroying a MOO object
+  move(object, where)          -- altering the object-containment hierarchy
+  chparent(object, new-parent) -- altering the object-inheritance hierarchy
+  parent(object)               -- object's parent in inheritance hierarchy
+  children(object)             -- object's children inheritance hierarchy
+  max_object()                 -- the highest-numbered object in the MOO
+
+  renumber(obj)          -- changes object's number to lowest available one*
+  reset_max_object()     -- resets max_object() to the largest valid object*
+
+  properties(object)   -- a list of the properties defined on an object
+
+  add_property(object, prop-name, value, info) -- add a new property
+  delete_property(object, prop-name)           -- remove a property
+  property_info(object, prop-name)             -- {owner, perms} info on prop
+  set_property_info(object, prop-name, info)   -- setting same
+  is_clear_property(object, prop-name)         -- check if a prop. is "clear"
+  clear_property(object, prop-name)            -- make a property "clear"
+
+  verbs(object)                  -- a list of the verbs defined on an object
+  add_verb(object, info, args)   -- add a verb to an object
+  delete_verb(object, verb-name) -- remove a verb from an object
+  verb_info(object, verb-name)   -- {owner, perms, names} info for verb defn.
+  verb_args(object, verb-name)   -- {dobj, prep, iobj} argument info for verb
+
+  verb_code(object, verb-name [, fully-paren [, indent]]) -- program listing
+
+  set_verb_info(object, verb-name, {owner, perms, names})
+  set_verb_args(object, verb-name, {dobj, prep, iobj})
+  set_verb_code(object, verb-name, {line, line, ...})
+
+
+#52 object utilities
+--------------------
+
+These are useful for finding out information about individual objects.
+
+Examining everything an object has defined on it:
+
+ :all_verbs           (object) => like it says
+ :all_properties      (object) => likewise
+ :findable_properties (object) => tests to see if caller can "find" them
+
+ :owned_properties    (object[, owner]) => tests for ownership
+
+Investigating inheritance:
+
+ :ancestors(object[,object...]) => all ancestors
+ :descendants      (object)     => all descendants
+ :ordered_descendants(object)   => descendants, in a different order
+ :leaves           (object)     => descendants with no children
+ :branches         (object)     => descendants with children
+
+ :isa    (object,class)  => true iff object is a descendant of class (or ==)
+
+ :property_conflicts (object,newparent)  => can object chparent to newparent?
+
+ :isoneof     (object,list)   => true if object :isa class in list of parents
+
+Considering containment:
+
+ :contains      (obj1, obj2)  => Does obj1 contain obj2 (nested)?
+ :all_contents      (object)  => return all the (nested) contents of object
+ :locations         (object)  => list of location hierarchy above object
+
+Verifying verbs and properties:
+
+ :has_property(object,pname) => false/true   does object.(pname) exist?
+ :has_verb    (object,vname) => false/{#obj} does object:(vname) exist?
+ :has_callable_verb          => same, verb must be callable from a program
+ :defines_verb               => does this object *define* this verb
+ :match_verb  (object,vname) => false/{location, newvname}
+                               (identify location and usable name of verb)
+
+Player checking:
+
+ :connected         (object) => true if object is a player and is connected
+
+Suspending:
+
+  Many of the above verbs have ..._suspended versions to assist with very
+large object hierarchies.  The following exist:
+
+ :descendants_suspended
+ :branches_suspended
+ :leaves_suspended
+ :all_properties_suspended
+ :descendants_with_property_suspended
+
+=============================================================================
+
+LISTS
+
+  listappend(list, value [, index]) -- adding an element at the end of list
+  listinsert(list, value [, index]) -- adding an element at the head of list
+  listset(list, value, index)       -- updating a list at some index
+  listdelete(list, index)           -- removing an element from a list
+
+  setadd(list, element)       -- add element to a set represented as a list
+  setremove(list, element)    -- remove element from such a set
+
+
+#55 list utilities
+------------------
+
+:append            (list,list,..) => result of concatenating the given lists
+:reverse           (list)         => reversed list
+:remove_duplicates (list)         => list with all duplicates removed
+:compress          (list)         => list with consecutive duplicates removed
+:setremove_all     (list,elt)     => list with all occurrences of elt removed
+:find_insert       (sortedlist,e) => index of first element > e in sortedlist
+:sort              (list[,keys])  => sorted list
+:count             (elt,list)     => count of elt found in list.
+:flatten           (list)         => flatten all recursive lists into 1 list
+:make              (n[,e])        => list of n copies of e
+:range             (m,n)          => {m,m+1,...,n}
+
+:arrayset (list,val,i[,j,k...]) => array modified so that list[i][j][k]==val
+
+-- Mapping functions   (take a list and do something to each element):
+
+:map_prop ({o...},prop)              => list of o.(prop)            for all o
+:map_verb ({o...},verb[,args)        => list of o:(verb)(@args)     for all o
+:map_arg  ([n,]obj,verb,{a...},args) => list of obj:(verb)(a,@args) for all a
+:map_builtin (objectlist, function)  => applies function to all in objectlist
+
+-- Association list functions --
+
+An association list (alist) is a list of pairs (2-element lists), though the
+following functions have been generalized for lists of n-tuples (n-element
+lists).  In each case i defaults to 1.
+
+:assoc        (targ,alist[,i]) => 1st tuple in alist whose i-th elem. is targ
+:iassoc       (targ,alist[,i]) => index of same.
+:assoc_prefix (targ,alist[,i]) => ... whose i-th element has targ as a prefix
+:iassoc_prefix(targ,alist[,i]) => index of same.
+:slice             (alist[,i]) => list of i-th elements
+:sort_alist        (alist[,i]) => alist sorted on i-th elements.
+
+=============================================================================
+
+MATH
+
+  min(n1, n2, ...) -- minimum of n1,n2,...
+  max(n1, n2, ...) -- maximum of n1,n2,...
+  abs(n)           -- absolute value of n
+  sqrt(n)          -- square root of n, rounded down
+  random(n)        -- random integer between 1 and n inclusive
+
+#27 Math Utilities
+------------------
+
+Trigonometric/Exponential functions:
+
+ :sin(a),cos(a),tan(a) -- returns 10000*(the value of the corresponding
+                          trigonometric function) angle a is in degrees.
+
+ :arctan([x,]y) -- returns arctan(y/x) in degrees in the range -179..180.
+                   x defaults to 10000.  Quadrant is that of (x,y).
+
+ :exp(x[,n]) -- calculates e^x with an nth order taylor polynomial
+
+
+Statistical functions:
+
+ :combinations(n,r) -- returns the number of combinations given n objects
+                       taken r at a time.
+
+ :permutations(n,r) -- returns the number of permutations possible given
+                       n objects taken r at a time.
+
+
+Number decomposition:
+
+ :div(n,d) -- correct version of / (handles negative numbers correctly)
+ :mod(n,d) -- correct version of % (handles negative numbers correctly)
+ :divmod(n,d) -- {div(n,d),mod(n,d)}  (combined div & mod)
+ :parts(n,q[,i]) -- returns list of two elements {integer,decimal fraction}
+
+
+Other math functions:
+
+ :sqrt(x)      -- returns the largest integer n <= the square root of x
+ :pow(x,n)     -- returns x^n
+ :factorial(x) -- returns x!
+
+
+Series:
+
+ :fibonacci(n) -- returns the 1st n fibonacci numbers in a list
+ :geometric(x,n) -- returns the value of the nth order geometric series at x
+
+Integer Properties:
+
+ :gcd(a,b) -- find the greatest common divisor of the two numbers
+ :lcm(a,b) -- find the least common multiple of the two numbers
+ :are_relatively_prime(a,b) -- return 1 if a and b are relatively prime
+ :is_prime(n) -- returns 1 if the number is a prime and 0 otherwise
+
+Miscellaneous:
+
+ :random(n) -- returns a random number from 0..n if n > 0 or n..0 if n < 0
+ :random_range(n[,mean]) -- returns a random number from mean - n..mean + n
+                            with mean defaulting to 0
+
+ :simpson({a,b},{f(a),f((a+b)/2),f(b)}) -- returns the numerical approxi-
+                                           mation of an integral using
+                                           simpson's rule
+
+Bitwise Arithmetic:
+
+ :AND(x,y) -- returns x AND y
+ :OR(x,y) -- returns x OR y
+ :XOR(x,y) -- returns x XOR y (XOR is the exclusive-or function)
+ :NOT(x) -- returns the complement of x
+
+      All bitwise manipulation is of 32-bit values.
+
+=============================================================================
+
+TIME
+
+:time()         -- current time in seconds since midnight GMT, 1 Jan 70
+:ctime([time])  -- time (or current time) converted to human-readable string
+
+
+#43 time utilities
+------------------
+
+    Converting from seconds-since-1970
+
+:dhms          (time)                  => string ...DD:HH:MM:SS
+:english_time  (time[, reference time) => string of y, m, d, h, m, s
+
+    Converting to seconds
+
+:to_seconds    ("hh:mm:ss")           => seconds since 00:00:00
+:from_ctime    (ctime)                => corresponding time-since-1970
+:from_day      (day_of_week, which)   => time-since-1970 for the given day*
+:from_month    (month, which)         => time-since-1970 for the given month*
+               (* the first midnight of that day/month)
+
+:parse_english_time_interval("n1 u1 n2 u2...")  => seconds in interval
+
+:seconds_until_time("hh:mm:ss")  => number of seconds from now until then
+
+:seconds_until_date("month",day,"hh:mm:ss",flag  => number of seconds from
+                                                    now until then
+
+    Converting to some standard English formats
+
+:day           ([c]time)               => what day it is
+:month         ([c]time)               => what month it is
+:ampm          ([c]time[, precision])  => what time it is, with am or pm
+:mmddyy        ([c]time)               => date in format MM/DD/YY
+:ddmmyy        ([c]time)               => date in format DD/MM/YY
+
+    Substitution
+
+:time_sub      (string, time)          => substitute time information
+
+    Miscellaneous
+
+:sun           ([time])                => angle between sun and zenith
+:dst_midnight  (time)
+
+=============================================================================
+
+#34 sequence utilities
+----------------------
+
+A sequence is a set of integers (*)
+This package supplies the following verbs:
+
+  :add      (seq,f,t)  => seq with [f..t] interval added
+  :remove   (seq,f,t)  => seq with [f..t] interval removed
+  :range    (f,t)      => sequence corresponding to [f..t]
+  {}                   => empty sequence
+  :contains (seq,n)    => n in seq
+  :size     (seq)      => number of elements in seq
+  :first    (seq)      => first integer in seq or E_NONE
+  :firstn   (seq,n)    => first n integers in seq (as a sequence)
+  :last     (seq)      => last integer in seq  or E_NONE
+  :lastn    (seq,n)    => last n integers in seq (as a sequence)
+
+  :complement(seq)        => sequence consisting of integers not in seq
+  :union    (seq,seq,...) => union of all sequences
+  :intersect(seq,seq,...) => intersection of all sequences
+
+  :contract (seq,cseq)              (see `help $seq_utils:contract')
+  :expand   (seq,eseq[,include])    (see `help $seq_utils:expand')
+
+  :extract(seq,array)           => array[@seq]
+  :for([n,]seq,obj,verb,@args)  => for s in (seq) obj:verb(s,@args); endfor
+
+  :tolist(seq)            => list corresponding to seq
+  :tostr(seq)             => contents of seq as a string
+  :from_list(list)        => sequence corresponding to list
+  :from_sorted_list(list) => sequence corresponding to list (assumed sorted)
+  :from_string(string)    => sequence corresponding to string
+
+
+For boolean expressions, note that the representation of the empty sequence
+is {} (boolean FALSE) and all non-empty sequences are represented as non-
+empty lists (boolean TRUE).
+
+The representation used works better than the usual list implementation for
+sets consisting of long uninterrupted ranges of integers.
+For sparse sets of integers the representation is decidedly non-optimal
+(though it never takes more than double the space of the usual list
+representation).
+
+(*) i.e., integers in the range [$minint+1..$maxint].  The implementation
+depends on $minint never being included in a sequence.
+
+=============================================================================
+
+#28 Set Utilities
+-----------------
+
+This object is useful for operations that treat lists as sets (i.e.,
+without concern about order and assuming no duplication).
+
+ :union(set, set, ...)        => union
+ :intersection(set, set, ...) => intersection
+
+ :intersection_preserve_case(base set, set, set, ...)
+        => intersection with the case of the base set's elements preserved
+
+ :diff*erence(set1, set2, ..., setn)
+        => result of removing all elements of sets 2..n from set 1.
+
+ :exclusive_or(set, set, set, ...)
+        => all elements that are contained in exactly one of the sets
+
+ :contains(set1, set2, ..., setn)
+        => true if and only if all of sets 2..n are subsets of set 1
+
+ :equal(set1, set2)
+        => true if and only if set1 and set2 are equal
+
+=============================================================================
+
+COMMANDS
+
+#56 command utilities
+---------------------
+
+$command_utils is the repository for verbs that are of general usefulness to
+authors of all sorts of commands.  For more details about any of these verbs,
+use `help $command_utils:<verb-name>'.
+
+
+Detecting and Handling Failures in Matching:
+
+:object_match_failed(match_result, name)
+  Test whether or not a :match_object() call failed and print messages if so.
+
+:player_match_failed(match_result, name)
+  Test whether or not a :match_player() call failed and print messages if so.
+
+:player_match_result(match_results, names)
+  ...similar to :player_match_failed, but does a whole list at once.
+
+
+Reading Input from the Player:
+
+:read()               -- Read one line of input from player and return it.
+:yes_or_no([prompt])  -- Prompt for and read a `yes' or `no' answer.
+:read_lines()         -- Read zero or more lines of input from the player.
+:dump_lines(lines)    -- Return list of lines quoted so that feeding them to
+                         :read_lines() will reproduce the original lines.
+
+
+Utilities for Suspending:
+
+:running_out_of_time()
+                -- Return true if we're low on ticks or seconds.
+
+:suspend_if_needed(time)
+                -- Suspend (and return true) if we're running out of time.
+
+
+Client Support for Lengthy Commands:
+
+:suspend(args)  -- Handle PREFIX and SUFFIX for clients in long commands.
+
+=============================================================================
+
+CODE
+
+#59 code utilities
+------------------
+
+:parse_propref("foo.bar") => {"foo","bar"} (or 0 if arg. isn't a prop ref.)
+:parse_verbref("foo:bar") => {"foo","bar"} (or 0 if arg. isn't a verb ref.)
+
+:parse_argspec("any","in","front","of","this","baz"...)
+                          => {{"any", "in front of", "this"},{"baz"...}}
+                                 (or string if args don't parse)
+
+:tonum(string)           => number (or E_TYPE if string is not a number)
+:toobj(string)           => object (or E_TYPE if string is not an object)
+:toerr(number or string) => error value (or 1 if out of range/unrecognized)
+:error_name(error value) => name of error  e.g. error_name(E_PERM) => "E_PERM"
+
+:verb_perms()      => the current task_perms (as set by set_task_perms()).
+:verb_location()   => the object where the current verb is defined.
+:verb_frame()      => callers()-style frame for the current verb.
+:verb_all_frames() => entire callers() stack including current verb.
+
+:verb_documentation([object,verbname]) => documentation at beginning of verb
+                                      code, if any -- default is calling verb
+
+   Preposition routines
+
+:prepositions()     => full list of prepostions
+:full_prep ("in")   => "in/inside/into"
+:short_prep("into") => "in"
+
+:short_prep("in/inside/into")  => "in"
+
+:get_prep  ("off", "of", "the", "table")  => {"off of", "the", "table"}
+
+
+   Verb routines
+
+:verbname_match (fullname,name) => can `name' be used to call `fullname'
+
+:find_verb_named          (object,name[,n]) => verb number or -1 if not found
+:find_callable_verb_named (object,name[,n]) => verb number or -1 if not found
+:find_verbs_containing    (pattern[,object|objlist])
+
+
+   Verbs that do the actual dirty work for @show:
+
+:show_object   (object)
+:show_property (object,propname)
+:show_verbdef  (object,verbname)
+
+   Dirty work for explain_syntax
+
+:explain_verb_syntax (thisname,verbname,@verbargs)
+
+   A random but useful verb
+
+:verb_or_property (object,name[,@args]) => result of verb or property call,
+                                          or E_PROPNF
+
+=============================================================================
+
+BUILDING
+
+#21 building utilities
+----------------------
+
+Verbs useful for building.  For a complete description of a given verb, do
+`help $building_utils:verbname'.
+
+:make_exit(spec,source,dest[,deek]) => a new exit spec is an exit-spec as
+                                      described in `help @dig'
+
+:set_names   (object, spec) => sets name and aliases for an object
+:parse_names (spec)         => list of {name, aliases}
+
+ In both of these, spec is of the form <name>[[,:]<alias>,<alias>,...]
+          (as described in `help @rename')
+
+:recreate(object, newparent) => effectively recycle and recreate object
+                               as a child of newparent
+
+=============================================================================
+
+GENDER
+
+#41 gender utilities
+--------------------
+
+Defines the list of standard genders, the default pronouns for each, and
+routines for adding or setting pronoun properties on any gendered object.
+
+Properties:
+
+  .genders  -- list of standard genders
+  .pronouns -- list of pronoun properties
+
+  .ps .po .pp .pq .pr .psc .poc .ppc .pqc .prc
+            -- lists of pronouns for each of the standard genders
+
+  If foo is of gender this.gender[n],
+  then the default pronoun foo.p is this.p[n]
+  (where p is one of ps/po/pp/pq...)
+
+Verbs:
+
+ :set(object,newgender) -- changes pronoun properties to match new gender.
+ :add(object[,perms[,owner]]) -- adds pronoun properties to object.
+
+ :get_pronoun     (which,object) -- return pronoun for a given object
+ :get_conj*ugation(verbspec,object) -- return appropriately conjugated verb
+
+=============================================================================
+
+OTHER BUILTIN FUNCTIONS
+
+pass(arg, ...)            -- calling a verb defined on this object's parent
+eval(string)              -- parsing and executing strings as MOO code
+notify(player, string)    -- sending text to a player's terminal
+read()                    -- reading a line of input from the player (*)
+output_delimiters(player) -- return {prefix,suffix} set by PREFIX/SUFFIX cmds
+
+  typeof(value)      -- determining the data type of a value
+  tostr(value, ...)  -- converting any set of values into a string
+  tonum(value)       -- converting any non-list value into a number
+  toobj(value)       -- converting any non-list value into an object
+  length(value)      -- returns the length of a string or list
+
+  is_player(object)     -- testing whether or not object is a player
+  players()             -- a list of all players, active or not
+  connected_players()   -- a list of all currently-connected players
+  idle_seconds(player)  -- seconds since given player typed anything
+
+  connected_seconds(player) -- seconds given player has been logged in
+  boot_player(player)       -- disconnect player from the MOO immediately*
+
+set_player_flag(player, value) -- set/clear player bit; boot player if clear*
+connection_name(player)        -- server-assigned name of player's connection
+open_network_connection(@args) -- open a connection to another network site
+
+caller_perms()         -- the player whose permissions your caller was using
+set_task_perms(player) -- changing permissions of the running task *
+
+callers()      -- list of {obj, verb, owner, vloc, player}: this task's stack
+suspend(secs)  -- suspending the current task for a number of seconds
+
+  seconds_left() -- number of seconds left in the current task
+  ticks_left()   -- number of ticks   left in the current task
+  task_id()      -- a random number representing the currently-running task
+  queued_tasks() -- list of {id,start,0,20000,owner,obj,verb,line,this}
+  kill_task(id)  -- delete one of your tasks from the queue
+
+  server_log(string) -- add a comment to the server log file
+  server_version()   -- a string of three numbers "major.minor.release"
+  memory_usage()     -- {{blocksize, nused, nfree}, ...}, server's mem stats
+  shutdown(msg)      -- print msg and kill the server *
+  dump_database()    -- what it says *
+
+=============================================================================
+
+OTHER UTILITIES
+---------------
+
+#51 matching utilities
+----------------------
+
+   :match(string, object-list)
+
+Return object in 'object-list' aliased to 'string'. Matches on a wide
+variety of syntax, including:
+
+\"5th axe\" -- The fifth object matching \"axe\" in the object list.
+\"where's sai\" -- The only object contained in 'where' matching \"sai\"
+(possible $ambiguous_match).
+\"where's second staff\" -- The second object contained in 'where' matching
+\"staff\".
+\"my third dagger\" -- The third object in your inventory matching \"dagger\"
+
+Ordinal matches are determined according to the match's position in
+'object-list' or, if a possessive (such as \"where\" above) is given, then
+the ordinal is the nth match in that object's inventory.
+
+
+   :match_nth(string, objlist, n)
+
+Find the nth object in 'objlist' that matches 'string'.
+
+   :match_verb(verbname, object)
+
+Looks for a command-line style verb named <verbname> on <object> with current
+values of prepstr, dobjstr, dobj, iobjstr, and iobj.  If a match is made, the
+verb is called with @args[3] as arguments and 1 is returned.  Otherwise, 0 is
+returned.
+
+   :match_list(string, object_list) -> List of all matches.
+
+   :parse_ordref(string) - Parses strings referring to an 'nth' object.
+
+=> {NUM n, STR object}  Where 'n' is the number the ordinal represents, and
+                        'object' is the rest of the string.
+
+=> 0 If the given string is not an ordinal reference.
+
+Example:
+
+   :parse_ordref(\"second broadsword\") => {2, \"broadsword\"}
+   :parse_ordref(\"second\") => 0
+
+Note that there must be more to the string than the ordinal alone.
+
+
+   :parse_possessive_reference(string)
+
+Parses strings in a possessive format.
+
+=> {STR whose, STR object}  Where 'whose' is the possessor of 'object'.
+
+If the string consists only of a possessive string (ie: \"my\", or
+\"yduJ's\"), then 'object' will be an empty string.
+
+=> 0 If the given string is not a possessive reference.
+
+Example:
+
+   :parse_possessive_reference(\"joe's cat\") => {\"joe\", \"cat\"}
+   :parse_possessive_reference(\"sis' fish\") => {\"sis\", \"fish\"}
+
+Strings are returned as a value suitable for a :match routine, thus 'my'
+becoming 'me'.
+
+   :parse_possessive_reference(\"my dog\") => {\"me\", \"dog\"}
+
+   :object_match_failed(object, string[, ambigs])
+
+Prints a message if string does not match object.  Generally used after
+object is derived from a :match_object(string). ambigs is an optional list
+of the objects that were matched upon.  If given, the message printed will
+list the ambiguous among them as choices.
+
+=============================================================================
+
+#53 lock utilities
+------------------
+
+These routines are used when locking objects, and when testing an object's
+lock before allowing use (such as in an exit).
+
+:parse_keyexp   (string keyexpression, object player)
+        => returns an object or list for the new key as defined by the
+           keyexpression or a string describing the error if it failed.
+
+:eval_key       (LIST|OBJ key, testobject)
+        => returns true if the given testobject satisfies the key.
+
+:unparse_key    (LIST|OBJ key)
+        => returns a string describing the key in english/moo-code terms.
+
+For more information on keys and locking, read `help locking', `help keys',
+and `help @lock'.
+
+=============================================================================
+
+#42 permissions utilities
+-------------------------
+
+Miscellaneous routines for permissions checking
+
+For a complete description of a given verb, do `help $perm_utils:verbname'
+
+:controls(who,what) -- can who write on object what
+:controls_property(who,what,propname) -- can who write on what.propname
+
+These routines check write flags and also the wizardliness of `who'.
+
+(these last two probably belong on $code_utils)
+
+:apply(permstring,mods)
+  -- used by @chmod to apply changes (e.g., +x) to a given permissions string
+
+:caller()
+  -- returns the first caller in the callers() stack distinct from `this'
+
+=============================================================================
+
+#14 Generic BigList Utilities
+-----------------------------
+
+This is a package for maintaining huge persistent (sorted) lists in a format
+that is less likely to spam the server (which runs into a certain amount of
+trouble dealing with long ordinary lists --- btw we use `biglist' to refer to
+the huge data structure we're about to describe and `list' to refer to
+ordinary MOO lists {...}).  The biglist in question lives on a particular
+object, to which we will refer in the discussion below as the `home' object,
+and its various elements appear as leaves of a tree whose nodes are kept in
+properties of the home object.  It should be noted that the home object does
+not need to be (and in fact should *not* be) a descendant of this one; this
+object merely provides utilities for manipulating the properties on the home
+object that are used in a particular biglist manipulation.
+
+All of the utilities below refer to `caller' to locate the home object.  Thus
+verbs to manipulate a given biglist must be located on or inherited by its
+home object itself.  The home object needs to define the following verbs
+
+  :_make(@args)     => new property on home object with value args
+  :_kill(prop)      delete a given property that was created by :_make
+  :_get(prop)       => home.prop
+  :_put(prop,@args) set home.prop = args
+  :_ord(element)    given something that is of the form of a biglist element
+                    return the corresponding ordinal (for sorting purposes).
+                    If you never intend to use :find_ord, then this can be a
+                    routine that always returns 0 or some other random value.
+
+See Generic Biglist Resident or $big_mail_recipient for examples.
+
+Those of the following routines that take a biglist argument are expecting
+either {} (empty biglist) or some biglist returned by one of the other
+routines.
+
+  :length(biglist)          => length(biglist) (i.e., number of elements)
+  :find_nth(biglist,n)      => biglist[n]
+
+  :find_ord(biglist,k,comp) => n where n is
+     the largest such that home:(comp)(k,home:_ord(biglist[n])) is false, or
+     the smallest such that home:(comp)(k,home:_ord(biglist[n+1])) is true.
+     Always returns a value between 0 and length(biglist) inclusive.
+     This assumes biglist to be sorted in order of increasing :_ord values
+     with respect to home:(comp)().
+     Standard situation is :_ord returns a number and comp is a < verb.
+
+  :start(biglist,s,e)  => {biglist[s..?],@handle} or {}
+  :next(@handle)       => {biglist[?+1..??],@newhandle} or {}
+
+     These two are used for iterating over a range of elements of a biglist
+     The canonical incantation for doing...
+
+        for elt in (biglist[first..last])
+          ...
+        endfor
+     is
+        handle = :start(biglist,first,last);
+        while(handle)
+          for elt in (handle[1])
+            ...
+          endfor
+          handle = :next(@listdelete(handle,1));
+        endwhile
+
+The following all destructively modify their biglist argument(s) L (and M).
+
+  :set_nth(L,n,value)  =>  L[n] = value
+     replaces the indicated element
+
+  :insert_before(L,M,n) => {@L[1..n-1],@M,@L[n..length(L)]}
+  :insert_after (L,M,n) => {@L[1..n],  @M,@L[n+1..length(L)]}
+     takes two distinct biglists, inserts one into the other at the given
+     point & returns the resulting consolidated biglist
+
+  :extract_range(L,m,n) => {{@L[1..m-1],@L[n+1..]}, L[m..n]}
+     breaks the given biglist into two distinct biglists.
+
+  :delete_range(L,m,n[,leafkiller]) => {@L[1..m-1],@L[n+1..]}
+  :keep_range  (L,m,n[,leafkiller]) => L[m..n]
+     like extract_range only we destroy what we don't want.
+
+  :insertlast(L,value)  => {@L,value}
+     inserts a new element at the end of biglist.
+     If find_ord is to continue to work properly, it is assumed that the
+     home:_ord(elt) is greater (comp-wise) than all of the :_ord values
+     of elements currently in the biglist.
+
+  :kill(L[,leafkiller])
+     destroys all nodes used by biglist.
+     Calls home:leafkiller on each element.
+
+=============================================================================
+
+#154 WWW Utilities
+------------------
+
+:genref_obj(object, key[, name])
+    Generate an HTML reference from an object, including the authorisation
+    key if appropriate. The tag string for the reference will be set to
+    'name' if it is specified, otherwise to the object's name.
+
+:string_to_html(string)
+    Convert a text string to HTML - in other words, substitute escape codes
+    for "&", "<", ">" and "\"" characters in the string.
+
+:link_objects(line, key)
+    Return a string with all object numbers in 'line' replaced by references
+    to those objects, including the authorisation key of appropriate.
+
+:note_to_html(text, key)
+    Convert a text note (a list of strings) into HTML. The text is wrapped
+    in "<pre>" and "</pre>" and string_to_html() and link_objects() are
+    applied to each line of the text.
+
+:generate_redirect(url)
+    Return a MIME header redirecting a web browser to the URL specified.
+
+:www_default(url, key)
+    Perform default actions for accessing an object via the web. Basically,
+    this means incrementing webhits and returning the standard MIME header
+    at the moment, but it could involve other actions in the future.
+
+:www_header(key)
+    Generate and return the standard Sprawl web page header.
+
+:www_trailer()
+    Generate and return the standard Sprawl web page trailer.
+
+:www_move(newLocation, key)
+    If the web user is logged in through the authorisation system and
+    'newLocation' is a room, attempt to move the user to that room. The
+    actual location of the user is returned to allow for checking that the
+    move succeeded (#-1 is returned for anonymous web users).
+
+:www_exits(room, dest, key)
+    Generate an HTML string listing all the exits to 'room' with links to
+    each. The 'dest' parameter controls the format of the link descriptions:
+
+    If dest is 0, each tag is set to the name of the exit
+               1, each tag is set to the name of the destination room
+               2, y'get: <a href=[URL]>[exitname]</a> (to [dest roomname])
+
+:exits2urls(exits, dest, key)
+    Translate a list of exit object numbers to a list of HTML references.
+    The 'dest' parameter is defined as for 'www_exits'.
+
+:listExits(room)
+    Return a list of exits to 'room'. The routine does its best to find all
+    exits, not just ones returned by the room's 'obvious_exits' function.
+
+:build_htext(key[, title[, body]])
+    Build and return an HTML page from the hdesc property of the caller, the
+    page is built with the standard Sprawl web page header. The 'title'
+    parameter can be a string to be used both for the page title and page
+    header or a two-element list: {page title, page header}. If it is
+    omitted, the name of the caller is used instead. 'body' if specified is
+    used to set the page background, text colour and link colours as defined
+    in NetScape 1.1; the parameter should be a five element list containing:
+    {background, text colour, link colour, vlink colour, alink colour}. The
+    background may be either a colour or the URL of an image.
+
+:build_description()
+    Build and return a plain text description from the hdesc property of the
+    caller.
+
+:path_to_list(path)
+    Split a URL path into its components as a list.
+
+:generate_mime(content_type)
+    Return a MIME header with Content-type as specified.
+
+:http_status(status_code)
+    Translate an HTTP status code to it's text equivalent.
+
+:subst_esc(data)
+    Substitute '%' escape codes for '<', '>' and '%'.
+
+:subst_hex(data, flag)
+    Substitute actual chars for '%' escape codes, "<br>" for line breaks. If
+    'flag' is TRUE, don't treat "%0A" and "%0D" in isolation as line breaks.
+
+:subst_hexand0a(data)
+    As for subst_hex but translate just "%0A" to "<BR>".
+
+:subst_hex_to_list(data)
+    As for subst_hex but convert to a list at line breaks."test
+
+=============================================================================
+
+#75 NNTP utilities
+------------------
+
+This is the NNTP utility package.  See `help $nntp' for more details.
+
+:open() - open a network connection to the NNTP server specified by
+          this.host and this.port.
+
+:article  (connection,article)
+:head     (connection,article)
+:body     (connection,article)
+
+:check_id - checks to see if the argument (a string) is a valid article
+            indentifier. Article identifiers are one of the following forms:
+
+   <message-id>    -- with brackets
+   groupname n     -- where groupname is like alt.pea.pickers and n is
+                      an article number
+   groupname:n     -- similar
+
+For the first form, the message ID is returned as a string
+For the other forms, it returns a list {groupname, n}, where groupname is
+the string and n is the number.
+
+:nntp_read - read an NNTP body, body being something that ends with a
+             period on a blank line. expects a connection to read from.
+
+:close     - quit from the NNTP server and close the passed connection.
+
+:fetch_article (article_id)
+:fetch_body    (article_id)
+:fetch_head    (article_id)
+
+This fetches the article referred to by article-id from an NNTP server.
+The article-id may be any of the forms accepted by check_id.
+When fetching headers or complete articles, it will often be useful to pass
+the header of the article to :fixup_headers(), which will attempt to join
+multiline headers into single lines.
+
+:@update  -  Update the groups list stored on the NNTP object.  This list
+             is used in determining which groups are valid for registration,
+             and should be run regularly.  This command may take some time
+             to execute.
+
+:fixup_headers({header-text})
+
+This function takes the header of an nntp article (as a list of strings) and
+joins multiline headers into single lines.  It does no cleanup on the result,
+so there may be extra spaces in the output, which is a list of strings.
+this may break if the first line isn't really a header.
+
+:get_connection
+
+$NNTP maintains a list of open, available connections. This verb returns a
+connection from that list, and removes the connection from the list of
+actives, adding it to a list of in-use connections. The maximum number of
+connections is maintained by this.connect_max. If this.connect_max is 0,
+there is no limit to the number of connections. If no connections are
+available, return E_RANGE.
+
+:release_connection (connection)
+
+Release_connection frees a connection obtained with get_connection(). It is
+assumed that any connection requested will eventually be released.
+
+:post(newsgroup(s), subject, lines, distributions)
+
+Post an article to news. Newsgroup(s) should either be a string or a list of
+strings. Subject should be a string.  Lines should be a list of strings.
+Distributions should either be a string or a list of strings containing
+valid distributions.  Returns 0 if successful, otherwise error or error
+string.  Returns E_PERM if the posting verb is not wizardly or running with
+the permissions of someone in $NNTP.posting_ok, or if $NNTP.posting_allowed
+is 0.
+
+:check_cache - cache maintenance for NNTP. Returns an item if it's in the
+               cache, {} otherwise. args[1] should be an article reference,
+               args[2] one of head, body, or article.
+
+:reorder_cache - Cache maintenance for NNTP. On a hit, we move the item to
+                 the head of the cache, so future lookups go faster.
+
+:expire_cache - Called by the expiry task to remove dusty items from the
+                cache. Returns the number of items it removed.
+
+:fetch_newnews(newsgroups, last-read)
+
+Return a list of message-IDs posted to newsgroups since last-read.
+Newsgroups is either a string containing a single newsgroup, or a list of
+strings.  last-read is a time.
+
+:fetch_xhdr(header, messages)
+
+Return a list of headers associated with the article identifier(s) passed.
+Header is a valid header line, such as 'subject'.  'message' should either
+be a message-id or a list of article identifiers.
+
+Note that since many NNTP servers do not properly implement the XHDR command
+(especially those running on a certain proprietary VAX operating system which
+Shall Remain Nameless,) this command may be disabled. In that case, this verb
+calls a much slower in-db implementation of the XHDR command, which fetches
+each article's entire header, then parses out the header line requested.
+
+:xhdr(connection,header,articles)
+
+Perform the actual XHDR command and clean up the results.  This generally
+shouldn't be called directly, unless you're deliberately bypassing the
+fetch_xhdr command for some reason.
+
+:time_from_date(date) - Convert an NNTP date to MOO time() format.
+
+:debug(debugging-message) - if $nntp.debug is set to something other
+                            than #-1, tell that object our arguments.
+
+:@expire - Run the NNTP cache expiry procedure right away.  Mostly useful
+           when the expiration task gets killed somehow.
+
+:fake_xhdr(connection,header,articles)
+
+A slow fake xhdr for NNTP servers which do not support (or perhaps properly
+implement) the XHDR command.
+
+:header_line(prefix, article-head)
+
+Find the header line beginning with the passed prefix.  In fact, this is just
+an application of $string_utils:find_prefix, with the addition of checking
+for prefixes ending in ':'.  The additional checking for lines ending in ':'
+here is mostly because (though i'm not sure if this is legal,) it's
+conceivably possible to be searching for the 'Foo' header in a message
+having both 'Foo:' and 'FooBar:' headers.  $string_utils:find_prefix would
+return $ambiguous_match in this case.
+
+=============================================================================
+
+#80 Byte Quota Utilities
+------------------------
+
+Verbs a user might want to call from a program:
+
+ :bi_create -- built-in create() call, takes same args.
+
+ :get_quota(who) -- just get the raw size_quota property
+
+ :display_quota(who) -- prints to player the quota of who.  If caller_perms()
+                        controls who, include any secondary characters.
+                        Called by @quota.
+
+ :get_size_quota(who [allchars]) -- return the quota of who, if allchars flag
+                                    set, add info from all secondary chars,
+                                    if caller_perms() permits.
+
+ :value_bytes(value)   -- computes the size of the value.
+ :object_bytes(object) -- computes the size of the object and caches it.
+
+ :recent_object_bytes(object, days) -- computes and caches the size of object
+                                       only if cached value more than days
+                                       old.  Returns cached value.
+
+ :do_summary(user) -- prints out the results of summarize-one-user.
+ :summarize_one_user(user) -- summarizes and caches space usage for user.
+
+
+Verbs the system calls:
+
+ :creation_permitted verb_addition_permitted
+ :property_addition_permitted(who) -- returns true if who is permed to build
+
+ :initialize_quota(who) -- sets quota for newly created players
+ :adjust_quota_for_programmer(who) -- empty; might add more quota to newly
+                                       @progged player.
+
+ :enable_create(who) -- sets .ownership_quota to 1
+ :disable_create(who) -- sets .ownership_quota to -1000 to prohibit create()
+
+ :charge_quota(who, object) -- subtract the size of object from who's quota.
+                               Manipulates the #-unmeasured if what is not
+                               currently measured. Called by
+                               $wiz_utils:set_owner.
+
+ :reimburse_quota(who, object) -- add the size of object to who's quota.
+
+ :preliminary_reimburse_quota(who, object)
+
+ Because the set_owner is done *after* an object has been turned into
+ $garbage, ordinary reimburse fails.  So we use this verb in the $recycler.
+
+ :set_quota(who, howmuch)
+ :quota_remaining(who)
+ :display_quota_summary -- internal, called by display quota
+
+See help @measure and help @quota for the command line verbs.
+
+=============================================================================
+
+#83 Object Quota Utilities
+--------------------------
+
+This is the Object Quota Utilities utility package.
+
+  :bi_create       - Calls built-in create.
+  :charge_quota    - Charge args[1] for the quota required to own args[2]
+  :reimburse_quota - Reimburse args[1] for the quota required to own args[2]
+  :set_quota       - Set args[1]'s quota to args[2]
+  :can_peek        - Is args[1] permitted to examine args[2]'s quota info?
+  :can_touch       - Is args[1] permitted to examine args[2]'s quota info?
+
+=============================================================================
+
+#25 Wizard Utilities
+--------------------
+
+The following functions are substitutes for various server builtins.
+Anytime one feel tempted to use one of the expressions on the right,
+use the corresponding one on the left instead.  This will take care
+of various things that the server (for whatever reason) does not handle.
+
+:set_programmer(object)             object.programmer = 1;
+    chparent object to $prog
+    send mail to $prog_log
+
+:set_player(object[,nochown])       set_player_flag(object,1);
+    set player flag,
+    add name/aliases to $player_db,
+    and maybe do a self chown.
+
+:unset_player(object[,newowner])    set_player_flag(object,0);
+    unset player flag,
+    remove name/aliases from $player_db
+    chown to newowner if given
+
+:set_owner(object, newowner)        object.owner = newowner;
+    change ownership on object
+    change ownership on all +c properties
+    juggle .ownership_quotas
+
+:set_property_owner(object, property, newowner)
+    change owner on a given property
+    if this is a -c property, we change the owner on all descendants
+    for which this is also a -c property.
+    Polite protest if property is +c and newowner != object.owner.
+
+:set_property_flags(object, property, flags)
+    change the permissions on a given property and propagate these to
+    *all descendants*.  property ownership is changed on descendants
+    where necessary.
+
+=============================================================================
+
+#71 Network Utilities
+---------------------
+
+:parse_address
+
+Given an email address, return {userid, site}.
+Valid addresses are of the form `userid[@site]'.
+At least for now, if [@site] is left out, site will be returned as blank.
+Should be a default address site, or something, somewhere.
+
+:local_domain
+
+given a site, try to figure out what the `local' domain is.
+if site has a @ or a % in it, give up and return E_INVARG.
+blank site is returned as is; try this:local_domain(this.localhost) for the
+answer you probably want.
+
+:open(address, port, [connect-connection-to])
+
+Open a network connection to address/port.  If the connect-connection-to is
+passed, then the connection will be connected to that object when $login gets
+ahold of it.  If not, then the connection is just ignored by $login, i.e. not
+bothered by it with $welcome_message etc.
+The object specified by connect-connection-to has to be a player (though it
+need not be a $player).
+Returns the (initial) connection or an error, as in open_network_connection
+
+:sendmail(to, subject, line1, line2, ...)
+
+Sends mail to internet address 'to', with given subject. It fills in various
+fields, such as date, from (from player), etc. The rest of the arguments are
+remaining lines of the message, and may begin with additional header fields.
+  (must match RFC822 specification).
+Requires $network.trust to call (no anonymous mail from MOO).
+Returns 0 if successful, or else error condition or string saying why not.
+
+:rawsendmail(to, @lines)
+Sends mail without processing. Returns 0 if successful, else reason why not.
+
+:invalid_email_address(email)
+Checks if email looks like a valid email address. Return reason why not.
+
+:email_will_fail(email-address[, display?]) -- Makes sure the email-address
+is one that can actually be used by $network:sendmail().
+
+:read
+For trusted players, they can read from objects they own or open connections
+
+:is_open(object)
+Returns true if the object is somehow connected, false otherwise.
+
+:incoming_connection
+Peer at an incoming connection.  Decide if it should be connected to
+something, return that object. If it should be ignored (outbound connection),
+return 1. Called only by #0:do_login_command
+
+:return_address_for(player) => string of 'return address'. Currently inbound
+mail doesn't work, so this is a bogus address.
+
+:server_started -- called when restarting to clean out state.
+
+:notify -- for trusted players, they can write to connections
+
+:suspend_if_needed -- $command_utils:suspend_if_needed but chowned to player
+
+:error(ERN, host, port) interpret open_network_connection(host, port) error
+
+:ident_incoming_connection(<player> [,<local port> [,<timeout>]])
+
+Attempt to identify the remote username assoociated with an incoming
+connection using the IDENT protocol (RFC 1413).  Requires the ability (via
+$string_utils:connection_port) to obtain the remote IP port of a given
+connection from the connection_name.
+
+Returns a username string if successful, E_NACC if it couldn't connect to an
+IDENT server on the remote machine, or E_TYPE if there was an error finding
+the associated userid (either a reported error from the server or a protocol
+error).
+
+Note:  This operation can take a while sometimes.. you'll probably want to
+fork it.
+
+:help_msg -- same as others.
+
+No help found on close, trust, invalid_hostname, or is_outgoing_connection.
+
+=============================================================================
+
+#74 Gopher utilities
+--------------------
+
+An interface to Gopher internet services.
+Copyright (c) 1992,1993 Grump,JoeFeedback@LambdaMOO.
+
+This object contains just the raw verbs for getting data from gopher servers
+and parsing the results.
+
+:get(site, port, selection)
+  Get data from gopher server: returns a list of strings, or an error if it
+  couldn't connect. Results are cached.
+
+:get_now(site, port, selection)
+  Used by $gopher:get. Arguments are the same: this actually gets the
+  data without checking the cache. (Don't call this, since the
+  caching is important to reduce lag.)
+
+:show_text(who, start, end, site, port, selection)
+  Requires wiz-perms to call.
+  like who:notify_lines($gopher:get(..node..)[start..end])
+
+:clear_cache()
+  Erase the gopher cache.
+
+:parse(string)
+  Takes a directory line as returned by $gopher:get, and return a list
+  {host, port, selector, label}
+  host, port, and selector are what you send to :get.
+  label is a string, where the first character is the type code.
+
+:type(char)
+  returns the name of the gopher type indicated by the character, e.g.
+  $gopher:type("I") => "image"
+
+=============================================================================
+
+#162 $web_utils:$web_utils
+--------------------------
+
+:okay_for_hit  {this none this}  "rxd"  -  okay_for_hit(object)
+
+Returns whether or not the object is valid for access by the web server.
+Currently checks if it is a descendent of $html.
+
+:error   {this none this}  "rx" -  error(place)  error(string)
+                                   Returns error in HTML format.
+
+:log  --  make a log of each hit.
+
+:destroy  -  destroy web session???
+
+:oust_brackets --  remove brackets (braces?) from args.
+
+=============================================================================
+
+#190 misc utilities
+-------------------
+
+:read() -- read one line of text prompting the player for it with <prompt>
+
+Difference from $command_utils:read is that it allows more flexibility in
+what form the prompt takes.
+
+
+:parse_table_options({header,justification,intercolumn-spacing})
+:parse_table_options(header)
+
+Does the dirty parsing work for make_table.
+
+parse_table_options({"Name","right","   "})
+ => {{"Name","----"},"right","   "}
+parse_table_options("Name")
+ => {{"Name","----"},"left"," "}help #190:make_table
+
+
+:make_table({header,justification,intercolumn-spacing},{stuff to tablify})
+:make_table(header,{stuff to tablify})
+
+Makes a table of the stuff given.  Really handy.  Examples:
+
+:make_table("Name",{"Joe","Jane"},"Age",{"10","15"})
+
+Name Age
+---- ---
+Joe  10
+Jane 15
+
+:make_table({"Name","left"," "},{"Joe","Jane"},{"Age","right","   "},
+{"10","15"})
+
+   Name   Age
+   ----   ---
+   Joe     10
+   Jane    15
+
+:make_table({"Name","left","| "},
+{"Joe","Jane"},{"Age","right"," | "},{"10","15"},{"","left"," |"},{})
+
+| Name | Age |
+| ---- | --- |
+| Joe  |  10 |
+| Jane |  15 |
+
+
+:is_r_prop(object, prop) -- Returns 1 if the prop is readable or 0 otherwise.
+
+:alt_columnize({items}, n [, space, indent, width]);
+
+Returns a list of strings of items of n columns. 'width' is the last
+character that may be occupied and it defaults to the standard screen width.
+An alternate use might be to substitute the player's line-length value.
+This columnization differs from that of $string_utils in that if an item is
+longer than the column, it is continued on the next line of the column.
+Line breaks are found using the value for SPACE (which defaults to a blank
+space) or, if there is no space in the line before the end of the column, at
+the end of the column. Each continuation of a column is indented with the
+string INDENT which defaults to the null string. Items do not wrap around to
+the top of the next column.
+
+=============================================================================
+
+#288 Net's Wizard Multiple Utils FO
+-----------------------------------
+
+:update_default_f*eatures udf  {this none this}  "rxd"
+:@chownA*ll  {any to any}  "rxd"
+:_chown  {this none this}  "rxd"
+:_grant  {this none this}  "rx"
+:@grantA*ll  {any to any}  "rxd"
+:@grantmo*st  {any to any} "rd"
+:@grantobjs   {any to any} "rxd"
+
+=============================================================================
+
+#337 Quinn utilities
+--------------------
+
+:view_property(OBJ object, STR property) -- an attractive way to view values
+
+:is_alphanumeric("character") => true if a character a-z, 0-9
+
+:type_name(NUM type) => STR of datatype name. ie: STR => string
+
+:in_stack(value, where, [callers_stack]) => index in callers() where found
+
+:names_only - Converts a list of objects to a list of names.  Simple!
+
+:enlist(value) => returns value as a list
+
+:match_exact match_object_exactly
+
+:social_match(string) => matches on room's occupants, accepting exact matches
+on an alias only.
+
+:match(string [, obj-list, prop-name]*)
+...like the $string_utils verb, but will return first exact match...
+
+:contents(what [, classes-included]) => contents of the given object
+ If optional args, will only list kids of those objects
+ OLD VERSION! Please use #34283:class_list(what:contents(), @classes)
+
+:seconds_since_midnight ssm
+
+EXAMPLE:  :ssm([STR hours_minutes_seconds || STR ctime || NUM time])
+            Seconds elapsed from 00:00:00 up to given time.
+
+:degree_string(NUM percentage[, LIST degree_pairs])
+
+:omessage(STR message, OBJ player) => message with all you-pronouns sub'd
+ with players
+
+:eval_sub(STR eval_str[, OBJ object]) => eval_str specially sub'd for
+frame-evals.  `object' is the object performing the scene, and defaults to
+`caller'
+
+ #rt = random $thing in room
+ #rc = random character/illuminati in room
+ #rp = random $player in room
+ #t  = the caller, or `object'
+ #l  = t's location
+ #p  = actual player, as extracted from callers()
+
+:map_eval(LIST values, STR eval) -- performs an eval on each element of
+`values', subbing "%#" with the element.  Returns a list of successful
+results and E_INVARGs (if an eval failed)
+
+:true_eval(LIST values, STR eval) -- performs an eval on each element of
+`values', subbing "%#" with the element.  Returns all elements whose eval
+returned a true value.
+
+:verbs(OBJ what[, NUM no-E_PERMS]) -- returns all verbs on `what'
+ if second `dummy' arg is given, unreadable verbs won't be included
+
+:class_list(LIST list [, classes-included])
+  The given list with all non-kids of args[2..] removed.
+
+:graph({headers}, {data} [, sort_column, {max_lengths}, center_data, {title,
+footer, center_titles, space_titles}, linelen]) => a graph of given data
+
+---- Explanation of Args
+
+- headers       : list of strings; the subject of each column
+- data          : list of lists; each a row of data
+ ( all of the following arguments are optional)
+- sort_column   : number; the column on which to sort the graph
+- max_lengths   : list of numbers, each the maximum width of a column
+- centre_data   : number; true if you'd like the main graph centered
+- border_info   : a list of the following elements:
+                : title         -- string; text prepended to body of graph
+                : footer        -- string; text appended to body of graph
+                : center_titles -- number; true means center title/footer
+                : space_titles  -- string; text between title/footer & graph
+- linelen       : number; linelength to use for the width of graph
+
+
+:to_percent(NUM cur[, NUM max]) => percent of cur/max
+If max is Zero, just return cur.
+
+:match_failed(object, string[, whatisit])
+Prints a message if string does not match object.
+
+:verb_heritage(OBJ object, STR verbname)
+Returns a list of ancestors on which the verb is defined.
+
+:fans groupies
+
+EXAMPLE: :fans(OBJ who) => List of players owning kids of who's objects.
+
+:cutl(value, num) => First `num' elements/characters of `val'.
+
+:cutr(value, num) => Last `num' elements/characters of `val'.
+
+:unroll(LIST list_of_lists) => LIST of all lists in given list `unrolled'
+
+:random_word(NUM length)
+
+Generate a random word of `length' characters.  Alternates vowels and
+consonants, for maximum pronounceability.
+Derived from $wiz_utils:random_password().
+
+:hor*izontal_merge merge
+
+EXAMPLE:  :merge([STR divider,]list, list, ...)
+
+Places each list of strings beside the other, a split screen view.
+Spacing between columns is determined by the divider argument.
+
+:longest shortest - longest/shortest(value, value, value, ...)
+
+Returns either the longest or the shortest value.
+
+:sum(LIST numbers) => total of all elements in `numbers' added together
+
+:assoc_array iassoc_array
+
+:assoc_array(targ,list[,indx, indx, indx]) returns the first element of
+`list' whose own indicated nested element contains target.  Index defaults
+to 1. For example...
+
+:assoc_array("foo", {biglist}, 2, 3, 1) would search through
+all elements of biglist[2][3][1] for the string "foo"
+
+:time ctime english_time
+
+:location(thing, [object_class]) => Finds the first child of `object_class'
+which contains `thing'.
+
+:english_encrypt(string[, casematters]) => Changes given string into a
+syntactically similiar string, with consonants and vowels sub'd with same.
+If `casematters', then capitalise returned text same as given.  Default
+ignores case.
+
+:equal(set1, set2) => True if the two lists given contain the same elements.
+
+:regexp_sub(STR match_string[, what]) -- subs the following
+#n -- what's name  #a -- what's aliases (`what' defaults to player)
+
+:spoken(STR text) => 0 if text is not in the syntax of something being
+spoken, else return said text.
+
+:owned_by_class(player, {include}[, {exclude}])
+
+:exclusive_list(objlist, {include-classes}[, {exclude-classes}])
+
+Returns objlist (which should be a list of objects) stripped of all objects
+not descended from `include_classes' or descended from `exclude_classes'.
+
+:substitute(string, match-result)
+As the primitive, but fixes any fudged results in the subs-element of
+match-result. If the result is empty, return E_INVARG.
+
+:byte_str*ing
+
+:size_string(NUM bytes[, NUM places_past_decimal_point])
+=> Size in bytes, kilobytes, megabytes, or gigabytes.
+
+Does not round numbers as well as it should, but blame that on 9.
+
+:literal_object(string) - As the verb on $string_utils, but allows friendly
+                          parsing of cmd-line references to $local.
+
+:parse_byteref(string) => NUM bytes referred to.
+
+Eg: 10 Mb  => 10000000
+     8k    => 8000
+    100Gb  => $maxint
+
+:db_share(player) => Total Bytes used as record by .object_size.
+
+:circular_add(circumference, @numbers)
+
+Examples:
+
+   :circular_add(12, 5, 10) => 3
+   :circular_add(12, 5, 28) => 9
+   :circular_add(12, 5, 7)  => 12
+   :circular_add(12, 12, -25) => 11
+
+:emoted(string)
+
+Returns true if the string is prepended by player's name or title and
+followed by some meaningful (non-whitespace) text.
+$room:emote uses name alone, so it should catch most instances.
+No checkng if player is the actual player, mind you.  Do your own security.
+
+:chop(string, size) -> list
+Chop the given string up into 'size'-length elements of a single list.
+
+:name_and_number_list nn_list names_of
+EX: :name_and_number_list(object|list-of-objects[, @english-list-args])
+
+:linesplit(line,len[,indent|spaces]) => List of substrings of line.
+
+:abbreviated_time abbr_time
+
+EX: :abbr_time(NUM seconds) -> String such as 8s, 4m, 3h.
+
+:args_with_quotes(cmdline_args)
+Return the arglist with argstr quotes intact.
+
+:same_type(list|object, type*)
+True if all elements of LIST are of the given type(s).
+
+:map_eval_suspended(LIST values, STR eval[, NUM interval])
+See 'map_eval'. 'interval' is how many seconds to suspend.
+
+:true_eval_suspended(LIST values, STR eval[, NUM interval])
+See 'true_eval'. 'interval' is how many seconds to suspend.
+
+:pluralize(STR singular-noun[, NUM quantity])
+The plural version of the given noun (if quantity merits a plural).
+
+:verb_name(string) -> Namespec suitable as a verb_info() arg.
+EX: "v*erb method prog*ram" -> "verb"
+
+:from_english_list
+:from_english_list(string)
+Return the original list of strings, sans commas and conjunctions.
+(Will take extra args same as $english_list when I figger 'em out)
+
+:unbreak(list)
+Attempt to fix the given list of strings so that one string is one paragraph.
+Either an indention, or an unindented line preceding an indention, are
+considered beginnings of paragraphs.
+
+:names_from_header_list(string)
+Take the english list string of names and object numbers in a standard mail
+message header and return them as a list of names.
+
+:short*
+This version returns the shortest names for each recipient, crushing
+Petition, Ballot, etc.
+
+:short_mail_name(string|object)
+Return a shorted version of the given mail recipient('s) name, crushing
+Petition, Ballot, and Dispute appropriately.
+
+:numbers_from_header_list(string)
+Take the english list string of names and object numbers in a standard mail
+message header and return the objects it specifies.
+
+:format([linelen, ]string[, @items])
+
+linelen  -- Maximum length of final string.
+string   -- Tokenized string to format.
+items    -- Items matching tokens in string.
+
+Each token should be of the format "%<integer>", where <integer> is the
+number of spaces to left justify (or right justify, if negative) an 'item'
+in the argument list. For example, an adjusted iteration of the following
+line could be used to print test scores in a pretty format:
+
+:format("%-3 %18 %-3%", 1, "Quinn", 98)
+-> "  1 Quinn             98%"
+
+:help_msg
+help_msg is the verb that sets up the help you are reading now.
+
+=============================================================================
+
+#920 Mickey's Utilities
+-----------------------
+
+A package of operations for using special operators to produce formatted
+output.
+
+The following ops deal with plurals.  If n is 1, the singular column is used.
+If it is some other number, the plural column is used.  If n is not a number,
+length(n) is used.
+
+ op               singular    plural
+----             ----------  --------
+ %s               s
+ %this, %these    this        these
+ %that, %those    that        those
+ %is, %are        is          are
+ %was, %were      was         were
+ %has, %have      has         have
+
+The following ops deal with misc objects:
+
+ %n       -- An object by name.
+ %nn      -- An object by name and number.
+
+These should probably go through write_self but presently do not.
+
+The following ops deal with numbers:
+
+ %some    -- Output "no" if n is 0; otherwise output
+
+The following ops deal with lists:
+
+ %items   -- Output items using $string_utils:english_list.  If the items
+             are objects, they are processed instead.
+
+ %maybeitems  -- Output "." if no items.  Output ": " + <result of %items> +
+                 "." otherwise.
+
+If an op is not found, caller:(op) is tried with an argument of the data.  It
+should return a string or a list of strings.
+
+Ops are case-sensitive.  If you use %N or %Is or whatever, you'll get an
+initial capital in the words that get used.  If you use %n or %is or whatever
+the natural case of the item will be used.  Generally, you should use an
+uppercase op when at the start of the sentence--as in "%Are %items ok?"
+
+
+:write(who,datum1,datum2,...)
+
+'who' may be a player or list of players.  A :tell_lines() will be done to
+those players. Each datum may be:
+
+  string -- to output datum as a string.
+  object -- to output object:write_self() if there is such a verb, or
+          object.name otherwise.
+
+  list   -- to output specially, see below.
+  other  -- to output tostr(object).
+
+  A list datum has the form {op, datum}.
+
+Examples:
+
+:write(me,"There ",{"%are",n}," ",n,"frob",{"%s",n},".")
+
+   if n is 1:   There is 1 frob.
+   if n is 2:   There are 2 frobs.
+
+:write (arg below)
+(me,"There ",{"%are",n}," ",{"%some",n},"frob",{"%s",n},".")
+
+   if n is 0 or {}:     There are no frobs.
+   if n is 1 or {4}:    There is one frob.
+   if n is 2 or {4,5}:  There are two frobs.
+
+:write
+(me,"There ",{"%are",n}," ",{"%some",n},   (arg continued below)
+"frob",{"%s",n},{"%maybeitems",n})
+
+   if n is {}:      There are no frobs.
+   if n is {4}:     There is one frob: 4.
+   if n is {4,5}:   There are two frobs: 4 and 5.
+
+:_write   {this none this}  "rxd"
+
+:tonum    {this none this}  "rxd"
+
+:parse_format_string   {this none this}  "rxd"
+
+:parse_format_op   {this none this}   "rxd"
+
+:format {this none this} "rxd"
+
+EX:  :format(who,string,thing1,thing2,...)
+
+Finds the %xxx's in string and associates them with the corresponding things
+that :write would want.  Do "help #920:write" for more info.
+
+EX:  :format(me, "There %are %some foo%s%maybeitems", x,x,x,x)
+
+   if x is {}:                 There are no foos.
+   if x is {"alpha"}:          There is one foo: alpha.
+   if x is {"alpha","beta"}:   There are two foos: alpha and beta.
+
+
+:verify_user   {this none this}  "rxd"
+:get_name   {this none this}   "rxd"
+
+EX:  :get_name(object[,a/an?])
+Returns the name of object, which may be any kind of thing.
+
+:format_string   {this none this}  "rxd"
+:format_action   {this none this}  "rxd"
+
+=============================================================================
+Last Update:  31 MAR 96  by  Wingnut  (Wingy)
