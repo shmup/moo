@@ -1,0 +1,157 @@
+MOOlists - by Uncle Tak
+
+A MOOlist is by far the most excellent data type. It is a list of data of any
+data type, in any combination. It is both similar to and quite different from
+arrays of other languages: MOOlists can be manipulated more literally than
+arrays, and are also much easier to use.
+
+
+## DEFINITION
+
+For our examples, we will be using three lists. They are defined as follows.
+
+    animals = {"elk", "sheep", "deer"};
+    names = {"Steve", "Bob", "Jim"};
+    ints = {1, 2, 3, 4, 5};
+
+Each item in a list is called an element.
+
+
+## INDEXING
+
+Lists would not be very useful if we could not work with each element
+individually. To do this, we use what's called the index or subscript.
+
+Note: When describing operations, it is common practice to use the return
+symbol (=>) to show the results of the operation.
+
+    animals[1] => "elk"
+    animals[3] => "deer"
+    ints[4] => 4
+    names[2] => "Bob"
+
+An element of a list works just like any other variable of that data type, and
+can be used in all the same operations.
+
+We can also refer to parts of a list:
+
+    animals[1..2] => {"elk", "sheep"}
+    ints[3..5] => {3, 4, 5}
+
+There is also the "$" operator. This is shorthand for the last element.
+
+    animals[$] => "deer"
+    ints[$] => 5
+
+Note: You can see that MOOlists are 1-based; that is, the first element is
+numbered 1. In most other languages, arrays are 0-based, which means that the
+first element is numbered 0. You'll want to keep this in mind when you switch
+to another language.
+
+
+## THE @ OPERATOR
+
+Think of the @ operator as "emptying" the contents of a list into the next
+available container. In other words:
+
+    {animals, names} => {{"elk", "sheep", "deer"}, {"Steve", "Bob", "Jim"}}
+    {animals, @names} => {{"elk", "sheep", "deer"}, "Steve", "Bob", "Jim"}
+    {@animals, @names} => {"elk", "sheep", "deer", "Steve", "Bob", "Jim"}
+
+By using the curly brackets, we create a new list, then the @ operator empties
+the contents of "animals" and "names" into the new list. This is useful for
+combining two lists, or for adding a whole bunch of elements to an existing
+list, or just for adding one new element.
+
+    {@animals, "turtle"} => {"elk", "sheep", "deer", "turtle"}
+    {@ints, 6} => {1, 2, 3, 4, 5, 6}
+    {0, @ints} => {0, 1, 2, 3, 4, 5}
+    {0, @ints, 6} => {0, 1, 2, 3, 4, 5, 6}
+
+
+## LIST FUNCTIONS
+
+In addition to the operators, there are several functions just for doing things
+to lists.
+
+Listinsert(list, element): Adds one new element to the beginning of a list.
+
+    listinsert(animals, "turtle") => {"turtle", "elk", "sheep", "deer"}
+    listinsert(animals, "sheep") => {"sheep", "elk", "sheep", "deer"}
+
+Listinsert(list, element, index): Inserts a new element at the specified index.
+
+    listinsert(animals, "turtle", 2) => {"elk", "turtle", "sheep", "deer"}
+    listinsert(animals, "turtle", 4) => {"elk", "sheep", "deer", "turtle"}
+
+Listappend(list, element): Adds one new element to the end of a list.
+listappend(animals, "turtle") => {"elk", "sheep", "deer", "turtle"}
+listappend(animals, "sheep") => {"elk", "sheep", "deer", "sheep"}
+
+Listappend(list, element, index): Adds one new element after the specified
+                                  index.
+
+    listappend(animals, "turtle", 2) => {"elk", "sheep", "turtle", "deer"}
+    listappend(animals, "turtle", 0) => {"turtle", "elk", "sheep", "deer"}
+
+Listdelete(list, index): Removes the element at the specified index.
+
+    listdelete(animals, 1) => {"sheep", "deer"}
+    listdelete(animals, 2) => {"elk", "deer"}
+
+Setadd(list, element): Adds one new element to the end of a list, unless it's
+                       a duplicate.
+
+    setadd(animals, "turtle") => {"elk", "sheep", "deer", "turtle"}
+    setadd(animals, "sheep") => {"elk", "sheep", "deer"}
+
+Setremove(list, element): Removes one element from a list, returning no error
+                          if it's not there.
+
+setremove(animals, "sheep") => {"elk", "deer"}
+setremove(animals, "turtle") => {"elk", "sheep", "deer"}
+
+
+## LIST LENGTH
+
+It's often important to get the length of a list.
+
+    length(animals) => 3
+    length(ints) => 5
+
+Note that the length is the same as what the $ operator returns; i.e., the
+index of the last element of the list. However, the $ operator only works in
+the context of indexing, so you'll still have to use length() for other things.
+
+
+## Two-Dimensional Lists
+
+You can also have a list of lists. Take a look at this code:
+
+    landanimals = {"sheep", "deer", "elk"};
+    skyanimals = {"eagle", "raven", "bat"};
+    seanimals = {"whale", "dolphin", "shark"};
+    animals = {landanimals, skyanimals, seaanimals};
+
+Now "animals" is a list of three other lists. We can still index it normally:
+
+    animals[2] => {"eagle", "raven", "bat"}
+
+And like I said before, every element of a list accepts all the same operations
+as any other variable of the same type. Thus, we can index the indexed element:
+
+    animals[2][1] => "eagle"
+    animals[2][3] => "bat"
+    animals[2][$] => "bat"
+    animals[$][$] => "shark"
+
+These are called two-dimensional lists because, if you visualize it, it looks
+like a matrix. Of course, you can make lists of however many dimensions you
+want.
+
+
+## AND THERE'S MORE
+
+There are code structures and algorithms dedicated just to using lists in
+various fashions. It's far too large a topic to cover in one lesson. Thus,
+lists will be revisited several times elsewhere in the guide.

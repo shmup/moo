@@ -1,0 +1,399 @@
+MOO Pepsi Tutorial
+
+(Written by Mark Horan)
+
+A MOO Programming Tutorial Vol 1.
+
+This tutorial will help the reader write a "drink" verb on a can of
+text-virtual pepsi. The verb will display a drink message each time it is
+invoked, until the contents of the pepsi are exhausted. In the first example
+listing, each gulp of pepsi will decrement the original volume of pepsi in the
+can by 20%. In the second example listing, the size of gulps of pepsi will be
+randomly selected. This tutorial is not designed to answer any question about
+MOO programming in a definitive manner; It is designed as a quick-start, a help
+toward getting started with a few basics when one finds oneself, as many
+beginners do, without a clue concerning where to begin. So this tutorial will
+provide help on getting started. Some important MOO programming structures will
+be implemented, and the basics of using the verb editor will be explained.
+
+It is assumed that the reader will have already requested programmer status at
+KccMOO, and that their programmer bit has been set to true.
+
+BEGIN TUTORIAL:
+
+First create an object upon which to define verbs and properties with:
+
+    @create $thing named pepsi
+
+You have now created a child instance of the generic thing object #5. Your can
+of pepsi inherits all the functionality of $thing; namely, it can be picked up
+and dropped and, provided you set its .description property, it can be looked
+at. However, it cannot yet be drunk from. Note: There are a number of key MOO
+objects that can be referenced via the "$" syntax. This is simply
+a convienence, providing a mechanism for MOO programmers to reference commonly
+used objects without needed to remember their exact database references; e.g.,
+The generic room #3 can be referenced with $room, the generic exit #7 can be
+referenced with $exit and the generic player #6 can be referenced with $player.
+
+Next create a verb on the pepsi called "drink" with:
+
+    @verb pepsi:drink this none none
+
+Note: The three items, "this none none", define the command line arguments for
+invoking this verb. Since the verb will be invoked with the command, "drink
+pepsi", the "this" argument, or direct object, refers to the object itself. The
+second argument is reserved for prepositions, and the third argument is
+reserved for an indirect object. Thus, one can define a verb's command line
+arguments such that it might be invoked with "give pepsi to charles". In this
+case, the verb would be declared with: "@verb pepsi:give this to any". And the
+programmer, in the body of his/her code, would be responsible for checking to
+see that the value of the built-in variable iobjstr ( indirect object string
+) is the name of an actual player object named Charles. However, in the case of
+our "drink" verb, we only need to inform the server that we are specifying our
+pepsi thing itself, as a direct object, with the identity variable, "this".
+
+Next we define a property on the pepsi, called "remaining", which will hold
+a value representing the amount of pepsi remaining in the can. A property is
+a MOO variable which is allocated more or less permanent storage in the
+database; that is, it is a named slot in the database whose value tends to
+survive beyond the run of whatever verbs use or minipulate it. This particular
+property, pepsi.remaining, will be initialized to 100, or 100%. Type the
+following command:
+
+    @property pepsi.remaining 100
+
+Now we will invoke the verb editor and write the actual code which implements
+the "drink pepsi" command, so type the following:
+
+    @edit pepsi:drink
+
+This command teleports you to a room called the verb editor, and loads it with
+the verb you've specified. At this point, the verb is empty; It contains no
+lines of code. In the verb editor, you enter lines of code as if you were
+speaking MOO wise, to someone in the room; which is to say, you precede each
+line with the word or, alternatively, with <">. Some other useful commands are
+as follows:
+
+---------- Useful Verb Editor Commands ----------
+com
+    to compile your code listing. Your verb will not run until it is compiled.
+    Enter this command after you have entered the complete listing of your
+    verb. You will receive either a success message, or an error message. If
+    you have an error, use the following commands to move around in the verb
+    editor to correct you mistakes:
+
+ins _
+    to insert a line after the specified line number.
+
+ins ^
+    to insert a line before the specified line number.
+
+del
+    to delete the specified line number.
+
+As well, you can type "look" while in the editor to learn about additional
+commands and options. You can also type "help editors" and "help @edit". They
+are many more verb editor commands and options, but you don't really need to
+learn them if you'd rather not bother. The above list will serve you well.
+Note: If you don't like putting double quotes at the beginning of each line of
+code, you can give the editor command "enter", and the editor will then accept
+multiple lines of code, each terminated by hitting the key; however, to get out
+of the "enter" mode, you must enter a line of text consisting of only a period
+"." as its first and only character.
+
+When you have entered in all your code, type 'com' to compile it. You'll see
+a message informing you of success if all went well, otherwise you'll see an
+error message. Usually this will entail a syntax error, such as forgetting
+a semi-colon at the end of a statement, or forgetting to surround a string with
+two sets of double quotes. You can develop a sort of perverse talent for
+spotting these sorts of errors, but the following code listing should work as
+advertised. Enter it into the verb editor exactly as shown. If you get errors,
+which is normal enough, use the above listed editing commands to move about in
+the listing to delete and insert appropriate lines of text. When you have
+successfully compiled your verb, type 'quit' to quit the editor.
+
+Now, here is a listing for the "drink" verb:
+
+(Remember, the variable this stands for the pepsi object itself.)
+
+BEGIN Example 1
+=======================
+
+""-- check to see if player has the pepsi --";
+if ( this.location != player )
+ player:tell("You need to be holding the pepsi to drink it!");
+ return;
+endif
+""-- check to see if there is even any pepsi to drink --";
+if ( this.remaining == 0 )
+ player:tell("The can of pepsi is empty.");
+ return;
+endif
+""-- drink twenty percent of original volume --";
+this.remaining = this.remaining - 20;
+if ( this.remaining == 0 )
+ player:tell("You finish off the last of the pepsi.");
+else
+ player:tell("You take a cool, thirst-quenching gulp of pepsi.");
+endif
+
+===============================
+END Example 1
+
+Note: In the above listing, and in the one below, you will see lines of code
+preceded by two double quotes, such as the first line in example 1. This line
+is a comment line. Its purpose is for communicating with human beings; The
+compiler will ignore it entirely. Remember, the first double quote tells the
+verb editor that you are entering a line of code. The second double quote
+defines the line as a comment line. Notice also the double quote at the end of
+this line, just before the semi-colon. This double quote is also necessary to
+specify a comment line. As well, a comment is a MOO code statement, and like
+all MOO code statements, it must be terminated with a semi-colon.
+
+Now that you've defined a verb on your can of pepsi, try it out!
+
+    Type: 'drink pepsi'
+
+Now here is the code listing for Example 2. You can enter the verb editor again
+with '@edit pepsi:drink' and delete all the lines you put there, or you might
+create a new child of $thing, called 'coke' maybe, and define Example 2 on it.
+
+BEGIN Example 2
+==============================
+
+""-- check to see if player has the pepsi --";
+if ( this.location != player )
+ player:tell("You need to be holding the pepsi to drink it!");
+ return;
+endif
+-- check to see if there is even any pepsi to drink --";
+if ( this.remaining == 0 )
+ player:tell("The can of pepsi is empty.");
+ return;
+endif
+""-- get a gulp --";
+gulps = { 5, 10 ,15, 20 };
+cool = 0;
+while (!cool)
+ $command_utils:suspend_if_needed(0);
+ gulp = random(length(gulps));
+ if ( gulps[gulp] <= this.remaining )
+ cool = 1;
+ endif
+endwhile
+-- drink the gulp --";
+this.remaining = this.remaining - gulps[gulp];
+if ( this.remaining == 0 )
+ player:tell("You gulp down the last of the pepsi.");
+elseif ( gulps[gulp] == 5 || gulps[gulp] == 10 )
+ player:tell("You take a sip of pepsi.");
+else
+ player:tell("You take a cool, thirst-quenching gulp of pepsi.");
+endif
+
+==========================
+End Example 2
+
+Note: Lines of code which define programming structures do not end in
+a semi-colon. These exceptions include "if (condition)/else/endif" statements,
+and while (condition)/endwhile statements.
+
+BTW: Here's a nicer-looking alternative to the while loop in example 2. These
+lines can replace everything between and including the 'while' and 'endwhile':
+
+    if ( this.remaining >= 20 )
+     gulp = random(4);
+    elseif ( this.remaining >= 15 )
+     gulp = random(3);
+    elseif ( this.remaining >= 10 )
+     gulp = random(2);
+    else
+     gulp = 1;
+    endif
+
+When the can of pepsi is empty, you can type:
+
+    @set pepsi.remaining to 100
+
+This will fill the can back up with pepsi, or you can write a verb that
+performs this task. In fact the conclusion of this tutorial will include just
+that: We will write a callable verb which implements the "fork()" statement, to
+reset the pepsi to a full state.
+
+Note: The line in Example 2, "$command_utils:suspend_if_needed(0);", is a call
+to a verb, suspend_if_needed, defined on the command utilities object. The
+utilities are a collection of objects which comprise a library of useful,
+callable functions, or verbs, which are not listed or explained in the
+LambdaMOO Programmer's Manual. You can type "help utilities" to begin learning
+more about this library.
+
+Some explanation of terms used in Example 2:
+
+    != means "is not equal to"
+    == means "is equal to"
+    >= means "is greater than or equal to"
+    || means "or"
+    { 5, 10, 15, 20 }is a list of four numbers
+    ""-- get a gulp --"; is a comment line ( ignored when verb is invoked )
+
+Refer to the LambdaMOO Programmer's manual for more explanation of MOO
+programming terms. If you are going to do MOO programming, you must have the
+manual.
+
+Or the manual is available for downloading from parcftp.xerox.com, in /pub/MOO.
+The file you want is called ProgrammersManual.txt. You also access this file
+using your favorite web browser, by goto'ing this URL:
+ftp://parcftp.xerox.com/pub/MOO/ProgrammersManual.txt
+
+It's important to know how to call one verb from another. In this way
+a programmer can write modules of code, each with relatively specialized
+functions, and get them to work together to produce desired results.
+
+A typical program might have three modules, a module designed to get some sort
+of user input, a module designed to process that input in some way, and
+a module designed to display or output the results of data processing. And
+there is likely a fourth, or main module designed to coordinate the behaviors
+of the other three in some fashion, usually to keep doing these three things
+until told, somehow, to quit doing them.
+
+Such a main module might look like this:
+
+    done = 0;
+    while (!done )
+    input = this:get_input();
+    result = this:process_input(input);
+    this:display_results(result);
+    if ( !$command_utils:yes_or_no("Do you want to process another?"))
+    player:tell("You decide not to process anymore data.");
+    done = 1;
+    endif
+    endwhile
+
+So we will declare and define a verb to be called upon by another verb, namely
+our Example 1 listed above, although our new, "called" module, which we are
+going to write, could just as easily be called from example 2. Its purpose will
+be to reset the value of pepsi.remaining to 100, or 100%, after an appropriate
+amount of time has elapsed since it was emptied; say, five minutes.
+
+First declare a verb, on the pepsi object, called "reset":
+
+    @verb pepsi:reset this none this
+
+Note: The arguments 'this none this' are a special format to be used with
+callable verbs. The form 'this none none' would work just as well, but then you
+would have this verb being displayed when users type 'exam pepsi', which is
+unnecessary as it is not a command, but an object-internal process. By using
+the form 'this none this', the server will know not to tell users about this
+verb when they use the 'exam' command.
+
+Now we need to change the permission string on this verb to include the
+character which will allow it to be called from another verb:
+
+    @chmod pepsi:reset +x
+
+Refer to the Programmers Manual for a more detailed treatment of object, verb
+and property permissions.
+
+Now the listing for the "reset" verb can be loaded into the editor as before.
+Here is the listing:
+
+    fork(5*60)
+     this.remaining = 100;
+    endfork
+
+Enter these three lines into the verb editor and compile as before.
+
+That's all. The fork statement begins a separate process at the time specified
+( 5 times 60 seconds, or 5 minutes ). The statement which resets
+pepsi.remaining to 100 is not processed until that time; however, control
+passes immediately to the line "endfork" and, since this is the end of the verb
+listing, control is passed back to the calling verb ( pepsi:drink ), with the
+statement(s) within the fork remaining to be executed at the time scheduled. If
+you'd like to keep matters a little simpler, just omit the lines 'fork(5*60)'
+and 'endfork', in which case the remaining statement, 'this.remaining = 100',
+will be executed by our called-upon verb immediately.
+
+Now we only need to add a single line of code to example listing 1, which will
+call upon the verb we've just written: "this:reset();". Note the syntax, with
+the parentheses at the end. In OOP speak ( Object Oriented Programming ), you
+are saying, "call reset, a member function of "this", the identity variable
+which, in this case, refers to our can of pepsi. The empty parentheses '()'
+show that the verb is being called with no arguments. You will eventually want
+to write some callable verbs so that they can be called with arguments; which
+is to say, data that your callable verbs need in order to do their jobs. But
+that is beyond the scope of this tutorial. If you have questions concerning
+anything this tutorial doesn't illuminate entirely, or that the Programmer
+Manual doesn't make clear, post them to *programmeurs ( *prog ).
+
+Now here is the modified listing of Example 1:
+
+BEGIN listing of modified Example 1 code
+================================
+
+""-- check to see if player has the pepsi --";
+if ( this.location != player )
+ player:tell("You need to be holding the pepsi to drink it!");
+ return;
+endif
+-- check to see if there is even any pepsi to drink --";
+if ( this.remaining == 0 )
+ player:tell("The can of pepsi is empty.");
+ return;
+endif
+""-- drink twenty percent of original volume --";
+this.remaining = this.remaining - 20;
+if ( this.remaining == 0 )
+ player:tell("You finish off the last of the pepsi.");
+ this:reset();
+else
+ player:tell("You take a cool, thirst-quenching gulp of pepsi.");
+endif
+
+=====================================
+END listing of modified Example 1 code
+
+Notice the fourth line from the bottom. This is the call to the callable verb
+we just wrote, which contained the forked statement resetting the value of
+pepsi.remaining to 100 after five minutes have elapsed.
+
+
+Hopefully, this little tutorial has provided a useful introduction to MOO
+programming. The example listings are relatively simple, and you can create
+objects with these verbs defined on them, interact with these objects, observe
+their behavior, and study the code which produces that behavior. You can
+generally do this with most objects throughout the moo; that is, interact with
+them, observe their behavior, and study the associated code. Some useful
+commands for doing this are:
+
+examine
+    Shows information about specified object
+
+@verbes
+    Shows all the verbs defined on an object.
+
+@d .
+    Shows all properties on an object. Note the period after the object name.
+    If I want to see all the properties defined on my own player object, I can
+    type '@d me.'
+
+@d :
+    Shows information on all of an object's verbs. Note the colon.
+
+@show
+    Shows information about an object.
+
+@show obj.property_name
+    Shows the specified property
+
+
+@list obj:verb
+    Shows the source listing for the specified verb
+
+@dump
+    Shows all properties and verbs on an object with values and listings.
+
+
+Additionally, beginning programmers should make sure they are subscribed to
+*prog. If you have questions regarding MOO programming, ask a programmer or
+wizard, and/or post it to *prog. It is quite likely that your question will
+serve the concerns of other programmers too, either now or later.

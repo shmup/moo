@@ -1,0 +1,236 @@
+MOO WAIF Tutorial
+
+In this example we'll be demonstrating the WAIF type by writing a simple code
+timer. This will show off several aspects of the WAIF type, including:
+automatically called verbs (initialization and destruction), instance verbs,
+instance properties, and a completely contrived example of a class verb.
+
+What is a code timer? It's a very simple tool to help benchmark the time it
+takes a verb to execute. It's intended to be a one line solution to a problem
+that would ordinarily take multiple temporary lines of code.
+
+Written by lisdude and last edited 2021-09-01.
+
+
+CREATION
+
+First we want a place for our verbs and properties to live. This will be our
+"class", which is a term that may be familiar to those who know other
+programming languages.
+
+    @create $waif called Code Timing WAIF
+
+For the sake of demonstration, we'll assume our newly created WAIF is #123.
+
+
+PROPERTIES
+
+We'll want two properties on our timer: First, the time it was started. Second,
+the player to report back to:
+
+    @prop #123.:start
+    @prop #123.:player
+
+As you can see, this is ordinary enough. However, each property name is
+prefixed with a colon. Why is that?
+
+A WAIF can be thought of as two distinct things: The WAIF class and an
+instantiated WAIF. The WAIF class is a completely ordinary object. It can have
+normal verbs and normal properties and function like any other object. The
+instantiated WAIF, however, is special. It exists only within a property or
+a verb. It's not an object. As such, we need a way to differentiate verbs and
+properties from the WAIF class vs the WAIF itself, as there are times when you
+want to be able to call a verb on the instantiated WAIF but not its class, and
+vice versa. The colon provides that differentiation. We'll see more about the
+differences between a waif class and an instantiated WAIF later.
+
+At this point, we're done. The WAIF is perfectly usable. If you'd like, you can
+test it:
+
+    @prop me.timer
+    ;me.timer = #123:new()
+    ;me.timer.player = me
+    ;me.timer.player
+
+Here we instantiated a WAIF using the new() verb (which can be found on the
+generic WAIF) and stored it in the 'timer' property on your player. You now
+have access to the start and player properties directly as if they were
+properties on an object. Fancy! Not all that useful. Notice that the colon is
+no longer in the property name. This is because the colon is only meant to
+differentiate between verbs and properties on the class itself. Since this WAIF
+is instantiated, it has no class verbs or properties and no differentiation is
+necessary.
+
+
+INSTANCE VERBS
+
+Now we want our WAIF to actually do something. This is one of the key
+differences between a WAIF and a LIST: a WAIF can have verbs. For our timer,
+we're going to define four verbs.
+
+    @verb #123::initialize tnt
+    @prog #123::initialize
+
+    this.class:increment_lifetime_timers();
+    this.player = args ? args[1] | player;
+    this:start();
+
+    .
+
+This is the initialization verb. When $waif:new() is called, it passes its
+arguments to the initialize verb on the instantiated WAIF. In this case, it
+will allow the player to redirect the timer's output to any player it wants.
+Otherwise, it defaults to the player who called the verb. Please note that no
+thought has been given to security or input validation in this brief example.
+That's left as an exercise to the reader.
+
+The first line is the first we'll see of the difference between verbs on
+a class vs verbs on an instantiated WAIF. this.class is a special property that
+all WAIF types possess. It returns the object that the WAIF is based on. Its
+parent, if you will. In this line, we're calling a verb on the parent that
+doesn't exist on the WAIF instance. Note how, in the Class Verbs and Properties
+section below, we don't have an extra colon in the increment_lifetime_timers
+verb.
+
+    @verb #123::recycle tnt
+    @prog #123::recycle
+
+    this:stop();
+
+    .
+
+The recycle() verb is another special verb. The server will automatically
+attempt to call it on an instantiated WAIF when it's time for it to get cleaned
+up. This gives us an opportunity to stop our timer when the WAIF instance goes
+out of scope and get the final output before it's lost forever.
+
+    @verb #123::stop tnt
+    @prog #123::stop
+
+    total = ftime(1) - this.start;
+    this.start = 0;
+    this.player:tell("Total execution time: ", total, " seconds.");
+
+    .
+
+The stop verb will determine the total time the timer has been running, reset
+it, and display output to the appropriate player. It's setup in this way so
+that the stop verb can be called manually or automatically when the WAIF is
+destroyed.
+
+    @verb #123::start tnt
+    @prog #123::start
+
+    this.start = ftime(1);
+
+    .
+
+This verb simply sets the start time. You'll notice it's automatically called
+by initialize() so that the timer is immediately useful, but it can also be
+called manually if the timer has been stopped.
+
+
+CLASS VERBS AND PROPERTIES
+
+This is where the example gets a little contrived. To demonstrate the
+difference between class and instance verbs and properties, we need to have
+some class verbs and properties! So for our example, we'll just keep track of
+the total number of timer instances that have ever been created. Why not?
+
+Remember that the class is a normal object, so we add and access verbs and
+properties exactly the same way as we always do:
+
+    @verb #123:lifetime_timers tnt
+    @prog #123:lifetime_timers
+
+    return this.total_timers;
+
+    .
+
+Simply return the total number of timers.
+
+    @verb #123:increment_lifetime_timers tnt
+    @prog #123:increment_lifetime_timers
+
+    this.total_timers = this.total_timers + 1;
+
+    .
+
+Add one to the number of timers.
+
+    @prop #123.total_timers 0
+
+
+USAGE
+
+Time to put all of our hard work to the test! To test it, we'll create two
+simple verbs:
+
+    @verb me:timer_test_1 tnt
+    @prog me:timer_test_1
+
+    timer = #123:new();
+    suspend(5);
+
+    .
+
+    @verb me:timer_test_2 tnt
+    @prog me:timer_test_2
+
+    timer = #123:new();
+    suspend(2);
+    timer:stop();
+    "Do exciting things here that we don't want timed.";
+    timer:start();
+    suspend(3);
+    timer:stop()
+
+    .
+
+Now try them out:
+
+    ;me:timer_test_1()
+    ;me:timer_test_2()
+
+You should see that the timer outputs roughly the same amount of time as the
+suspend. Now let's try out our class verb:
+
+    ;#123:lifetime_timers()
+
+The output should be 2 if you've only followed the steps above.
+
+
+CONCLUSION
+
+Hopefully that gives you a better idea of how the WAIF type works. Now's the
+time to experiment and get a better feel for it. What happens if you try to
+call lifetime_timers() on an instantiated WAIF? What happens if you try to call
+#123:start() or even #123::start()?
+
+
+FAQ
+
+Q: Should WAIF always be all caps? Is it an acronym?
+A: While I'm not an authority on such matters, here's my take: Conventionally,
+all type names are all caps. LIST, INT, FLOAT, etc. For this reason, WAIF
+should always be capitalized. However, you do what makes you comfortable.
+
+Q: How do I recycle a WAIF?
+A: Unlike ordinary objects, a WAIF is not recycled. A WAIF only exists as long
+as some real object holds a reference to it. That means a WAIF must exist
+inside a property or a running verb for it to exist at all. To 'recycle'
+a WAIF, simply remove it from every property or running verb and the server
+will wash it away.
+
+Q: What's with the colons? I still don't get it.
+A: With ordinary objects, a child will inherit verbs and properties from its
+parent. Now imagine that you want the parent to hold one set of verbs and
+properties and the child to hold an entirely different set. This is what
+happens with WAIFs. When a colon is present in a verb or property name on
+a parent class, it means "this verb or property is all the WAIF gets to
+inherit. Nothing else."
+
+Q: What do you mean when you keep saying instantiated and instance?
+A: Instantiating just means creating. You're creating a new instance of the
+WAIF class. So for example, if you call me.waif = someWaif:new(); then you've
+just instantiated someWaif and have an instance stored in me.waif.

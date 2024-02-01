@@ -1,0 +1,291 @@
+Quiver's Building Tutorial
+Wednesday, May 4, 1994
+
+DISCLAIMER
+
+This is not the end_all and be_all of building. This is an attempt to
+integrate some basic techniques and information with an ability to
+understand and create a believable space on the MOO. Building is mostly
+grunt work. No amount of instruction will change that. The more time,
+effort and thought you put into your construction, the better the result
+will be.
+
+SMOKE AND MIRRORS
+
+Rule #1 is that you always build for the lowest common denominator. The
+guest or new user that stumbles into your construction should be able to
+enjoy every part of it and should find it perfectly understandable to
+them. Too often builders fall into a sort of shorthand style where they
+assume that the users will be knowledgable MOOers who can supply the
+missing pieces. Assume nothing of the sort.
+
+The basic (and practically only) tools of building are rooms, exits,
+messages and descriptions. Your mission is to produce the *effect* of a
+believable space using these text-bound instruments. They must imply
+space, dimension, texture, movement and time. In essence, you must
+become a writer. I view M*'s as a sort of four-dimensional, multi-user,
+hyper-textual word processor. What is written with this tool can never
+be successfully published or performed. It can only be experienced via
+the tool that created it.
+
+If you enjoy the descriptive powers of a writer such as Raymond
+Chandler, wherein the details and texture almost overpower the plot, the
+MOO should be a positive experience. Indeed, there is no plot in a MOO.
+The writer cannot control the sequence of events or even which details
+are read or skipped. This means that the basic room description (@desc
+here as "<text>) must supply enough information to serve as the basis of
+a complete experience of your construction. Everything else serves to
+refine and broaden the experience.
+
+This means that a room described with something like, "This is the room
+where Willy lives." must be a failure, no matter how much detail and
+messaging is added to it. Many players will simply pass through the
+room, see this bland description and pass on to areas of more interest.
+The room description simply fails to stir the interest of the user to
+explore.
+
+And the obverse can also be true. Stumbling into a room with a twenty
+line description, even more lines of integrated messages, numerous
+actual objects and (in the case of the Metaverse) an @rose display can
+overwhelm even a seasoned user. A classic case of spam. When I encounter
+such a room, my eyes glaze over, I read a few words and then head for
+the nearest exit. I assume that I am being bombarded with information
+that belongs in hidden details and that the room is probably poorly
+constructed.
+
+So, there is seemingly a fine balance between the terse and the verbose.
+Although there can be no hard and fast rule, a good room description can
+usually be contained in 5 to 10 lines. And I have found that the effect
+is usually better if those lines contain something tangible. In other
+words, don't tell people they have entered a strange and weird room,
+rather, describe strange and weird things to them. They'll figure it out.
+
+NUTS AND BOLTS
+
+Enough of this flatulence! Let's design a simple room with an exit and
+a few details. So we can have a bit of dramatic flair, let it be a
+dungeon cell with a barred window and a heavy wooden door. Before you
+read any further, decide for yourself how you would describe this space
+and the actions it might contain. Write down your ideas and compare them
+to mine. First we need to describe the cell...
+
+        @desc here as "The smooth stones of the cell walls glisten in
+        the dim light. The chill penetrates to the bone and your
+        nostrils are filled with the smells of rot and decay. A dank
+        film covers the flagstone floor.
+
+What have I said here? You are in a cell. It is made of stone. It is
+probably wet or damp. It is cold. Something in the cell is rotten and
+smells bad. You are standing in some kind of muck. It is fairly dark in
+the cell. By emphasizing the senses (touch, temperature, light, smell)
+you can create in a few words a fairly effective image of a cell. Notice
+how much is *unsaid* in this description that your mind fills in for
+you. This is almost micro-economic in function; implying the whole by
+examining the details.
+
+Well, we have parented this room to #955 in the Metaverse, an
+integrating, detailing room with failed_exit messages. This means we can
+define our cell by adding details and messages. These will expand on
+the impression we have already created with our @desc. To make it
+simple, the walls will be to the north, south, east and west. Later we
+will add a window to the west wall and a door to the east. But for now,
+we will assume there are no doors or exits.
+
+Details (@detail, @details) in a detailing room contain a description of
+something a person might look at based upon the room description. There
+is no actual object (and no quota cost), just a text string associated
+with a noun or nouns. First, always assume that someone will look at all
+the cardinal and ordinal points (n,s,e,w,ne,nw,se,sw). And if they do,
+they should see something other than a default failure message. So, we
+have already stated that the walls lie to the cardinal points, and walls
+appear in the @desc, so we might create a detail like...
+
+        @detail north,south,east,west,n,s,e,w,walls is "The wall rises
+        to a height of at least fifteen feet. There are no cracks,
+        crevaces or openings in its surface. A thin film of fetid water
+        flows slowly over the smooth stones of the wall towards the
+        floor of the cell...
+
+Not exactly poetry, but it does serve to amplify the image of the room.
+We now know the height of the wall and the source of the glistening. We
+can also surmise the source of the smell and the muck on the floor. We
+are also told that there is no exit in this direction. And what if
+someone attempted to look at the stones? We could create...
+
+        @detail stones is "They appear to be granite...
+
+Details can be layered upon details. I would suggest examining the
+pinnacle room of the Pyramid on Metaverse. It makes extensive use of
+this technique. Other details might be for up, down (floor), smell, etc.
+There is literally no limit. But we have said there is a window to the
+west. First, what does this window look out upon? Lets assume there is a
+Town Square room numbered #12345 that lies outside the cell and the
+window is to look out upon this area. First we dig an exit...
+
+        @dig window,west,w to #12345
+
+Note that the west,w in this exit will override the west,w detail we
+just created. Actual objects always superceed details. Now to upgrade
+the parent of the exit to a more featured model we...
+
+        @chparent window to #1011
+
+This model has advanced messaging and integrates into our cell room
+description. If you now look at the room you will see an additional
+message displayed in the description that reads something like: You see
+an undescribed exit here. This is the @look message on the window that
+integrates with the room description. Lets set it to...
+
+        @look window is "A thin shaft of light falls from the barred
+        window high up the west wall.
+
+After this addition the entire room description should now read as...
+
+        The smooth stones of the cell walls glisten in the dim light.
+        The chill penetrates to the bone and your nostrils are filled
+        with the smells of rot and decay. A dank film covers the
+        flagstone floor. A thin shaft of light falls from the barred
+        window high up the west wall.
+
+We don't want anyone, including ourselves to be able to use this exit to
+pass into the next room. We simply want to use the messaging properties
+of the exit to create an illusion. Therefore we lock the exit with...
+
+        @lock window with me&!me
+
+This logical lock fails everytime, for everyone (me and NOT me). We are
+going to use the the @desc, the @nogo and @onogo messages (@nogo is
+displayed to the user that fails to use a locked exit. @onogo is
+displayed to others in the room when the exit attempt fails). In the
+@desc (what you see when you look at the window) we will use a special
+feature of this exit type that allows us to include information from the
+destination by using tokens. The %w token lists all the players present
+in the destination room, or "no one" if the room is empty...
+
+        @desc window as "A small, arched window is set into the western
+        wall of the cell well above your head. A thin shaft of sunlight
+        falls between its heavy iron bars. You jump and manage to grasp
+        the bars, pull yourself upwards and peer outside. You see the
+        Town Square and recognize %w amongst the crowd. After several
+        moments you lose your grip and fall heavily to the flagstone
+        floor...
+
+Again, all the nouns in this description could have an @detail
+associated with them (sunlight, bars, etc). Now, if someone should
+attempt to exit via the window we will give them this message...
+
+        @nogo window is "You jump and manage to grasp the iron bars
+        in the window high up the western wall. Slipping and struggling,
+        you manage to brace your feet against the wall. Your muscles
+        strain and your joints pop as you attempt to dislodge the bars.
+        They hold fast. After several futile attempts you lose your grip
+        and fall heavily to the flagstone floor of the cell...
+
+And others in the cell with you see...
+
+        @onogo window is "leaps several times and manages to grasp the
+        iron bars in the small western window. %S struggles and strains
+        trying to dislodge the bars and make an escape. Suddenly, %s
+        falls from the wall and lands on the flagstone floor with a
+        distinct thud...
+
+The "o" messages on exits always provide the name of the player using
+the exit as a first word. This particular exit type also has pronoun
+substitutions: %s,%S for subject, %o,%O for object, %p%P for possesive,
+and others. All such "tricks" are documented in the help messages
+associated with with the generic parent (well, usually). These help
+messages combined with the liberal use of @messages and @examine (and,
+if you have a programmer's bit, @show) will tell you a great deal about
+the generics. Trial and error, combined with asking more experienced
+users, is the way *everyone* learned to MOO.
+
+And what if someone attempts to go or exit in a direction in which there
+is no exit? This generic (#955) gives you options beyond the default
+failure messages...
+
+        @north_failed here is "You take several steps to the north and
+        find your way blocked by a high and solid stone wall...
+
+        @onorth_failed here is "examines the northern wall of the
+        cell...
+
+        @southeast_failed here is "You find yourself wedged in a foul
+        and dark corner of the cell...
+
+        @osoutheast_failed here is "seems to be standing in the
+        corner...
+
+        @down_failed here is "You kick and swirl about the muck on the
+        floor in search of an exit. It is far too disgusting to put your
+        hands in. After several minutes you have managed to find only
+        flagstones and slime...
+
+        @odown_failed here is "seems to be tap dancing in the slime...
+
+        etc...
+
+Hopefully you get the idea. Descriptions, details and messages all serve
+to define the space and the actions that might occur there. The more
+fine and detailed your work, the greater the illusion. But what about
+our real exit, the heavy door that leads out of the cell? Well, lets
+assume it is dug and parented to #1011 and outfitted with both an @look
+for the room and an @desc for when someone looks door,east,e. Lets also
+assume it is unlocked (lucky us!) and can be freely used. These are the
+messages I would set on it...
+
+        @leave door is "You grasp the iron ring on the door and slowly
+        pull it open. The hinges seem to be rusted. You leave the cell
+        and walk out into...
+
+        @oleave door is "pulls open the heavy wooden door to the east.
+        It opens slowly and with a groan. %S walks through the open door
+        and closes it behind %o...
+
+        @oarrive door is "arrives from the cell to the west. %S closes
+        the cell door behind %o...
+
+        @arrive door is "This is much better!
+
+"The @leave is what the exit user sees before he leaves the room.
+@oleave is what those left behind see. @oarrive is what players in the
+destination room see when the player enters from the cell. And the
+@arrive is a final message that can be appended to the bottom of the
+destination's description. And a note to new users: this exit only goes
+one way! There is no return exit *into* the cell unless you dig it.
+
+Several notes: There are generic exits that actually open and close,
+either manually or automatically. These have a number of other messaging
+options to set. This is a simple version created with only messaging.
+Also note the subtle differences between what the user and the observors
+see. I used this technique to make an elevator for the Town Hall in the
+Metaverse. Anyone standing in any lobby of the building will see an open
+and waiting elevator that contains whoever might be in it. When you
+enter the elevator the door "closes" behind you and you cannot see out.
+Therefore, the door is always closed to those who are *in* the elevator.
+And the exit messaging for the various floors gives the impression of
+the elevator moving and the door opening and closing. The simple fact
+that you can't be in two places at the same time on the MOO can give a
+builder an extra measure of design freedom.
+
+THEMES AND SUCH
+
+When I get an idea for an area, I never plan it out completely. I will
+plan a single room and perhaps an exit or two. I will also consider what
+this initial construct *might* lead to, but leave it all very loose and
+open. For me, this keeps the building process fresh and interesting. And
+if I build something that stinks or won't fit no matter what, I then
+have little hesitation about nuking the entire thing and starting over.
+Bored builders build boring stuff.
+
+Never hesitate to "borrow" an idea or a technique from a construct that
+you admire. And if you can't figure out exactly how they did it, never
+hesitate to ask. And, at least at first, ask other builders and wizards
+to look at your work and offer suggestions. And do this early-on in
+your work before you have put in vast amounts of time and effort on what
+might be a misguided project.
+
+--- Quiver ---
+
+"...for no man lives in the external truth among salts and acids, but in
+ the warm, phantasmagoric chamber of his brain, with the painted windows
+ and the storied wall."                                      --- RLS ---
