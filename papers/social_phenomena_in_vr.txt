@@ -1,0 +1,424 @@
+           Mudding: Social Phenomena in Text-Based Virtual Realities
+
+                                 Pavel Curtis
+                                  Xerox PARC
+
+Abstract
+
+A MUD (Multi-User Dungeon or, sometimes, Multi-User Dimension) is a
+network-accessible, multi-participant, user-extensible virtual reality whose
+user interface is entirely textual. Participants (usually called players) have
+the appearance of being situated in an artificially-constructed place that also
+contains those other players who are connected at the same time.  Players can
+communicate easily with each other in real time. This virtual gathering place
+has many of the social attributes of other places, and many of the usual social
+mechanisms operate there. Certain attributes of this virtual place, however,
+tend to have significant effects on social phenomena, leading to new mechanisms
+and modes of behavior not usually seen `IRL' (in real life). In this paper, I
+relate my experiences and observations from having created and maintained a MUD
+for over a year.
+
+
+1       A Brief Introduction to Mudding
+
+                                           The Machine did not transmit nuances
+                                          of expression. It only gave a general
+                                           idea of people-an idea that was good
+                                             enough for all practical purposes.
+                                                               E.M. Forster [1]
+
+A MUD is a software program that accepts `connections' from multiple users
+across some kind of network (e.g., telephone lines or the Internet) and
+provides to each user access to a shared database of `rooms', `exits', and
+other objects. Each user browses and manipulates this database from `inside'
+one of those rooms, seeing only those objects that are in the same room and
+moving from room to room mostly via the exits that connect them. A MUD,
+therefore, is a kind of virtual reality, an electronically-represented
+`place' that users can visit.
+
+MUDs are not, however, like the kinds of virtual realities that one usually
+hears about, with fancy graphics and special hardware to sense the position and
+orientation of the user's real-world body. A MUD user's interface to the
+database is entirely text-based; all commands are typed in by the users and all
+feedback is printed as unformatted text on their terminal. The typical MUD user
+interface is most reminiscent of old computer games like Adventure and Zork
+[5]; a typical interaction is shown in Figure 1.
+-------------------------------------------------------------------------------
+        >look
+        Corridor
+        The corridor from the west continues to the east here,
+        but the way is blocked by a purple-velvet rope
+        stretched across the hall. There are doorways leading
+        to the north and south.
+        You see a sign hanging from the middle of the rope here.
+        >read sign
+        This point marks the end of the currently-occupied
+        portion of the house. Guests proceed beyond this point
+        at their own risk.
+         -- The residents
+        >go east
+        You step disdainfully over the velvet rope and enter
+        the dusty darkness of the unused portion of the house.
+
+        Figure 1: A typical MUD database interaction
+-------------------------------------------------------------------------------
+Three major factors distinguish a MUD from an Adventure-style computer game,
+though:
+
+    o   A MUD is not goal-oriented; it has no beginning or end, no `score', and
+        no notion of `winning' or `success'. In short, even though users of
+        MUDs are commonly called players, a MUD isn't really a game at all.
+
+    o   A MUD is extensible from within; a user can add new objects to the
+        database such as rooms, exits, `things', and notes. Certain MUDs,
+        including the one I run, even support an embedded programming language
+        in which a user can describe whole new kinds of behavior for the
+        objects they create.
+
+    o   A MUD generally has more than one user connected at a time. All of the
+        connected users are browsing and manipulating the same database and can
+        encounter the new objects created by others. The multiple users on a
+        MUD can communicate with each other in real time.
+
+This last factor has a profound effect on the ways in which users interact with
+the system; it transforms the activity from a solitary one into a social one.
+
+Most inter-player communication on MUDs follows rules that fit within the
+framework of the virtual reality. If a player `says' something (using the say
+command), then every other player in the same room will `hear' them. For
+example, suppose that a player named Munchkin typed the command
+
+        say Can anyone hear me?
+
+Then Munchkin would see the feedback
+
+        You say, "Can anyone hear me?"
+
+and every other player in the same room would see
+
+        Munchkin says, "Can anyone hear me?"
+
+Similarly, the emote command allows players to express various forms of `non-
+verbal' communication. If Munchkin types
+
+        emote smiles.
+
+then every player in the same room sees
+
+        Munchkin smiles.
+
+Most interplayer communication relies entirely on these two commands.*
+-------------------------------------------------------------------------------
+* In fact, these two commands are so frequently used that single-character
+  abbreviations are provided for them.  The two example commands would usually
+  be typed as follows:
+
+        "Can anyone hear me?
+        :smiles.
+-------------------------------------------------------------------------------
+
+There are two circumstances in which the realistic limitations of say and emote
+have proved sufficiently annoying that new mechanisms were developed.  It
+sometimes happens that one player wishes to speak to another player in the same
+room, but without anyone else in the room being aware of the communication.
+If Munchkin uses the whisper command
+
+        whisper "I wish he'd just go away..." to Frebble
+
+then only Frebble will see
+
+        Munchkin whispers, "I wish he'd just go away..."
+
+The other players in the room see nothing of this at all.
+
+Finally, if one player wishes to say something to another who is connected to
+the MUD but currently in a different and perhaps `remote' room, the page com-
+mand is appropriate. It is invoked with a syntax very like that of the whisper
+command and the recipient sees output like this:
+
+        You sense that Munchkin is looking for you in The Hall.
+        He pages, "Come see this clock, it's tres cool!"
+
+Aside from conversation, MUD players can most directly express themselves in
+three ways: by their choice of player name, by their choice of gender, and by
+their self-description.
+
+When a player first connects to a MUD, they choose a name by which the other
+players will know them. This choice, like almost all others in MUDs, is not
+cast in stone; any player can rename themself at any time, though not to a name
+currently in use by some other player. Typically, MUD names are single words,
+in contrast to the longer `full' names used in real life.
+
+Initially, MUD players appear to be neuter; automatically-generated messages
+that refer to such a player use the family of pronouns including `it', `its',
+etc. Players can choose to appear as a different gender, though, and not only
+male or female. On many MUDs, players can also choose to be plural (appearing
+to be a kind of `colony' creature: "ChupChups leave the room, closing the door
+behind them"), or to use one of several sets of gender-neutral pronouns (e.g.,
+`s/he', `him/her' and `his/her', or `e', `em' and `eir').
+
+Every object in a MUD optionally has a textual description which players can
+view with the look command. For example, the description of a room is automat-
+ically shown to a player when they enter that room and can be seen again just
+by typing `look'. To see another player's description, one might type `look
+Bert'.  Players can set or change their descriptions at any time. The lengths
+of player descriptions typically vary from short one-liners to dozen-line
+paragraphs.
+
+Aside from direct communication and responses to player commands, messages
+are printed to players when other players enter or leave the same room, when
+others connect or disconnect and are already in the same room, and when objects
+in the virtual reality have asynchronous behavior (e.g., a cuckoo clock chiming
+the hours).
+
+MUD players typically spend their connected time socializing with each other,
+exploring the various rooms and other objects in the database, and adding new
+such objects of their own design. They vary widely in the amount of time they
+spend connected on each visit, ranging from only a minute to several hours;
+some players stay connected (and almost always idle) for days at a time, only
+occasionally actively participating.
+
+This very brief description of the technical aspects of mudding suffices for
+the purposes of this paper. It has been my experience, however, that it is
+quite difficult to properly convey the `sense' of the experience in words.
+Readers desiring more detailed information are advised to try mudding
+themselves, as described in the final section of this paper.
+
+
+2       Social Phenomena Observed on One MUD
+
+                                                            Man is the measure.
+                                                                          Ibid.
+
+In October of 1990, I began running an Internet-accessible MUD server on my
+personal workstation here at PARC. Since then, it has been running
+continuously, with interruptions of only a few hours at most. In January of
+1991, the existence of the MUD (called LambdaMOO*) was announced publicly, via
+-------------------------------------------------------------------------------
+* The `MOO' in `LambdaMOO' stands for `MUD, Object-Oriented'.  The origin of
+  the `Lambda' part is more obscure, based on my years of experience with the
+  Lisp programming language.
+-------------------------------------------------------------------------------
+the Usenet newsgroup rec.games.mud. As of this writing, well over 3,500
+different players have connected to the server from over a dozen countries
+around the world and, at any given time, over 750 players have connected at
+least once in the last week. Recent statistics concerning the number of players
+connected at a given time of day (Pacific Standard Time) appear in Figure 2.
+-------------------------------------------------------------------------------
+
+4 a.m.   ************** 10-1/2
+5 a.m.   ***************** 12-1/4
+6 a.m.   ******************* 14
+7 a.m.   ************************** 18-3/4
+8 a.m.   ****************************** 21-1/4
+9 a.m.   *********************************** 25-1/4
+10 a.m.  *************************************** 28
+11 a.m.  ********************************************* 32-1/4
+noon     **************************************************** 37
+1 p.m.   ********************************************************** 41-1/4
+2 p.m.   ******************************************************** 39-3/4
+3 p.m.   ************************************************* 35
+4 p.m.   ******************************************************** 39-1/2
+5 p.m.   ********************************************************** 40-3/4
+6 p.m.   ******************************************************** 39-3/4
+7 p.m.   ********************************************************* 40-1/2
+8 p.m.   ************************************************************ 42-1/2
+9 p.m.   *************************************************************** 44-1/4
+10 p.m.  ***************************************************** 37-3/4
+11 p.m.  ******************************************** 31
+midnight ************************************** 26-3/4
+1 a.m.   ***************************** 20-3/4
+2 a.m.   ******************* 13-3/4
+3 a.m.   *************** 10-3/4
+4 a.m.   ************** 10-1/2
+
+  Figure 2: Average number of connected players on LambdaMOO, by time of day
+-------------------------------------------------------------------------------
+
+LambdaMOO is clearly a reasonably active place, with new and old players coming
+and going frequently throughout the day. This popularity has provided me with a
+position from which to observe the social patterns of a fairly large and
+diverse MUD clientele. I want to point out to the reader, however, that I have
+no formal training in sociology, anthropology, or psychology, so I cannot make
+any claims about methodology or even my own objectivity. What I relate below is
+merely my personal observations made over a year of mudding. In most cases, my
+discussions of the motivations and feelings of individual players is based upon
+in-MUD conversations with them; I have no means of checking the veracity of
+their statements concerning their real-life genders, identities, or (obviously)
+feelings. On the other hand, in most cases, I also have no reason to doubt
+them.
+
+I have grouped my observations into three categories: phenomena related to the
+behavior and motivations of individual players, phenomena related to inter-
+actions between small groups of players (especially observations concerning MUD
+conversation), and phenomena related to the behavior of a MUD's community as
+a whole.
+
+Cutting across all of these categories is a recurring theme to which I would
+like to draw the reader's attention in advance. Social behavior on MUDs is in
+some ways a direct mirror of behavior in real life, with mechanisms being drawn
+nearly unchanged from real-life, and in some ways very new and different,
+taking root in the new opportunities that MUDs provide over real life.
+
+2.1     Observations about individuals
+
+** The mudding population. The people who have an opportunity to connect to
+LambdaMOO are not a representative sample of the world population; they all
+read and write English with at least passable proficiency and they have access
+to the Internet. Based on the names of their network hosts, I believe that well
+over 90% of them are affiliated with colleges and universities, mostly as
+students and, to a lesser extent, mostly undergraduates. Because they have
+Internet access, it might be supposed that the vast majority of players are
+involved in the computing field, but I do not believe that this is the case.
+It appears to me that no more than half (and probably less) of them are so
+employed; the increasing general availability of computing resources on college
+campuses and in industry appears to be having an effect, allowing a broader
+community to participate.
+
+In any case, it appears that the educational background of the mudding com-
+munity is generally above average and it is likely that the economic background
+is similarly above the norm. Based on my conversations with people and on the
+names of those who have asked to join a mailing list about programming in
+LambdaMOO, I would guess that over 70% of the players are male; it is very
+difficult to give any firm justification for this number, however.
+
+** Player presentation. As described in the introduction to mudding, players
+have a number of choices about how to present themselves in the MUD; the first
+such decision is the name they will use. Figure 3 shows some of the names used
+by players on LambdaMOO.
+-------------------------------------------------------------------------------
+        Toon        Gemba       Gary_Severn     Ford       Frand
+        li'ir       Maya        Rincewind       yduJ       funky
+        Grump       Foodslave   Arthur          EbbTide    Anathae
+        yrx         Satan       byte            Booga      tek
+        chupchups   waffle      Miranda         Gus        Merlin
+        Moonlight   MrNatural   Winger          Drazz'zt   Kendal
+        RedJack     Snooze      Shin            lostboy    foobar
+        Ted_Logan   Xephyr      King_Claudius   Bruce      Puff
+        Dirque      Coyote      Vastin          Player     Cool
+        Amy         Thorgeir    Cyberhuman      Gandalf    blip
+        Jayhirazan  Firefoot    JoeFeedback     ZZZzzz...  Lyssa
+        Avatar      zipo        Blackwinter     viz        Kilik
+        Maelstorm   Love        Terryann        Chrystal   arkanoiv
+
+             Figure 3: A selection of player names from LambdaMOO
+-------------------------------------------------------------------------------
+One can pick out a few common styles for names (e.g., names from or inspired by
+myth, fantasy, or other literature, common names from real life, names of
+concepts, animals, and everyday objects that have representative
+connotations, etc.), but it is clear that no such category includes a majority
+of the names. Note that a significant minority of the names are in lower case;
+this appears to be a stylistic choice (players with such names describe the
+practice as `cool') and not, as might be supposed, an indication of a depressed
+ego.
+
+Players can be quite possessive about their names, resenting others who choose
+names that are similarly spelt or pronounced or even that are taken from the
+same mythology or work of literature. In one case, for example, a player named
+`ZigZag' complained to me about other players taking the names `ZigZag!' and
+`Zig'.
+
+The choice of a player's gender is, for some, one of great consequence and
+forethought; for others (mostly males), it is simple and without any questions.
+For all that this choice involves the fewest options for the player (unlike
+their name or description, which are limited only by their imagination), it is
+also the choice that can generate the greatest concern and interest on the part
+of other players.
+
+As I've said before, it appears that the great majority of players are male and
+the vast majority of them choose to present themselves as such. Some males,
+however, taking advantages of the relative rarity of females in MUDs, present
+themselves as female and thus stand out to some degree. Some use this
+distinction just for the fun of deceiving others, some of these going so far as
+to try to entice male-presenting players into sexually-explicit discussions
+and interactions. This is such a widely-noticed phenomenon, in fact, that one
+is advised by the common wisdom to assume that any flirtatious
+female-presenting players are, in real life, males. Such players are often
+subject to ostracism based on this assumption.
+
+Some MUD players have suggested to me that such transvestite flirts are per-
+haps acting out their own (latent or otherwise) homosexual urges or fantasies,
+taking advantage of the perfect safety of the MUD situation to see how it feels
+to approach other men. While I have had no personal experience talking to such
+players, let alone the opportunity to delve into their motivations, the idea
+strikes me as plausible given the other ways in which MUD anonymity seems to
+free people from their inhibitions. (I say more about anonymity later on.)
+
+Other males present themselves as female more out of curiosity than as an
+attempt at deception; to some degree, they are interested in seeing `how the
+other half lives', what it feels like to be perceived as female in a community.
+From what I can tell, they can be quite successful at this.
+
+Female-presenting players report a number of problems. Many of them have told
+me that they are frequently subject both to harassment and to special treat-
+ment. One reported seeing two newcomers arrive at the same time, one male-pre-
+senting and one female-presenting. The other players in the room struck up
+conversations with the putative female and offered to show her around but com-
+pletely ignored the putative male, who was left to his own devices.
+
+In addition, probably due mostly to the number of female-presenting males one
+hears about, many female players report that they are frequently (and some-
+times quite aggressively) challenged to `prove' that they are, in fact, female.
+To the best of my knowledge, male-presenting players are rarely if ever so
+challenged.
+
+Because of these problems, many players who are female in real life choose to
+present themselves otherwise, choosing either male, neuter, or gender-neutral
+pronouns. As one might expect, the neuter and gender-neutral presenters are
+still subject to demands that they divulge their real gender.
+
+Some players apparently find it quite difficult to interact with those whose
+true gender has been called into question; since this phenomenon is rarely
+manifest in real life, they have grown dependent on `knowing where they
+stand', on knowing what gender roles are `appropriate'. Some players (and not
+only males) also feel that it is dishonest to present oneself as being a
+different gender than in real life; they report feeling `mad' and `used' when
+they discover the deception.
+
+While I can spare no more space for this topic, I enthusiastically encourage
+the interested reader to look up Van Gelder's fascinating article [3] for many
+more examples and insights, as well as the story of a remarkably successful
+deception via "electronic transvestism".
+
+The final part of a player's self-presentation, and the only part involving
+prose, is the player's description. This is where players can, and often do,
+establish the details of a persona or role they wish to play in the virtual
+reality. It is also a significant factor in other players' first impressions,
+since new players are commonly looked at soon after entering a common room.
+
+Some players use extremely short descriptions, either intending to be cryptic
+(e.g., `the possessor of the infinity gems') or straightforward (e.g., `an
+average-sized dark elf with lavender eyes') or, often, just insufficiently
+motivated to create a more complex description for themselves. Other players go
+to great efforts in writing their descriptions; one moderately long example
+appears in Figure 4.
+-------------------------------------------------------------------------------
+      You see a quiet, unassuming figure, wreathed in an oversized,
+      dull-green Army jacket which is pulled up to nearly conceal his
+      face. His long, unkempt blond hair blows back from his face as he
+      tosses his head to meet your gaze. Small round gold-rimmed glasses,
+      tinted slightly grey, rest on his nose. On a shoulder strap he
+      carries an acoustic guitar and he lugs a backpack stuffed to
+      overflowing with sheet music, sketches, and computer printouts.
+      Under the coat are faded jeans and a T-Shirt reading `Paranoid
+      CyberPunks International'. He meets your gaze and smiles faintly,
+      but does not speak with you. As you surmise him, you notice a glint
+      of red at the rims of his blue eyes, and realize that his canine
+      teeth seem to protrude slightly. He recoils from your look of
+      horror and recedes back into himself.
+
+                Figure 4: A moderately long player description
+-------------------------------------------------------------------------------
+
+A large proportion of player descriptions contain a degree of wish fulfillment;
+I cannot count the number of `mysterious but unmistakably powerful' figures I
+have seen wandering around in LambdaMOO. Many players, it seems, are taking
+advantage of the MUD to emulate various attractive characters from fiction.
+
+Given the detail and content of so many player descriptions, one might expect
+to find a significant amount of role-playing, players who adopt a coherent
+character with features distinct from their real-life personalities. Such is
+rarely the case, however. Most players appear to tire of such an effort quickly
+and simply interact with the others more-or-less straightforwardly, at least to
+the degree one does in normal discourse. One factor might be that the roles
+chosen by players 
