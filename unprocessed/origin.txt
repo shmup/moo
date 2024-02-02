@@ -1,0 +1,687 @@
+Bots - The Origin of New Species
+By ANDREW LEONARD
+Hardwired
+
+
+**CHAPTER ONE**
+------------------------------------------------------------------------
+
+**A Plague of Barneys**
+
+The Barney Problem 1
+
+No one could ever accuse the wizards of Point MOOt of thinking too
+small.
+
+They dreamed of simulating a fully functional society, lodged with
+the digital recesses of a computer, true in all essential categories
+to the principles of the real world. They called this dream
+"reality modeling."
+
+But just as dreams are never more than a half step from nightmares,
+the "reality" of Point MOOt never quite "modeled" as expected.
+Consider for example, how the wizards endeavored to save their
+infant civilization from class warfare and ended up with a plague of
+Barneys.
+
+Back in the spring of 1993, optimism abounded in the Advanced
+Communication Technologies Laboratory at the University of Texas at
+Austin. Anything was possible at the ACTLab, a hothouse for
+experiment in digital culture directed by Professor Allucquere
+Rosanne Stone. A transsexual specialist in the mysteries of identity
+and gender bending, Stone encouraged creative approaches to the
+investigation of social realities. The transformative possibilities
+of imaginatively constructed online communities particularly
+fascinated her. Designating a computer to be at the disposal of the
+Point MOOt wizards -- a hodgepodge of undergrads, doctoral
+students, and intrigued volunteers -- she gave them carte blanche
+to create a brand-new world.
+
+Programmed from a hard-drive tabula rasa, Point MOOt began as a
+top-down exercise in social engineering. But the wizards anticipated
+no difficulties in attracting a citizenry. Build it, they reasoned,
+and the masses would come. Anyone who could connect, via the
+Internet, to the computer that housed the code for Point MOOt
+qualified as a potential immigrant. If you could log on, you could
+move in.
+
+The wizards labored day and night encoding an impressive civic
+infrastructure. Located at a fictional West Texas crossroads, Point
+MOOt boasted a university, several strip malls, and a TV station.
+Cafes, bars, and restaurants lined the streets. Trailer parks and
+tenement buildings, hospitals and churches, Point MOOt had
+everything a healthy city requires. There was even an underground
+cult that worshiped Cthulu, a slime-covered grayish green monster
+who periodically stormed through towns, trampling buildings and
+kidnapping unlucky citizens. No town is perfect.
+
+Gathered together from construction sites scattered throughout
+cyberspace, the Point MOOt wizards did not lack for experience.
+Similar computer-based virtual worlds -- known generically as MUDs,
+or multi user domains -- began appearing in 1979. From their
+earliest incarnations as online versions of popular fantasy
+role-playing games such as Dungeons and Dragons, MUDs gradually
+evolved into community hangouts: havens in the digital ether where
+like-minded individuals could engage in no-holds-barred, text-based
+"conversation."
+
+Today MUDs have morphed into a dazzling array of forms that include
+interactive, three-dimensional, animated environments. In a
+state-of-the-art virtual world, inhabitants can choose full-bodied
+avatars as representations of themselves and navigate through
+stimuli-packed explosions of sound, pictures, and even video. But as
+recently as 1993, most communication and experience on the Net were
+manifested through the vehicle of text. MUDs were worlds built out
+of words. A MUD visitor typed the com-mand >@look< and saw a text
+description of a person, place, or thing. MUD objects, rooms, and
+characters could have various properties -- the ability to move, to
+change, to speak -- depending on how the wizards programmed them.
+But the essential quality of MUDlife was textual.
+
+Point MOOt belonged to a subset of MUDs known as MOOs. The acronym
+"MOO," short for "MUD object-oriented," referred to the
+difference between the programming languages used to write the
+underlying architecture of MUDs and MOOs. The MOO language,
+developed by Pavel Curtis at the legendary Xerox PARC (Palo Alto
+Research Center), took the basic ideas of the MUD language to a more
+accessible level. Many of Point MOOt's wizards -- crafty geeks
+sporting gaudy noms de cyberplume like Chiphead and Chivato, Smack
+and Racer-X, Warhol and Ogre -- were veterans of landmark MOOs,
+such as Curtis's LambdaMOO or the rollicking poststructuralist
+playground PMC (Post Modern Culture) MOO. Point MOOt offered these
+wizards a blank canvas on which to sharpen their skills and to
+exercise their imaginations.
+
+Though the wizards had differing motivations -- some were radical
+left-wing revolutionaries, some were troublemakers, and some just
+wanted to build a city -- they were united by a desire to make
+Point MOOt a special place, a new stage in the evolution of MUDs.
+Their ambitions knew no limits. "We tested both the boundaries of
+the virtual society and of `real' society itself," wrote
+archwizard Allan Alford.
+
+But the wizards soon discovered that testing boundaries is dangerous
+business. Social engineering is far from a perfect science. Reality
+is a mess, and reality modeling is even messier. Every problem
+solved engendered new, unforeseen dilemmas. Every effort at
+programming a new world led directly to old-world bugs. And just as
+was true in meatspace -- where real people met face-to-face -- the
+business of economics proved to be the toughest nut to crack.
+
+Point MOOt had an economy based on quota, or MOOlah, as it was
+sometimes called. If you wanted to build yourself a home, you needed
+MOOlah. If you wanted to buy products or services offered by other
+citizens, you had to hand over some MOOlah. MOOlah was both the
+currency of the realm and the raw matter of construction. One built
+one's private palace out of MOOlah.
+
+In Point MOOt, MOOlah did not grow on trees, nor did it miraculously
+materialize in plain sight out in the streets, waiting to be picked
+up and pocketed, as was commonplace in other MUDs. MOOlah had to be
+earned. If you wanted to be a productive citizen of Point MOOt, able
+to enjoy the finer things in life, you had to get a job. Sure, you
+could always head on over to Nurlene Moot's office at City Hall and
+ask the suspiciously narrow-minded bureaucrat for a welfare
+application. But that didn't appeal to everyone. In West Texas,
+throwing yourself at the mercy of the state wasn't a popular
+option. Far better that you made the trip to see Buford Moot. Though
+Buford, like Nurlene, occasionally came off as just another obtuse
+paper pusher, in his capacity as city planner he could write out job
+contracts for a long list of available employment opportunities.
+Most involved working on the city itself: constructing housing,
+building roads, creating civic spaces. Some were less conventional.
+The wizards were not afraid to embrace the dark side in their
+reality modeling. One of Buford's job contracts offered MOOlah to
+anyone who could concoct a business scam designed to rip off fellow
+residents.
+
+There was just one catch. To accomplish any of these jobs, you
+needed to be conversant in the MOO programming language that was to
+Point MOOt what drywall and concrete are to real-world metropolises.
+You needed to be MOO-literate.
+
+As programming languages go, MOO isn't especially difficult. It's
+not as if would-be Point MOOt wage earners were being asked to get
+down and dirty with machine language digital instructions meant to
+be read directly by a computer. The MOO language is easy to master;
+introductory manuals are available free for downloading at locations
+scattered across the Internet. Still, to many people, the prospect
+of grappling with any programming language at all presents a serious
+obstacle. Basic programming cannot compare to the cognitively
+oppressive challenge of, say, abstract math or Heideggerian
+philosophy, but to a substantial sector of the population the act of
+programming seems impossibly difficult. Most people would rather not
+even try.
+
+So the wizards of Point MOOt had a problem. Reality modeling was a
+noble goal, but requiring people to work at jobs for which they did
+not have the necessary skills struck some city planners as a tad
+unfair. Worse, it could prove positively damaging to the fabric of a
+civic society. The last thing the wizards wanted to see was the
+immediate stratification of the citizenry of their spanking-new city
+into upper and lower classes based upon who had the chops to whip up
+a simple MOO program. The MOO-slinger digerati would sip martinis in
+expensive cafes, while the programming lumpen waited for welfare
+checks and sweated in the projects on the outskirts of town.
+
+Rather than stock up on barricades and barbed wire for the
+inevitable bloody revolution, Point MOOt's wizards sought another
+way. There was little point in their grand experiment if they let it
+devolve into sullen chaos right from the inception. There was only
+one permissible answer: widespread access to easy jobs, jobs that
+anybody could handle, whether or not they knew how to hack MOO code.
+
+In a private email discussion group used to exchange programming
+tips and good old gossip, the wizards bandied about possible
+solutions. And fortunately, as programmers, they were blessed with
+the power to make real changes. As the ultimate arbiters of every
+facet of Point MOOt life, the wizards could choose from a
+considerably wider range of options than your average real-world
+commissar or ruling party policy wonk. The solution they hit upon
+proved both imaginative and irresistible. In Point MOOt, no citizen
+would be forced into penury. If welfare was too shameful and regular
+work too hard, one choice still remained.
+
+Unemployed? Go kill a Barney.
+
+Deep beneath the city of Point MOOt lay a labyrinth of
+interconnected subterranean rooms. Inaccessible to most of Point
+MOOt's citizens, these rooms contained a bizarre assortment of
+wizard works in progress. In one such room lurked an exceedingly odd
+contraption -- the Barney-spewing machine. Every so often, the
+Barney-spewing machine lurched into motion and spat out a man
+dressed in a purple dinosaur suit. A Barney. A digitally constructed
+clone of that sweeter-than-sweet children's television character
+who is adored by two-year-olds everywhere, tolerated by their
+parents, and loathed by all other members of civilized society.
+Shortly after conception, the Barney, like some hideous beast from
+the netherworld seeking the light of day, ascended a twisted network
+of hidden tunnels until it reached the aboveground town of Point
+MOOt.
+
+To this day, the wizards of Point MOOt hedge and start to mumble
+when asked why they chose to inflict the likeness of Barney on their
+fair city. At first, it was just a lark, a snug fit with Point
+MOOt's Texan/sci-fi theme. In any event, such displays of
+self-mocking silliness are not all that unusual in online
+environments: a fair percentage of cyberculture's architects spent
+far too many hours of their youth watching Saturday morning
+cartoons.
+
+But origin question notwithstanding, Barneys became a staple of
+Point MOOt life. There was no avoiding them. They could wander the
+length and breadth of the MOO. They could open the doors to any
+room. And they were vocal to the point of becoming a public
+nuisance.
+
+Allan Alford, a fast-talking Texan and the single most important
+driving force behind the creation and evolution of Point MOOt, did
+not personally initiate the Barney phenomenon. But he remembers it
+well, with a wistful nostalgia in wry counterpoint to his otherwise
+sincere, and serious, ruminations on the progressive social goals of
+Point MOOt.
+
+"They roamed the MOO singing the Barney song," says Alford. (A
+terror indeed, as anyone who has been exposed to the song is well
+aware.)
+
+Woe betide the citizen unable to keep cool in the face of a
+serenading Barney. Physical violence against a Barney (expressed in
+MOOish by text commands such as >@hit Barney< or >@kick Barney<)
+was not the answer. If attacked, Barneys frequently fell apart -- a
+lopped-off arm here, an amputated leg there -- then regenerated,
+one new Barney from each separate body part. The reproductive feat
+ensured a steady Barney population explosion, since the human
+residents of Point MOOt often found it difficult to restrain their
+anti-Barney animosities.
+
+The Barneys were pests.
+
+"They were actively annoying -- free-roving, self-spawning, and
+could pick locks. That's what made them horrible," says Alford.
+
+The wizards decided to kill two MOObirds with one MOOstone. They had
+too many Barneys and not enough jobs. So they created a new job:
+Barney hunter, a job for the masses, requiring of citizens only that
+they be able to type the command >@shoot Barney<.
+
+You had to be equipped with a Barney Blaster gun before you could
+start taking potshots, but that was easy enough. Harley Moot, Point
+MOOt's chief bounty hunter, had access to an inexhaustible supply
+of Barney Blasters, available to the general public without waiting
+periods or credit checks. Point the Barney Blaster at a Barney, type
+>@shoot Barney<, and boom! A purple man-size dinosaur hit the
+turf, shredding into several nonregenerating parts. Harley Moot paid
+one unit of MOOlah for each dead Barney, payable upon delivery of
+Barney's severed head.
+
+For a brief moment, the wizards thought their problem solved. The
+techno-proletariat had been assured a minimum wage. Barney hunting
+became Point MOOt's most popular pastime. A steady stream of fresh
+Point MOOt immigrants lined up at Harley Moot's door.
+
+But the central importance of Barney hunting to the Point MOOt
+economy soon led to unexpected results. All of Point MOOt's
+citizens, even the ones who did know their way through mazes of MOO
+code, started to pay close attention to the purple man-beast with
+the silly smile. They discovered that if they typed in different MOO
+commands besides >@shoot< (such as >@feed< or >@impregnate<)
+they could cause interesting things to happen.
+
+Impregnated Barneys gave birth to new Barneys, saddled at birth with
+individual names that combined the name "Barney" with the online
+nickname of the human who had forced his or her attention on its
+parent. (If you saw a Chivato-Barney wandering around, you knew
+Chivato had been naughty.) Barneys stuffed with food presented a
+worse problem. Barneys were insatiable: they continued eating
+nonstop until ballooning in size and exploding. And the fragments of
+an exploded Barney spawned five new Barneys! One mad Point MOOt
+scientist figured out a simple series of MOO commands that looped
+the feeding cycle. After the first overfed Barney exploded and
+reproduced, all the new Barneys commenced eating until
+oversatiation. Over and over again.
+
+The combined production of the Barney-spewing machine, Barneys
+looped into a feeding frenzy, and the normal population growth
+attributable to kicked and beaten Barneys ensured that the wizards
+of Point MOOt, after narrowly averting the tragedy of class warfare,
+now had a new problem. The Barney problem.
+
+At any given moment, any location in Point MOOt could be overrun by
+hundreds of vacuously grinning purple dinosaurs, all singing the
+Barney song. "They would come and go in huge waves," says Alford.
+"And they far exceeded the number of Barney hunters."
+
+From the perspective of a Point MOOt citizen, whose view of the
+world was confined to text scrolling across a computer monitor, the
+experience of a Barney onslaught was disorienting, even frightening.
+Suddenly the monitor exploded with an endless stream of "I love
+you, you love me" sentences spiraling down the screen. The Barney
+scourge put a real damper on the possibilities of civic life in
+Point MOOt.
+
+**A Certain Quality of Inhumanity 2**
+
+Barney was a bot. Not a very smart bot, and not a very useful bot,
+but a bot nonetheless.
+
+A bot is a software version of a mechanical robot. Like a mechanical
+robot, it is guided by algorithmic rules of behavior -- if this
+happens, do that; if that happens, do this. But instead of clanking
+around a laboratory room bumping into walls, software robots are
+programs that maneuver through cyberspace, bouncing off of
+communication protocols and operating systems.
+
+Strings of code written by everyone from teenage chat room lurkers
+to topflight computer scientists, bots are variously designed to
+carry on conversations, act as human surrogates, or achieve specific
+tasks -- in particular, to seek out and retrieve information. Bots
+entertain, annoy, work, and play.
+
+Over the past decade, as the online universe has exploded
+supernova-like into every interstice of modern life, bots have begun
+to flourish. In every neighborhood of the Net, bots either lurk
+behind the scenes or demand attention, front and center. Mailbots
+filter electronic mail, preventing junk mail and spam advertising
+from clogging up our online mailboxes. Chatterbots carry on
+whimsical conversations in online, real-time text environments, such
+as chat rooms or MUDs. Cancelbots seek out unwanted expression and
+erase it from electronic bulletin boards. Gamebots populate computer
+game environments with believable characters and wily foes. Web
+robots explore the hyperlinked reality of cyberspace, mapping out
+and indexing the vast quantities of information available through
+the World Wide Web.
+
+Bots are the first indigenous species of cyberspace, a class of
+creatures dazzling in its infinite variety. Web robots, spiders,
+wanderers, and worms. Cancelbots, modbots, Lazarus, and the
+Automoose. Softbots, userbots, taskbots, chatterbots, knowbots, and
+mailbots. MrBot and MrsBot. Bartender-bots, BalooBear bots, and bolo
+bots. Warbots, clonebots, crashbots, floodbots, annoybots, hackbots,
+and Vladbots. Turing bots. Tsunami bots. Gaybots, gossipbots, and
+gamebots. Prostibots. Conceptbots and RoverBots. Skeletonbots,
+spybots, slothbots, and spambots. Xbots and metabots. Eggdrop bots.
+Motorcycle-bull-dyke bots.
+
+Most bots, unlike the Barney bots, refrain from singing silly songs
+or exploding into overeating-induced spasms of bodily fragmentation,
+but all bots share some aspects of the Barney experience. Their
+evolution is full of high hopes, unexpected wrong turns, near
+catastrophes, and wild exuberance.
+
+In one form or another, bots have been around since the early 1960s.
+But there is no consensus on what particular sequence of encoded
+ones and zeros truly classifies a bot. Bot genetic structures remain
+inadequately mapped. The word bot -- a slang truncation of robot
+-- describes everything from a simple logon script (like one that
+might save a user the trouble of typing in a phone number, a
+password, and a user identification code every time that user wants
+to go online) to complex programs written in the latest,
+most-advanced programming languages and designed to execute tasks
+that most humans would find impossible.
+
+At Point MOOt, Barney was just one of many bots proud to call
+virtual West Texas their home. In the early summer of 1994, fully
+half of Point MOOt's population were bots. Nurlene, Buford, and
+Harley Moot weren't just closely related. In addition to sharing a
+last name, they shared a certain quality of inhumanity. They were
+bots.
+
+As were all the city officials. Bots greased the wheels of Point
+MOOt bureaucracy. They were an essential part of the reality
+modeling process. In Point MOOt, you never knew where the next bot
+would turn up. Point MOOt had bum bots, ne'er-do-well homeless
+wanderers who shuffled up to citizens, panhandled them, and refused
+to leave unless given some MOOlah. Annoying, often, but not half so
+bad as the hooker bots, who evinced no shame whatsoever about
+propositioning citizens in broad daylight. One brazen hussy hooker
+bot once strolled right into Buford Moot's office while he was
+interviewing a prospective job applicant! Point MOOt even had a
+pseudo-Hunter Thompson bot -- a beer-swilling gonzo journalist who
+hung around in cafes and bars and had an unpleasant habit of
+suddenly losing his cool, leaping up, and spraying Mace at the
+nearest human.
+
+Allan Alford's personal favorite was Chico, a bot formed in the
+persona of a foreign exchange student. In this guise, the bot could
+get away with making syntactical errors that would otherwise betray
+his robotic DNA. Alford toiled for months on Chico, writing
+elaborate sentence-parsing algorithms designed to enable the bot to
+learn new vocabulary and master complicated grammar.
+
+The bots added color to Point MOOt. More important, though, the city
+official bots saved the wizards from having to deal with the hassles
+and minutiae of running the city on a daily basis.
+
+"My first idea," says Alford, "was to hire people to become
+bureaucrats and pay them with quota [MOOlah]. But no one wanted to
+do it, or if they did want to do it, they weren't around when they
+were needed.... But then I suddenly realized -- this is a
+programmed environment. Bots were the key. I began developing bots
+to essentially become town bureaucrats....
+
+"Nurlene would talk to you, interview you, explain the rules, make
+you sign the right forms, and then transfer you to the welfare
+system," says Alford.
+
+Barney started as a joke and evolved into an economic cog. But
+Buford and Nurlene were designed from the beginning as labor-saving
+devices. As such, they unconsciously harked back to the derivation
+of the word robot. First used by Czechoslovakian science fiction
+writer Karel Capek to describe mechanical beings, the word means
+"forced labor" in the original Czech.
+
+Buford and Nurlene were tools. Slaves, even, or at best, indentured
+servants. The bum bots and hooker bots were characters, role players
+in the community. Barney ended up being a little of both. A bot can
+be many things: it's a concept that defies easy categorization.
+
+Bot is short for robot, which is cooler than program," says John
+Leth-Nissen, a hacker who hangs out on the Internet Relay Chat (IRC)
+network. And that captures part of the bot equation. Bots are cool.
+They stoke our imaginations with the promise of a universe populated
+by beings other than ourselves, beings that can surprise us, beings
+that are both our servants and, possibly, our enemies. Bots, which
+are here, now, and growing in number and power every day, are
+advance scouts from the future.
+
+But the gee-whiz cool factor only scratches the surface of why bot
+movements should be watched with an eagle eye. Bots represent both
+the aspirations of the cutting edge of the computer research
+community and the voracious hopes and dreams of software
+entrepreneurs. Bots are a test bed for experiments in the arena of
+artificial intelligence, and they're a stab at solving the ever
+sticky problem of making the interface between humans and computers
+effortless and enjoyable. Bots are a way of thinking about how we
+interact with computers: our desire to attribute personality to
+programs is as much about our desire to fill the world with myths
+and legends as it is about any definable, hard-coded reality.
+
+Some of the rhetoric about bots aims too high. Sherry Turkle, an MIT
+psychologist who specializes in online interactions, defines a bot
+as a "small artificially intelligent program." She may be jumping
+the gun. Artificial intelligence is far from a done deal. The
+concept of intelligence, in daily life, resists easy definition; to
+attribute it to a computer program is to beg for debate. Is
+intelligence the ability to speak a natural language? to have common
+sense? to reason? Or is it, as Alan Turing suggested, a computer
+program's ability to pass itself off as a human being? Is it merely
+a matter of tricks and prestidigitation?
+
+Certainly, one would be hard put to make the case that the Barney
+bot had much more intelligence than a doorknob. On the chain of
+bot-being, the Barney bot ranks pretty low. But then again, if one
+could suspend disbelief long enough to accept that men in purple
+dinosaur suits inhabited the town of Point MOOt, perhaps one could
+also succeed in pretending that the Barneys displayed a modicum of
+intelligence.
+
+A more accurate definition than Turkle's might run as follows: a
+bot is a supposedly intelligent software program that is autonomous,
+is endowed with personality, and usually, but not always, performs a
+service.
+
+Personality implies that the bot displays some aspect of human
+behavior or has in some way been anthropomorphized. Barney had
+personality galore, even if most of his acquaintances found it
+irredeemably repulsive. Autonomous means that the bot must be able
+to do its work without direct human supervision. Barney was
+autonomous: he wandered from room to room in Point MOOt without
+being told where to go in advance or having to be prodded at each
+step. And Barney performed a service: originally he provided comic
+relief; later he became an economic mainstay.
+
+The service aspect of bots is crucial, a character trait running at
+cross angles to issues of autonomy, personality, or intelligence.
+Nurlene Moot, the city official, had a purpose in life -- not just
+as the administrator of the dole but also as interface between the
+wizards and their creation. Through Nurlene the wizards ensured that
+certain tasks were carried out that the wizards either refused to do
+or were too busy to do. Nurlene also served as interface between the
+citizens of Point MOOt and the interior workings of the city.
+
+The service/interface aspect is what makes a bot something greater
+than a curiosity. Bots are the first precursors to the intelligent
+agents that many visionaries see as indispensable companions to
+humans in the not-too-distant future. Intelligent agents are
+software programs designed to help human beings deal with the
+overwhelming information overload that is the most obvious drawback
+to the information age.
+
+Though agents and bots significantly overlap, the two categories are
+not exactly equivalent. Agents do not require the accoutrements of
+personality: human names, the ability to crack a bad joke, zany
+habits. And though bots can be very useful, they are not forced,
+like agents, to work hard for their digital room and board. A
+chatterbot that sits in a MUD and talks about ice hockey with anyone
+who says hello is not an agent.
+
+But for an agent to be really successful in its chosen task, it may
+need to be a bot or, as some in the industry prefer to say, a
+believable agent. True botness makes a computer program or a
+computer environment more approachable, more entertaining, more
+user-friendly -- drastically important considerations for those who
+wish to create successful agent prototypes, either for academic
+research or for the consumer marketplace.
+
+Listen for a moment to one of the leading apostles of agent
+religion, Nicholas Negroponte, director of MIT's Media Lab, as he
+explains why agents should be considered an attractive necessity.
+After discussing the baffling responsibilities of hectic modern
+life, he wonders, "Wouldn't you really prefer to run your home and
+office life with a gaggle of well-trained butlers (to answer the
+telephone), maids (to make the hospital corners [on your bed]),
+secretaries (to filter the world), accountants or brokers (to manage
+your money), and on some occasions, cooks, gardeners, and chauffeurs
+when there were too many guests, weeds, or cars on the road?"
+
+In Negroponte's vision, these tasks are performed not by actual
+humans but by individualized, personified computer programs.
+Negroponte calls his digital butlers "agents." But he could just
+as well call them bots. Bot: Find me the best price on that CD, get
+flowers for my mom, keep me posted on the latest developments in
+Mozambique.
+
+Negroponte's vision is shared by a horde of entrepreneurs currently
+stampeding into cyberspace with agent products. The giants of the
+computer industry -- Microsoft and Intel, IBM and Apple -- are
+funneling millions of dollars into agent research. But both the
+ivory-tower academics and the corporate researchers are pushing down
+from the top, seeking new tools to aid them in their quest for the
+secrets of intelligence or bottom-line profit bonanzas.
+
+Bots, meanwhile, just happen, out there in the vast and growing
+wildernesses of the Net. Instead of seeking the bottom line, they
+are growing from the bottom up, a grassroots phenomenon, as likely
+to be conceived by bored teenagers looking for fun as by PhDs from
+Stanford or MIT. There are no international conferences devoted to
+bots, no high-powered academic departments with "autonomous bot"
+groups. The evolution of the Barney bots of Point MOOt was
+accidental, unscripted, and unpredictable. And there, in a nutshell,
+is the story of the evolution of all bots. They are the spawn of the
+Net's anarchy and decentralization, the product of a thousand
+different hackers writing code on a thousand different computers.
+
+Bots, like all creatures, belong to their environment. And in this
+case, that environment is the Net. The proliferating MUDs, the
+thousands of bulletin boards that make up Usenet news, the
+practically infinite chat rooms of the IRC network, the inexorably
+spreading and morphing World Wide Web -- only in the most
+accidental of ways can the Net be said to have been planned or
+organized or regimented. It is a massively successful example of the
+power of parallel distribution -- endlessly inventive, endlessly
+changing.
+
+This multiplicity of Net environments is one reason why attempting
+to discern a particular genealogy or anatomy of bots is a mission
+fraught with semantic and logistic peril. Bots comprise not just one
+new species but a complete spectrum of new species, a brand-new
+phylum under the digital sun.
+
+As interface, as artificial intelligence experiment, as pure
+playthings, bots exert a strange attraction on the human inhabitants
+of cyberspace. The bots of Point MOOt, and the Net, make for a good
+story. But so do the bot problems. The evidence of a plague of
+Barneys is a warning bell signaling more than just what can go wrong
+in the case of improper or incompletely thought-out programming.
+
+Bots don't have to be benign, and bot misbehavior doesn't have to
+be accidental. Bots can be instructed to do whatever their creators
+want them to do, which means that along with their potential to do
+good they can also do a whole lot of evil.
+
+With newbie botmaster wannabes joining the Net in huge numbers every
+day, bad bot shenanigans are bound to get worse. The Net is no
+longer a playground for just the technically clued in. It is
+increasingly complex, and it increasingly reflects the strains and
+pressures of the real world. Commercial incentives fuel ever growing
+levels of investment. The steady influx into cyberspace of the
+age-old viral hatreds and lunacies that infect the world's
+face-to-face culture will only increase. Bots will be -- and are
+-- the vehicle for uncontrollable passions.
+
+Bots aren't just cool. They're trouble.
+
+(C) 1997 Andrew Leonard All rights reserved. ISBN: 1-888869-05-4
+
+[![](data:image/gif;base64,R0lGODdhdgAvALMAAP///+fn3t7ezs7OtbW1jM7OnEJCMZycc5SUYxgYEHt7UlpaOZycYykpGGNjMQAAACwAAAAAdgAvAAAE/7DISau9OOvNu+fMJ45kaW6MIzFs675wLM90bd/47KhF7v/AoFDHGxqPSORulWw6n7FlD0qtHqXWrDaH3Xq/r+4tACgDAiwCOTCIkcsBAiuAZhAAcoYZIDiwDgJlbXN1d3kMA3wuiXx+dnsAPmI2BGpxcgd8BImDLnSVdIRpeCyanCyBmwCDoY+HZi2ZA3cCo7OVkkU+rYiRqHWedYmirqWsdatpjq2Gf6ukxY7FQJNjwLzDL2QDibUMzNBnA4FtzdpndNDDySyJcS13dMA41Ta82L6e6APLheFniqbp45bqFwMB3tKQGyWA2496NfC1EDCPmAuKoxwlI9OCHYF+o//yQILXzpe5h7py8MokQFWnFrxacFKTL9mdQam6EWt2U5Wcnhgf3Tp0AyKNmDTZuKlYUlPHQWf+BGL3zZ+cbHoG0Ww5ak8uJmDCbjEqtmwSsmbTCkHbZMCaV97uhHzhkZ3brrC0sEUyM5BGUnIFGuvq567QSkSr7D0SICE7MwcCnxz8SJHhyXpTWqHaCs8qydCehsRzGR1TKouNcEbm0mRoynLJ+Wv40krqIY1F65HzZq6LugwyRRWcGayVvgA0/ixjCzFsX+6a4yo+RYvbM6/yZLtjBpnWfOC8UldL/qzm8uhRGk/vAgECG+4VMHBPf+z5GAgU6Jf/BYEBA/M5IJ//fi8o0IADLCjwAID2rSdDAwog8ACCX/w334IMENheA+9dyN94NSCQgHsTzqeAA/nplyICApoYoXsosrBifizKl2ICNjbQQIbxRZgChPI5MOKKLaTo4nsqRnhihzTstUACDkCYggEiIqBjAv9BiKV//i2AYosKLGClfxBaKKCBCSowYoQG6MdhAhByaICYcTJooJr+uamAAQksMOcCD3xIhIMwNNBnm3guICeQBkA4YaN3/ockh3si4KeVKAK4wAImYnpiAhkGiuGIVEIK5XxYzvdkqP6NeCCeNrAlIadRtikhgFIyACSHDzSwwIAY2pqqrRz6aqWNCBogKoAKPski0o5vzsmfgu/dyuqC1G7K5KDVyUAtA41y6MCEsKoJbpsT5oeijmOque6UauqZYZAjDvsnA1hC+kB88e2bn714NgpuizWg5d+j0Sq4J4MWNkCljg//h6Cv8frJwKVYGujegRnSOiezfnLKbqNiOkAlnFSabPLFnEIpoqDc0kBfffTZ2KF781XrI40y0lztzzjXN1+aMmoY9M46t2B0tSbScx97UMcc9dRNPk311bddTV7WWqe1RAo7hC322GSXbfbZaKet9tpspw1223DHLffcdKMdAQA7){width="118"
+height="47"
+border="0"}](https://www.nytimes.com/books/bn/author?sourceid=4773&is_search=Y&match=exact&options=and&anotherlevel=Y&title=bots&author_first=andrew&author_last=leonard)
+![](data:,){.sf-hidden border="0" width="1" height="1" md8l8zojd=""}
+
+[Return to the Books Home Page](https://www.nytimes.com/books)
+
+
+
++:----------------------------------+:---------------------------------:+
+|                                  | -------------------------------   |
+|                                   |                                   |
+|                                   | [**                               |
+|                                   | Home**](https://www.nytimes.com/) |
+|                                   | | [**Site                        |
+|                                   | Index**](https://www.nytimes.     |
+|                                   | com/info/contents/siteindex.html) |
+|                                   | | [**Site                        |
+|                                   | Search**](https                   |
+|                                   | ://www.nytimes.com/search/daily/) |
+|                                   | |                                |
+|                                   | [**Forums**](                     |
+|                                   | https://www.nytimes.com/comment/) |
+|                                   | |                                |
+|                                   | [**Archives**](h                  |
+|                                   | ttps://www.nytimes.com/archives/) |
+|                                   | |                                |
+|                                   | [**Marketplace**](http            |
+|                                   | s://www.nytimes.com/marketplace/) |
+|                                   |                                   |
+|                                   | [Quick                            |
+|                                   | News](https:/                     |
+|                                   | /www.nytimes.com/yr/mo/day/late/) |
+|                                   | | [Page One                      |
+|                                   | Plus](https://                    |
+|                                   | www.nytimes.com/yr/mo/day/front/) |
+|                                   | |                                |
+|                                   | [International](https://          |
+|                                   | www.nytimes.com/yr/mo/day/world/) |
+|                                   | |                                |
+|                                   | [National/N.Y.](https://www       |
+|                                   | .nytimes.com/yr/mo/day/national/) |
+|                                   | |                                |
+|                                   | [Business](https://www            |
+|                                   | .nytimes.com/yr/mo/day/business/) |
+|                                   | |                                |
+|                                   | [Technology](https:/              |
+|                                   | /www.nytimes.com/yr/mo/day/tech/) |
+|                                   | |                                |
+|                                   | [Science](https://ww              |
+|                                   | w.nytimes.com/yr/mo/day/science/) |
+|                                   | |                                |
+|                                   | [Sports](https://w                |
+|                                   | ww.nytimes.com/yr/mo/day/sports/) |
+|                                   | |                                |
+|                                   | [Weather](                        |
+|                                   | https://www.nytimes.com/weather/) |
+|                                   | |                                |
+|                                   | [Editorial](https://www.          |
+|                                   | nytimes.com/yr/mo/day/editorial/) |
+|                                   | |                                |
+|                                   | [Op-Ed](https:/                   |
+|                                   | /www.nytimes.com/yr/mo/day/oped/) |
+|                                   | |                                |
+|                                   | [Arts](https://www.n              |
+|                                   | ytimes.com/yr/mo/day/artleisure/) |
+|                                   | |                                |
+|                                   | [Automobiles](https:/             |
+|                                   | /www.nytimes.com/yr/mo/day/auto/) |
+|                                   | |                                |
+|                                   | [Books](https://www.n             |
+|                                   | ytimes.com/books/yr/mo/day/home/) |
+|                                   | |                                |
+|                                   | [Diversions](htt                  |
+|                                   | ps://www.nytimes.com/diversions/) |
+|                                   | | [Job                           |
+|                                   | Market](https://www.              |
+|                                   | nytimes.com/yr/mo/day/jobmarket/) |
+|                                   | | [Real                          |
+|                                   | Estate](https://www.n             |
+|                                   | ytimes.com/yr/mo/day/realestate/) |
+|                                   | |                                |
+|                                   | [Travel](https://w                |
+|                                   | ww.nytimes.com/yr/mo/day/travel/) |
+|                                   |                                   |
+|                                   | [Help/Feedback](https:/           |
+|                                   | /www.nytimes.com/subscribe/help/) |
+|                                   | |                                |
+|                                   | [Classifieds](htt                 |
+|                                   | ps://www.nytimes.com/classified/) |
+|                                   | |                                |
+|                                   | [Services](https://www.nytimes    |
+|                                   | .com/info/contents/services.html) |
+|                                   | | [New York                      |
+|                                   | Today](http://www.nytoday.com/)   |
+|                                   |                                   |
+|                                   | [Copyright 1997 The New York      |
+|                                   | Times                             |
+|                                   | Company](https://www.nyti         |
+|                                   | mes.com/info/help/copyright.html) |
++-----------------------------------+-----------------------------------+
